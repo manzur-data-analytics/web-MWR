@@ -1,0 +1,186 @@
+<footer class="bg-[#382821] text-white overflow-hidden">
+
+    <!-- MAIN -->
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-16 lg:py-20">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
+
+
+            <!-- BRAND -->
+            <div class="sm:col-span-2 lg:col-span-1 text-center sm:text-left">
+
+                <h3 class="font-title text-4xl lg:text-5xl font-light tracking-wide">
+                    MWR
+                </h3>
+
+                <div class="w-16 h-px bg-[#d4a15a] mt-5 mx-auto sm:mx-0"></div>
+
+                <p class="mt-6 font-body text-white/70 leading-7 text-sm max-w-sm mx-auto sm:mx-0">
+
+                    {{ 'FOOTER.DESCRIPTION' | transloco }}
+
+                </p>
+
+            </div>
+
+
+
+            <!-- NAVIGATION -->
+            <div class="text-center sm:text-left">
+
+                <h4 class="font-body uppercase tracking-[0.3em] text-xs text-[#c8b89a]">
+
+                    {{ 'FOOTER.NAVIGATION' | transloco }}
+
+                </h4>
+
+
+                <ul class="mt-6 space-y-4">
+
+                    <li>
+                        <a href="#hotel" class="font-body text-sm text-white/70 hover:text-white transition">
+
+                            {{ 'NAVBAR.HOTEL' | transloco }}
+
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#habitaciones" class="font-body text-sm text-white/70 hover:text-white transition">
+
+                            {{ 'NAVBAR.HABITACIONES' | transloco }}
+
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#experiencias" class="font-body text-sm text-white/70 hover:text-white transition">
+
+                            {{ 'NAVBAR.EXPERIENCIAS' | transloco }}
+
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#contacto" class="font-body text-sm text-white/70 hover:text-white transition">
+
+                            {{ 'NAVBAR.CONTACTO' | transloco }}
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- CONTACT -->
+            <div class="text-center sm:text-left">
+
+                <h4 class="font-body uppercase tracking-[0.3em] text-xs text-[#c8b89a]">
+
+                    {{ 'FOOTER.CONTACT' | transloco }}
+
+                </h4>
+
+
+                <div class="mt-6 space-y-4">
+
+                    <p class="font-body text-sm text-white/70 leading-6">
+
+                        {{hotelInfo.address}}
+
+                    </p>
+
+
+                    <p class="font-body text-sm text-white/70">
+
+                        {{hotelInfo.phone}}
+
+                    </p>
+
+
+                    <p class="font-body text-sm text-white/70 break-all">
+
+                        {{hotelInfo.email}}
+
+                    </p>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MAP -->
+            <div class="sm:col-span-2 lg:col-span-1">
+
+
+                <h4 class="font-body uppercase tracking-[0.3em] text-xs text-[#c8b89a] text-center lg:text-left">
+
+                    {{ 'FOOTER.LOCATION' | transloco }}
+
+                </h4>
+
+
+                <div class="mt-6 h-64 sm:h-72 lg:h-60 overflow-hidden rounded-sm border border-white/10">
+
+
+                    <iframe class="w-full h-full"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.781289957793!2d-65.40899322466832!3d-23.612175478764904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9404cbdd1ed0edd9%3A0x90ce15ae6c5e87e9!2sMaimara%20Wine%20Resort!5e0!3m2!1ses!2sar!4v1784126402895!5m2!1ses!2sar"
+                        loading="lazy" style="border:0;" allowfullscreen="">
+                    </iframe>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- BOTTOM -->
+
+    <div class="border-t border-white/10">
+
+        <div
+            class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-6 flex flex-col md:flex-row items-center justify-between gap-5 text-center md:text-left">
+
+
+            <p class="font-body text-xs text-white/50 tracking-wide">
+
+                © {{currentYear}} MWR Hotel.
+                {{ 'FOOTER.RIGHTS' | transloco }}
+
+            </p>
+
+
+
+            <div class="flex flex-wrap justify-center gap-5">
+
+                <a *ngFor="let social of socials" [href]="social.url"
+                    class="font-body text-xs text-white/60 hover:text-white transition">
+
+                    {{social.name}}
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</footer>

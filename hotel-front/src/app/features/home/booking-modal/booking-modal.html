@@ -1,0 +1,180 @@
+<div *ngIf="visible" class="fixed inset-0 z-[999] bg-black/50 backdrop-blur-sm flex items-center justify-center p-4">
+
+    <!-- Modal -->
+    <div class="relative w-full max-w-3xl rounded-sm bg-[#f4f1ed] shadow-2xl animate-fade-up">
+
+        <!-- Top actions -->
+        <div class="absolute top-5 right-5 flex items-center gap-4">
+
+            <!-- Language -->
+            <div class="relative">
+                <button (click)="toggleLangMenu()"
+                    class="font-body uppercase text-[11px] tracking-[0.2em] text-[#5c5a3e] hover:text-[#8e4c2f] transition">
+
+                    {{ currentLanguage() | uppercase }}
+
+                </button>
+
+                <div *ngIf="isLangMenuOpen()"
+                    class="absolute right-0 mt-3 w-32 bg-[#f4f1ed] shadow-xl rounded-sm overflow-hidden border border-[#e7dcc6]"
+                    role="menu">
+
+                    <button *ngFor="let lang of languages" (click)="changeLanguage(lang.code); closeLangMenu()"
+                        role="menuitem" [attr.aria-current]="currentLanguage() === lang.code ? 'true' : null"
+                        class="w-full text-left px-4 py-3 text-[12px] tracking-[0.15em] text-[#5c5a3e] hover:bg-[#e7dcc6]/50 transition-colors font-body"
+                        [ngClass]="{
+                            'font-semibold bg-[#e7dcc6]/40': currentLanguage() === lang.code
+                        }">
+
+
+                        {{ lang.label }}
+
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- Close -->
+            <button (click)="close()" class="text-[#7a7a74] hover:text-[#382821] transition-colors">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12" />
+
+                </svg>
+
+            </button>
+
+        </div>
+
+        <!-- Header -->
+        <div class="px-6 md:px-10 pt-8 text-center">
+
+            <span class="font-body uppercase tracking-[0.45em] text-[10px] md:text-[11px] text-[#8e4c2f]">
+
+                {{ 'BOOKING.SUBTITLE' | transloco }}
+
+            </span>
+
+            <h2 class="font-title mt-3 text-3xl md:text-4xl font-light text-[#382821]">
+
+                {{ 'BOOKING.TITLE' | transloco }}
+
+            </h2>
+
+            <div class="w-16 h-px bg-[#c8b89a] mx-auto my-4">
+            </div>
+
+            <p class="font-body text-sm md:text-base text-[#7a7a74] leading-7 max-w-xl mx-auto">
+
+                {{ 'BOOKING.DESCRIPTION' | transloco }}
+
+            </p>
+
+        </div>
+
+        <!-- Form -->
+        <form class="px-6 md:px-10 pb-8 pt-6">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
+
+                <!-- Check in -->
+                <div>
+
+                    <label class="font-body uppercase tracking-[0.2em] text-[11px] text-[#8e4c2f]">
+
+                        {{ 'BOOKING.CHECK_IN' | transloco }}
+
+                    </label>
+
+                    <input type="date"
+                        class="mt-3 w-full border-b border-[#c8b89a] bg-transparent py-3 outline-none focus:border-[#bb644a] transition font-body text-[#382821]">
+
+                </div>
+
+                <!-- Check out -->
+                <div>
+
+                    <label class="font-body uppercase tracking-[0.2em] text-[11px] text-[#8e4c2f]">
+
+                        {{ 'BOOKING.CHECK_OUT' | transloco }}
+
+                    </label>
+
+                    <input type="date"
+                        class="mt-3 w-full border-b border-[#c8b89a] bg-transparent py-3 outline-none focus:border-[#bb644a] transition font-body text-[#382821]">
+
+                </div>
+
+                <!-- Adults -->
+                <div>
+
+                    <label class="font-body uppercase tracking-[0.2em] text-[11px] text-[#8e4c2f]">
+
+                        {{ 'BOOKING.ADULTS' | transloco }}
+
+                    </label>
+
+                    <select
+                        class="mt-3 w-full border-b border-[#c8b89a] bg-transparent py-3 outline-none font-body text-[#382821]">
+
+
+                        <option>1</option>
+                        <option selected>2</option>
+                        <option>3</option>
+                        <option>4</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Children -->
+                <div>
+                    <label class="font-body uppercase tracking-[0.2em] text-[11px] text-[#8e4c2f]">
+
+                        {{ 'BOOKING.CHILDREN' | transloco }}
+
+                    </label>
+
+                    <select
+                        class="mt-3 w-full border-b border-[#c8b89a] bg-transparent py-3 outline-none font-body text-[#382821]">
+
+
+                        <option selected>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+            <!-- Notice -->
+            <div class="mt-10 bg-[#e7dcc6]/50 p-5">
+
+                <p class="font-body text-sm leading-6 text-[#5c5a3e]">
+
+                    {{ 'BOOKING.NOTICE' | transloco }}
+
+                </p>
+
+            </div>
+
+            <button type="submit"
+                class="group mt-8 w-full bg-[#382821] hover:bg-[#8e4c2f] transition-all duration-500 py-4 uppercase tracking-[0.3em] text-[12px] text-white font-body">
+
+                <span class="group-hover:tracking-[0.4em] transition-all duration-500">
+
+                    {{ 'BOOKING.BUTTON' | transloco }}
+
+                </span>
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>

@@ -1,0 +1,204 @@
+{
+    "NAVBAR": {
+        "INICIO": "Home",
+        "ALOJAMIENTO": "Accommodation",
+        "GASTRONOMIA": "Dining",
+        "EVENTOS": "Events & Weddings",
+        "SPA": "Spa",
+        "EXPERIENCIAS": "Experiences",
+        "NOSOTROS": "About Us",
+        "RESERVAR": "Book Now"
+    },
+    "HOME": {
+        "TITLE": "Soon",
+        "DESCRIPTION": "Discover a new hospitality experience where design, nature, and comfort come together to create unforgettable moments.",
+        "ACCOMMODATION": {
+            "SUBTITLE": "Accommodation",
+            "TITLE": "Suites and villas designed for complete tranquility.",
+            "DESCRIPTION": "Contemporary architecture meets nature to create private, refined spaces dedicated to comfort and relaxation. Every suite has been thoughtfully designed to offer an exclusive hospitality experience surrounded by breathtaking landscapes and timeless elegance.",
+            "BUTTON": "Book Now"
+        },
+        "GASTRONOMY": {
+            "PREVIEW": {
+                "SUBTITLE": "Gastronomic Experience",
+                "TITLE": "Flavors born from our land",
+                "DESCRIPTION": "A culinary proposal where local ingredients, high-altitude wines and the creativity of our team come together to create unforgettable moments.",
+                "BUTTON": "Discover gastronomy"
+            }
+        },
+        "EVENTS": {
+            "SUBTITLE": "Events and weddings",
+            "TITLE": "Celebrations designed for unforgettable moments",
+            "DESCRIPTION": "An exclusive setting where every event becomes a unique experience, combining exceptional spaces, signature cuisine and personalized attention.",
+            "GALLERY": {
+                "SUBTITLE": "Previous events",
+                "TITLE": "Stories brought to life",
+                "DESCRIPTION": "Discover celebrations hosted in our spaces, from intimate weddings to remarkable social and corporate gatherings."
+            },
+            "OFFER": {
+                "SUBTITLE": "Our proposal",
+                "TITLE": "Experiences created for every occasion",
+                "SOCIAL": "Social events",
+                "SOCIAL_DESC": "Private celebrations designed down to every detail, with personalized settings, exclusive cuisine and dedicated service.",
+                "WEDDINGS": "Weddings",
+                "WEDDINGS_DESC": "A unique setting to celebrate the beginning of a new story, with elegant spaces, customized menus and attention to every detail.",
+                "CORPORATE": "Corporate events",
+                "CORPORATE_DESC": "Business gatherings in inspiring spaces, ideal for meetings, presentations and corporate experiences with exceptional service."
+            },
+            "SPACES": {
+                "SUBTITLE": "Spaces",
+                "TITLE": "Settings adapted to every celebration",
+                "MAIN": "Main hall",
+                "MAIN_DESC": "Up to 200 guests",
+                "GARDENS": "Outdoor gardens",
+                "GARDENS_DESC": "Open-air events surrounded by nature",
+                "PRIVATE": "Private spaces",
+                "PRIVATE_DESC": "Exclusive experiences and personalized gatherings"
+            },
+            "FORM": {
+                "TITLE": "Request a personalized proposal",
+                "NAME": "Full name",
+                "EMAIL": "Email address",
+                "DATE": "Event date",
+                "GUESTS": "Number of guests",
+                "MESSAGE": "Tell us about your event",
+                "BUTTON": "Request quotation"
+            }
+        },
+        "SPA": {
+            "SUBTITLE": "Wellness Wine Spa",
+            "TITLE": "A sanctuary dedicated to wellness.",
+            "DESCRIPTION": "Heated pools, spa circuit, relaxation lounges and signature wine-inspired treatments.",
+            "ITEM1": "Indoor wellness circuit",
+            "ITEM2": "Exclusive massages & therapies",
+            "ITEM3": "Spa Day experiences",
+            "BUTTON": "Discover the Spa",
+            "RESERVE": "Book Spa Day"
+        }
+    },
+    "ACCOMMODATION": {
+        "HERO": {
+            "SUBTITLE": "Rooms & Suites",
+            "TITLE": "Rest becomes an experience.",
+            "DESCRIPTION": "Every room has been designed to provide privacy, generous spaces and breathtaking vineyard views, blending contemporary comfort with the essence of Northern Argentina.",
+            "BUTTON": "Discover rooms",
+            "SECOND_BUTTON": "View experiences",
+            "CARD_SUBTITLE": "Collection",
+            "CARD_TITLE": "Luxury Suites",
+            "SIZE": "Size",
+            "CAPACITY": "Capacity",
+            "VIEW": "View"
+        },
+        "EXPERIENCE": {
+            "SUBTITLE": "The Experience",
+            "TITLE": "More than a room.",
+            "DESCRIPTION": "Every stay is designed to combine comfort, nature and personalized hospitality.",
+            "HEADING": "Luxury in every detail",
+            "TEXT": "From regional breakfast to exclusive spa access and personalized concierge service, every moment is carefully crafted.",
+            "AMENITY1": "Regional Breakfast",
+            "AMENITY1_DESC": "Fresh local products every morning.",
+            "AMENITY2": "Wine Spa",
+            "AMENITY2_DESC": "Dry and wet wellness facilities.",
+            "AMENITY3": "Pool & Solarium",
+            "AMENITY3_DESC": "Heated outdoor pool overlooking the vineyards.",
+            "AMENITY4": "Concierge",
+            "AMENITY4_DESC": "Personal assistance throughout your stay."
+        },
+        "CTA": {
+            "SUBTITLE": "Your next stay starts here",
+            "TITLE": "Let us create your perfect getaway.",
+            "DESCRIPTION": "Our team will gladly help you choose the ideal room and answer any questions before your arrival.",
+            "BUTTON": "Book via WhatsApp"
+        }
+    },
+    "GASTRONOMY": {
+        "HERO": {
+            "SUBTITLE": "Surco Restaurant",
+            "TITLE": "A gastronomic experience celebrating the territory",
+            "DESCRIPTION": "A signature culinary proposal where local ingredients, carefully selected wines and creativity come together to create unforgettable moments.",
+            "RESERVE": "Book a table",
+            "MENU": "View menu",
+            "CARD_TITLE": "The experience",
+            "CARD_ITEM_1": "Signature cuisine",
+            "CARD_ITEM_2": "Regional ingredients",
+            "CARD_ITEM_3": "Wine selection"
+        },
+        "EXPERIENCE": {
+            "SUBTITLE": "Our essence",
+            "TITLE": "A cuisine shaped by identity and territory",
+            "DESCRIPTION": "At Surco, our executive chef interprets the flavors of the region through a refined, seasonal and authentic cuisine. Each creation is born from respect for local ingredients, producers and the constant pursuit of creating unforgettable experiences.",
+            "QUOTE": "Gastronomy begins when every ingredient has a story to tell.",
+            "CHEF": "Executive Chef Name",
+            "ROLE": "Surco Executive Chef",
+            "DISH_SUBTITLE": "Signature creations",
+            "DISH_TITLE": "Dishes that define our cuisine",
+            "DISH1": "Flavors of the land",
+            "DISH2": "Seasonal excellence",
+            "DISH3": "An experience to remember"
+        },
+        "CTA": {
+            "SUBTITLE": "Reserve your experience",
+            "TITLE": "A table, a story, an unforgettable moment",
+            "DESCRIPTION": "Discover Surco and experience a gastronomic proposal where every detail has been designed to create a unique journey.",
+            "BUTTON": "Reserve a table",
+            "MENU": "View menu"
+        }
+    },
+    "SPA": {
+        "HERO": {
+            "SUBTITLE": "Wellness Wine Spa",
+            "TITLE": "A sanctuary where time slows down.",
+            "DESCRIPTION": "Heated pools, wet and dry spa circuits, wine therapy and treatments designed to restore body and mind in the heart of the Quebrada.",
+            "BUTTON": "Book Spa Day",
+            "TREATMENTS": "View treatments",
+            "CARD_TITLE": "Wellness Experience",
+            "ITEM1": "Heated Pool",
+            "ITEM2": "Spa Circuit",
+            "ITEM3": "Massages & Wine Therapy"
+        },
+        "GALLERY": {
+            "SUBTITLE": "SPACES",
+            "TITLE": "Every space invites you to unwind.",
+            "DESCRIPTION": "Heated pool, relaxation lounges, wet and dry spa circuit designed to reconnect body and mind.",
+            "POOL": "Heated Pool",
+            "RELAX": "Relaxation Lounge",
+            "CIRCUIT": "Spa Circuit"
+        },
+        "TREATMENTS": {
+            "SUBTITLE": "TREATMENTS",
+            "TITLE": "Wellness rituals designed to restore balance.",
+            "MASSAGE": "Therapeutic Massages",
+            "MASSAGE_DESC": "Relaxing and deep tissue techniques performed by experienced therapists.",
+            "WINE": "Wine Therapy",
+            "WINE_DESC": "An exclusive ritual inspired by the antioxidant properties of grapes and wine.",
+            "FACIAL": "Premium Facials",
+            "FACIAL_DESC": "Hydrating and revitalizing treatments tailored for complete skin renewal.",
+            "CIRCUIT": "Wet & Dry Spa Circuit",
+            "CIRCUIT_DESC": "Enjoy our heated pool, dry sauna, steam room and relaxation lounges."
+        },
+        "DAY": {
+            "SUBTITLE": "SPA DAY",
+            "TITLE": "A full day devoted to your wellbeing.",
+            "DESCRIPTION": "Reconnect with yourself through a carefully curated Spa Day including access to the wellness circuit, signature treatments and peaceful relaxation areas.",
+            "BUTTON": "Book Spa Day"
+        }
+    },
+    "BOOKING": {
+        "SUBTITLE": "Online booking",
+        "TITLE": "Reserve your stay",
+        "DESCRIPTION": "Select your dates and number of guests to continue with your reservation.",
+        "CHECK_IN": "Check-in",
+        "CHECK_OUT": "Check-out",
+        "ADULTS": "Adults",
+        "CHILDREN": "Children",
+        "NOTICE": "By continuing you will be redirected to our secure booking platform to complete your reservation.",
+        "BUTTON": "Check availability"
+    },
+    "FOOTER": {
+        "DESCRIPTION": "A sanctuary where nature, architecture and hospitality come together to create unforgettable moments.",
+        "NAVIGATION": "Explore",
+        "CONTACT": "Contact",
+        "LOCATION": "Location",
+        "RIGHTS": "All rights reserved."
+    }
+}

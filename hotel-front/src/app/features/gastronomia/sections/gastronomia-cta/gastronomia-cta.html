@@ -1,0 +1,98 @@
+<section class="relative min-h-[480px] sm:h-[700px] overflow-hidden">
+
+    <!-- imagen fija -->
+
+    <div class="absolute inset-0">
+
+        <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=2000&q=80"
+            class="sticky-image w-full h-full object-cover">
+
+    </div>
+
+
+    <!-- overlay -->
+
+    <div class="absolute inset-0 bg-[#382821]/45"></div>
+
+
+    <!-- contenido -->
+
+    <div class="relative z-10 min-h-[480px] sm:h-full flex items-center justify-center text-center px-6 py-20 sm:py-0">
+
+        <div class="max-w-3xl">
+            <span class="uppercase
+                tracking-[0.3em] sm:tracking-[0.5em]
+                text-[#d4a15a]
+                text-[11px]">
+
+                {{ 'GASTRONOMY.CTA.SUBTITLE' | transloco }}
+
+            </span>
+
+            <h2 class="mt-5 sm:mt-6
+                font-title
+                text-3xl sm:text-4xl lg:text-5xl xl:text-6xl
+                font-light
+                text-white">
+
+                {{ 'GASTRONOMY.CTA.TITLE' | transloco }}
+
+            </h2>
+
+            <div class="w-16 sm:w-24
+                h-px
+                bg-[#d4a15a]
+                mx-auto
+                my-7 sm:my-10">
+            </div>
+
+            <p class="text-white/80
+                text-base sm:text-lg
+                leading-7 sm:leading-8">
+
+                {{ 'GASTRONOMY.CTA.DESCRIPTION' | transloco }}
+
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mt-10 sm:mt-12">
+
+                <a href="#" class="luxury-btn relative overflow-hidden
+                    px-10 py-4
+                    border border-[#8e4c2f]
+                    text-[#8e4c2f]
+                    uppercase
+                    tracking-[0.25em] sm:tracking-[0.35em]
+                    text-xs
+                    w-full sm:w-auto
+                    transition">
+
+                    <span class="relative z-10 transition-colors duration-500">
+                        {{ 'GASTRONOMY.CTA.BUTTON' | transloco }}
+                    </span>
+
+                </a>
+
+
+                <a href="#" class="luxury-btn relative overflow-hidden
+                    px-10 py-4
+                    border border-[#d4a15a]
+                    text-[#d4a15a]
+                    uppercase
+                    tracking-[0.25em] sm:tracking-[0.35em]
+                    text-xs
+                    w-full sm:w-auto
+                    transition">
+
+                    <span class="relative z-10 transition-colors duration-500">
+                        {{ 'GASTRONOMY.CTA.MENU' | transloco }}
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

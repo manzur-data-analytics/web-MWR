@@ -1,0 +1,5 @@
+img {
+    transition:
+        opacity 1500ms ease,
+        transform 4000ms linear;
+}

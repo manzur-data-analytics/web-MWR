@@ -1,0 +1,98 @@
+<section class="relative min-h-[600px] sm:h-[85vh] sm:min-h-[720px] overflow-hidden">
+
+    <!-- Imagen -->
+    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=2000&q=80"
+        class="absolute inset-0 w-full h-full object-cover scale-105">
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-[#382821]/90 via-[#382821]/50  to-black/20"></div>
+
+    <!-- Decoración -->
+    <div class="absolute left-4 top-20 sm:left-16 sm:top-32 w-44 h-44 sm:w-80 sm:h-80 rounded-full bg-[#bb644a]/20
+        blur-3xl">
+    </div>
+
+    <!-- Contenido -->
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-28 sm:py-0 min-h-[600px] sm:h-full flex items-center">
+
+        <div class="max-w-3xl">
+            <span class="uppercase tracking-[0.25em] sm:tracking-[0.45em] text-[#d4a15a] text-xs">
+                {{ 'GASTRONOMY.HERO.SUBTITLE' | transloco }}
+            </span>
+
+            <h1 class="mt-5 sm:mt-6 font-title text-4xl sm:text-5xl xl:text-7xl font-light leading-tight text-white">
+                {{ 'GASTRONOMY.HERO.TITLE' | transloco }}
+            </h1>
+
+            <div class="w-16 sm:w-24 h-px bg-[#d4a15a] my-7 sm:my-10"></div>
+
+            <p class="max-w-xl text-white/80 text-base sm:text-lg leading-7 sm:leading-9">
+                {{ 'GASTRONOMY.HERO.DESCRIPTION' | transloco }}
+            </p>
+
+            <div class="flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8 mt-10 sm:mt-12">
+                <a href="#" class="px-9 py-4 bg-[#8e4c2f] hover:bg-[#bb644a] transition uppercase tracking-[0.3em] text-xs
+                    text-center
+                    w-full sm:w-auto">
+                    {{ 'GASTRONOMY.HERO.RESERVE' | transloco }}
+                </a>
+                <a href="#" class="group inline-flex items-center justify-center sm:justify-start gap-4 text-[#d4a15a]
+                    uppercase
+                    tracking-[0.3em]
+                    text-xs">
+                    {{ 'GASTRONOMY.HERO.MENU' | transloco }}
+                    <span class="w-10 h-px bg-[#d4a15a] transition-all group-hover:w-16">
+                    </span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Tarjeta inferior -->
+    <div class="hidden xl:block
+        absolute
+        right-20
+        bottom-16
+        bg-[#f4f1ed]
+        text-[#382821]
+        px-10 py-8
+        shadow-2xl">
+
+
+        <span class="uppercase
+            tracking-[0.35em]
+            text-[10px]
+            text-[#bb644a]">
+
+            {{ 'GASTRONOMY.HERO.CARD_TITLE' | transloco }}
+
+        </span>
+
+
+        <div class="mt-5 space-y-3
+            font-body">
+
+
+            <p>
+                {{ 'GASTRONOMY.HERO.CARD_ITEM_1' | transloco }}
+            </p>
+
+            <p>
+                {{ 'GASTRONOMY.HERO.CARD_ITEM_2' | transloco }}
+            </p>
+
+            <p>
+                {{ 'GASTRONOMY.HERO.CARD_ITEM_3' | transloco }}
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>

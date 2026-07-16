@@ -1,0 +1,57 @@
+:host{
+    display:block;
+}
+
+.luxury-whatsapp-btn{
+
+    position:relative;
+    overflow:hidden;
+
+    padding:18px 42px;
+
+    border:1px solid #d4a15a;
+
+    color:#d4a15a;
+
+    text-decoration:none;
+
+    transition:.5s;
+}
+
+.luxury-whatsapp-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:#d4a15a;
+
+    transform:translateX(-101%);
+
+    transition:transform .6s cubic-bezier(.77,0,.18,1);
+
+}
+
+.luxury-whatsapp-btn:hover{
+
+    color:#382821;
+
+}
+
+.luxury-whatsapp-btn:hover::before{
+
+    transform:translateX(0);
+
+}
+
+@media(max-width:768px){
+
+    section{
+
+        min-height:520px;
+
+    }
+
+}

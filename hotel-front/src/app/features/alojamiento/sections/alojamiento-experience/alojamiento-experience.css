@@ -1,0 +1,23 @@
+:host {
+    display: block;
+}
+
+img {
+    transition: transform .8s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+@media(max-width:1024px) {
+
+    .grid {
+        gap: 4rem;
+    }
+
+    img:first-child {
+        height: 420px !important;
+    }
+
+}
