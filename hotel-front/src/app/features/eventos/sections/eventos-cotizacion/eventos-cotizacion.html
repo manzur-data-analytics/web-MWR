@@ -1,0 +1,228 @@
+<section id="cotizacion" class="relative py-32 overflow-hidden">
+
+    <!-- Fondo -->
+
+    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=2200&q=90"
+        class="absolute inset-0 w-full h-full object-cover">
+
+    <div class="absolute inset-0 bg-gradient-to-r from-[#382821]/90 via-[#382821]/70 to-[#382821]/55"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-24">
+
+            <span class="uppercase tracking-[0.45em] text-[#d4a15a] text-xs">
+                {{'EVENTS.QUOTE.SUBTITLE' | transloco}}
+            </span>
+
+            <h2 class="mt-6 font-title text-5xl lg:text-6xl font-light text-white">
+                {{'EVENTS.QUOTE.TITLE' | transloco}}
+            </h2>
+
+            <div class="w-24 h-px bg-[#d4a15a] mx-auto my-8"></div>
+
+            <p class="text-white/80 text-lg leading-9">
+                {{'EVENTS.QUOTE.DESCRIPTION' | transloco}}
+            </p>
+
+        </div>
+
+        <div class="grid xl:grid-cols-[480px_1fr] gap-24 items-start">
+
+            <!-- Información -->
+
+            <div class="text-white sticky top-32">
+
+                <span class="uppercase tracking-[0.4em] text-[#d4a15a] text-xs">
+                    {{'EVENTS.QUOTE.EXPERIENCE' | transloco}}
+                </span>
+
+                <h3 class="mt-5 font-title text-5xl leading-tight">
+                    {{'EVENTS.QUOTE.EXPERIENCE_TITLE' | transloco}}
+                </h3>
+
+                <p class="mt-8 text-white/75 leading-9 max-w-md">
+                    {{'EVENTS.QUOTE.EXPERIENCE_DESCRIPTION' | transloco}}
+                </p>
+
+                <div class="space-y-10 mt-16">
+
+                    <div class="border-l-2 border-[#d4a15a] pl-6">
+                        <div class="font-title text-5xl text-[#d4a15a]">
+                            {{'EVENTS.QUOTE.STAT1_NUMBER' | transloco}}
+                        </div>
+                        <p class="mt-2 uppercase tracking-[0.25em] text-xs text-white/70">
+                            {{'EVENTS.QUOTE.STAT1_LABEL' | transloco}}
+                        </p>
+                    </div>
+
+                    <div class="border-l-2 border-[#d4a15a] pl-6">
+                        <div class="font-title text-5xl text-[#d4a15a]">
+                            {{'EVENTS.QUOTE.STAT2_NUMBER' | transloco}}
+                        </div>
+                        <p class="mt-2 uppercase tracking-[0.25em] text-xs text-white/70">
+                            {{'EVENTS.QUOTE.STAT2_LABEL' | transloco}}
+                        </p>
+                    </div>
+
+                    <div class="border-l-2 border-[#d4a15a] pl-6">
+                        <div class="font-title text-5xl text-[#d4a15a]">
+                            {{'EVENTS.QUOTE.STAT3_NUMBER' | transloco}}
+                        </div>
+                        <p class="mt-2 uppercase tracking-[0.25em] text-xs text-white/70">
+                            {{'EVENTS.QUOTE.STAT3_LABEL' | transloco}}
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Formulario -->
+            <div class="bg-[#f8f5f1] shadow-[0_35px_80px_rgba(0,0,0,.35)]">
+
+                <div class="h-2 bg-[#8e4c2f]"></div>
+
+                <div class="p-10 lg:p-14">
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12">
+
+                        <div class="border border-[#d9cfbf] bg-white px-5 py-5 text-center">
+
+                            <p class="uppercase tracking-[0.25em] text-[11px] text-[#8e4c2f]">
+
+                                {{'EVENTS.QUOTE.FEATURE1' | transloco}}
+
+                            </p>
+
+                        </div>
+
+                        <div class="border border-[#d9cfbf] bg-white px-5 py-5 text-center">
+
+                            <p class="uppercase tracking-[0.25em] text-[11px] text-[#8e4c2f]">
+
+                                {{'EVENTS.QUOTE.FEATURE2' | transloco}}
+
+                            </p>
+
+                        </div>
+
+                        <div class="border border-[#d9cfbf] bg-white px-5 py-5 text-center">
+
+                            <p class="uppercase tracking-[0.25em] text-[11px] text-[#8e4c2f]">
+
+                                {{'EVENTS.QUOTE.FEATURE3' | transloco}}
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <label class="uppercase tracking-[0.35em] text-[11px] text-[#8e4c2f]">
+
+                        {{'EVENTS.QUOTE.EVENT_TYPE' | transloco}}
+
+                    </label>
+
+                    <div class="grid grid-cols-2 gap-4 mt-6 mb-12">
+
+                        @for(type of eventTypes; track type.value){
+
+                        <button type="button" (click)="selectedType = type.value" class="event-type-card"
+                            [class.active]="selectedType===type.value">
+
+                            {{type.label | transloco}}
+
+                        </button>
+
+                        }
+
+                    </div>
+
+                    <form class="grid md:grid-cols-2 gap-6">
+
+                        <input class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white"
+                            placeholder="{{'EVENTS.QUOTE.NAME' | transloco}}">
+
+                        <input class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white"
+                            placeholder="{{'EVENTS.QUOTE.EMAIL' | transloco}}">
+
+                        <input class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white"
+                            placeholder="{{'EVENTS.QUOTE.PHONE' | transloco}}">
+
+                        <input type="number" class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white"
+                            placeholder="{{'EVENTS.QUOTE.GUESTS' | transloco}}">
+
+
+                        <!-- Fecha -->
+
+                        <div class="md:col-span-2">
+
+                            <label class="uppercase tracking-[0.3em] text-[11px] text-[#8e4c2f] mb-4 block">
+
+                                {{'EVENTS.QUOTE.DATE_TYPE' | transloco}}
+
+                            </label>
+
+                            <div class="flex gap-3 mb-5">
+
+                                <button type="button" (click)="dateType='exact'" class="event-type-card flex-1"
+                                    [class.active]="dateType==='exact'">
+
+                                    {{'EVENTS.QUOTE.EXACT_DATE' | transloco}}
+
+                                </button>
+
+                                <button type="button" (click)="dateType='month'" class="event-type-card flex-1"
+                                    [class.active]="dateType==='month'">
+
+                                    {{'EVENTS.QUOTE.MONTH_ONLY' | transloco}}
+
+                                </button>
+
+                            </div>
+
+                            @if(dateType === 'exact'){
+
+                            <input type="date" class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white w-full">
+
+                            }
+
+                            @else{
+
+                            <input type="month" class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white w-full">
+
+                            }
+
+                        </div>
+
+
+                        <input class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white"
+                            placeholder="{{'EVENTS.QUOTE.BUDGET' | transloco}}">
+
+                        <div></div>
+
+                        <textarea
+                            class="luxury-input md:col-span-2 h-40 border border-[#d9cfbf] px-5 py-4 bg-white resize-none"
+                            placeholder="{{'EVENTS.QUOTE.MESSAGE' | transloco}}">
+                        </textarea>
+
+                        <button class="luxury-submit md:col-span-2 mt-2">
+
+                            {{'EVENTS.QUOTE.BUTTON' | transloco}}
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

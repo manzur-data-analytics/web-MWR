@@ -1,0 +1,89 @@
+<section class="relative py-24 lg:py-36 bg-[#382821] overflow-hidden">
+
+    <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=2200&q=90"
+            class="w-full h-full object-cover opacity-20">
+    </div>
+
+    <div class="absolute inset-0 bg-[#382821]/80"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
+
+
+        <!-- HEADER -->
+        <div class="max-w-3xl mb-16">
+
+            <span class="uppercase tracking-[0.45em] text-xs text-[#d4a15a]">
+                {{'EVENTS.OFFERS.SUBTITLE' | transloco}}
+            </span>
+
+
+            <h2 class="mt-6 font-title text-4xl sm:text-5xl lg:text-6xl font-light text-white">
+                {{'EVENTS.OFFERS.TITLE' | transloco}}
+            </h2>
+
+
+            <div class="w-24 h-px bg-[#d4a15a] mt-8"></div>
+
+
+        </div>
+
+
+        <!-- CARDS -->
+        <div class="grid lg:grid-cols-3 gap-8">
+
+
+            @for(item of offers; track item.id){
+
+
+            <article class="group relative h-[520px] overflow-hidden cursor-pointer" (click)="openOffer(item)">
+
+
+                <img [src]="item.image"
+                    class="absolute inset-0 w-full h-full object-cover transition duration-[1200ms] group-hover:scale-110">
+
+
+                <div class="absolute inset-0 bg-gradient-to-t from-[#382821] via-[#382821]/40 to-transparent">
+                </div>
+
+
+
+                <div class="absolute bottom-0 p-8">
+
+
+                    <span class="text-[#d4a15a] text-xs tracking-[0.4em]">
+                        {{item.number}}
+                    </span>
+
+
+                    <h3 class="mt-5 font-title text-4xl text-white">
+                        {{item.title | transloco}}
+                    </h3>
+
+
+                    <p class="mt-4 text-white/75 leading-7">
+                        {{item.short | transloco}}
+                    </p>
+
+
+                    <div class="mt-8 flex items-center gap-4 text-[#d4a15a] uppercase tracking-[0.3em] text-xs">
+
+                        {{'EVENTS.OFFERS.VIEW' | transloco}}
+
+                        <span class="w-10 h-px bg-[#d4a15a] transition-all group-hover:w-16"></span>
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+            }
+
+        </div>
+
+    </div>
+
+</section>

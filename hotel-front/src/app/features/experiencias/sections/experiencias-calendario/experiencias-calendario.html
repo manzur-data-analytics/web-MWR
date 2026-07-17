@@ -1,0 +1,53 @@
+<!-- Eliminamos py-32 de aquí -->
+<section id="experience-calendar" class="relative bg-[#f8f5f1]">
+    <!-- BACKGROUND IMAGE -->
+    <div class="calendar-background">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=90">
+    </div>
+
+    <!-- OVERLAY -->
+    <div class="calendar-overlay"></div>
+
+    <!-- decoraciones -->
+    <div class="calendar-glow left"></div>
+    <div class="calendar-glow right"></div>
+
+    <!-- Pasamos el py-32 aquí para proteger el contenido sin romper el fondo sticky -->
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10 py-32">
+
+        <!-- HEADER -->
+        <div class="text-center max-w-3xl mx-auto mb-20">
+            <span class="uppercase tracking-[0.45em] text-xs text-[#8e4c2f]">
+                {{'EXPERIENCES.CALENDAR.SUBTITLE' | transloco}}
+            </span>
+            <h2 class="mt-6 font-title text-5xl xl:text-6xl font-light text-[#382821]">
+                {{'EXPERIENCES.CALENDAR.TITLE' | transloco}}
+            </h2>
+            <div class="w-24 h-px bg-[#d4a15a] mx-auto my-8"></div>
+            <p class="text-[#6b645b] text-lg leading-9">
+                {{'EXPERIENCES.CALENDAR.DESCRIPTION' | transloco}}
+            </p>
+        </div>
+
+        <!-- CALENDAR -->
+        <div class="calendar-wrapper">
+            <!-- El contenido de tu calendario se queda exactamente igual -->
+            <div class="calendar-header">
+                <button>‹</button>
+                <h3>{{currentMonth}}</h3>
+                <button>›</button>
+            </div>
+            <div class="calendar-week">
+                <span *ngFor="let day of weekDays">{{day}}</span>
+            </div>
+            <div class="calendar-grid">
+                <button *ngFor="let day of days" class="calendar-day" [class.has-event]="day.event"
+                    (click)="openDay(day)">
+                    <span>{{day.number}}</span>
+                    <small *ngIf="day.event">{{day.event.type}}</small>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>

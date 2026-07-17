@@ -1,0 +1,214 @@
+.experiences-cta {
+
+    position: relative;
+
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+}
+
+
+.cta-background {
+
+    position: absolute;
+    inset: 0;
+
+
+    background-image: url('https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=2000&q=90'
+        );
+
+
+    background-size: cover;
+    background-position: center;
+
+
+    transform: scale(1.05);
+
+}
+
+
+.cta-overlay {
+
+    position: absolute;
+    inset: 0;
+
+
+    background:
+        linear-gradient(180deg,
+            rgba(30, 20, 15, .55),
+            rgba(30, 20, 15, .75));
+
+}
+
+
+
+.cta-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 40px;
+
+}
+
+
+
+.cta-subtitle {
+
+    text-transform: uppercase;
+
+    letter-spacing: .45em;
+
+    font-size: .75rem;
+
+    color: #d4a15a;
+
+}
+
+
+
+.cta-content h2 {
+
+    margin-top: 25px;
+
+    font-family: var(--font-title);
+
+    font-size: 4.5rem;
+
+    font-weight: 300;
+
+}
+
+
+
+.cta-line {
+
+    width: 90px;
+
+    height: 1px;
+
+    background: #d4a15a;
+
+    margin: 35px auto;
+
+}
+
+
+
+.cta-content p {
+
+    font-size: 1.15rem;
+
+    line-height: 2;
+
+    color: rgba(255, 255, 255, .85);
+
+}
+
+
+
+.cta-actions {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 45px;
+
+}
+
+
+
+.cta-primary {
+
+
+    padding: 18px 45px;
+
+    background: #d4a15a;
+
+    color: #382821;
+
+
+    text-transform: uppercase;
+
+    letter-spacing: .25em;
+
+    font-size: .7rem;
+
+
+    transition: .35s;
+
+}
+
+
+
+.cta-primary:hover {
+
+    background: white;
+
+}
+
+
+
+.cta-secondary {
+
+
+    padding: 18px 45px;
+
+    border: 1px solid rgba(255, 255, 255, .5);
+
+    color: white;
+
+
+    text-transform: uppercase;
+
+    letter-spacing: .25em;
+
+    font-size: .7rem;
+
+
+    transition: .35s;
+
+}
+
+
+.cta-secondary:hover {
+
+    background: white;
+
+    color: #382821;
+
+}
+
+
+
+@media(max-width:640px) {
+
+    .cta-content h2 {
+
+        font-size: 2.8rem;
+
+    }
+
+
+    .cta-actions {
+
+        flex-direction: column;
+
+    }
+
+}

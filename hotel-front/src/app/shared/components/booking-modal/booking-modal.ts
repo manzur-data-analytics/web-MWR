@@ -1,5 +1,5 @@
 import { Component, inject, signal } from '@angular/core';
-import { ModalService } from '../../../shared/services/modal-service';
+import { ModalService } from '../../services/modal-service';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { TranslocoPipe, TranslocoService } from '@jsverse/transloco';

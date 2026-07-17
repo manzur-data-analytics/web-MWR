@@ -1,0 +1,55 @@
+<!-- Agregamos overflow-hidden y z-10 para asegurar aislamiento total -->
+<section id="signature-experiences" class="relative py-32 bg-[#f8f5f1] overflow-hidden z-10">
+    <div class="background-image">
+        <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=2200&q=80">
+    </div>
+
+    <!-- Overlay -->
+
+    <!-- decoración -->
+    <div class="absolute left-0 top-40 w-[34rem] h-[34rem] rounded-full bg-[#d4a15a]/10 blur-3xl"></div>
+    <div class="absolute right-0 bottom-20 w-[30rem] h-[30rem] rounded-full bg-[#8e4c2f]/10 blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-28">
+            <span class="uppercase tracking-[0.45em] text-xs text-[#8e4c2f]">
+                {{ 'EXPERIENCES.SIGNATURE.SUBTITLE' | transloco }}
+            </span>
+            <h2 class="mt-6 font-title text-5xl xl:text-6xl font-light text-[#382821]">
+                {{ 'EXPERIENCES.SIGNATURE.TITLE' | transloco }}
+            </h2>
+            <div class="w-24 h-px bg-[#d4a15a] mx-auto my-8"></div>
+            <p class="text-[#6b645b] text-lg leading-9">
+                {{ 'EXPERIENCES.SIGNATURE.DESCRIPTION' | transloco }}
+            </p>
+        </div>
+
+        <!-- EXPERIENCES -->
+        <article class="experience-row" *ngFor="let exp of experiences; let i = index" [class.reverse]="i % 2 !== 0">
+            <div class="experience-photo" (click)="openExperience(exp)">
+                <img [src]="exp.image" [alt]="exp.titleKey | transloco">
+                <button class="experience-overlay" (click)="openExperience(exp); $event.stopPropagation()">
+                    {{ 'EXPERIENCES.SIGNATURE.VIEW_GALLERY' | transloco }}
+                </button>
+            </div>
+
+            <div class="experience-content">
+                <span class="experience-number">{{ exp.number }}</span>
+                <h3>{{ exp.titleKey | transloco }}</h3>
+                <p>{{ exp.descKey | transloco }}</p>
+
+                <div class="experience-features">
+                    <span *ngFor="let f of exp.features">
+                        {{ f.icon }} {{ f.textKey | transloco }}
+                    </span>
+                </div>
+
+                <a href="#" class="experience-btn" (click)="openExperience(exp); $event.preventDefault()">
+                    {{ 'EXPERIENCES.SIGNATURE.RESERVE' | transloco }}
+                </a>
+            </div>
+        </article>
+    </div>
+</section>

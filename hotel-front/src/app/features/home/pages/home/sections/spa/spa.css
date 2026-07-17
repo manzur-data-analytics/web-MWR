@@ -1,0 +1,27 @@
+.luxury-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:58px;
+    padding:0 2.8rem;
+
+    background:#8e4c2f;
+    color:#fff;
+
+    border:1px solid #8e4c2f;
+
+    text-transform:uppercase;
+    letter-spacing:.3em;
+    font-size:.75rem;
+    font-weight:600;
+
+    transition:all .35s ease;
+    box-shadow:0 15px 35px rgba(142,76,47,.22);
+}
+
+.luxury-btn:hover{
+    background:#bb644a;
+    border-color:#bb644a;
+    transform:translateY(-2px);
+    box-shadow:0 22px 45px rgba(142,76,47,.32);
+}

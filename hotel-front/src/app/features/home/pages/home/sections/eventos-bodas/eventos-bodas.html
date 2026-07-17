@@ -1,589 +1,298 @@
-<section id="eventos-bodas" class="relative bg-[#f4f1ed] overflow-hidden">
+<section id="eventos-bodas" class="relative py-24 lg:py-36 overflow-hidden">
 
-    <!-- INTRO -->
-    <div class="relative min-h-[420px] sm:h-[65vh] sm:min-h-[550px]">
+    <!-- Imagen ambiente -->
+    <div class="absolute inset-0 overflow-hidden">
 
-        <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=2000&q=80"
-            class="absolute inset-0 w-full h-full object-cover">
+        <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=2200&q=90" class="
+        w-full
+        h-full
+        object-cover
+        scale-105
+        transition-transform
+        duration-[3000ms]">
 
-        <div class="absolute inset-0 bg-[#382821]/50"></div>
-
-        <div
-            class="relative z-10 min-h-[420px] sm:h-full flex items-center justify-center text-center px-6 py-20 sm:py-0">
-
-            <div class="max-w-3xl">
-
-                <span class="uppercase tracking-[0.25em] sm:tracking-[0.45em] text-[#d4a15a] text-xs">
-                    {{'HOME.EVENTS.SUBTITLE' | transloco}}
-                </span>
+    </div>
 
 
-                <h1 class="mt-5 sm:mt-6 font-title text-4xl sm:text-5xl xl:text-6xl font-light text-white">
-                    {{'HOME.EVENTS.TITLE' | transloco}}
-                </h1>
+    <!-- Overlay elegante -->
+    <div class="
+        absolute
+        inset-0
+        bg-gradient-to-b
+        from-[#f4f1ed]/30
+        via-[#382821]/65
+        to-[#382821]/85">
+    </div>
 
 
-                <div class="w-16 sm:w-24 h-px bg-[#d4a15a] mx-auto my-6 sm:my-8"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
 
 
-                <p class="text-white/80 text-base sm:text-lg leading-7 sm:leading-8">
-                    {{'HOME.EVENTS.DESCRIPTION' | transloco}}
+        <!-- INTRO -->
+
+        <div class="max-w-3xl mx-auto text-center">
+
+
+            <span class="
+            uppercase
+            tracking-[0.5em]
+            text-[#d4a15a]
+            text-[11px]">
+
+                {{'HOME.EVENTS.SUBTITLE' | transloco}}
+
+            </span>
+
+
+
+            <h2 class="
+            mt-6
+            font-title
+            text-4xl
+            sm:text-5xl
+            lg:text-7xl
+            font-light
+            text-white
+            leading-tight">
+
+                {{'HOME.EVENTS.TITLE' | transloco}}
+
+            </h2>
+
+
+
+            <div class="
+            w-24
+            h-px
+            bg-[#d4a15a]
+            mx-auto
+            my-8">
+            </div>
+
+
+
+            <p class="
+            text-white/80
+            text-base
+            sm:text-lg
+            leading-8">
+
+                {{'HOME.EVENTS.DESCRIPTION' | transloco}}
+
+            </p>
+
+
+        </div>
+
+
+
+
+
+        <!-- CARDS -->
+
+        <div class="
+        grid
+        md:grid-cols-3
+        gap-6
+        mt-16
+        lg:mt-20">
+
+
+            <div class="event-card">
+
+                <span>01</span>
+
+                <h3>
+                    {{'HOME.EVENTS.CARD1' | transloco}}
+                </h3>
+
+                <p>
+                    {{'HOME.EVENTS.CARD1_DESC' | transloco}}
                 </p>
 
             </div>
 
+
+
+            <div class="event-card">
+
+                <span>02</span>
+
+                <h3>
+                    {{'HOME.EVENTS.CARD2' | transloco}}
+                </h3>
+
+                <p>
+                    {{'HOME.EVENTS.CARD2_DESC' | transloco}}
+                </p>
+
+            </div>
+
+
+
+
+            <div class="event-card">
+
+                <span>03</span>
+
+                <h3>
+                    {{'HOME.EVENTS.CARD3' | transloco}}
+                </h3>
+
+                <p>
+                    {{'HOME.EVENTS.CARD3_DESC' | transloco}}
+                </p>
+
+            </div>
+
+
         </div>
 
-    </div>
 
-    <!-- 1. CARRETE FOTOS Y VIDEOS -->
-    <section class="relative py-16 sm:py-20 lg:py-28 bg-[#f4f1ed] overflow-hidden">
 
-        <!-- decoración -->
-        <div
-            class="absolute -left-24 sm:-left-40 top-20 w-56 h-56 sm:w-96 sm:h-96 rounded-full bg-[#e7dcc6]/40 blur-3xl">
-        </div>
 
-        <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
 
-            <!-- HEADER -->
-            <div class="mb-10 sm:mb-16 max-w-3xl">
-                <span class="uppercase tracking-[0.25em] sm:tracking-[0.45em] text-xs text-[#8e4c2f]">
+        <!-- FORMULARIO -->
 
-                    {{'HOME.EVENTS.GALLERY.SUBTITLE' | transloco}}
+        <div class="
+        mt-20
+        max-w-5xl
+        mx-auto
+        bg-[#f4f1ed]
+        shadow-[0_30px_80px_rgba(0,0,0,.25)]
+        p-8
+        sm:p-12
+        lg:p-16">
+
+
+            <div class="text-center mb-10">
+
+
+                <span class="
+                uppercase
+                tracking-[0.45em]
+                text-[#8e4c2f]
+                text-[10px]">
+
+                    {{'HOME.EVENTS.FORM.SUBTITLE' | transloco}}
 
                 </span>
 
-                <h2
-                    class="mt-5 sm:mt-6 font-title text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-light text-[#382821]">
 
-                    {{'HOME.EVENTS.GALLERY.TITLE' | transloco}}
 
-                </h2>
+                <h3 class="
+                mt-5
+                font-title
+                text-3xl
+                sm:text-5xl
+                font-light
+                text-[#382821]">
 
-                <div class="w-16 sm:w-24 h-px bg-[#c8b89a] mt-6 sm:mt-8"></div>
+                    {{'HOME.EVENTS.FORM.TITLE' | transloco}}
 
-            </div>
+                </h3>
 
-            <!-- GALERIA -->
-            <div class="grid lg:grid-cols-12 gap-6 items-center">
-                <!-- imagen principal -->
-                <div class="lg:col-span-7 relative overflow-hidden">
 
-                    @for(img of imagenes; track img; let i = $index){
-
-                    <img [src]="img" class="
-                    absolute inset-0
-                    w-full h-full
-                    object-cover
-                    transition-all duration-[1500ms]" [class.opacity-100]="i === imagenActual()"
-                        [class.opacity-0]="i !== imagenActual()">
-
-                    }
-
-                    <div class="aspect-[4/3]"></div>
-
+                <div class="
+                w-20
+                h-px
+                bg-[#c8b89a]
+                mx-auto
+                mt-6">
                 </div>
 
-                <!-- secundarias -->
-                <div class="lg:col-span-5 grid grid-cols-2 gap-3 sm:gap-5">
-
-                    <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=700&q=80"
-                        class="
-                        h-40 sm:h-52 lg:h-64
-                        w-full
-                        object-cover
-                        transition duration-700
-                        hover:scale-105">
-
-                    <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=700&q=80"
-                        class="
-                        h-40 sm:h-52 lg:h-64
-                        w-full
-                        object-cover
-                        transition duration-700
-                        hover:scale-105">
-
-
-                    <!-- video -->
-                    <div class="col-span-2 relative overflow-hidden h-40 sm:h-52 lg:h-64">
-                        <video autoplay muted loop playsinline class="w-full h-full object-cover">
-
-                            <source src="https://cdn.coverr.co/videos/coverr-a-wedding-celebration-1575/1080p.mp4"
-                                type="video/mp4">
-
-                        </video>
-
-                        <div class="absolute inset-0 bg-[#382821]/20"></div>
-
-                        <span class="
-                        absolute bottom-4 left-4 sm:bottom-6 sm:left-6
-                        text-white
-                        uppercase
-                        tracking-[0.25em] sm:tracking-[0.4em]
-                        text-[10px] sm:text-xs">
-
-                            Moments
-                        </span>
-                    </div>
-
-                </div>
 
             </div>
 
 
-            <!-- indicadores -->
-            <div class="flex gap-3 mt-8 sm:mt-10">
 
 
-                @for(img of imagenes; track img; let i=$index){
 
-                <button (click)="imagenActual.set(i)" class="
-                h-[2px]
-                transition-all duration-700" [class.w-12]="i===imagenActual()" [class.w-5]="i!==imagenActual()"
-                    [class.bg-[#8e4c2f]]="i===imagenActual()" [class.bg-[#c8b89a]]="i!==imagenActual()">
+            <form class="
+            grid
+            md:grid-cols-2
+            gap-5">
+
+
+                <input class="luxury-input" placeholder="{{'HOME.EVENTS.FORM.NAME' | transloco}}">
+
+
+
+                <input class="luxury-input" placeholder="{{'HOME.EVENTS.FORM.EMAIL' | transloco}}">
+
+
+
+                <input class="luxury-input" placeholder="{{'HOME.EVENTS.FORM.DATE' | transloco}}">
+
+
+
+                <input class="luxury-input" placeholder="{{'HOME.EVENTS.FORM.GUESTS' | transloco}}">
+
+
+
+                <textarea class="
+                luxury-input
+                md:col-span-2
+                h-36" placeholder="{{'HOME.EVENTS.FORM.MESSAGE' | transloco}}">
+                </textarea>
+
+
+
+
+                <button class="
+                luxury-submit
+                md:col-span-2">
+
+                    {{'HOME.EVENTS.FORM.BUTTON' | transloco}}
 
                 </button>
 
-                }
 
-            </div>
+            </form>
+
 
         </div>
 
-    </section>
-
-    <!-- 2 OFERTA -->
-    <section class="relative py-16 sm:py-20 lg:py-28 overflow-hidden bg-[#382821]">
-        <!-- fondo general -->
-        <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=2000&q=80"
-            class="absolute inset-0 w-full h-full object-cover opacity-20">
-
-        <div class="absolute inset-0 bg-[#382821]/70"></div>
 
 
-        <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
 
-            <!-- HEADER -->
-            <div class="max-w-3xl mb-12 sm:mb-16 lg:mb-20">
-                <span class="uppercase tracking-[0.25em] sm:tracking-[0.45em] text-xs text-[#d4a15a]">
-                    {{'HOME.EVENTS.OFFER.SUBTITLE' | transloco}}
+
+        <!-- LINK -->
+
+        <div class="text-center mt-14">
+
+
+            <a href="/eventos" class="
+            inline-flex
+            items-center
+            gap-4
+            text-[#d4a15a]
+            uppercase
+            tracking-[0.4em]
+            text-xs
+            group">
+
+
+                {{'HOME.EVENTS.MORE' | transloco}}
+
+
+                <span class="
+                w-10
+                h-px
+                bg-[#d4a15a]
+                transition-all
+                duration-500
+                group-hover:w-16">
                 </span>
 
-                <h2
-                    class="mt-5 sm:mt-6 font-title text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-light text-white leading-tight">
-                    {{'HOME.EVENTS.OFFER.TITLE' | transloco}}
 
-                </h2>
+            </a>
 
-                <div class="w-16 sm:w-24 h-px bg-[#d4a15a] mt-6 sm:mt-8"></div>
-            </div>
-
-            <!-- CARDS -->
-            <div class="grid lg:grid-cols-3 gap-6 sm:gap-8">
-                <!-- SOCIAL -->
-                <article class="group relative h-[380px] sm:h-[450px] lg:h-[520px] overflow-hidden">
-
-                    <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1000&q=80"
-                        class="
-                            absolute inset-0
-                            w-full h-full
-                            object-cover
-                            transition duration-[1200ms]
-                            group-hover:scale-110">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#382821] via-[#382821]/40 to-transparent"></div>
-
-                    <div class="absolute bottom-0 p-6 sm:p-8 lg:p-10">
-
-                        <span class="text-[#d4a15a] text-xs tracking-[0.3em] sm:tracking-[0.4em]">
-                            01
-                        </span>
-
-                        <h3 class="mt-4 sm:mt-5 font-title text-2xl sm:text-3xl lg:text-4xl font-light text-white">
-                            {{'HOME.EVENTS.OFFER.SOCIAL' | transloco}}
-                        </h3>
-
-                        <p class="mt-4 sm:mt-5 text-white/80 text-sm sm:text-base leading-6 sm:leading-8">
-                            {{'HOME.EVENTS.OFFER.SOCIAL_DESC' | transloco}}
-                        </p>
-
-                    </div>
-                </article>
-
-                <!-- WEDDINGS -->
-                <article class="group relative h-[380px] sm:h-[450px] lg:h-[520px] overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1000&q=80"
-                        class="
-                            absolute inset-0
-                            w-full h-full
-                            object-cover
-                            transition duration-[1200ms]
-                            group-hover:scale-110">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#382821] via-[#382821]/40 to-transparent"></div>
-
-                    <div class="absolute bottom-0 p-6 sm:p-8 lg:p-10">
-
-                        <span class="text-[#d4a15a] text-xs tracking-[0.3em] sm:tracking-[0.4em]">
-                            02
-                        </span>
-
-                        <h3 class="mt-4 sm:mt-5 font-title text-2xl sm:text-3xl lg:text-4xl font-light text-white">
-
-                            {{'HOME.EVENTS.OFFER.WEDDINGS' | transloco}}
-
-                        </h3>
-
-                        <p class="mt-4 sm:mt-5 text-white/80 text-sm sm:text-base leading-6 sm:leading-8">
-                            {{'HOME.EVENTS.OFFER.WEDDINGS_DESC' | transloco}}
-                        </p>
-
-                    </div>
-                </article>
-
-                <!-- CORPORATE -->
-                <article class="group relative h-[380px] sm:h-[450px] lg:h-[520px] overflow-hidden">
-
-                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=80"
-                        class="
-                            absolute inset-0
-                            w-full h-full
-                            object-cover
-                            transition duration-[1200ms]
-                            group-hover:scale-110">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#382821] via-[#382821]/40 to-transparent"></div>
-
-                    <div class="absolute bottom-0 p-6 sm:p-8 lg:p-10">
-
-
-                        <span class="text-[#d4a15a] text-xs tracking-[0.3em] sm:tracking-[0.4em]">
-                            03
-                        </span>
-
-                        <h3 class="mt-4 sm:mt-5 font-title text-2xl sm:text-3xl lg:text-4xl font-light text-white">
-                            {{'HOME.EVENTS.OFFER.CORPORATE' | transloco}}
-                        </h3>
-
-                        <p class="mt-4 sm:mt-5 text-white/80 text-sm sm:text-base leading-6 sm:leading-8">
-
-                            {{'HOME.EVENTS.OFFER.CORPORATE_DESC' | transloco}}
-
-                        </p>
-
-                    </div>
-
-                </article>
-
-            </div>
 
         </div>
 
-    </section>
 
-    <!-- 3 ESPACIOS -->
-    <section class="py-16 sm:py-20 lg:py-24">
+    </div>
 
-        <div class="max-w-7xl mx-auto px-6 lg:px-10">
-
-            <div class="text-center mb-10 sm:mb-14">
-
-                <span class="uppercase tracking-[0.25em] sm:tracking-[0.45em] text-xs text-[#8e4c2f]">
-                    {{'HOME.EVENTS.SPACES.SUBTITLE' | transloco}}
-                </span>
-
-                <h2 class="mt-4 sm:mt-5 font-title text-3xl sm:text-4xl lg:text-5xl text-[#382821]">
-                    {{'HOME.EVENTS.SPACES.TITLE' | transloco}}
-                </h2>
-
-            </div>
-
-            <!-- plano -->
-            <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-
-                <!-- Plano ilustrado -->
-                <div class="relative">
-
-                    <div class="absolute -left-3 -bottom-3 sm:-left-6 sm:-bottom-6
-                    w-full h-full
-                    border border-[#c8b89a]">
-                    </div>
-
-                    <div class="relative bg-white shadow-xl p-6 sm:p-10">
-
-                        <svg viewBox="0 0 800 600" class="w-full h-auto">
-
-                            <!-- terreno / jardín -->
-                            <rect x="20" y="380" width="760" height="200" fill="none" stroke="#c8b89a" stroke-width="2"
-                                stroke-dasharray="8 6" />
-
-                            <!-- árboles decorativos jardín -->
-                            <g fill="#c8b89a">
-                                <circle cx="70" cy="430" r="14" />
-                                <circle cx="120" cy="460" r="10" />
-                                <circle cx="700" cy="430" r="14" />
-                                <circle cx="650" cy="460" r="10" />
-                            </g>
-
-                            <!-- salón principal -->
-                            <rect x="20" y="20" width="480" height="340" fill="#f4f1ed" stroke="#382821"
-                                stroke-width="3" />
-
-                            <!-- espacios privados -->
-                            <rect x="520" y="20" width="260" height="150" fill="#f4f1ed" stroke="#382821"
-                                stroke-width="3" />
-                            <line x1="650" y1="20" x2="650" y2="170" stroke="#382821" stroke-width="2" />
-
-                            <!-- pasillo / división -->
-                            <rect x="520" y="190" width="260" height="170" fill="#f4f1ed" stroke="#382821"
-                                stroke-width="3" />
-
-                            <!-- puertas (arcos) -->
-                            <path d="M 500 150 A 30 30 0 0 1 500 210" fill="none" stroke="#8e4c2f" stroke-width="2" />
-                            <path d="M 240 360 A 30 30 0 0 0 300 360" fill="none" stroke="#8e4c2f" stroke-width="2" />
-
-                            <!-- marcador 01 - Salón principal -->
-                            <circle cx="260" cy="190" r="22" fill="#8e4c2f" />
-                            <text x="260" y="197" text-anchor="middle" fill="white" font-size="18"
-                                font-family="sans-serif">01</text>
-
-                            <!-- marcador 02 - Jardines -->
-                            <circle cx="400" cy="480" r="22" fill="#bb644a" />
-                            <text x="400" y="487" text-anchor="middle" fill="white" font-size="18"
-                                font-family="sans-serif">02</text>
-
-                            <!-- marcador 03 - Espacios privados -->
-                            <circle cx="650" cy="270" r="22" fill="#382821" />
-                            <text x="650" y="277" text-anchor="middle" fill="white" font-size="18"
-                                font-family="sans-serif">03</text>
-
-                        </svg>
-
-                        <p class="mt-4 text-center text-[10px] sm:text-xs uppercase tracking-[0.2em] text-[#7a7a74]">
-                            {{'HOME.EVENTS.SPACES.PLAN_CAPTION' | transloco}}
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="space-y-6 sm:space-y-8">
-
-                    <div class="flex gap-4">
-
-                        <span class="shrink-0 w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center
-                        bg-[#8e4c2f] text-white text-xs sm:text-sm font-title">
-                            01
-                        </span>
-
-                        <div>
-                            <h3 class="font-title text-2xl sm:text-3xl text-[#382821]">
-                                Salón principal
-                            </h3>
-
-                            <p class="mt-2 sm:mt-3 text-[#5c5a3e] text-sm sm:text-base">
-                                Hasta 200 invitados
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div class="flex gap-4">
-
-                        <span class="shrink-0 w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center
-                        bg-[#bb644a] text-white text-xs sm:text-sm font-title">
-                            02
-                        </span>
-
-                        <div>
-                            <h3 class="font-title text-2xl sm:text-3xl text-[#382821]">
-                                Jardines exteriores
-                            </h3>
-
-                            <p class="mt-2 sm:mt-3 text-[#5c5a3e] text-sm sm:text-base">
-                                Eventos al aire libre
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div class="flex gap-4">
-
-                        <span class="shrink-0 w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center
-                        bg-[#382821] text-white text-xs sm:text-sm font-title">
-                            03
-                        </span>
-
-                        <div>
-                            <h3 class="font-title text-2xl sm:text-3xl text-[#382821]">
-                                Espacios privados
-                            </h3>
-
-                            <p class="mt-2 sm:mt-3 text-[#5c5a3e] text-sm sm:text-base">
-                                Reuniones exclusivas
-                            </p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- 4 FORM -->
-    <section class="py-16 sm:py-20 lg:py-24 bg-[#e7dcc6]">
-
-        <div class="max-w-4xl mx-auto px-6">
-
-            <div class="bg-[#f4f1ed] p-6 sm:p-10 lg:p-16 shadow-xl">
-
-                <div class="text-center mb-8 sm:mb-10">
-
-                    <div class="flex items-center justify-center gap-3">
-                        <span class="w-8 sm:w-10 h-px bg-[#c8b89a]"></span>
-                        <svg class="w-3.5 h-3.5 text-[#8e4c2f] rotate-45" viewBox="0 0 24 24" fill="currentColor">
-                            <rect x="6" y="6" width="12" height="12" />
-                        </svg>
-                        <span class="w-8 sm:w-10 h-px bg-[#c8b89a]"></span>
-                    </div>
-
-                    <h2 class="mt-5 font-title text-3xl sm:text-4xl lg:text-5xl text-[#382821]">
-                        {{'HOME.EVENTS.FORM.TITLE' | transloco}}
-                    </h2>
-
-                    <div class="w-16 h-px bg-[#c8b89a] mx-auto mt-6"></div>
-
-                </div>
-
-                <form class="grid md:grid-cols-2 gap-5 sm:gap-6 mt-8 sm:mt-10">
-
-                    <!-- Nombre -->
-                    <div class="relative">
-                        <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#8e4c2f]/60 pointer-events-none"
-                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                        <input class="luxury-input w-full pl-12 pr-4 py-4
-                        border border-[#c8b89a]/60
-                        bg-transparent
-                        text-[#382821]
-                        placeholder:text-[#7a7a74]
-                        focus:outline-none
-                        focus:border-[#8e4c2f]
-                        transition-colors" placeholder="{{'HOME.EVENTS.FORM.NAME' | transloco}}">
-                    </div>
-
-                    <!-- Email -->
-                    <div class="relative">
-                        <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#8e4c2f]/60 pointer-events-none"
-                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                        </svg>
-                        <input type="email" class="luxury-input w-full pl-12 pr-4 py-4
-                        border border-[#c8b89a]/60
-                        bg-transparent
-                        text-[#382821]
-                        placeholder:text-[#7a7a74]
-                        focus:outline-none
-                        focus:border-[#8e4c2f]
-                        transition-colors" placeholder="{{'HOME.EVENTS.FORM.EMAIL' | transloco}}">
-                    </div>
-
-                    <!-- Fecha -->
-                    <div class="relative">
-                        <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#8e4c2f]/60 pointer-events-none"
-                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
-                        </svg>
-                        <input class="luxury-input w-full pl-12 pr-4 py-4
-                        border border-[#c8b89a]/60
-                        bg-transparent
-                        text-[#382821]
-                        placeholder:text-[#7a7a74]
-                        focus:outline-none
-                        focus:border-[#8e4c2f]
-                        transition-colors" onfocus="(this.type='date')"
-                            placeholder="{{'HOME.EVENTS.FORM.DATE' | transloco}}">
-                    </div>
-
-                    <!-- Invitados -->
-                    <div class="relative">
-                        <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#8e4c2f]/60 pointer-events-none"
-                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-                        </svg>
-                        <input type="number" min="1" class="luxury-input w-full pl-12 pr-4 py-4
-                        border border-[#c8b89a]/60
-                        bg-transparent
-                        text-[#382821]
-                        placeholder:text-[#7a7a74]
-                        focus:outline-none
-                        focus:border-[#8e4c2f]
-                        transition-colors" placeholder="{{'HOME.EVENTS.FORM.GUESTS' | transloco}}">
-                    </div>
-
-                    <!-- Mensaje -->
-                    <div class="relative md:col-span-2">
-                        <svg class="absolute left-4 top-5 w-5 h-5 text-[#8e4c2f]/60 pointer-events-none" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
-                        </svg>
-                        <textarea class="
-                            w-full 
-                            py-4
-                            pl-12
-                            h-32
-                            sm:h-40
-                            border
-                            border-[#c8b89a]/60
-                            bg-transparent
-                            text-[#382821]
-                            placeholder:text-[#7a7a74]
-                            focus:outline-none
-                            focus:border-[#8e4c2f]
-                            transition-colors
-                            resize-none" placeholder="{{'HOME.EVENTS.FORM.MESSAGE' | transloco}}"></textarea>
-                    </div>
-
-                    <!-- Botón -->
-                    <button type="submit" class="md:col-span-2
-                    group
-                    flex items-center justify-center gap-3
-                    bg-[#8e4c2f]
-                    hover:bg-[#bb644a]
-                    text-white
-                    uppercase
-                    tracking-[0.3em]
-                    text-xs
-                    py-4
-                    transition-colors">
-
-                        {{'HOME.EVENTS.FORM.BUTTON' | transloco}}
-
-                        <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none"
-                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                        </svg>
-
-                    </button>
-
-                </form>
-
-            </div>
-
-        </div>
-
-    </section>
 
 </section>

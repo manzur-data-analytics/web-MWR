@@ -1,0 +1,27 @@
+:host {
+    display: block;
+}
+
+.luxury-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.luxury-btn span {
+    position: relative;
+    z-index: 2;
+}
+
+.luxury-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #8e4c2f;
+    transform: translateX(-100%);
+    transition: .6s cubic-bezier(.77, 0, .18, 1);
+}
+
+.luxury-btn:hover::before {
+    transform: translateX(0);
+}

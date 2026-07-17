@@ -1,16 +1,17 @@
 import { AfterViewInit, Component, ElementRef, HostListener, inject, ViewChild } from '@angular/core';
 import { Navbar } from '../../../../layout/navbar/navbar';
-import { TranslocoPipe, TranslocoService } from '@jsverse/transloco';
-import { Footer } from '../../../../layout/footer/footer';
+import { TranslocoService } from '@jsverse/transloco';
 import { Alojamiento } from './sections/alojamiento/alojamiento';
 import { EventosBodas } from './sections/eventos-bodas/eventos-bodas';
 import { Spa } from './sections/spa/spa';
 import { Inicio } from './sections/inicio/inicio';
 import { Gastronomia } from './sections/gastronomia/gastronomia';
+import { Experiencias } from './sections/experiencias/experiencias';
+import { Nosotros } from './sections/nosotros/nosotros';
 
 @Component({
   selector: 'app-home',
-  imports: [Inicio, Navbar, TranslocoPipe, Footer, Alojamiento, Gastronomia, EventosBodas, Spa],
+  imports: [Inicio, Alojamiento, Gastronomia, EventosBodas, Spa, Experiencias, Nosotros],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

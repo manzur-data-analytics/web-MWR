@@ -11,26 +11,17 @@
         <!-- Desktop Menu -->
         <nav class="hidden lg:flex items-center gap-8 xl:gap-9">
 
-            <a *ngFor="let item of navItems" [routerLink]="item.route" [fragment]="item.fragment" class="group relative
-               font-body
-               uppercase
-               text-[13px]
-               tracking-[0.25em]
-               font-normal
-               py-1" [ngClass]="navLinkClass()">
+            <a *ngFor="let item of navItems" [routerLink]="item.route" routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: item.route === '/' }"
+                class="group relative flex items-center justify-center text-center min-h-[48px] min-w-[105px] font-body uppercase text-[13px] tracking-[0.25em] font-normal leading-5"
+                [ngClass]="navLinkClass()">
 
-                {{ item.label | transloco }}
+                <span>
+                    {{ item.label | transloco }}
+                </span>
 
-                <span class="absolute
-                   left-1/2
-                   -bottom-0.5
-                   h-px
-                   w-0
-                   bg-current
-                   transition-all
-                   duration-300
-                   group-hover:w-full
-                   group-hover:left-0">
+                <span
+                    class="absolute left-1/2 -bottom-0.5 h-px w-0 bg-current transition-all duration-300 group-hover:w-full group-hover:left-0">
                 </span>
 
             </a>
@@ -110,22 +101,24 @@
 
     <nav class="flex flex-col p-8">
 
-        <a *ngFor="let item of navItems" [routerLink]="item.route" [fragment]="item.fragment" (click)="closeMenu()"
-            class="py-4 border-b uppercase tracking-wider text-stone-800">
+        <a *ngFor="let item of navItems" [routerLink]="item.route" (click)="closeMenu()" class="py-4 border-b uppercase
+       tracking-wider text-stone-800">
 
             {{ item.label | transloco }}
-
         </a>
 
-        <!-- Idiomas -->
-        <div class="flex justify-center gap-5 mt-8" role="group" aria-label="Seleccionar idioma">
+        <!-- Idiomas móvil -->
+        <div class="flex justify-center gap-5 mt-8" role="group">
 
             <button *ngFor="let lang of languages" (click)="changeLanguage(lang.code); closeMenu()"
-                [attr.aria-current]="currentLanguage() === lang.code ? 'true' : null"
-                class="font-body text-sm tracking-[0.3em] text-stone-700" [ngClass]="{
-                    'font-semibold underline underline-offset-4':
-                    currentLanguage() === lang.code
-                }">
+                [attr.aria-current]="currentLanguage() === lang.code ? 'true' : null" class="
+            font-body
+            text-sm
+            tracking-[0.3em]
+            text-stone-700" [ngClass]="{
+                'font-semibold underline underline-offset-4':
+                currentLanguage() === lang.code
+            }">
 
                 {{ lang.code.toUpperCase() }}
 
@@ -133,11 +126,10 @@
 
         </div>
 
-        <a routerLink="/" fragment="booking" (click)="closeMenu()"
-            class="mt-8 bg-amber-700 text-white text-center py-4 rounded-full uppercase tracking-wider">
+        <a routerLink="/reservar" (click)="closeMenu()" class="mt-8 bg-amber-700 text-white text-center py-4 rounded-full
+       uppercase tracking-wider">
 
             {{ 'NAVBAR.RESERVAR' | transloco }}
-
         </a>
 
     </nav>

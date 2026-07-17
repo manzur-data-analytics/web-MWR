@@ -27,43 +27,26 @@
             }
         },
         "EVENTS": {
-            "SUBTITLE": "Events and weddings",
-            "TITLE": "Celebrations designed for unforgettable moments",
-            "DESCRIPTION": "An exclusive setting where every event becomes a unique experience, combining exceptional spaces, signature cuisine and personalized attention.",
-            "GALLERY": {
-                "SUBTITLE": "Previous events",
-                "TITLE": "Stories brought to life",
-                "DESCRIPTION": "Discover celebrations hosted in our spaces, from intimate weddings to remarkable social and corporate gatherings."
-            },
-            "OFFER": {
-                "SUBTITLE": "Our proposal",
-                "TITLE": "Experiences created for every occasion",
-                "SOCIAL": "Social events",
-                "SOCIAL_DESC": "Private celebrations designed down to every detail, with personalized settings, exclusive cuisine and dedicated service.",
-                "WEDDINGS": "Weddings",
-                "WEDDINGS_DESC": "A unique setting to celebrate the beginning of a new story, with elegant spaces, customized menus and attention to every detail.",
-                "CORPORATE": "Corporate events",
-                "CORPORATE_DESC": "Business gatherings in inspiring spaces, ideal for meetings, presentations and corporate experiences with exceptional service."
-            },
-            "SPACES": {
-                "SUBTITLE": "Spaces",
-                "TITLE": "Settings adapted to every celebration",
-                "MAIN": "Main hall",
-                "MAIN_DESC": "Up to 200 guests",
-                "GARDENS": "Outdoor gardens",
-                "GARDENS_DESC": "Open-air events surrounded by nature",
-                "PRIVATE": "Private spaces",
-                "PRIVATE_DESC": "Exclusive experiences and personalized gatherings"
-            },
+            "SUBTITLE": "Events & Weddings",
+            "TITLE": "Unique moments, unforgettable celebrations",
+            "DESCRIPTION": "We create exclusive experiences for weddings, social gatherings and corporate events, combining elegance, gastronomy and an exceptional setting.",
+            "CARD1": "Weddings",
+            "CARD1_DESC": "Celebrations designed to create unforgettable memories.",
+            "CARD2": "Social Events",
+            "CARD2_DESC": "Private experiences tailored to every occasion.",
+            "CARD3": "Corporate",
+            "CARD3_DESC": "Elegant spaces for meetings and business gatherings.",
             "FORM": {
-                "TITLE": "Request a personalized proposal",
+                "SUBTITLE": "Request a proposal",
+                "TITLE": "Let's plan your event",
                 "NAME": "Full name",
                 "EMAIL": "Email address",
                 "DATE": "Event date",
                 "GUESTS": "Number of guests",
                 "MESSAGE": "Tell us about your event",
-                "BUTTON": "Request quotation"
-            }
+                "BUTTON": "Send request"
+            },
+            "MORE": "Discover events"
         },
         "SPA": {
             "SUBTITLE": "Wellness Wine Spa",
@@ -74,6 +57,26 @@
             "ITEM3": "Spa Day experiences",
             "BUTTON": "Discover the Spa",
             "RESERVE": "Book Spa Day"
+        },
+        "EXPERIENCES": {
+            "SUBTITLE": "Experiences",
+            "TITLE": "More than a stay",
+            "DESCRIPTION": "Discover unique moments designed to connect you with nature, gastronomy and relaxation.",
+            "PICNIC_TITLE": "Luxury Picnic",
+            "PICNIC_DESC": "Enjoy a gourmet picnic surrounded by beautiful gardens and breathtaking scenery.",
+            "WINE_TITLE": "Wine Tasting",
+            "WINE_DESC": "Taste a curated selection of regional wines paired with local specialties.",
+            "SUNSET_TITLE": "Sunset Experiences",
+            "SUNSET_DESC": "End the day with unforgettable sunsets, fine cuisine and premium wines.",
+            "BUTTON": "Discover experience"
+        },
+        "ABOUT": {
+            "SUBTITLE": "Our story",
+            "TITLE": "A legacy built with passion and family",
+            "DESCRIPTION": "For generations, this estate has preserved stories, memories and a unique way of welcoming guests. Today we continue that legacy through tradition, nature and hospitality.",
+            "GENERATIONS": "Generations",
+            "YEARS": "Years of history",
+            "BUTTON": "Discover our story"
         }
     },
     "ACCOMMODATION": {
@@ -144,6 +147,106 @@
             "MENU": "View menu"
         }
     },
+    "EVENTS": {
+        "HERO": {
+            "SUBTITLE": "Events & Weddings",
+            "TITLE": "Celebrations that become unforgettable memories",
+            "DESCRIPTION": "We create unique experiences for weddings, social events, and corporate gatherings in an exclusive setting, combining gastronomy, nature, and personalized service.",
+            "BUTTON": "Request a quote",
+            "SPACES": "Explore spaces"
+        },
+        "GALLERY": {
+            "SUBTITLE": "Exclusive events",
+            "TITLE": "Moments designed to remember",
+            "ITEMS": {
+                "WEDDING": {
+                    "TITLE": "Elegant weddings",
+                    "CATEGORY": "Private celebrations"
+                },
+                "SOCIAL": {
+                    "TITLE": "Unforgettable gatherings",
+                    "CATEGORY": "Social events"
+                },
+                "CORPORATE": {
+                    "TITLE": "Corporate events",
+                    "CATEGORY": "Business experiences"
+                },
+                "CELEBRATION": {
+                    "TITLE": "Grand celebrations",
+                    "CATEGORY": "Special moments"
+                }
+            }
+        },
+        "OFFERS": {
+            "SUBTITLE": "Our proposal",
+            "TITLE": "Events designed for unique moments",
+            "VIEW": "View experience",
+            "WEDDINGS": {
+                "TITLE": "Weddings",
+                "SHORT": "Elegant celebrations designed around every detail."
+            },
+            "SOCIAL": {
+                "TITLE": "Social events",
+                "SHORT": "Memorable gatherings with exclusive gastronomy and settings."
+            },
+            "CORPORATE": {
+                "TITLE": "Corporate events",
+                "SHORT": "Professional spaces for meetings, gatherings and business celebrations."
+            }
+        },
+        "SPACES": {
+            "SUBTITLE": "Our spaces",
+            "TITLE": "Spaces designed for every celebration",
+            "PLAN_CAPTION": "Illustrative space layout",
+            "SALON": {
+                "TITLE": "Main hall",
+                "DESCRIPTION": "An elegant setting prepared for unforgettable celebrations.",
+                "CAPACITY": "Up to 200 guests"
+            },
+            "GARDEN": {
+                "TITLE": "Outdoor gardens",
+                "DESCRIPTION": "Natural spaces ideal for ceremonies and receptions.",
+                "CAPACITY": "Outdoor events"
+            },
+            "PRIVATE": {
+                "TITLE": "Private spaces",
+                "DESCRIPTION": "Exclusive areas for intimate gatherings.",
+                "CAPACITY": "Private meetings"
+            }
+        },
+        "QUOTE": {
+            "SUBTITLE": "Request a Proposal",
+            "TITLE": "Let's start planning your next event",
+            "DESCRIPTION": "Share the details of your celebration and our team will prepare a personalized proposal tailored to your needs.",
+            "EXPERIENCE": "Memorable Experiences",
+            "EXPERIENCE_TITLE": "Every celebration deserves an exceptional setting",
+            "EXPERIENCE_DESCRIPTION": "Our team will guide you through every stage of the planning process so you can simply enjoy the occasion.",
+            "STAT1_NUMBER": "200+",
+            "STAT1_LABEL": "Guests",
+            "STAT2_NUMBER": "4",
+            "STAT2_LABEL": "Exclusive Venues",
+            "STAT3_NUMBER": "100%",
+            "STAT3_LABEL": "Personalized Service",
+            "FEATURE1": "Reply within 24 hours",
+            "FEATURE2": "Tailored proposal",
+            "FEATURE3": "No obligation",
+            "EVENT_TYPE": "Event Type",
+            "WEDDING": "Wedding",
+            "SOCIAL": "Social Event",
+            "CORPORATE": "Corporate Event",
+            "OTHER": "Other",
+            "NAME": "Full Name",
+            "EMAIL": "Email Address",
+            "PHONE": "Phone Number",
+            "GUESTS": "Estimated Number of Guests",
+            "BUDGET": "Estimated Budget",
+            "MESSAGE": "Tell us how you imagine your event...",
+            "BUTTON": "Request Proposal",
+            "DATE_TYPE": "Do you already have a date?",
+            "EXACT_DATE": "Exact date",
+            "MONTH_ONLY": "Approximate month"
+        }
+    },
     "SPA": {
         "HERO": {
             "SUBTITLE": "Wellness Wine Spa",
@@ -181,6 +284,110 @@
             "TITLE": "A full day devoted to your wellbeing.",
             "DESCRIPTION": "Reconnect with yourself through a carefully curated Spa Day including access to the wellness circuit, signature treatments and peaceful relaxation areas.",
             "BUTTON": "Book Spa Day"
+        }
+    },
+    "EXPERIENCES": {
+        "HERO": {
+            "SUBTITLE": "Exclusive Experiences",
+            "TITLE": "Unique moments inspired by the spirit of the valley",
+            "DESCRIPTION": "From vineyard picnics to private wine tastings and winery tours, every experience is designed to connect guests with nature, wine and the warm hospitality of MWR Hotel.",
+            "BUTTON": "Explore experiences",
+            "SECOND_BUTTON": "Check availability",
+            "CARD_SUBTITLE": "Featured experiences",
+            "CARD_TITLE": "Memories crafted with elegance",
+            "WINE": "Wine tastings",
+            "PICNIC": "Gourmet picnic",
+            "BODEGAS": "Winery tours"
+        },
+        "SIGNATURE": {
+            "SUBTITLE": "Exclusive Experiences",
+            "TITLE": "Moments You'll Always Remember",
+            "DESCRIPTION": "Four curated experiences designed for those seeking more than a stay—memories that remain long after check-out.",
+            "VIEW_GALLERY": "View gallery",
+            "RESERVE": "Book now",
+            "PANEL_DURATION": "Duration",
+            "PANEL_AVAILABILITY": "Availability",
+            "PANEL_MODE": "Experience",
+            "PANEL_RESERVE": "Book experience",
+            "FEATURE_WINE": "Wine",
+            "FEATURE_PICNIC": "Picnic",
+            "FEATURE_GROUP_SMALL": "2–6 guests",
+            "FEATURE_LABELS": "6 wine labels",
+            "FEATURE_GOURMET": "Gourmet cuisine",
+            "FEATURE_SOMMELIER": "Sommelier",
+            "FEATURE_TRANSFER": "Transfer included",
+            "FEATURE_WINERY": "Winery",
+            "FEATURE_TASTING": "Wine tasting",
+            "FEATURE_GROUP_REDUCED": "Small groups",
+            "FEATURE_SUNSET": "Sunset",
+            "FEATURE_SPARKLING": "Sparkling wine",
+            "FEATURE_MUSIC": "Live music",
+            "FEATURE_EXCLUSIVE": "Exclusive",
+            "PICNIC_CATEGORY": "Outdoor",
+            "PICNIC_TITLE": "Private Sunset Picnic",
+            "PICNIC_DESC": "A beautifully set table among the vineyards, reserve wines, artisan cheeses and charcuterie, while the sun disappears behind the mountains.",
+            "PICNIC_DURATION": "4 hours",
+            "PICNIC_AVAILABILITY": "Available year-round",
+            "PICNIC_MODE": "Private, outdoor",
+            "WINE_CATEGORY": "Gastronomy",
+            "WINE_TITLE": "Signature Wine Pairing",
+            "WINE_DESC": "Six carefully selected wines paired with gourmet dishes designed to highlight every varietal. A complete sensory journey.",
+            "WINE_DURATION": "2 hours",
+            "WINE_AVAILABILITY": "Wednesday to Sunday",
+            "WINE_MODE": "Indoor, small groups",
+            "BODEGA_CATEGORY": "Wine Tourism",
+            "BODEGA_TITLE": "Exclusive Winery Tour",
+            "BODEGA_DESC": "Discover the vineyards and historic wine cellars of one of the region's finest wineries, including private transportation and a guided tasting.",
+            "BODEGA_DURATION": "3 hours",
+            "BODEGA_AVAILABILITY": "Advance reservation required",
+            "BODEGA_MODE": "Transfer included",
+            "SUNSET_CATEGORY": "Rooftop",
+            "SUNSET_TITLE": "Sunset Sessions Rooftop",
+            "SUNSET_DESC": "Chilled sparkling wines, live music, and breathtaking views of the estate to end the day in style. An exclusive experience for our guests.",
+            "SUNSET_DURATION": "2 hours",
+            "SUNSET_AVAILABILITY": "Fridays & Saturdays",
+            "SUNSET_MODE": "Rooftop, limited capacity"
+        },
+        "CALENDAR": {
+            "SUBTITLE": "Experience calendar",
+            "TITLE": "Live unique moments during your stay",
+            "DESCRIPTION": "Explore available experiences and reserve exclusive activities designed to discover new flavors, landscapes and unforgettable moments.",
+            "MONTH": "July 2026",
+            "EVENT_WINE": "Wine tasting",
+            "EVENT_PICNIC": "Private picnic",
+            "EVENT_SUNSET": "Exclusive sunset",
+            "EVENT_BODEGA": "Winery visit",
+            "SELECT_DAY": "Select date",
+            "AVAILABLE": "Available",
+            "RESERVE": "Book experience"
+        },
+        "CTA": {
+            "SUBTITLE": "Exclusive experiences",
+            "TITLE": "Your next story begins here",
+            "DESCRIPTION": "Discover unique moments designed to transform your stay into an unforgettable memory.",
+            "RESERVE": "Book experience",
+            "EXPLORE": "Explore experiences"
+        }
+    },
+    "ABOUT": {
+        "HERO": {
+            "SUBTITLE": "Our story",
+            "TITLE": "A vineyard, a family and generations of memories",
+            "DESCRIPTION": "From our first days among vineyards and mountains, we have built a place where family tradition meets a new way of welcoming guests."
+        },
+        "HISTORY": {
+            "SUBTITLE": "Our history",
+            "TITLE": "A family, a land and a legacy that continues",
+            "DESCRIPTION": "For generations this estate was home, work and family gathering. Today we open its doors to share the same essence with our guests.",
+            "QUOTE": "Every stone, every tree and every corner holds a story.",
+            "ITEM1_TITLE": "The beginnings",
+            "ITEM1_TEXT": "The first years of a family building its bond with the land.",
+            "ITEM2_TITLE": "The family legacy",
+            "ITEM2_TEXT": "New generations preserved the traditions and values of the estate.",
+            "ITEM3_TITLE": "A new chapter",
+            "ITEM3_TEXT": "The property evolved while keeping its identity.",
+            "ITEM4_TITLE": "Our present",
+            "ITEM4_TEXT": "Today we welcome guests who become part of our story."
         }
     },
     "BOOKING": {

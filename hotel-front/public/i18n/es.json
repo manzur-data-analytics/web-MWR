@@ -27,43 +27,26 @@
             }
         },
         "EVENTS": {
-            "SUBTITLE": "Eventos y bodas",
-            "TITLE": "Celebraciones diseñadas para momentos inolvidables",
-            "DESCRIPTION": "Un entorno exclusivo donde cada evento se convierte en una experiencia única, combinando espacios excepcionales, gastronomía de autor y una atención personalizada.",
-            "GALLERY": {
-                "SUBTITLE": "Eventos anteriores",
-                "TITLE": "Historias que cobran vida",
-                "DESCRIPTION": "Descubra celebraciones realizadas en nuestros espacios, desde bodas íntimas hasta grandes encuentros sociales y corporativos."
-            },
-            "OFFER": {
-                "SUBTITLE": "Nuestra propuesta",
-                "TITLE": "Experiencias creadas para cada ocasión",
-                "SOCIAL": "Eventos sociales",
-                "SOCIAL_DESC": "Celebraciones privadas pensadas al detalle, con ambientaciones personalizadas, gastronomía exclusiva y un servicio dedicado para crear momentos memorables.",
-                "WEDDINGS": "Bodas",
-                "WEDDINGS_DESC": "Un escenario único para celebrar el comienzo de una nueva historia, con espacios elegantes, propuestas gastronómicas personalizadas y atención en cada detalle.",
-                "CORPORATE": "Eventos corporativos",
-                "CORPORATE_DESC": "Encuentros empresariales en espacios inspiradores, ideales para reuniones, presentaciones y experiencias corporativas con un servicio de excelencia."
-            },
-            "SPACES": {
-                "SUBTITLE": "Espacios",
-                "TITLE": "Escenarios adaptados a cada celebración",
-                "MAIN": "Salón principal",
-                "MAIN_DESC": "Hasta 200 invitados",
-                "GARDENS": "Jardines exteriores",
-                "GARDENS_DESC": "Eventos al aire libre rodeados de naturaleza",
-                "PRIVATE": "Espacios privados",
-                "PRIVATE_DESC": "Experiencias exclusivas y reuniones personalizadas"
-            },
+            "SUBTITLE": "Eventos & Bodas",
+            "TITLE": "Momentos únicos, celebraciones inolvidables",
+            "DESCRIPTION": "Creamos experiencias exclusivas para bodas, eventos sociales y encuentros corporativos, combinando elegancia, gastronomía y un entorno excepcional.",
+            "CARD1": "Bodas",
+            "CARD1_DESC": "Celebraciones diseñadas para crear recuerdos inolvidables.",
+            "CARD2": "Eventos Sociales",
+            "CARD2_DESC": "Experiencias privadas adaptadas a cada ocasión.",
+            "CARD3": "Corporativos",
+            "CARD3_DESC": "Espacios ideales para reuniones y encuentros empresariales.",
             "FORM": {
-                "TITLE": "Solicite una propuesta personalizada",
+                "SUBTITLE": "Solicitar propuesta",
+                "TITLE": "Comencemos a planificar tu evento",
                 "NAME": "Nombre completo",
                 "EMAIL": "Correo electrónico",
                 "DATE": "Fecha del evento",
                 "GUESTS": "Cantidad de invitados",
-                "MESSAGE": "Cuéntenos sobre su evento",
-                "BUTTON": "Solicitar cotización"
-            }
+                "MESSAGE": "Contanos sobre tu evento",
+                "BUTTON": "Enviar solicitud"
+            },
+            "MORE": "Descubrir eventos"
         },
         "SPA": {
             "SUBTITLE": "Wellness Wine Spa",
@@ -73,7 +56,27 @@
             "ITEM2": "Masajes y tratamientos exclusivos",
             "ITEM3": "Spa Day para huéspedes y visitantes",
             "BUTTON": "Descubrir el Spa",
-            "RESERVE": "Reservar Spa Day"
+            "RESERVE": "Reservar Dia Spa"
+        },
+        "EXPERIENCES": {
+            "SUBTITLE": "Experiencias",
+            "TITLE": "Mucho más que una estadía",
+            "DESCRIPTION": "Descubra momentos pensados para conectar con la naturaleza, la gastronomía y el descanso en un entorno único.",
+            "PICNIC_TITLE": "Canastas Picnic",
+            "PICNIC_DESC": "Disfrute un picnic gourmet entre jardines y paisajes naturales preparados especialmente para usted.",
+            "WINE_TITLE": "Degustación de Vinos",
+            "WINE_DESC": "Recorra una cuidada selección de etiquetas regionales acompañadas por productos locales.",
+            "SUNSET_TITLE": "Experiencias al Atardecer",
+            "SUNSET_DESC": "Relájese mientras contempla el paisaje acompañado por música, gastronomía y una copa de vino.",
+            "BUTTON": "Descubrir experiencia"
+        },
+        "ABOUT": {
+            "SUBTITLE": "Nuestra historia",
+            "TITLE": "Un legado construido con pasión y familia",
+            "DESCRIPTION": "Desde generaciones atrás, esta finca guarda historias, recuerdos y una forma única de recibir a quienes nos visitan. Hoy continuamos ese legado combinando tradición, naturaleza y hospitalidad.",
+            "GENERATIONS": "Generaciones",
+            "YEARS": "Años de historia",
+            "BUTTON": "Conocer nuestra historia"
         }
     },
     "ACCOMMODATION": {
@@ -144,12 +147,112 @@
             "MENU": "Ver menú"
         }
     },
+    "EVENTS": {
+        "HERO": {
+            "SUBTITLE": "Eventos & Bodas",
+            "TITLE": "Celebraciones que se convierten en recuerdos inolvidables",
+            "DESCRIPTION": "Creamos experiencias únicas para bodas, eventos sociales y encuentros corporativos en un entorno exclusivo, combinando gastronomía, naturaleza y atención personalizada.",
+            "BUTTON": "Solicitar cotización",
+            "SPACES": "Conocer espacios"
+        },
+        "GALLERY": {
+            "SUBTITLE": "Eventos exclusivos",
+            "TITLE": "Momentos diseñados para recordar",
+            "ITEMS": {
+                "WEDDING": {
+                    "TITLE": "Bodas elegantes",
+                    "CATEGORY": "Celebraciones privadas"
+                },
+                "SOCIAL": {
+                    "TITLE": "Encuentros inolvidables",
+                    "CATEGORY": "Eventos sociales"
+                },
+                "CORPORATE": {
+                    "TITLE": "Eventos corporativos",
+                    "CATEGORY": "Experiencias empresariales"
+                },
+                "CELEBRATION": {
+                    "TITLE": "Grandes celebraciones",
+                    "CATEGORY": "Momentos especiales"
+                }
+            }
+        },
+        "OFFERS": {
+            "SUBTITLE": "Nuestra propuesta",
+            "TITLE": "Eventos diseñados para momentos únicos",
+            "VIEW": "Ver experiencia",
+            "WEDDINGS": {
+                "TITLE": "Bodas",
+                "SHORT": "Celebraciones elegantes diseñadas alrededor de cada detalle."
+            },
+            "SOCIAL": {
+                "TITLE": "Eventos sociales",
+                "SHORT": "Encuentros memorables con gastronomía y ambientaciones exclusivas."
+            },
+            "CORPORATE": {
+                "TITLE": "Eventos corporativos",
+                "SHORT": "Espacios profesionales para reuniones, encuentros y celebraciones empresariales."
+            }
+        },
+        "SPACES": {
+            "SUBTITLE": "Nuestros espacios",
+            "TITLE": "Ambientes creados para cada celebración",
+            "PLAN_CAPTION": "Distribución ilustrativa del espacio",
+            "SALON": {
+                "TITLE": "Salón principal",
+                "DESCRIPTION": "Un ambiente elegante preparado para grandes celebraciones.",
+                "CAPACITY": "Hasta 200 invitados"
+            },
+            "GARDEN": {
+                "TITLE": "Jardines exteriores",
+                "DESCRIPTION": "Espacios naturales ideales para ceremonias y recepciones.",
+                "CAPACITY": "Eventos al aire libre"
+            },
+            "PRIVATE": {
+                "TITLE": "Espacios privados",
+                "DESCRIPTION": "Sectores exclusivos para encuentros íntimos.",
+                "CAPACITY": "Reuniones privadas"
+            }
+        },
+        "QUOTE": {
+            "SUBTITLE": "Solicitud de cotización",
+            "TITLE": "Comencemos a planificar su próximo evento",
+            "DESCRIPTION": "Comparta con nosotros los detalles de su celebración y nuestro equipo preparará una propuesta personalizada adaptada a sus necesidades.",
+            "EXPERIENCE": "Experiencias memorables",
+            "EXPERIENCE_TITLE": "Cada celebración merece un escenario excepcional",
+            "EXPERIENCE_DESCRIPTION": "Nuestro equipo acompaña cada etapa de la planificación para que solo tenga que disfrutar del momento.",
+            "STAT1_NUMBER": "200+",
+            "STAT1_LABEL": "Invitados",
+            "STAT2_NUMBER": "4",
+            "STAT2_LABEL": "Espacios exclusivos",
+            "STAT3_NUMBER": "100%",
+            "STAT3_LABEL": "Atención personalizada",
+            "FEATURE1": "Respuesta en menos de 24 h",
+            "FEATURE2": "Propuesta personalizada",
+            "FEATURE3": "Sin compromiso",
+            "EVENT_TYPE": "Tipo de evento",
+            "WEDDING": "Boda",
+            "SOCIAL": "Evento social",
+            "CORPORATE": "Evento corporativo",
+            "OTHER": "Otro",
+            "NAME": "Nombre completo",
+            "EMAIL": "Correo electrónico",
+            "PHONE": "Teléfono",
+            "GUESTS": "Cantidad aproximada de invitados",
+            "BUDGET": "Presupuesto estimado",
+            "MESSAGE": "Cuéntenos cómo imagina su evento...",
+            "BUTTON": "Solicitar propuesta",
+            "DATE_TYPE": "¿Ya tiene una fecha definida?",
+            "EXACT_DATE": "Fecha exacta",
+            "MONTH_ONLY": "Mes aproximado"
+        }
+    },
     "SPA": {
         "HERO": {
             "SUBTITLE": "Wellness Wine Spa",
             "TITLE": "Un refugio donde el tiempo se detiene.",
             "DESCRIPTION": "Piscinas, circuito húmedo y seco, vinoterapia y tratamientos pensados para recuperar el equilibrio entre cuerpo y mente en el corazón de la Quebrada.",
-            "BUTTON": "Reservar Spa Day",
+            "BUTTON": "Reservar Dia Spa",
             "TREATMENTS": "Ver tratamientos",
             "CARD_TITLE": "Experiencia Wellness",
             "ITEM1": "Piscina climatizada",
@@ -177,10 +280,114 @@
             "CIRCUIT_DESC": "Piscina climatizada, sauna seco, sauna húmedo y espacios de relajación."
         },
         "DAY": {
-            "SUBTITLE": "SPA DAY",
+            "SUBTITLE": "DIA DE SPA",
             "TITLE": "Un día completo dedicado al bienestar.",
             "DESCRIPTION": "Disfrutá una jornada diseñada para desconectar del ritmo cotidiano, con acceso al circuito de spa, tratamientos exclusivos y momentos de relajación en un entorno único.",
-            "BUTTON": "Reservar Spa Day"
+            "BUTTON": "Reservar Dia Spa"
+        }
+    },
+    "EXPERIENCES": {
+        "HERO": {
+            "SUBTITLE": "Experiencias Exclusivas",
+            "TITLE": "Momentos únicos inspirados en la esencia del valle",
+            "DESCRIPTION": "Desde picnics entre viñedos hasta degustaciones privadas y recorridos por bodegas, cada experiencia ha sido diseñada para conectar con la naturaleza, el vino y la hospitalidad que distinguen a MWR Hotel.",
+            "BUTTON": "Descubrir experiencias",
+            "SECOND_BUTTON": "Consultar disponibilidad",
+            "CARD_SUBTITLE": "Experiencias destacadas",
+            "CARD_TITLE": "Vivencias creadas para recordar",
+            "WINE": "Degustaciones de vinos",
+            "PICNIC": "Picnic gourmet",
+            "BODEGAS": "Visitas a bodegas"
+        },
+        "SIGNATURE": {
+            "SUBTITLE": "Experiencias exclusivas",
+            "TITLE": "Momentos que se quedan con vos",
+            "DESCRIPTION": "Cuatro experiencias diseñadas para quienes buscan algo más que una estadía: recuerdos que perduran mucho después del check-out.",
+            "VIEW_GALLERY": "Ver galería",
+            "RESERVE": "Reservar",
+            "PANEL_DURATION": "Duración",
+            "PANEL_AVAILABILITY": "Disponibilidad",
+            "PANEL_MODE": "Modalidad",
+            "PANEL_RESERVE": "Reservar experiencia",
+            "FEATURE_WINE": "Vino",
+            "FEATURE_PICNIC": "Picnic",
+            "FEATURE_GROUP_SMALL": "2-6 personas",
+            "FEATURE_LABELS": "6 etiquetas",
+            "FEATURE_GOURMET": "Gourmet",
+            "FEATURE_SOMMELIER": "Sommelier",
+            "FEATURE_TRANSFER": "Traslado",
+            "FEATURE_WINERY": "Bodega",
+            "FEATURE_TASTING": "Degustación",
+            "FEATURE_GROUP_REDUCED": "Grupos reducidos",
+            "FEATURE_SUNSET": "Sunset",
+            "FEATURE_SPARKLING": "Espumantes",
+            "FEATURE_MUSIC": "Música",
+            "FEATURE_EXCLUSIVE": "Exclusivo",
+            "PICNIC_CATEGORY": "Al aire libre",
+            "PICNIC_TITLE": "Picnic Privado al Atardecer",
+            "PICNIC_DESC": "Una mesa vestida de blanco entre los viñedos, copas de vino reserva y una selección de quesos y fiambres artesanales, mientras el sol se despide detrás de la cordillera.",
+            "PICNIC_DURATION": "4 horas",
+            "PICNIC_AVAILABILITY": "Todo el año",
+            "PICNIC_MODE": "Privado, al aire libre",
+            "WINE_CATEGORY": "Gastronomía",
+            "WINE_TITLE": "Cata Maridaje de Autor",
+            "WINE_DESC": "Seis etiquetas seleccionadas por nuestro sommelier, maridadas con pasos gourmet pensados para resaltar cada varietal. Una experiencia sensorial de principio a fin.",
+            "WINE_DURATION": "2 horas",
+            "WINE_AVAILABILITY": "De miércoles a domingo",
+            "WINE_MODE": "Indoor, grupos reducidos",
+            "BODEGA_CATEGORY": "Enoturismo",
+            "BODEGA_TITLE": "Tour Exclusivo de Bodega",
+            "BODEGA_DESC": "Recorré los viñedos y las barricas centenarias de una de las bodegas más prestigiosas de la región, con traslado incluido y degustación guiada al finalizar.",
+            "BODEGA_DURATION": "3 horas",
+            "BODEGA_AVAILABILITY": "Con reserva previa",
+            "BODEGA_MODE": "Traslado incluido",
+            "SUNSET_CATEGORY": "Rooftop",
+            "SUNSET_TITLE": "Sunset Sessions Rooftop",
+            "SUNSET_DESC": "Espumantes helados, música en vivo y la mejor vista de la propiedad para despedir el día. Una experiencia exclusiva para huéspedes que buscan algo distinto.",
+            "SUNSET_DURATION": "2 horas",
+            "SUNSET_AVAILABILITY": "Viernes y sábados",
+            "SUNSET_MODE": "Rooftop, cupos limitados"
+        },
+        "CALENDAR": {
+            "SUBTITLE": "Agenda de experiencias",
+            "TITLE": "Viví momentos únicos durante tu estadía",
+            "DESCRIPTION": "Consultá las experiencias disponibles y reservá actividades exclusivas diseñadas para descubrir nuevos sabores, paisajes y momentos inolvidables.",
+            "MONTH": "Julio 2026",
+            "EVENT_WINE": "Cata de vinos",
+            "EVENT_PICNIC": "Picnic privado",
+            "EVENT_SUNSET": "Sunset exclusivo",
+            "EVENT_BODEGA": "Visita a bodega",
+            "SELECT_DAY": "Seleccionar fecha",
+            "AVAILABLE": "Disponible",
+            "RESERVE": "Reservar experiencia"
+        },
+        "CTA": {
+            "SUBTITLE": "Experiencias exclusivas",
+            "TITLE": "Tu próxima historia comienza aquí",
+            "DESCRIPTION": "Descubrí momentos únicos diseñados para transformar una estadía en un recuerdo inolvidable.",
+            "RESERVE": "Reservar experiencia",
+            "EXPLORE": "Explorar experiencias"
+        }
+    },
+    "ABOUT": {
+        "HERO": {
+            "SUBTITLE": "Nuestra historia",
+            "TITLE": "Una finca, una familia y generaciones de recuerdos",
+            "DESCRIPTION": "Desde nuestros primeros días entre viñedos y montañas, construimos un lugar donde la tradición familiar se encuentra con una nueva forma de recibir huéspedes."
+        },
+        "HISTORY": {
+            "SUBTITLE": "Nuestra historia",
+            "TITLE": "Una familia, una tierra y un legado que continúa",
+            "DESCRIPTION": "Durante generaciones esta finca fue hogar, trabajo y encuentro familiar. Hoy abrimos sus puertas para compartir esa misma esencia con nuestros huéspedes.",
+            "QUOTE": "Cada piedra, cada árbol y cada rincón guarda una historia.",
+            "ITEM1_TITLE": "Los comienzos",
+            "ITEM1_TEXT": "Los primeros años de una familia construyendo su vínculo con la tierra.",
+            "ITEM2_TITLE": "El legado familiar",
+            "ITEM2_TEXT": "Nuevas generaciones mantuvieron vivas las tradiciones y valores de la finca.",
+            "ITEM3_TITLE": "Una nueva etapa",
+            "ITEM3_TEXT": "La propiedad comenzó a transformarse sin perder su identidad.",
+            "ITEM4_TITLE": "Nuestro presente",
+            "ITEM4_TEXT": "Hoy recibimos visitantes que forman parte de nuestra historia."
         }
     },
     "BOOKING": {

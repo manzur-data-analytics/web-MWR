@@ -3,13 +3,13 @@ import { Component, HostListener, signal } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
 import { TranslocoService } from '@jsverse/transloco';
 import { inject } from '@angular/core';
-import { BookingModal } from '../../features/home/booking-modal/booking-modal';
+import { BookingModal } from '../../shared/components/booking-modal/booking-modal';
 import { ModalService } from '../../shared/services/modal-service';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
-  imports: [CommonModule, TranslocoPipe, BookingModal, RouterLink],
+  imports: [CommonModule, TranslocoPipe, BookingModal, RouterLink, RouterLinkActive],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })
@@ -35,13 +35,13 @@ export class Navbar {
 
   // --- Data-driven nav---
   navItems = [
-    { route: '/', fragment: 'inicio', label: 'NAVBAR.INICIO' },
-    { route: '/alojamiento', fragment: 'alojamiento', label: 'NAVBAR.ALOJAMIENTO' },
-    { route: '/gastronomia', fragment: 'gastronomia', label: 'NAVBAR.GASTRONOMIA' },
-    { route: '/', fragment: 'eventos-bodas', label: 'NAVBAR.EVENTOS' },
+    { route: '/', label: 'NAVBAR.INICIO' },
+    { route: '/alojamiento', label: 'NAVBAR.ALOJAMIENTO' },
+    { route: '/gastronomia', label: 'NAVBAR.GASTRONOMIA' },
+    { route: '/eventos', label: 'NAVBAR.EVENTOS' },
     { route: '/spa', label: 'NAVBAR.SPA' },
-    { route: '/', fragment: 'experiencias', label: 'NAVBAR.EXPERIENCIAS' },
-    { route: '/', fragment: 'nosotros', label: 'NAVBAR.NOSOTROS' }
+    { route: '/experiencias', label: 'NAVBAR.EXPERIENCIAS' },
+    { route: '/nosotros', label: 'NAVBAR.NOSOTROS' }
   ];
 
   languages = [

@@ -1,0 +1,69 @@
+<section class="history-section">
+
+    <!-- fondo suave -->
+    <div class="history-bg"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
+
+        <!-- HEADER -->
+
+        <div class="history-header">
+
+            <span>
+                {{'ABOUT.HISTORY.SUBTITLE' | transloco}}
+            </span>
+
+            <h2>
+                {{'ABOUT.HISTORY.TITLE' | transloco}}
+            </h2>
+
+            <p>
+                {{'ABOUT.HISTORY.DESCRIPTION' | transloco}}
+            </p>
+
+        </div>
+
+        <!-- CARRUSEL -->
+        <div class="history-carousel-wrapper">
+
+            <div class="history-carousel-track">
+
+                <article class="history-item" *ngFor="let item of history.concat(history)">
+
+                    <div class="photo-frame">
+                        <img [src]="item.image" [alt]="item.year">
+                    </div>
+
+                    <div class="history-content">
+
+                        <strong>
+                            {{item.year}}
+                        </strong>
+
+                        <h3>
+                            {{item.title | transloco}}
+                        </h3>
+
+                        <p>
+                            {{item.text | transloco}}
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+        </div>
+
+        <!-- FRASE -->
+        <div class="history-quote">
+
+            <p>
+                "{{'ABOUT.HISTORY.QUOTE' | transloco}}"
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
