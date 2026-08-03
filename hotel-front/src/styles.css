@@ -2,31 +2,42 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500&display=swap');
 
+@theme {
+    --color-brand-bg: #f8f5f1;
+    --color-brand-dark: #382821;
+    --color-brand-gold: #d4a15a;
+    --color-brand-terracotta: #8e4c2f;
+    --color-brand-muted: #6b645b;
+}
+
+/* Variables CSS tradicionales para componentes sin Tailwind */
+:root {
+    --clr-bg: #f8f5f1;
+    --clr-dark: #382821;
+    --clr-gold: #d4a15a;
+    --clr-terracotta: #8e4c2f;
+    --clr-muted: #6b645b;
+    --clr-border: #e7ddd1;
+}
 
 html {
     scroll-behavior: smooth;
 }
 
-
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-body);
+    color: var(--clr-dark);
 }
 
-
-/* Tipografía principal para títulos */
 .font-title {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--font-title);
 }
 
-
-/* Tipografía para textos, menú, botones */
 .font-body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-body);
 }
-
 
 @keyframes fadeUp {
-
     from {
         opacity: 0;
         transform: translateY(40px);
@@ -36,9 +47,7 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
-
 }
-
 
 .animate-fade-up {
     animation: fadeUp 1.4s ease-out forwards;

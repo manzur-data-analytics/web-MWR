@@ -1,15 +1,16 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-eventos-offers',
-  imports: [TranslocoPipe],
+  imports: [TranslocoPipe, CommonModule],
   templateUrl: './eventos-offers.html',
   styleUrl: './eventos-offers.css',
 })
 
 export class EventosOffers {
-  
+
   offers = [
 
     {
@@ -40,5 +41,9 @@ export class EventosOffers {
 
   openOffer(item: any) {
     console.log(item)
+  }
+
+  trackByOfferId(index: number, item: any): number | string {
+    return item.id;
   }
 }

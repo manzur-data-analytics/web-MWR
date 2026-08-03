@@ -7,9 +7,16 @@ import { BookingModal } from '../../shared/components/booking-modal/booking-moda
 import { ModalService } from '../../shared/services/modal-service';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
+export interface NavItem {
+  label: string;
+  route?: string;
+  children?: { label: string; route: string }[];
+  isOpen?: boolean;
+}
+
 @Component({
   selector: 'app-navbar',
-  imports: [CommonModule, TranslocoPipe, BookingModal, RouterLink, RouterLinkActive],
+  imports: [CommonModule, TranslocoPipe, RouterLink, RouterLinkActive],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })
@@ -34,6 +41,16 @@ export class Navbar {
   isLangMenuOpen = this.langMenuOpen.asReadonly();
 
   // --- Data-driven nav---
+  /* navItems = [
+     { route: '/', label: 'NAVBAR.INICIO' },
+     { route: '/alojamiento', label: 'NAVBAR.ALOJAMIENTO' },
+     { route: '/gastronomia', label: 'NAVBAR.GASTRONOMIA' },
+     { route: '/eventos', label: 'NAVBAR.EVENTOS' },
+     { route: '/spa', label: 'NAVBAR.SPA' },
+     { route: '/experiencias', label: 'NAVBAR.EXPERIENCIAS' },
+     { route: '/nosotros', label: 'NAVBAR.NOSOTROS' }
+   ];*/
+
   navItems = [
     { route: '/', label: 'NAVBAR.INICIO' },
     { route: '/alojamiento', label: 'NAVBAR.ALOJAMIENTO' },
@@ -41,7 +58,14 @@ export class Navbar {
     { route: '/eventos', label: 'NAVBAR.EVENTOS' },
     { route: '/spa', label: 'NAVBAR.SPA' },
     { route: '/experiencias', label: 'NAVBAR.EXPERIENCIAS' },
-    { route: '/nosotros', label: 'NAVBAR.NOSOTROS' }
+    {
+      label: 'NAVBAR.NOSOTROS',
+      isOpen: false, // Controla si se abre en mobile
+      children: [
+        { label: 'Nosotros 1', route: '/nosotros' },
+        { label: 'Nosotros 2', route: '/nosotros-2' }
+      ]
+    },
   ];
 
   languages = [

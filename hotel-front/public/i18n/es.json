@@ -2,8 +2,8 @@
     "NAVBAR": {
         "INICIO": "Inicio",
         "ALOJAMIENTO": "Alojamiento",
-        "GASTRONOMIA": "Gastronomia",
-        "EVENTOS": "Eventos & Bodas",
+        "GASTRONOMIA": "Gastronomía",
+        "EVENTOS": "Eventos",
         "SPA": "Spa",
         "EXPERIENCIAS": "Experiencias",
         "NOSOTROS": "Nosotros",
@@ -85,12 +85,7 @@
             "TITLE": "Descansar también puede ser una experiencia.",
             "DESCRIPTION": "Cada habitación fue concebida para ofrecer privacidad, amplitud y vistas privilegiadas a los viñedos y la Quebrada de Humahuaca, combinando diseño contemporáneo con materiales nobles de la región.",
             "BUTTON": "Descubrir habitaciones",
-            "SECOND_BUTTON": "Ver experiencias",
-            "CARD_SUBTITLE": "Colección",
-            "CARD_TITLE": "Suites de lujo",
-            "SIZE": "Superficie",
-            "CAPACITY": "Capacidad",
-            "VIEW": "Vista"
+            "SECOND_BUTTON": "Reservar"
         },
         "EXPERIENCE": {
             "SUBTITLE": "La experiencia",
@@ -152,8 +147,7 @@
             "SUBTITLE": "Eventos & Bodas",
             "TITLE": "Celebraciones que se convierten en recuerdos inolvidables",
             "DESCRIPTION": "Creamos experiencias únicas para bodas, eventos sociales y encuentros corporativos en un entorno exclusivo, combinando gastronomía, naturaleza y atención personalizada.",
-            "BUTTON": "Solicitar cotización",
-            "SPACES": "Conocer espacios"
+            "BUTTON": "Solicitar cotización"
         },
         "GALLERY": {
             "SUBTITLE": "Eventos exclusivos",
@@ -227,9 +221,6 @@
             "STAT2_LABEL": "Espacios exclusivos",
             "STAT3_NUMBER": "100%",
             "STAT3_LABEL": "Atención personalizada",
-            "FEATURE1": "Respuesta en menos de 24 h",
-            "FEATURE2": "Propuesta personalizada",
-            "FEATURE3": "Sin compromiso",
             "EVENT_TYPE": "Tipo de evento",
             "WEDDING": "Boda",
             "SOCIAL": "Evento social",
@@ -252,12 +243,8 @@
             "SUBTITLE": "Wellness Wine Spa",
             "TITLE": "Un refugio donde el tiempo se detiene.",
             "DESCRIPTION": "Piscinas, circuito húmedo y seco, vinoterapia y tratamientos pensados para recuperar el equilibrio entre cuerpo y mente en el corazón de la Quebrada.",
-            "BUTTON": "Reservar Dia Spa",
-            "TREATMENTS": "Ver tratamientos",
-            "CARD_TITLE": "Experiencia Wellness",
-            "ITEM1": "Piscina climatizada",
-            "ITEM2": "Circuito Spa",
-            "ITEM3": "Masajes & Vinoterapia"
+            "BUTTON": "Reservar Dia de Spa",
+            "TREATMENTS": "Menú de Tratamiento"
         },
         "GALLERY": {
             "SUBTITLE": "ESPACIOS",
@@ -291,13 +278,7 @@
             "SUBTITLE": "Experiencias Exclusivas",
             "TITLE": "Momentos únicos inspirados en la esencia del valle",
             "DESCRIPTION": "Desde picnics entre viñedos hasta degustaciones privadas y recorridos por bodegas, cada experiencia ha sido diseñada para conectar con la naturaleza, el vino y la hospitalidad que distinguen a MWR Hotel.",
-            "BUTTON": "Descubrir experiencias",
-            "SECOND_BUTTON": "Consultar disponibilidad",
-            "CARD_SUBTITLE": "Experiencias destacadas",
-            "CARD_TITLE": "Vivencias creadas para recordar",
-            "WINE": "Degustaciones de vinos",
-            "PICNIC": "Picnic gourmet",
-            "BODEGAS": "Visitas a bodegas"
+            "BUTTON": "Descubrir experiencias"
         },
         "SIGNATURE": {
             "SUBTITLE": "Experiencias exclusivas",
@@ -371,23 +352,93 @@
     },
     "ABOUT": {
         "HERO": {
-            "SUBTITLE": "Nuestra historia",
-            "TITLE": "Una finca, una familia y generaciones de recuerdos",
-            "DESCRIPTION": "Desde nuestros primeros días entre viñedos y montañas, construimos un lugar donde la tradición familiar se encuentra con una nueva forma de recibir huéspedes."
+            "SUBTITLE": "Hospitalidad & Tradición Quebradeña",
+            "TITLE": "Nuestra Historia",
+            "DESCRIPTION": "Un proyecto familiar nacido en el corazón de Maimará, donde abrimos las puertas de nuestro hotel para compartir la magia de despertar frente a nuestros propios viñedos de altura."
+        },
+        "RELATO": {
+            "SUBTITLE": "Relato Familiar",
+            "TITLE": "Un hogar entre los cerros y las vides",
+            "PARAGRAPH1": "Nuestra historia comenzó con el sueño de dar cobijo a los viajeros en la Quebrada y echar raíces en el suelo sagrado de Maimará.",
+            "PARAGRAPH2": "Al frente de nuestro hotel plantamos las primeras hileras de viñedos, combinando la calidez de la hospitalidad familiar con la pasión enológica de altura.",
+            "PARAGRAPH3": "Cada amanecer, nuestros huéspedes contempla el despertar del viñedo bajo la imponencia de los cerros colorados que custodian nuestra casa.",
+            "QUOTE": "Recibir a quien llega no es solo ofrecer un lugar donde descansar; es compartir nuestro vino, nuestra tierra y nuestra familia.",
+            "SIGNATURE_ALT": "Firma de la familia"
         },
         "HISTORY": {
-            "SUBTITLE": "Nuestra historia",
-            "TITLE": "Una familia, una tierra y un legado que continúa",
-            "DESCRIPTION": "Durante generaciones esta finca fue hogar, trabajo y encuentro familiar. Hoy abrimos sus puertas para compartir esa misma esencia con nuestros huéspedes.",
-            "QUOTE": "Cada piedra, cada árbol y cada rincón guarda una historia.",
-            "ITEM1_TITLE": "Los comienzos",
-            "ITEM1_TEXT": "Los primeros años de una familia construyendo su vínculo con la tierra.",
-            "ITEM2_TITLE": "El legado familiar",
-            "ITEM2_TEXT": "Nuevas generaciones mantuvieron vivas las tradiciones y valores de la finca.",
-            "ITEM3_TITLE": "Una nueva etapa",
-            "ITEM3_TEXT": "La propiedad comenzó a transformarse sin perder su identidad.",
-            "ITEM4_TITLE": "Nuestro presente",
-            "ITEM4_TEXT": "Hoy recibimos visitantes que forman parte de nuestra historia."
+            "SUBTITLE": "Hitos Destacados",
+            "TITLE": "Un Viaje a Través de las Décadas",
+            "QUOTE": "Honrar nuestras raíces en Maimará construyendo un refugio para el alma y los sentidos.",
+            "ITEM1_TITLE": "Cimientos de la Casa",
+            "ITEM1_TEXT": "Abrimos las puertas de nuestro hotel familiar abriendo paso a la hospitalidad en el pueblo.",
+            "ITEM2_TITLE": "Plantación del Viñedo",
+            "ITEM2_TEXT": "Transformamos el terreno frente al hotel en un viñedo de extrema altura rodeado de cerros.",
+            "ITEM3_TITLE": "Primera Cosecha",
+            "ITEM3_TEXT": "Celebramos nuestra primera vendimia artesanal, compartida directamente con nuestros huéspedes.",
+            "ITEM4_TITLE": "Experiencia Integral",
+            "ITEM4_TEXT": "Consolidamos una propuesta única donde hotelería, gastronomía autóctona y vino conviven en armonía."
+        },
+        "TERRITORIO": {
+            "SUBTITLE": "Terroir de Extrema Altura",
+            "TITLE": "El Territorio nos Define",
+            "TEXT1": "Ubicados en Maimará, en plena Quebrada de Humahuaca, nuestras vides crecen bajo un sol radiante, aire puro de montaña y riego con agua limpia de deshielo.",
+            "TEXT2": "La notable amplitud térmica y la altitud le otorgan a nuestras uvas un carácter concentrado, expresivo y de identidad única.",
+            "STAT1_VALUE": "2.390",
+            "STAT1_LABEL": "Metros de Altitud",
+            "STAT2_VALUE": "100%",
+            "STAT2_LABEL": "Atención Familiar"
+        },
+        "LOCATION": {
+            "SUBTITLE": "Nuestra Ubicación",
+            "TITLE": "El Origen en la Tierra",
+            "DESCRIPTION": "Ubicados en el pintoresco pueblo de Maimará, frente a la imponente Paleta del Pintor. Nuestro hotel y viñedo ofrecen un marco natural sin igual en el corazón de la Quebrada de Humahuaca.",
+            "ALTITUDE_VALUE": "2390m",
+            "ALTITUDE_LABEL": "Sobre el nivel del mar",
+            "LATITUDE_VALUE": "S 23° 37'",
+            "LATITUDE_LABEL": "Latitud Sur",
+            "MAP_BTN": "Ver mapa interactivo",
+            "CARD_TITLE": "Hotel & Viñedo Familiar",
+            "CARD_ADDRESS": "Maimará, Quebrada de Humahuaca, Jujuy, Argentina."
+        },
+        "FINCAS": {
+            "SUBTITLE": "Nuestras Parcelas",
+            "TITLE": "Suelos Quebradeños & Altitud",
+            "HA_UNIT": "HA",
+            "MSNM_UNIT": "MSNM",
+            "ITEM1_NAME": "Parcela El Viñedo del Frente",
+            "ITEM1_LOCATION": "Maimará (Frente al Hotel)",
+            "ITEM1_TEXT": "Ubicada justo cruzando nuestra entrada, recibe el sol pleno de la mañana y la vista directa a la Paleta del Pintor.",
+            "ITEM1_VARIETALS": "Malbec · Syrah",
+            "ITEM2_NAME": "Parcela La Falda",
+            "ITEM2_LOCATION": "Maimará",
+            "ITEM2_TEXT": "Suelos pedregosos y francos que potencian la frescura y elegancia de varietales blancos.",
+            "ITEM2_VARIETALS": "Torrontés · Sauvignon Blanc",
+            "ITEM3_NAME": "Parcela Los Cerros",
+            "ITEM3_LOCATION": "Maimará",
+            "ITEM3_TEXT": "Terreno mineral expuesto a gran amplitud térmica para tintos concentrados y de gran personalidad.",
+            "ITEM3_VARIETALS": "Cabernet Franc · Tannat",
+            "ITEM4_NAME": "Parcela El Mirador",
+            "ITEM4_LOCATION": "Quebrada de Humahuaca",
+            "ITEM4_TEXT": "Vides a extrema altura dedicadas a la producción limitada de ediciones especiales de la casa.",
+            "ITEM4_VARIETALS": "Pinot Noir · Malbec de Altura"
+        },
+        "COMPROMISO": {
+            "SUBTITLE": "Sustentabilidad",
+            "TITLE": "Respeto Absoluto por la Naturaleza",
+            "TEXT": "Honramos a la Pachamama trabajando la tierra con prácticas orgánicas y conscientes, protegiendo el ecosistema andino y garantizando la sustentabilidad de nuestra finca."
+        },
+        "PILARES": {
+            "SUBTITLE": "Nuestros Valores",
+            "TITLE": "El Arte de Recibir",
+            "ITEM1_SUBTITLE": "Hospitalidad",
+            "ITEM1_TITLE": "Calidez Familiar",
+            "ITEM1_TEXT": "Cada huésped es recibido como parte de nuestro hogar, brindando una atención personalizada en cada detalle.",
+            "ITEM2_SUBTITLE": "Terroir",
+            "ITEM2_TITLE": "Vinos de Altura",
+            "ITEM2_TEXT": "Elaboramos vinos que reflejan fielmente el clima, el sol y el suelo mineral de Maimará.",
+            "ITEM3_SUBTITLE": "Entorno",
+            "ITEM3_TITLE": "Conexión con la Naturaleza",
+            "ITEM3_TEXT": "Abrir la ventana y encontrarse con el viñedo y los cerros es el corazón de nuestra propuesta."
         }
     },
     "BOOKING": {

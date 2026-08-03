@@ -1,0 +1,17 @@
+.hero-image {
+    image-rendering: smooth;
+    image-rendering: -webkit-optimize-contrast;
+
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    will-change: transform;
+
+    filter: contrast(1.02) saturate(1.04);
+    -webkit-user-select: none;
+    user-select: none;
+
+    /* Fundido del borde inferior hacia transparente */
+    -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+}

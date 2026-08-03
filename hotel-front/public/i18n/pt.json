@@ -2,8 +2,8 @@
     "NAVBAR": {
         "INICIO": "Início",
         "ALOJAMIENTO": "Acomodações",
-        "GASTRONOMIA": "Gastronomia",
-        "EVENTOS": "Eventos & Casamentos",
+        "GASTRONOMIA": "Refeições",
+        "EVENTOS": "Eventos",
         "SPA": "Spa",
         "EXPERIENCIAS": "Experiências",
         "NOSOTROS": "Sobre Nós",
@@ -85,12 +85,7 @@
             "TITLE": "Descansar também é uma experiência.",
             "DESCRIPTION": "Cada quarto foi projetado para oferecer privacidade, conforto e vistas privilegiadas para os vinhedos e para a Quebrada de Humahuaca.",
             "BUTTON": "Conhecer quartos",
-            "SECOND_BUTTON": "Ver experiências",
-            "CARD_SUBTITLE": "Coleção",
-            "CARD_TITLE": "Suítes de Luxo",
-            "SIZE": "Área",
-            "CAPACITY": "Capacidade",
-            "VIEW": "Vista"
+            "SECOND_BUTTON": "Reserva"
         },
         "EXPERIENCE": {
             "SUBTITLE": "A Experiência",
@@ -152,8 +147,7 @@
             "SUBTITLE": "Eventos & Casamentos",
             "TITLE": "Celebrações que se transformam em memórias inesquecíveis",
             "DESCRIPTION": "Criamos experiências únicas para casamentos, eventos sociais e encontros corporativos em um ambiente exclusivo, combinando gastronomia, natureza e atendimento personalizado.",
-            "BUTTON": "Solicitar orçamento",
-            "SPACES": "Conhecer espaços"
+            "BUTTON": "Solicitar orçamento"
         },
         "GALLERY": {
             "SUBTITLE": "Eventos exclusivos",
@@ -215,21 +209,18 @@
             }
         },
         "QUOTE": {
-            "SUBTITLE": "Solicitação de orçamento",
+            "SUBTITLE": "Solicitação de cotação",
             "TITLE": "Vamos começar a planejar seu próximo evento",
-            "DESCRIPTION": "Compartilhe os detalhes da sua celebração e nossa equipe preparará uma proposta personalizada de acordo com as suas necessidades.",
+            "DESCRIPTION": "Compartilhe conosco os detalhes da sua comemoração e nossa equipe preparará uma proposta personalizada sob medida.",
             "EXPERIENCE": "Experiências memoráveis",
-            "EXPERIENCE_TITLE": "Toda celebração merece um cenário excepcional",
-            "EXPERIENCE_DESCRIPTION": "Nossa equipe acompanha cada etapa do planejamento para que você precise apenas aproveitar o momento.",
+            "EXPERIENCE_TITLE": "Toda comemoração merece um cenário excepcional",
+            "EXPERIENCE_DESCRIPTION": "Nossa equipe acompanha cada etapa do planejamento para que você só precise aprovechar o momento.",
             "STAT1_NUMBER": "200+",
             "STAT1_LABEL": "Convidados",
             "STAT2_NUMBER": "4",
             "STAT2_LABEL": "Espaços exclusivos",
             "STAT3_NUMBER": "100%",
             "STAT3_LABEL": "Atendimento personalizado",
-            "FEATURE1": "Resposta em até 24 horas",
-            "FEATURE2": "Proposta personalizada",
-            "FEATURE3": "Sem compromisso",
             "EVENT_TYPE": "Tipo de evento",
             "WEDDING": "Casamento",
             "SOCIAL": "Evento social",
@@ -240,9 +231,9 @@
             "PHONE": "Telefone",
             "GUESTS": "Número aproximado de convidados",
             "BUDGET": "Orçamento estimado",
-            "MESSAGE": "Conte-nos como você imagina seu evento...",
+            "MESSAGE": "Conte-nos como imagina o seu evento...",
             "BUTTON": "Solicitar proposta",
-            "DATE_TYPE": "Já possui uma data definida?",
+            "DATE_TYPE": "Já tem uma data definida?",
             "EXACT_DATE": "Data exata",
             "MONTH_ONLY": "Mês aproximado"
         }
@@ -252,12 +243,8 @@
             "SUBTITLE": "Wellness Wine Spa",
             "TITLE": "Um refúgio onde o tempo desacelera.",
             "DESCRIPTION": "Piscinas aquecidas, circuito seco e úmido, vinoterapia e tratamentos pensados para renovar corpo e mente no coração da Quebrada.",
-            "BUTTON": "Reservar Spa Day",
-            "TREATMENTS": "Ver tratamentos",
-            "CARD_TITLE": "Experiência Wellness",
-            "ITEM1": "Piscina Aquecida",
-            "ITEM2": "Circuito Spa",
-            "ITEM3": "Massagens & Vinoterapia"
+            "BUTTON": "Agendar um dia de spa",
+            "TREATMENTS": "Menu de tratamento"
         },
         "GALLERY": {
             "SUBTITLE": "ESPAÇOS",
@@ -291,13 +278,7 @@
             "SUBTITLE": "Experiências Exclusivas",
             "TITLE": "Momentos únicos inspirados na essência do vale",
             "DESCRIPTION": "De piqueniques entre vinhedos a degustações privadas e visitas às vinícolas, cada experiência foi criada para conectar você à natureza, ao vinho e à hospitalidade exclusiva do MWR Hotel.",
-            "BUTTON": "Descobrir experiências",
-            "SECOND_BUTTON": "Consultar disponibilidade",
-            "CARD_SUBTITLE": "Experiências em destaque",
-            "CARD_TITLE": "Momentos feitos para serem lembrados",
-            "WINE": "Degustações de vinhos",
-            "PICNIC": "Piquenique gourmet",
-            "BODEGAS": "Visitas às vinícolas"
+            "BUTTON": "Descobrir experiências"
         },
         "SIGNATURE": {
             "SUBTITLE": "Experiências Exclusivas",
@@ -372,22 +353,65 @@
     "ABOUT": {
         "HERO": {
             "SUBTITLE": "Nossa história",
-            "TITLE": "Uma fazenda, uma família e gerações de memórias",
-            "DESCRIPTION": "Desde nossos primeiros dias entre vinhedos e montanhas, construímos um lugar onde a tradição familiar encontra uma nova forma de receber hóspedes."
+            "TITLE": "Uma propriedade, uma família e gerações de memórias",
+            "DESCRIPTION": "Desde os nossos primeiros dias entre vinhedos e montanhas, construímos um lugar onde a tradição familiar se encontra com uma nova forma de receber hóspedes."
+        },
+        "RELATO": {
+            "SUBTITLE": "Passado e presente",
+            "TITLE": "Uma família à frente da terra",
+            "PARAGRAPH1": "Desde os nossos primeiros anos, esta propriedade faz parte da história da região. Com o tempo, nossa família assumiu a liderança, transformando-a em um espaço dedicado a acolher com o mesmo carinho que recebemos.",
+            "PARAGRAPH2": "Hoje, como uma nova geração à frente, guiamos este lugar com uma visão clara: honrar a tradição e projetar o futuro, sem jamais perder a essência que nos deu origem.",
+            "PARAGRAPH3": "Cada canto da propriedade reflete o nosso compromisso em criar experiências que honrem a terra, aqueles que a trabalham e a busca constante pela excelência.",
+            "QUOTE": "Consideramo-nos simples guardiões desta terra. Acreditamos no nosso dever de deixá-la em melhores condições do que quando a recebemos."
         },
         "HISTORY": {
-            "SUBTITLE": "Nossa história",
+            "SUBTITLE": "Marcos da propriedade",
             "TITLE": "Uma família, uma terra e um legado que continua",
-            "DESCRIPTION": "Por gerações esta propriedade foi lar, trabalho e encontro familiar. Hoje abrimos suas portas para compartilhar essa mesma essência com nossos hóspedes.",
+            "DESCRIPTION": "Durante gerações esta propriedade foi lar, trabalho e ponto de encontro familiar. Hoje abrimos suas portas para compartilhar essa mesma essência com nossos hóspedes.",
             "QUOTE": "Cada pedra, cada árvore e cada canto guarda uma história.",
-            "ITEM1_TITLE": "Os começos",
-            "ITEM1_TEXT": "Os primeiros anos de uma família criando sua ligação com a terra.",
+            "ITEM1_TITLE": "Os primeiros anos",
+            "ITEM1_TEXT": "Os primeiros anos de uma família construindo seu vínculo com a terra.",
             "ITEM2_TITLE": "O legado familiar",
             "ITEM2_TEXT": "Novas gerações mantiveram vivas as tradições e valores da propriedade.",
             "ITEM3_TITLE": "Uma nova etapa",
-            "ITEM3_TEXT": "A propriedade evoluiu sem perder sua identidade.",
+            "ITEM3_TEXT": "A propriedade começou a se transformar sem perder sua identidade.",
             "ITEM4_TITLE": "Nosso presente",
-            "ITEM4_TEXT": "Hoje recebemos hóspedes que fazem parte da nossa história."
+            "ITEM4_TEXT": "Hoje recebemos visitantes que fazem parte da nossa história."
+        },
+        "TERRITORIO": {
+            "SUBTITLE": "Nosso entorno",
+            "TITLE": "O território nos define",
+            "TEXT1": "Nossa propriedade está localizada ao pé da cordilheira, em um lugar privilegiado onde o solo, a água e a altitude se combinam para dar caráter a cada canto.",
+            "TEXT2": "Esta paisagem dinâmica, junta às variações térmicas entre o dia e a noite, torna este lugar único. Com esse conhecimento, cuidamos de cada detalhe com precisão.",
+            "STAT1_VALUE": "980m",
+            "STAT1_LABEL": "Acima do nível do mar",
+            "STAT2_VALUE": "S 33° 00'",
+            "STAT2_LABEL": "Latitude Sul"
+        },
+        "FINCAS": {
+            "SUBTITLE": "Nossas propriedades",
+            "TITLE": "As propriedades que nos dão identidade",
+            "ITEM1_NAME": "Propriedade Principal",
+            "ITEM1_LOCATION": "Luján de Cuyo",
+            "ITEM1_TEXT": "Nossa propriedade histórica, cujos primeiros vinhedos foram plantados há mais de um século. Aqui nasce grande parte da nossa identidade familiar.",
+            "ITEM1_VARIETALS": "Malbec e Semillón",
+            "ITEM2_NAME": "Propriedade de Altitude",
+            "ITEM2_LOCATION": "Tupungato",
+            "ITEM2_TEXT": "A de maior altitude entre nossas propriedades, onde a amplitude térmica dá origem a vinhos de um frescor distintivo.",
+            "ITEM2_VARIETALS": "Malbec e Chardonnay",
+            "ITEM3_NAME": "Propriedade do Leste",
+            "ITEM3_LOCATION": "Perdriel",
+            "ITEM3_TEXT": "Uma das nossas maiores propriedades, equipada com irrigação por gotejamento e estudos de solo com viticultura de precisão.",
+            "ITEM3_VARIETALS": "Cabernet Sauvignon e Syrah",
+            "ITEM4_NAME": "Propriedade do Vale",
+            "ITEM4_LOCATION": "Agrelo",
+            "ITEM4_TEXT": "Localizada em Agrelo, com sistema de espaldeira alta e rede antigranizo que protege cada colheita.",
+            "ITEM4_VARIETALS": "Petit Verdot e Moscato Bianco"
+        },
+        "COMPROMISO": {
+            "SUBTITLE": "Compromisso sustentável",
+            "TITLE": "O respeito pela terra guia cada passo",
+            "TEXT": "Preservar o meio ambiente é um ato diário que abrange tudo o que fazemos. Cada decisão que tomamos busca deixar esta terra em melhores condições para aqueles que virão depois de nós."
         }
     },
     "BOOKING": {

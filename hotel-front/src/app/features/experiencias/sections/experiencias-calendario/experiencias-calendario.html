@@ -1,52 +1,110 @@
-<!-- Eliminamos py-32 de aquí -->
 <section id="experience-calendar" class="relative bg-[#f8f5f1]">
     <!-- BACKGROUND IMAGE -->
     <div class="calendar-background">
-        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=90">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=90"
+            alt="Background">
     </div>
 
     <!-- OVERLAY -->
     <div class="calendar-overlay"></div>
 
-    <!-- decoraciones -->
+    <!-- Decoraciones -->
     <div class="calendar-glow left"></div>
     <div class="calendar-glow right"></div>
 
-    <!-- Pasamos el py-32 aquí para proteger el contenido sin romper el fondo sticky -->
-    <div class="relative max-w-7xl mx-auto px-6 lg:px-10 py-32">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-16 sm:py-28">
 
         <!-- HEADER -->
-        <div class="text-center max-w-3xl mx-auto mb-20">
+        <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-20">
             <span class="uppercase tracking-[0.45em] text-xs text-[#8e4c2f]">
                 {{'EXPERIENCES.CALENDAR.SUBTITLE' | transloco}}
             </span>
-            <h2 class="mt-6 font-title text-5xl xl:text-6xl font-light text-[#382821]">
+            <h2 class="mt-4 sm:mt-6 font-title text-4xl sm:text-5xl xl:text-6xl font-light text-[#382821]">
                 {{'EXPERIENCES.CALENDAR.TITLE' | transloco}}
             </h2>
-            <div class="w-24 h-px bg-[#d4a15a] mx-auto my-8"></div>
-            <p class="text-[#6b645b] text-lg leading-9">
+            <div class="w-16 sm:w-24 h-px bg-[#d4a15a] mx-auto my-6 sm:my-8"></div>
+            <p class="text-[#6b645b] text-base sm:text-lg leading-7 sm:leading-9">
                 {{'EXPERIENCES.CALENDAR.DESCRIPTION' | transloco}}
             </p>
         </div>
 
-        <!-- CALENDAR -->
+        <!-- CALENDAR WRAPPER -->
         <div class="calendar-wrapper">
-            <!-- El contenido de tu calendario se queda exactamente igual -->
+
+            <!-- CALENDAR HEADER -->
             <div class="calendar-header">
-                <button>‹</button>
+                <!-- Agregamos eventos (click) -->
+                <button (click)="prevMonth()" aria-label="Mes anterior">‹</button>
                 <h3>{{currentMonth}}</h3>
-                <button>›</button>
+                <button (click)="nextMonth()" aria-label="Mes siguiente">›</button>
             </div>
+
+            <!-- DÍAS DE LA SEMANA -->
             <div class="calendar-week">
                 <span *ngFor="let day of weekDays">{{day}}</span>
             </div>
+
+            <!-- GRILLA DEL CALENDARIO -->
             <div class="calendar-grid">
-                <button *ngFor="let day of days" class="calendar-day" [class.has-event]="day.event"
-                    (click)="openDay(day)">
-                    <span>{{day.number}}</span>
-                    <small *ngIf="day.event">{{day.event.type}}</small>
+                <button *ngFor="let day of days" class="calendar-day" [class.is-padding]="day.isPadding"
+                    [class.has-event]="day.event"
+                    [class.is-selected]="selectedDay?.number === day.number && !day.isPadding" (click)="openDay(day)"
+                    [disabled]="day.isPadding">
+
+                    <!-- Muestra contenido solo si es un día válido -->
+                    <ng-container *ngIf="!day.isPadding">
+                        <!-- FOTO DE FONDO PARA EVENTOS -->
+                        <div *ngIf="day.event" class="day-bg-image">
+                            <img [src]="day.event.image" [alt]="day.event.type">
+                            <div class="day-overlay"></div>
+                        </div>
+
+                        <!-- NÚMERO DE DÍA -->
+                        <span class="day-number">{{day.number}}</span>
+
+                        <!-- ETIQUETA EN DESKTOP -->
+                        <span *ngIf="day.event" class="event-tag hidden md:block">
+                            {{day.event.type}}
+                        </span>
+
+                        <!-- INDICADOR EN MÓVIL (Punto Dorado) -->
+                        <div *ngIf="day.event" class="event-dot md:hidden"></div>
+                    </ng-container>
+
                 </button>
             </div>
+
+            <!-- DETALLE DEL DÍA SELECCIONADO -->
+            <div *ngIf="selectedDay as day" class="mt-6">
+                <div *ngIf="day.event as event"
+                    class="selected-day-detail p-5 sm:p-6 bg-[#faf8f5] border border-[#d4a15a]/40 rounded-sm flex flex-col sm:flex-row sm:items-center justify-between gap-6 animate-fadeIn">
+
+                    <!-- Información del Evento -->
+                    <div class="flex items-center gap-4">
+                        <img [src]="event.image" [alt]="event.type"
+                            class="w-14 h-14 rounded-full object-cover border-2 border-[#d4a15a] shrink-0 shadow-sm">
+
+                        <div class="flex flex-col">
+                            <span class="text-xs uppercase tracking-widest text-[#8e4c2f] font-mono">
+                                Día {{ day.number }} de {{ currentMonth }}
+                            </span>
+                            <h4 class="font-title text-xl sm:text-2xl text-[#382821] mt-0.5">
+                                {{ event.type }} Experience
+                            </h4>
+                        </div>
+                    </div>
+
+                    <!-- Botón de Reserva (Ubicado abajo en móvil, alineado a la derecha en escritorio) -->
+                    <div class="pt-2 sm:pt-0 border-t border-[#e7ddd1] sm:border-0 flex justify-end">
+                        <a href="#reservar"
+                            class="w-full sm:w-auto text-center px-6 py-3 bg-[#382821] text-white text-xs uppercase tracking-widest hover:bg-[#d4a15a] hover:text-[#382821] transition-all duration-300 shadow-sm">
+                            Reservar
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
 
     </div>

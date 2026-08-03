@@ -1,69 +1,231 @@
-<section class="history-section">
+<div class="relative bg-[#100909] text-[#faf7f2] font-sans antialiased selection:bg-[#d4a15a] selection:text-[#100909]">
 
-    <!-- fondo suave -->
-    <div class="history-bg"></div>
-
-    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
-
-        <!-- HEADER -->
-
-        <div class="history-header">
-
-            <span>
-                {{'ABOUT.HISTORY.SUBTITLE' | transloco}}
-            </span>
-
-            <h2>
-                {{'ABOUT.HISTORY.TITLE' | transloco}}
-            </h2>
-
-            <p>
-                {{'ABOUT.HISTORY.DESCRIPTION' | transloco}}
-            </p>
-
+    <!-- 1. HERO CON DIFUMINADO INFERIOR              -->
+    <header class="relative h-[85vh] min-h-[600px] flex items-center justify-center px-6 overflow-hidden">
+        <!-- Imagen de Fondo Fija / Sticky Hero -->
+        <div class="absolute inset-0 z-0">
+            <img [src]="bgImage1" [alt]="'ABOUT.HERO.TITLE' | transloco"
+                class="w-full h-full object-cover scale-105 filter brightness-75">
+            <!-- Overlay Gradiente que Difumina hacia abajo -->
+            <div class="absolute inset-0 bg-gradient-to-b from-[#100909]/60 via-[#100909]/40 to-[#100909]"></div>
         </div>
 
-        <!-- CARRUSEL -->
-        <div class="history-carousel-wrapper">
+        <!-- Contenido del Hero -->
+        <div class="relative z-10 text-center max-w-3xl mx-auto space-y-6">
+            <span
+                class="text-xs uppercase tracking-[0.5em] text-[#d4a15a] font-mono block font-semibold drop-shadow-md">
+                {{ 'ABOUT.HERO.SUBTITLE' | transloco }}
+            </span>
+            <h1
+                class="font-title text-4xl sm:text-6xl lg:text-7xl font-light text-[#faf7f2] leading-[1.1] tracking-tight drop-shadow-lg">
+                {{ 'ABOUT.HERO.TITLE' | transloco }}
+            </h1>
+            <div class="w-20 h-[1px] bg-[#d4a15a] mx-auto my-6 shadow-glow"></div>
+            <p
+                class="text-sm sm:text-base text-[#faf7f2]/90 leading-relaxed font-light max-w-xl mx-auto drop-shadow-md">
+                {{ 'ABOUT.HERO.DESCRIPTION' | transloco }}
+            </p>
+        </div>
 
-            <div class="history-carousel-track">
+        <!-- Degradado suave de transición a la siguiente sección -->
+        <div
+            class="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-[#faf7f2] to-transparent z-10 pointer-events-none">
+        </div>
+    </header>
 
-                <article class="history-item" *ngFor="let item of history.concat(history)">
+    <!-- 2. RELATO FAMILIAR (SECCIÓN CLARA Y EDITORIAL) -->
+    <section class="relative z-20 py-24 sm:py-32 bg-[#faf7f2] text-[#2a1818] shadow-2xl">
+        <div class="max-w-6xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
 
-                    <div class="photo-frame">
-                        <img [src]="item.image" [alt]="item.year">
+                <!-- Retrato / Foto de la Propiedad -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative overflow-hidden shadow-2xl rounded-sm group">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=80"
+                            [alt]="'ABOUT.RELATO.TITLE' | transloco"
+                            class="w-full h-[450px] sm:h-[520px] object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000">
+                        <div class="absolute inset-0 border border-[#d4a15a]/40 m-4 pointer-events-none"></div>
+                    </div>
+                </div>
+
+                <!-- Texto Narrativo -->
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-xs uppercase tracking-[0.35em] text-[#d4a15a] font-mono block font-semibold">
+                        {{ 'ABOUT.RELATO.SUBTITLE' | transloco }}
+                    </span>
+
+                    <h2 class="font-title text-3xl sm:text-5xl font-light leading-tight text-[#2a1818]">
+                        {{ 'ABOUT.RELATO.TITLE' | transloco }}
+                    </h2>
+
+                    <div class="space-y-4 text-[#5c4a4a] leading-relaxed font-light text-sm sm:text-base relato-copy">
+                        <p class="relato-dropcap">{{ 'ABOUT.RELATO.PARAGRAPH1' | transloco }}</p>
+                        <p>{{ 'ABOUT.RELATO.PARAGRAPH2' | transloco }}</p>
                     </div>
 
-                    <div class="history-content">
-
-                        <strong>
-                            {{item.year}}
-                        </strong>
-
-                        <h3>
-                            {{item.title | transloco}}
-                        </h3>
-
-                        <p>
-                            {{item.text | transloco}}
-                        </p>
-
-                    </div>
-
-                </article>
+                    <blockquote class="relato-quote my-6">
+                        “{{ 'ABOUT.RELATO.QUOTE' | transloco }}”
+                    </blockquote>
+                </div>
 
             </div>
         </div>
+    </section>
 
-        <!-- FRASE -->
-        <div class="history-quote">
+    <!-- 3. HITOS DE NUESTRA HISTORIA (STICKY PARALLAX EFFECT) -->
+    <section class="relative">
 
-            <p>
-                "{{'ABOUT.HISTORY.QUOTE' | transloco}}"
-            </p>
+        <!-- FONDO STICKY CON IMAGEN QUE SE DIFUMINA Y PERMANECE FIJA -->
+        <div class="sticky top-0 h-screen w-full overflow-hidden pointer-events-none z-0">
+            <img [src]="bgImage2" [alt]="'ABOUT.HISTORY.TITLE' | transloco"
+                class="w-full h-full object-cover filter brightness-50">
+            <!-- Gradientes de difuminado superior e inferior -->
+            <div class="absolute inset-0 bg-gradient-to-b from-[#faf7f2] via-[#100909]/80 to-[#100909]"></div>
+        </div>
+
+        <!-- CONTENIDO QUE HACE SCROLL SOBRE EL FONDO STICKY -->
+        <div class="relative z-10 -mt-[100vh] py-32">
+
+            <div class="max-w-3xl mx-auto px-6 text-center mb-20 space-y-4">
+                <span class="text-xs uppercase tracking-[0.4em] text-[#d4a15a] font-mono block font-semibold">
+                    {{ 'ABOUT.HISTORY.SUBTITLE' | transloco }}
+                </span>
+                <h2 class="font-title text-3xl sm:text-5xl font-light text-[#faf7f2]">
+                    {{ 'ABOUT.HISTORY.TITLE' | transloco }}
+                </h2>
+                <div class="w-16 h-[1px] bg-[#d4a15a]/60 mx-auto pt-2"></div>
+            </div>
+
+            <!-- Tarjetas Cronológicas Flotantes (Glassmorphism) -->
+            <div class="max-w-3xl mx-auto px-6 space-y-8">
+                <div *ngFor="let item of history; let i = index"
+                    class="glass-card p-6 sm:p-8 rounded-sm flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:border-[#d4a15a] transition-all duration-500 transform hover:-translate-y-1">
+
+                    <div
+                        class="text-3xl sm:text-4xl font-mono text-[#d4a15a] font-light min-w-[100px] border-b sm:border-b-0 sm:border-r border-[#d4a15a]/30 pb-2 sm:pb-0 sm:pr-6">
+                        {{ item.year }}
+                    </div>
+
+                    <div class="space-y-2 flex-1">
+                        <h3 class="font-title text-xl font-light text-[#faf7f2]">
+                            {{ item.title | transloco }}
+                        </h3>
+                        <p class="text-xs sm:text-sm text-[#faf7f2]/80 leading-relaxed font-light">
+                            {{ item.text | transloco }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cita Final -->
+            <div class="max-w-2xl mx-auto px-6 text-center mt-24">
+                <p class="font-serif italic text-xl sm:text-3xl text-[#d4a15a] drop-shadow-md">
+                    "{{ 'ABOUT.HISTORY.QUOTE' | transloco }}"
+                </p>
+            </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
+    <!-- 4. EL DOMINIO Y MAPA (CON IMAGEN DE FONDO)   -->
+    <section class="relative py-28 bg-[#1a0f0f] text-[#faf7f2] overflow-hidden">
+
+        <!-- Imagen de fondo de textura/finca difuminada -->
+        <div class="absolute inset-0 z-0 opacity-15 pointer-events-none">
+            <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=1920&q=80"
+                class="w-full h-full object-cover filter blur-sm">
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 space-y-20">
+
+            <!-- Encabezado -->
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <span class="text-xs uppercase tracking-[0.35em] text-[#d4a15a] font-mono">
+                    {{ 'ABOUT.TERRITORIO.SUBTITLE' | transloco }}
+                </span>
+                <h2 class="font-title text-3xl sm:text-5xl font-light text-[#faf7f2]">
+                    {{ 'ABOUT.TERRITORIO.TITLE' | transloco }}
+                </h2>
+                <p class="text-sm sm:text-base text-[#faf7f2]/80 leading-relaxed font-light">
+                    {{ 'ABOUT.TERRITORIO.TEXT1' | transloco }}
+                </p>
+            </div>
+
+            <!-- Ubicación y Mapa -->
+            <div
+                class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center glass-card p-6 sm:p-10 border border-[#d4a15a]/30 shadow-2xl">
+
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs uppercase tracking-[0.3em] text-[#d4a15a] font-mono block">
+                        {{ 'ABOUT.LOCATION.SUBTITLE' | transloco }}
+                    </span>
+                    <h3 class="font-title text-2xl sm:text-3xl font-light text-[#faf7f2]">
+                        {{ 'ABOUT.LOCATION.TITLE' | transloco }}
+                    </h3>
+                    <p class="text-sm text-[#faf7f2]/75 font-light leading-relaxed">
+                        {{ 'ABOUT.LOCATION.DESCRIPTION' | transloco }}
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-[#d4a15a]/20">
+                        <div>
+                            <span class="block text-2xl font-title text-[#d4a15a]">
+                                {{ 'ABOUT.LOCATION.ALTITUDE_VALUE' | transloco }}
+                            </span>
+                            <span class="text-[10px] uppercase tracking-wider font-mono text-[#faf7f2]/60">
+                                {{ 'ABOUT.LOCATION.ALTITUDE_LABEL' | transloco }}
+                            </span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-title text-[#d4a15a]">
+                                {{ 'ABOUT.LOCATION.LATITUDE_VALUE' | transloco }}
+                            </span>
+                            <span class="text-[10px] uppercase tracking-wider font-mono text-[#faf7f2]/60">
+                                {{ 'ABOUT.LOCATION.LATITUDE_LABEL' | transloco }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="lg:col-span-7 h-[340px] sm:h-[400px] overflow-hidden border border-[#d4a15a]/30 relative rounded-sm shadow-inner">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.509825680126!2d-68.85501862354783!3d-33.0166299735626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0a133dfd266d%3A0x8e8334bc8f041e2f!2sBodega%20Lagarde!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar"
+                        class="w-full h-full border-0 filter grayscale opacity-80 hover:opacity-100 hover:grayscale-0 transition-all duration-700"
+                        allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+
+            </div>
+
+            <!-- Fincas (Tarjetas con Hover de Cristal) -->
+            <div class="space-y-10">
+                <h3 class="font-title text-2xl sm:text-3xl font-light text-center text-[#d4a15a]">
+                    {{ 'ABOUT.FINCAS.TITLE' | transloco }}
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div *ngFor="let finca of fincas"
+                        class="glass-card p-8 border border-[#d4a15a]/20 space-y-4 hover:border-[#d4a15a]/60 hover:bg-[#2a1818]/80 transition-all duration-500">
+                        <div class="flex justify-between items-baseline border-b border-[#d4a15a]/20 pb-3">
+                            <h4 class="font-title text-xl text-[#faf7f2] font-light">
+                                {{ finca.name | transloco }}
+                            </h4>
+                            <span class="text-xs font-mono text-[#d4a15a]">
+                                {{ finca.ha }} {{ 'ABOUT.FINCAS.HA_UNIT' | transloco }} · {{ finca.msnm }} {{
+                                'ABOUT.FINCAS.MSNM_UNIT' | transloco }}
+                            </span>
+                        </div>
+                        <p class="text-xs sm:text-sm text-[#faf7f2]/75 leading-relaxed font-light">
+                            {{ finca.text | transloco }}
+                        </p>
+                        <span class="text-[11px] uppercase tracking-widest text-[#d4a15a] font-mono block pt-2">
+                            {{ finca.varietals | transloco }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</div>

@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
+
 export interface ExperienceFeature {
   icon: string;
   textKey: string;
@@ -22,20 +23,17 @@ export interface Experience {
 
 @Component({
   selector: 'app-experiencias-signature',
+  standalone: true,
   imports: [TranslocoPipe, CommonModule],
   templateUrl: './experiencias-signature.html',
   styleUrl: './experiencias-signature.css',
 })
-
 export class ExperienciasSignature {
-  selectedExperience: Experience | null = null;
-
   experiences: Experience[] = [
     {
       id: 1,
       number: '01',
-      image:
-        'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=90',
+      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=90',
       gallery: [
         'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
         'https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=800&q=80',
@@ -58,8 +56,7 @@ export class ExperienciasSignature {
     {
       id: 2,
       number: '02',
-      image:
-        'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1600&q=90',
+      image: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1600&q=90',
       gallery: [
         'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80',
         'https://images.unsplash.com/photo-1516594798947-e65505dbb29d?auto=format&fit=crop&w=800&q=80',
@@ -82,8 +79,7 @@ export class ExperienciasSignature {
     {
       id: 3,
       number: '03',
-      image:
-        'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1600&q=90',
+      image: 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1600&q=90',
       gallery: [
         'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=80',
         'https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=800&q=80',
@@ -106,8 +102,7 @@ export class ExperienciasSignature {
     {
       id: 4,
       number: '04',
-      image:
-        'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=90',
+      image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=90',
       gallery: [
         'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80',
         'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=800&q=80',
@@ -128,25 +123,4 @@ export class ExperienciasSignature {
       ],
     },
   ];
-
-  openExperience(exp: Experience): void {
-    this.selectedExperience = exp;
-
-    document.body.style.overflow = 'hidden';
-    document.documentElement.style.overflow = 'hidden';
-  }
-
-  closeExperience(): void {
-    this.selectedExperience = null;
-
-    document.body.style.overflow = '';
-    document.documentElement.style.overflow = '';
-  }
-
-  @HostListener('document:keydown.escape')
-  onEscape(): void {
-    if (this.selectedExperience) {
-      this.closeExperience();
-    }
-  }
 }

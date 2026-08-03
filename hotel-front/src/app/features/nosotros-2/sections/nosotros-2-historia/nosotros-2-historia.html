@@ -1,0 +1,307 @@
+<div
+    class="relative  text-brand-dark font-body antialiased selection:bg-brand-gold selection:text-brand-dark overflow-hidden">
+
+    <!-- SECCIÓN HISTORIA & MURAL (Con contenedor de fondo cálido) -->
+    <section
+        class="py-20 lg:py-28 relative overflow-hidden border-y border-[#e5ded3] bg-cover bg-center bg-no-repeat bg-fixed"
+        style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80');">
+
+        <!-- Capa de superposición (Overlay) cálida y semi-transparente -->
+        <div class="absolute inset-0 bg-[#f2ece4]/85 backdrop-blur-[2px]"></div>
+
+        <!-- Adornos visuales de luz -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-gold/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div
+            class="absolute bottom-0 left-0 w-96 h-96 bg-brand-terracotta/10 rounded-full blur-3xl pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+
+            <!-- CAPÍTULO 1: LA HISTORIA Y EL MURO DE CUADROS -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+                <!-- COLUMNA IZQUIERDA: Texto Narrativo -->
+                <div class="lg:col-span-6 space-y-8">
+                    <div class="space-y-3">
+                        <div class="inline-flex items-center gap-3">
+                            <span class="w-10 h-[1px] bg-brand-terracotta"></span>
+                            <span
+                                class="text-xs uppercase tracking-[0.4em] text-brand-terracotta font-mono font-semibold">
+                                {{ 'ABOUT.RELATO.SUBTITLE' | transloco }}
+                            </span>
+                        </div>
+                        <h2
+                            class="font-title text-4xl sm:text-5xl lg:text-6xl font-light leading-[1.15] text-brand-dark">
+                            {{ 'ABOUT.RELATO.TITLE' | transloco }}
+                        </h2>
+                    </div>
+
+                    <div
+                        class="space-y-5 text-brand-muted leading-relaxed font-light text-base text-justify lg:text-left">
+                        <p
+                            class="first-letter:float-left first-letter:text-6xl first-letter:pr-4 first-letter:font-title first-letter:text-brand-terracotta first-letter:font-normal first-letter:leading-none">
+                            {{ 'ABOUT.RELATO.PARAGRAPH1' | transloco }}
+                        </p>
+                        <p class="border-l-2 border-brand-gold/60 pl-4 italic text-stone-700">
+                            {{ 'ABOUT.RELATO.PARAGRAPH2' | transloco }}
+                        </p>
+                        <p>
+                            {{ 'ABOUT.RELATO.PARAGRAPH3' | transloco }}
+                        </p>
+                    </div>
+
+                    <!-- Cita de la Familia -->
+                    <div
+                        class="relative p-6 rounded-lg bg-white/90 backdrop-blur-sm border-l-4 border-brand-gold shadow-md">
+                        <p class="font-title italic text-xl sm:text-2xl text-brand-dark leading-snug">
+                            “{{ 'ABOUT.RELATO.QUOTE' | transloco }}”
+                        </p>
+                        <span
+                            class="block mt-3 text-xs uppercase tracking-widest font-mono text-brand-terracotta font-semibold">
+                            — Familia Manzur
+                        </span>
+                    </div>
+
+                </div>
+
+                <!-- COLUMNA DERECHA: Pared de Cuadros -->
+                <div class="lg:col-span-6 relative">
+                    <div
+                        class="relative p-6 sm:p-8 rounded-2xl bg-white/90 backdrop-blur-md border border-stone-200/80 shadow-2xl">
+
+                        <div class="relative grid grid-cols-12 gap-3 sm:gap-4 z-10">
+
+                            <!-- Foto Principal -->
+                            <div class="col-span-12 sm:col-span-9 relative z-10 group">
+                                <div
+                                    class="absolute -inset-1 bg-brand-gold/30 rounded-lg blur-md opacity-0 group-hover:opacity-100 transition duration-700">
+                                </div>
+                                <div
+                                    class="relative overflow-hidden rounded-lg shadow-lg border-[4px] border-white bg-white">
+                                    <img [src]="galleryImages.maimaraMain" alt="Cerros de Maimará"
+                                        class="w-full h-[280px] sm:h-[340px] object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                                    <div
+                                        class="absolute bottom-3 left-3 right-3 text-[11px] font-mono tracking-widest text-brand-dark uppercase font-bold backdrop-blur-md bg-white/90 p-2 rounded-md border border-stone-200 shadow-sm">
+                                        Maimará • Paleta del Pintor
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Foto Secundaria 1 -->
+                            <div class="col-span-6 sm:col-span-5 relative z-20 sm:-ml-10 -mt-8 sm:mt-6 group">
+                                <div
+                                    class="relative overflow-hidden rounded-lg shadow-xl border-[4px] border-white bg-white transform transition-transform duration-500 group-hover:-translate-y-2">
+                                    <img [src]="galleryImages.maimaraSecondary" alt="Texturas de la Quebrada"
+                                        class="w-full h-[160px] sm:h-[200px] object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                                </div>
+                            </div>
+
+                            <!-- Foto Secundaria 2 (Viñedo) -->
+                            <div class="col-span-6 sm:col-span-6 relative z-30 -mt-10 sm:-mt-12 group">
+                                <div
+                                    class="relative overflow-hidden rounded-lg shadow-xl border-[4px] border-white bg-white transform transition-transform duration-500 group-hover:translate-y-2">
+                                    <img [src]="galleryImages.terroirVineyard" alt="Viñedo & Cava"
+                                        class="w-full h-[150px] sm:h-[190px] object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                                </div>
+                            </div>
+
+                            <!-- Foto Secundaria 3 -->
+                            <div class="col-span-8 sm:col-span-5 relative z-20 -mt-6 sm:-ml-6 group">
+                                <div
+                                    class="relative overflow-hidden rounded-lg shadow-xl border-[4px] border-white bg-white">
+                                    <img [src]="galleryImages.interiorLuxury" alt="Interiores Finca"
+                                        class="w-full h-[140px] sm:h-[160px] object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Esquina decorativa -->
+                        <div
+                            class="absolute -bottom-2 -right-2 w-24 h-24 border-r-2 border-b-2 border-brand-gold pointer-events-none">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2: DISPOSICIÓN VERTICAL DE PAISAJES CON MEZCLA FLUIDA    -->
+    <div class="relative w-full overflow-hidden">
+        <div class="flex flex-col w-full relative">
+
+            <!-- 1. Foto Superior: Cerro / Paleta del Pintor Maimará (Alta Resolución) -->
+            <div class="relative h-[450px] sm:h-[550px] lg:h-[650px] group overflow-hidden">
+                <img src="/nosotros/fondo-2.png" alt="Cerros de Maimará - Paleta del Pintor" loading="lazy"
+                    decoding="async" draggable="false"
+                    class="hero-image w-full h-full object-cover object-center transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]" />
+            </div>
+
+            <!-- Tarjeta Central Flotante -->
+            <div class="absolute inset-0 z-30 flex items-center justify-center p-6 pointer-events-none">
+                <div
+                    class="bg-brand-dark/90 backdrop-blur-xl p-8 sm:p-12 border border-brand-gold/50 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] max-w-xl text-center pointer-events-auto transform hover:scale-[1.01] transition duration-500">
+                    <h3 class="font-title text-3xl sm:text-4xl text-brand-bg font-light leading-tight mt-3 text-white">
+                        Donde la Tierra Habla
+                    </h3>
+                    <div class="w-12 h-[1px] bg-brand-gold mx-auto my-5"></div>
+                    <p class="text-xs sm:text-sm text-brand-bg/90 leading-relaxed font-light text-white">
+                        Los colores de la Paleta del Pintor en Maimará no solo enmarcan nuestro horizonte; nutren los
+                        minerales de nuestra tierra y la paz de cada rincón de la finca.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SECCIÓN 3: CONTENEDOR BOUTIQUE DE ALTA GAMA                       -->
+    <div class="relative w-full py-12 sm:py-20 px-6 lg:px-12 overflow-hidden ">
+
+        <!-- CAPA DE FONDO: IMAGEN REAL CON TEXTURA -->
+        <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop"
+                alt="Fondo Textura Paisaje"
+                class="w-full h-full object-cover object-center opacity-25 scale-105 filter blur-[2px] transition-all duration-700">
+
+            <div class="absolute inset-0 bg-gradient-to-b from-brand-bg via-brand-bg/60 to-brand-bg"></div>
+
+            <div class="absolute inset-0 opacity-[0.05] mix-blend-overlay"
+                style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');">
+            </div>
+
+            <div class="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-brand-gold/20 rounded-full blur-[140px]"></div>
+            <div
+                class="absolute bottom-1/4 right-1/4 w-[550px] h-[550px] bg-brand-terracotta/15 rounded-full blur-[150px]">
+            </div>
+        </div>
+
+        <!-- CONTENEDOR PRINCIPAL FLOTANTE -->
+        <div
+            class="max-w-7xl mx-auto relative z-10 p-8 sm:p-14 lg:p-20 rounded-3xl bg-white/40 border border-white/60 shadow-[0_20px_70px_rgba(0,0,0,0.08)] backdrop-blur-2xl space-y-20">
+
+            <div
+                class="absolute top-0 left-12 right-12 h-[2px] bg-gradient-to-r from-transparent via-brand-gold/60 to-transparent">
+            </div>
+
+            <!-- CAPÍTULO 3: ARQUITECTURA Y HOSPITALIDAD -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-stretch relative z-10">
+
+                <!-- Tarjeta 1: Arquitectura -->
+                <div
+                    class="p-8 sm:p-10 rounded-2xl bg-white/70 border border-white/80 shadow-sm hover:shadow-xl hover:bg-white/90 hover:border-brand-terracotta/40 transition-all duration-500 relative group overflow-hidden backdrop-blur-md">
+                    <div
+                        class="absolute top-0 left-0 w-1.5 h-full bg-brand-terracotta group-hover:w-2 transition-all duration-300">
+                    </div>
+                    <div class="space-y-4 relative z-10 pl-2">
+                        <span
+                            class="text-xs uppercase tracking-[0.35em] text-brand-terracotta font-mono font-bold block">
+                            Arquitectura & Respeto
+                        </span>
+                        <h3 class="font-title text-2xl sm:text-3xl font-light text-brand-dark">
+                            Construido en Armonía con el Paisaje
+                        </h3>
+                        <p class="text-brand-muted leading-relaxed font-light text-sm sm:text-base">
+                            Cada muro de adobe, cada viga de cardón y cada piedra tallada a mano relatan nuestro
+                            compromiso con la arquitectura vernácula. Diseñamos este refugio para fundirse con la
+                            quebrada, garantizando privacidad absoluta y un confort sofisticado.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Hospitalidad -->
+                <div
+                    class="p-8 sm:p-10 rounded-2xl bg-white/70 border border-white/80 shadow-sm hover:shadow-xl hover:bg-white/90 hover:border-brand-gold/50 transition-all duration-500 relative group overflow-hidden backdrop-blur-md">
+                    <div
+                        class="absolute top-0 left-0 w-1.5 h-full bg-brand-gold group-hover:w-2 transition-all duration-300">
+                    </div>
+                    <div class="space-y-4 relative z-10 pl-2">
+                        <span class="text-xs uppercase tracking-[0.35em] text-brand-gold font-mono font-bold block">
+                            La Experiencia Humana
+                        </span>
+                        <h3 class="font-title text-2xl sm:text-3xl font-light text-brand-dark">
+                            Hospitalidad de Cuna Familiar
+                        </h3>
+                        <p class="text-brand-muted leading-relaxed font-light text-sm sm:text-base">
+                            Recibir a nuestros huéspedes es abrir las puertas de nuestra casa histórica. Creemos en un
+                            lujo pausado, donde el tiempo se mide en atardeceres dorados sobre los cerros y
+                            conversaciones junto al fuego de la cava.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CAPÍTULO 4: HITOS HISTÓRICOS & CIFRAS DE LA FINCA -->
+            <div class="pt-10 border-t border-brand-dark/10 relative z-10">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center">
+
+                    <div
+                        class="p-6 sm:p-8 bg-white/70 rounded-2xl shadow-sm border border-white/80 hover:border-brand-gold hover:-translate-y-1.5 hover:shadow-lg transition-all duration-300 backdrop-blur-md">
+                        <span class="block font-title text-4xl sm:text-5xl text-brand-terracotta font-light">1926</span>
+                        <span
+                            class="text-[11px] sm:text-xs font-mono uppercase tracking-wider text-brand-dark/80 font-semibold mt-2 block">Origen
+                            Familiar</span>
+                    </div>
+
+                    <div
+                        class="p-6 sm:p-8 bg-white/70 rounded-2xl shadow-sm border border-white/80 hover:border-brand-gold hover:-translate-y-1.5 hover:shadow-lg transition-all duration-300 backdrop-blur-md">
+                        <span
+                            class="block font-title text-4xl sm:text-5xl text-brand-terracotta font-light">2.500</span>
+                        <span
+                            class="text-[11px] sm:text-xs font-mono uppercase tracking-wider text-brand-dark/80 font-semibold mt-2 block">Altitud
+                            de Viñedos</span>
+                    </div>
+
+                    <div
+                        class="p-6 sm:p-8 bg-white/70 rounded-2xl shadow-sm border border-white/80 hover:border-brand-gold hover:-translate-y-1.5 hover:shadow-lg transition-all duration-300 backdrop-blur-md">
+                        <span class="block font-title text-4xl sm:text-5xl text-brand-terracotta font-light">12</span>
+                        <span
+                            class="text-[11px] sm:text-xs font-mono uppercase tracking-wider text-brand-dark/80 font-semibold mt-2 block">Suites
+                            Exclusivas</span>
+                    </div>
+
+                    <div
+                        class="p-6 sm:p-8 bg-white/70 rounded-2xl shadow-sm border border-white/80 hover:border-brand-gold hover:-translate-y-1.5 hover:shadow-lg transition-all duration-300 backdrop-blur-md">
+                        <span class="block font-title text-4xl sm:text-5xl text-brand-terracotta font-light">100%</span>
+                        <span
+                            class="text-[11px] sm:text-xs font-mono uppercase tracking-wider text-brand-dark/80 font-semibold mt-2 block">Compromiso
+                            Orgánico</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CAPÍTULO 5: VIDEO SALUDO FAMILIAR -->
+            <div class="pt-10 border-t border-brand-dark/10 space-y-8 relative z-10">
+                <div class="max-w-2xl mx-auto text-center space-y-3">
+                    <span class="text-xs uppercase tracking-[0.4em] text-brand-terracotta font-mono font-bold block">
+                        Nuestra Bienvenida
+                    </span>
+                    <h3 class="font-title text-3xl sm:text-4xl font-light text-brand-dark">
+                        Un Saludo de la Familia
+                    </h3>
+                    <p class="text-brand-muted font-light text-sm sm:text-base">
+                        Te invitamos a conocer de cerca a quienes hacen posible la magia cotidiana en nuestra finca.
+                    </p>
+                </div>
+
+                <!-- Marco de Galería para el Video -->
+                <div
+                    class="relative max-w-4xl mx-auto rounded-2xl p-3 bg-white/80 backdrop-blur-md shadow-[0_20px_50px_rgba(0,0,0,0.08)] border border-white">
+                    <div class="relative rounded-xl overflow-hidden bg-black aspect-video">
+                        <video controls preload="metadata"
+                            poster="https://cdn.agroempresario.com/images/posts/1749eb0689c0f23fa0251422e4f80ddc7a68011c2137a1d0_840.jpg"
+                            class="w-full h-full object-cover">
+                            <source src="assets/videos/familia-saludo.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

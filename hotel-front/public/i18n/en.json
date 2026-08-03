@@ -3,7 +3,7 @@
         "INICIO": "Home",
         "ALOJAMIENTO": "Accommodation",
         "GASTRONOMIA": "Dining",
-        "EVENTOS": "Events & Weddings",
+        "EVENTOS": "Events",
         "SPA": "Spa",
         "EXPERIENCIAS": "Experiences",
         "NOSOTROS": "About Us",
@@ -85,12 +85,7 @@
             "TITLE": "Rest becomes an experience.",
             "DESCRIPTION": "Every room has been designed to provide privacy, generous spaces and breathtaking vineyard views, blending contemporary comfort with the essence of Northern Argentina.",
             "BUTTON": "Discover rooms",
-            "SECOND_BUTTON": "View experiences",
-            "CARD_SUBTITLE": "Collection",
-            "CARD_TITLE": "Luxury Suites",
-            "SIZE": "Size",
-            "CAPACITY": "Capacity",
-            "VIEW": "View"
+            "SECOND_BUTTON": "Reserve"
         },
         "EXPERIENCE": {
             "SUBTITLE": "The Experience",
@@ -152,8 +147,7 @@
             "SUBTITLE": "Events & Weddings",
             "TITLE": "Celebrations that become unforgettable memories",
             "DESCRIPTION": "We create unique experiences for weddings, social events, and corporate gatherings in an exclusive setting, combining gastronomy, nature, and personalized service.",
-            "BUTTON": "Request a quote",
-            "SPACES": "Explore spaces"
+            "BUTTON": "Request a quote"
         },
         "GALLERY": {
             "SUBTITLE": "Exclusive events",
@@ -215,34 +209,31 @@
             }
         },
         "QUOTE": {
-            "SUBTITLE": "Request a Proposal",
+            "SUBTITLE": "Quote request",
             "TITLE": "Let's start planning your next event",
-            "DESCRIPTION": "Share the details of your celebration and our team will prepare a personalized proposal tailored to your needs.",
-            "EXPERIENCE": "Memorable Experiences",
+            "DESCRIPTION": "Share the details of your celebration with us, and our team will prepare a personalized proposal tailored to your needs.",
+            "EXPERIENCE": "Memorable experiences",
             "EXPERIENCE_TITLE": "Every celebration deserves an exceptional setting",
-            "EXPERIENCE_DESCRIPTION": "Our team will guide you through every stage of the planning process so you can simply enjoy the occasion.",
+            "EXPERIENCE_DESCRIPTION": "Our team guides you through every stage of planning so you can simply enjoy the moment.",
             "STAT1_NUMBER": "200+",
             "STAT1_LABEL": "Guests",
             "STAT2_NUMBER": "4",
-            "STAT2_LABEL": "Exclusive Venues",
+            "STAT2_LABEL": "Exclusive venues",
             "STAT3_NUMBER": "100%",
-            "STAT3_LABEL": "Personalized Service",
-            "FEATURE1": "Reply within 24 hours",
-            "FEATURE2": "Tailored proposal",
-            "FEATURE3": "No obligation",
-            "EVENT_TYPE": "Event Type",
+            "STAT3_LABEL": "Personalized service",
+            "EVENT_TYPE": "Event type",
             "WEDDING": "Wedding",
-            "SOCIAL": "Social Event",
-            "CORPORATE": "Corporate Event",
+            "SOCIAL": "Social event",
+            "CORPORATE": "Corporate event",
             "OTHER": "Other",
-            "NAME": "Full Name",
-            "EMAIL": "Email Address",
-            "PHONE": "Phone Number",
-            "GUESTS": "Estimated Number of Guests",
-            "BUDGET": "Estimated Budget",
+            "NAME": "Full name",
+            "EMAIL": "Email address",
+            "PHONE": "Phone number",
+            "GUESTS": "Approximate number of guests",
+            "BUDGET": "Estimated budget",
             "MESSAGE": "Tell us how you imagine your event...",
-            "BUTTON": "Request Proposal",
-            "DATE_TYPE": "Do you already have a date?",
+            "BUTTON": "Request proposal",
+            "DATE_TYPE": "Do you already have a set date?",
             "EXACT_DATE": "Exact date",
             "MONTH_ONLY": "Approximate month"
         }
@@ -253,11 +244,7 @@
             "TITLE": "A sanctuary where time slows down.",
             "DESCRIPTION": "Heated pools, wet and dry spa circuits, wine therapy and treatments designed to restore body and mind in the heart of the Quebrada.",
             "BUTTON": "Book Spa Day",
-            "TREATMENTS": "View treatments",
-            "CARD_TITLE": "Wellness Experience",
-            "ITEM1": "Heated Pool",
-            "ITEM2": "Spa Circuit",
-            "ITEM3": "Massages & Wine Therapy"
+            "TREATMENTS": "Treatment Menu"
         },
         "GALLERY": {
             "SUBTITLE": "SPACES",
@@ -291,13 +278,7 @@
             "SUBTITLE": "Exclusive Experiences",
             "TITLE": "Unique moments inspired by the spirit of the valley",
             "DESCRIPTION": "From vineyard picnics to private wine tastings and winery tours, every experience is designed to connect guests with nature, wine and the warm hospitality of MWR Hotel.",
-            "BUTTON": "Explore experiences",
-            "SECOND_BUTTON": "Check availability",
-            "CARD_SUBTITLE": "Featured experiences",
-            "CARD_TITLE": "Memories crafted with elegance",
-            "WINE": "Wine tastings",
-            "PICNIC": "Gourmet picnic",
-            "BODEGAS": "Winery tours"
+            "BUTTON": "Explore experiences"
         },
         "SIGNATURE": {
             "SUBTITLE": "Exclusive Experiences",
@@ -371,23 +352,66 @@
     },
     "ABOUT": {
         "HERO": {
-            "SUBTITLE": "Our story",
-            "TITLE": "A vineyard, a family and generations of memories",
-            "DESCRIPTION": "From our first days among vineyards and mountains, we have built a place where family tradition meets a new way of welcoming guests."
+            "SUBTITLE": "Our history",
+            "TITLE": "An estate, a family, and generations of memories",
+            "DESCRIPTION": "From our earliest days among vineyards and mountains, we built a place where family tradition meets a new way of welcoming guests."
+        },
+        "RELATO": {
+            "SUBTITLE": "Past and present",
+            "TITLE": "A family at the forefront of the land",
+            "PARAGRAPH1": "Since our earliest years, this estate has been part of the region's history. Over time, our family took the helm, transforming it into a space dedicated to welcoming guests with the same warmth we received.",
+            "PARAGRAPH2": "Today, as the new generation leading the way, we guide this place with a clear vision: to honor tradition and look toward the future, without ever losing the essence of our origins.",
+            "PARAGRAPH3": "Every corner of the estate reflects our commitment to creating experiences that honor the land, those who work it, and our constant pursuit of excellence.",
+            "QUOTE": "We consider ourselves simple guardians of this land. We believe in our duty to leave it in better condition than when we received it."
         },
         "HISTORY": {
-            "SUBTITLE": "Our history",
-            "TITLE": "A family, a land and a legacy that continues",
-            "DESCRIPTION": "For generations this estate was home, work and family gathering. Today we open its doors to share the same essence with our guests.",
-            "QUOTE": "Every stone, every tree and every corner holds a story.",
+            "SUBTITLE": "Milestones of the estate",
+            "TITLE": "One family, one land, and an ongoing legacy",
+            "DESCRIPTION": "For generations this estate was home, work, and family gathering. Today we open its doors to share that same essence with our guests.",
+            "QUOTE": "Every stone, every tree, and every corner holds a story.",
             "ITEM1_TITLE": "The beginnings",
-            "ITEM1_TEXT": "The first years of a family building its bond with the land.",
+            "ITEM1_TEXT": "The early years of a family building its bond with the land.",
             "ITEM2_TITLE": "The family legacy",
-            "ITEM2_TEXT": "New generations preserved the traditions and values of the estate.",
+            "ITEM2_TEXT": "New generations kept the estate's traditions and values alive.",
             "ITEM3_TITLE": "A new chapter",
-            "ITEM3_TEXT": "The property evolved while keeping its identity.",
+            "ITEM3_TEXT": "The property began to transform without losing its identity.",
             "ITEM4_TITLE": "Our present",
-            "ITEM4_TEXT": "Today we welcome guests who become part of our story."
+            "ITEM4_TEXT": "Today we welcome visitors who become part of our history."
+        },
+        "TERRITORIO": {
+            "SUBTITLE": "Our surroundings",
+            "TITLE": "The territory defines us",
+            "TEXT1": "Our estate is located at the foot of the mountain range, in a privileged corner where soil, water, and altitude combine to give character to every part of the property.",
+            "TEXT2": "This dynamic landscape, together with thermal contrasts between day and night, makes this place unique. With this understanding, we care for every detail with precision.",
+            "STAT1_VALUE": "980m",
+            "STAT1_LABEL": "Above sea level",
+            "STAT2_VALUE": "S 33° 00'",
+            "STAT2_LABEL": "South Latitude"
+        },
+        "FINCAS": {
+            "SUBTITLE": "Our properties",
+            "TITLE": "The estates that give us identity",
+            "ITEM1_NAME": "Main Estate",
+            "ITEM1_LOCATION": "Luján de Cuyo",
+            "ITEM1_TEXT": "Our historic estate, whose first vineyards were planted over a century ago. A large part of our identity as a family was born here.",
+            "ITEM1_VARIETALS": "Malbec and Semillon",
+            "ITEM2_NAME": "High Altitude Estate",
+            "ITEM2_LOCATION": "Tupungato",
+            "ITEM2_TEXT": "The highest altitude among our properties, where daily temperature variance produces wines with distinctive freshness.",
+            "ITEM2_VARIETALS": "Malbec and Chardonnay",
+            "ITEM3_NAME": "East Estate",
+            "ITEM3_LOCATION": "Perdriel",
+            "ITEM3_TEXT": "One of our largest properties, equipped with drip irrigation and soil studies applying precision viticulture.",
+            "ITEM3_VARIETALS": "Cabernet Sauvignon and Syrah",
+            "ITEM4_NAME": "Valley Estate",
+            "ITEM4_LOCATION": "Agrelo",
+            "ITEM4_TEXT": "Located in Agrelo, featuring a high trellis system and hail protection netting safeguarding every harvest.",
+            "ITEM4_VARIETALS": "Petit Verdot and Moscato Bianco"
+        },
+        "COMPROMISO": {
+            "SUBTITLE": "Sustainable commitment",
+            "TITLE": "Respect for the land guides every step",
+            "TEXT": "Preserving the environment is an everyday commitment woven into everything we do. Every decision we make aims to leave this land in better condition for those who follow."
         }
     },
     "BOOKING": {

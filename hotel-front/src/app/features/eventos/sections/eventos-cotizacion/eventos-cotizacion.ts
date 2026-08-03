@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-eventos-cotizacion',
-  imports: [TranslocoPipe],
+  imports: [TranslocoPipe, CommonModule],
   templateUrl: './eventos-cotizacion.html',
   styleUrl: './eventos-cotizacion.css',
 })

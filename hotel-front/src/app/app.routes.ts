@@ -6,6 +6,7 @@ import { Gastronomia } from './features/gastronomia/pages/gastronomia/gastronomi
 import { Eventos } from './features/eventos/pages/eventos/eventos';
 import { Experiencias } from './features/experiencias/pages/experiencias/experiencias';
 import { Nosotros } from './features/nosotros/pages/nosotros/nosotros';
+import { Nosotros2 } from './features/nosotros-2/pages/nosotros-2/nosotros-2';
 
 export const routes: Routes = [
     { path: '', component: Home },
@@ -14,6 +15,7 @@ export const routes: Routes = [
     { path: 'eventos', component: Eventos },
     { path: 'spa', component: Spa },
     { path: 'experiencias', component: Experiencias },
-    { path: 'nosotros', component: Nosotros }
+    { path: 'nosotros', component: Nosotros },
+    { path: 'nosotros-2', component: Nosotros2 }
 
 ];

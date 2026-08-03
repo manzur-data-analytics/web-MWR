@@ -28,28 +28,29 @@
 
         </div>
 
-        <div class="grid xl:grid-cols-[480px_1fr] gap-24 items-start">
+        <div class="grid xl:grid-cols-[480px_1fr] gap-12 xl:gap-24 items-stretch">
 
-            <!-- Información -->
+            <!-- Información (Izquierda) Se ocultan en mobile (hidden) y se muestran desde lg: (lg:block) -->
+            <div class="hidden lg:block text-white flex flex-col justify-between py-2">
 
-            <div class="text-white sticky top-32">
+                <div>
+                    <span class="uppercase tracking-[0.4em] text-[#d4a15a] text-xs">
+                        {{'EVENTS.QUOTE.EXPERIENCE' | transloco}}
+                    </span>
 
-                <span class="uppercase tracking-[0.4em] text-[#d4a15a] text-xs">
-                    {{'EVENTS.QUOTE.EXPERIENCE' | transloco}}
-                </span>
+                    <h3 class="mt-5 font-title text-4xl xl:text-5xl leading-tight">
+                        {{'EVENTS.QUOTE.EXPERIENCE_TITLE' | transloco}}
+                    </h3>
 
-                <h3 class="mt-5 font-title text-5xl leading-tight">
-                    {{'EVENTS.QUOTE.EXPERIENCE_TITLE' | transloco}}
-                </h3>
+                    <p class="mt-6 xl:mt-8 text-white/75 leading-8 xl:leading-9 max-w-md">
+                        {{'EVENTS.QUOTE.EXPERIENCE_DESCRIPTION' | transloco}}
+                    </p>
+                </div>
 
-                <p class="mt-8 text-white/75 leading-9 max-w-md">
-                    {{'EVENTS.QUOTE.EXPERIENCE_DESCRIPTION' | transloco}}
-                </p>
-
-                <div class="space-y-10 mt-16">
+                <div class="space-y-8 mt-12 xl:mt-16">
 
                     <div class="border-l-2 border-[#d4a15a] pl-6">
-                        <div class="font-title text-5xl text-[#d4a15a]">
+                        <div class="font-title text-4xl xl:text-5xl text-[#d4a15a]">
                             {{'EVENTS.QUOTE.STAT1_NUMBER' | transloco}}
                         </div>
                         <p class="mt-2 uppercase tracking-[0.25em] text-xs text-white/70">
@@ -58,7 +59,7 @@
                     </div>
 
                     <div class="border-l-2 border-[#d4a15a] pl-6">
-                        <div class="font-title text-5xl text-[#d4a15a]">
+                        <div class="font-title text-4xl xl:text-5xl text-[#d4a15a]">
                             {{'EVENTS.QUOTE.STAT2_NUMBER' | transloco}}
                         </div>
                         <p class="mt-2 uppercase tracking-[0.25em] text-xs text-white/70">
@@ -67,7 +68,7 @@
                     </div>
 
                     <div class="border-l-2 border-[#d4a15a] pl-6">
-                        <div class="font-title text-5xl text-[#d4a15a]">
+                        <div class="font-title text-4xl xl:text-5xl text-[#d4a15a]">
                             {{'EVENTS.QUOTE.STAT3_NUMBER' | transloco}}
                         </div>
                         <p class="mt-2 uppercase tracking-[0.25em] text-xs text-white/70">
@@ -79,140 +80,131 @@
 
             </div>
 
-            <!-- Formulario -->
-            <div class="bg-[#f8f5f1] shadow-[0_35px_80px_rgba(0,0,0,.35)]">
+            <!-- Formulario (Derecha) -->
+            <div
+                class="bg-[#f8f5f1] shadow-[0_35px_80px_rgba(0,0,0,.35)] flex flex-col justify-between overflow-hidden border border-[#e8dfd1]">
 
-                <div class="h-2 bg-[#8e4c2f]"></div>
+                <!-- Acento Superior Dorado/Cobre -->
+                <div class="h-2 bg-gradient-to-r from-[#8e4c2f] via-[#d4a15a] to-[#8e4c2f]"></div>
 
-                <div class="p-10 lg:p-14">
+                <div class="p-8 lg:p-12 xl:p-14 flex-1 flex flex-col justify-center">
 
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12">
+                    <!-- Encabezado del Formulario -->
+                    <div class="mb-10 text-center md:text-left">
+                        <span class="uppercase tracking-[0.35em] text-[11px] text-[#8e4c2f] font-semibold block mb-2">
+                            {{'EVENTS.QUOTE.SUBTITLE' | transloco}}
+                        </span>
 
-                        <div class="border border-[#d9cfbf] bg-white px-5 py-5 text-center">
-
-                            <p class="uppercase tracking-[0.25em] text-[11px] text-[#8e4c2f]">
-
-                                {{'EVENTS.QUOTE.FEATURE1' | transloco}}
-
-                            </p>
-
-                        </div>
-
-                        <div class="border border-[#d9cfbf] bg-white px-5 py-5 text-center">
-
-                            <p class="uppercase tracking-[0.25em] text-[11px] text-[#8e4c2f]">
-
-                                {{'EVENTS.QUOTE.FEATURE2' | transloco}}
-
-                            </p>
-
-                        </div>
-
-                        <div class="border border-[#d9cfbf] bg-white px-5 py-5 text-center">
-
-                            <p class="uppercase tracking-[0.25em] text-[11px] text-[#8e4c2f]">
-
-                                {{'EVENTS.QUOTE.FEATURE3' | transloco}}
-
-                            </p>
-
-                        </div>
-
+                        <div class="w-16 h-0.5 bg-[#d4a15a] mt-5 hidden md:block"></div>
                     </div>
 
-                    <label class="uppercase tracking-[0.35em] text-[11px] text-[#8e4c2f]">
+                    <form class="space-y-8">
 
-                        {{'EVENTS.QUOTE.EVENT_TYPE' | transloco}}
-
-                    </label>
-
-                    <div class="grid grid-cols-2 gap-4 mt-6 mb-12">
-
-                        @for(type of eventTypes; track type.value){
-
-                        <button type="button" (click)="selectedType = type.value" class="event-type-card"
-                            [class.active]="selectedType===type.value">
-
-                            {{type.label | transloco}}
-
-                        </button>
-
-                        }
-
-                    </div>
-
-                    <form class="grid md:grid-cols-2 gap-6">
-
-                        <input class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white"
-                            placeholder="{{'EVENTS.QUOTE.NAME' | transloco}}">
-
-                        <input class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white"
-                            placeholder="{{'EVENTS.QUOTE.EMAIL' | transloco}}">
-
-                        <input class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white"
-                            placeholder="{{'EVENTS.QUOTE.PHONE' | transloco}}">
-
-                        <input type="number" class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white"
-                            placeholder="{{'EVENTS.QUOTE.GUESTS' | transloco}}">
-
-
-                        <!-- Fecha -->
-
-                        <div class="md:col-span-2">
-
-                            <label class="uppercase tracking-[0.3em] text-[11px] text-[#8e4c2f] mb-4 block">
-
-                                {{'EVENTS.QUOTE.DATE_TYPE' | transloco}}
-
+                        <!-- Selector: Tipo de Evento -->
+                        <div>
+                            <label
+                                class="uppercase tracking-[0.2em] text-[11px] text-[#8e4c2f] font-semibold block mb-3">
+                                {{'EVENTS.QUOTE.EVENT_TYPE' | transloco}}
                             </label>
 
-                            <div class="flex gap-3 mb-5">
+                            <!-- Grid ajustado: 2 columnas en mobile/tablet y 4 solo en pantallas XL -->
+                            <div class="grid grid-cols-2 xl:grid-cols-4 gap-2.5">
+                                <button *ngFor="let type of eventTypes" type="button"
+                                    (click)="selectedType = type.value"
+                                    class="py-2.5 px-1.5 border text-[11px] xl:text-xs font-medium uppercase text-center transition-all duration-300 leading-snug flex items-center justify-center min-h-[48px] whitespace-normal"
+                                    [class.bg-[#382821]]="selectedType === type.value"
+                                    [class.text-white]="selectedType === type.value"
+                                    [class.border-[#382821]]="selectedType === type.value"
+                                    [class.bg-white]="selectedType !== type.value"
+                                    [class.text-[#382821]]="selectedType !== type.value"
+                                    [class.hover:border-[#d4a15a]]="selectedType !== type.value">
 
-                                <button type="button" (click)="dateType='exact'" class="event-type-card flex-1"
-                                    [class.active]="dateType==='exact'">
-
-                                    {{'EVENTS.QUOTE.EXACT_DATE' | transloco}}
+                                    <span>
+                                        {{ type.label | transloco }}
+                                    </span>
 
                                 </button>
-
-                                <button type="button" (click)="dateType='month'" class="event-type-card flex-1"
-                                    [class.active]="dateType==='month'">
-
-                                    {{'EVENTS.QUOTE.MONTH_ONLY' | transloco}}
-
-                                </button>
-
                             </div>
-
-                            @if(dateType === 'exact'){
-
-                            <input type="date" class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white w-full">
-
-                            }
-
-                            @else{
-
-                            <input type="month" class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white w-full">
-
-                            }
-
                         </div>
 
+                        <!-- Campos de Información Personal -->
+                        <div class="grid md:grid-cols-2 gap-5 sm:gap-6">
+                            <div class="relative">
+                                <input
+                                    class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white/80 w-full text-sm text-[#2b211d] focus:bg-white focus:outline-none focus:border-[#d4a15a] transition-all"
+                                    placeholder="{{'EVENTS.QUOTE.NAME' | transloco}}">
+                            </div>
 
-                        <input class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white"
-                            placeholder="{{'EVENTS.QUOTE.BUDGET' | transloco}}">
+                            <div class="relative">
+                                <input
+                                    class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white/80 w-full text-sm text-[#2b211d] focus:bg-white focus:outline-none focus:border-[#d4a15a] transition-all"
+                                    placeholder="{{'EVENTS.QUOTE.EMAIL' | transloco}}">
+                            </div>
 
-                        <div></div>
+                            <div class="relative">
+                                <input
+                                    class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white/80 w-full text-sm text-[#2b211d] focus:bg-white focus:outline-none focus:border-[#d4a15a] transition-all"
+                                    placeholder="{{'EVENTS.QUOTE.PHONE' | transloco}}">
+                            </div>
 
-                        <textarea
-                            class="luxury-input md:col-span-2 h-40 border border-[#d9cfbf] px-5 py-4 bg-white resize-none"
-                            placeholder="{{'EVENTS.QUOTE.MESSAGE' | transloco}}">
-                        </textarea>
+                            <div class="relative">
+                                <input type="number"
+                                    class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white/80 w-full text-sm text-[#2b211d] focus:bg-white focus:outline-none focus:border-[#d4a15a] transition-all"
+                                    placeholder="{{'EVENTS.QUOTE.GUESTS' | transloco}}">
+                            </div>
+                        </div>
 
-                        <button class="luxury-submit md:col-span-2 mt-2">
+                        <!-- Selector: Tipo de Fecha + Input -->
+                        <div
+                            class="bg-white/50 p-4 sm:p-5 border border-[#e8dfd1] rounded-sm space-y-4 max-w-full overflow-hidden">
+                            <label
+                                class="uppercase tracking-[0.2em] sm:tracking-[0.3em] text-[11px] text-[#8e4c2f] font-semibold block">
+                                {{'EVENTS.QUOTE.DATE_TYPE' | transloco}}
+                            </label>
 
+                            <div class="flex gap-2.5 sm:gap-3">
+                                <button type="button" (click)="dateType='exact'"
+                                    class="flex-1 py-2.5 px-2 sm:px-4 text-[11px] sm:text-xs tracking-wider uppercase font-medium border transition-all duration-300 whitespace-normal leading-snug"
+                                    [class.bg-[#d4a15a]]="dateType==='exact'" [class.text-white]="dateType==='exact'"
+                                    [class.border-[#d4a15a]]="dateType==='exact'" [class.bg-white]="dateType!=='exact'"
+                                    [class.text-[#382821]]="dateType!=='exact'"
+                                    [class.border-[#d9cfbf]]="dateType!=='exact'">
+                                    {{'EVENTS.QUOTE.EXACT_DATE' | transloco}}
+                                </button>
+
+                                <button type="button" (click)="dateType='month'"
+                                    class="flex-1 py-2.5 px-2 sm:px-4 text-[11px] sm:text-xs tracking-wider uppercase font-medium border transition-all duration-300 whitespace-normal leading-snug"
+                                    [class.bg-[#d4a15a]]="dateType==='month'" [class.text-white]="dateType==='month'"
+                                    [class.border-[#d4a15a]]="dateType==='month'" [class.bg-white]="dateType!=='month'"
+                                    [class.text-[#382821]]="dateType!=='month'"
+                                    [class.border-[#d9cfbf]]="dateType!=='month'">
+                                    {{'EVENTS.QUOTE.MONTH_ONLY' | transloco}}
+                                </button>
+                            </div>
+
+                            <!-- Inputs adaptados para pantallas móviles sin desborde -->
+                            <input *ngIf="dateType === 'exact'" type="date"
+                                class="luxury-input border border-[#d9cfbf] px-3.5 sm:px-5 py-3 bg-white w-full max-w-full min-w-0 box-border text-xs sm:text-sm text-[#2b211d] focus:outline-none focus:border-[#d4a15a] appearance-none">
+
+                            <input *ngIf="dateType === 'month'" type="month"
+                                class="luxury-input border border-[#d9cfbf] px-3.5 sm:px-5 py-3 bg-white w-full max-w-full min-w-0 box-border text-xs sm:text-sm text-[#2b211d] focus:outline-none focus:border-[#d4a15a] appearance-none">
+                        </div>
+
+                        <!-- Presupuesto y Mensaje -->
+                        <div class="space-y-5">
+                            <input
+                                class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white/80 w-full text-sm text-[#2b211d] focus:bg-white focus:outline-none focus:border-[#d4a15a] transition-all"
+                                placeholder="{{'EVENTS.QUOTE.BUDGET' | transloco}}">
+
+                            <textarea
+                                class="luxury-input h-32 border border-[#d9cfbf] px-5 py-4 bg-white/80 w-full text-sm text-[#2b211d] focus:bg-white focus:outline-none focus:border-[#d4a15a] resize-none transition-all"
+                                placeholder="{{'EVENTS.QUOTE.MESSAGE' | transloco}}"></textarea>
+                        </div>
+
+                        <!-- Botón Submit -->
+                        <button type="submit"
+                            class="luxury-submit w-full py-5 bg-[#382821] text-white uppercase tracking-[0.3em] text-xs font-semibold hover:bg-[#8e4c2f] transition-colors duration-300 shadow-lg">
                             {{'EVENTS.QUOTE.BUTTON' | transloco}}
-
                         </button>
 
                     </form>

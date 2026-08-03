@@ -8,9 +8,10 @@
             <img src="/inicio/logo/logomwrbl.png" alt="Hotel" class="h-11 w-auto transition-all duration-300 lg:h-14" />
         </a>
 
-        <!-- Desktop Menu -->
+        <!-- Desktop Menu -
         <nav class="hidden lg:flex items-center gap-8 xl:gap-9">
 
+            
             <a *ngFor="let item of navItems" [routerLink]="item.route" routerLinkActive="active"
                 [routerLinkActiveOptions]="{ exact: item.route === '/' }"
                 class="group relative flex items-center justify-center text-center min-h-[48px] min-w-[105px] font-body uppercase text-[13px] tracking-[0.25em] font-normal leading-5"
@@ -26,7 +27,64 @@
 
             </a>
 
+        </nav>-->
+
+        <nav class="hidden lg:flex items-center gap-8 xl:gap-9">
+
+            <ng-container *ngFor="let item of navItems">
+
+                <!-- Item normal -->
+                <a *ngIf="!item.children" [routerLink]="item.route" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: item.route === '/' }"
+                    class="group relative flex items-center justify-center text-center min-h-[48px] min-w-[105px] font-body uppercase text-[13px] tracking-[0.25em] font-normal leading-5"
+                    [ngClass]="navLinkClass()">
+
+                    <span>{{ item.label | transloco }}</span>
+
+                    <span
+                        class="absolute left-1/2 -bottom-0.5 h-px w-0 bg-current transition-all duration-300 group-hover:w-full group-hover:left-0">
+                    </span>
+
+                </a>
+
+                <!-- Dropdown -->
+                <div *ngIf="item.children"
+                    class="relative group flex items-center justify-center min-h-[48px] min-w-[105px]">
+
+                    <button
+                        class="flex items-center gap-1 font-body uppercase text-[13px] tracking-[0.25em] font-normal"
+                        [ngClass]="navLinkClass()">
+
+                        {{ item.label | transloco }}
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+
+                        </svg>
+
+                    </button>
+
+                    <div
+                        class="absolute top-full mt-2 left-1/2 -translate-x-1/2 w-52 rounded-xl bg-white shadow-xl border border-stone-200 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300">
+
+                        <a *ngFor="let child of item.children" [routerLink]="child.route"
+                            class="block px-5 py-3 text-sm text-stone-700 hover:bg-stone-50 transition">
+
+                            {{ child.label }}
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </ng-container>
+
         </nav>
+
 
         <!-- Right cluster: language + CTA -->
         <div class="hidden lg:flex items-center gap-5 shrink-0">
@@ -92,6 +150,73 @@
 
 <!-- Drawer -->
 <aside id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Menú de navegación"
+    class="fixed top-0 right-0 h-screen w-80 max-w-[85vw] bg-white z-[60] transform transition-transform duration-300 lg:hidden overflow-y-auto"
+    [ngClass]="mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'">
+
+    <!-- Encabezado del Drawer -->
+    <div class="flex justify-between items-center p-6 border-b sticky top-0 bg-white z-10">
+        <img src="/inicio/logo/logomwr.png" alt="Hotel" class="h-9 w-auto" />
+        <button (click)="closeMenu()" class="text-3xl leading-none text-stone-700 hover:text-black"
+            aria-label="Cerrar menú">×</button>
+    </div>
+
+    <!-- Navegación Móvil -->
+    <nav class="flex flex-col p-6 space-y-1">
+
+        <ng-container *ngFor="let item of navItems">
+
+            <!-- 1. Enlace Normal (Sin hijos) -->
+            <a *ngIf="!item.children" [routerLink]="item.route" (click)="closeMenu()"
+                class="py-4 border-b uppercase tracking-widest text-stone-800 text-sm font-medium block">
+                {{ item.label | transloco }}
+            </a>
+
+            <!-- 2. Enlace con Submenú / Acordeón -->
+            <div *ngIf="item.children" class="border-b">
+                <!-- Botón Padre del Acordeón -->
+                <button (click)="item.isOpen = !item.isOpen" type="button"
+                    class="w-full py-4 flex items-center justify-between uppercase tracking-widest text-stone-800 text-sm font-medium">
+                    <span>{{ item.label | transloco }}</span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-4 h-4 transition-transform duration-300 text-stone-500"
+                        [ngClass]="{ 'rotate-180': item.isOpen }" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+
+                <!-- Submenú desplegable Móvil -->
+                <div *ngIf="item.isOpen" class="pl-4 pb-3 space-y-2 bg-stone-50/80 rounded-lg mb-2 pt-2">
+                    <a *ngFor="let child of item.children" [routerLink]="child.route" (click)="closeMenu()"
+                        class="block py-2.5 px-3 text-xs uppercase tracking-wider text-stone-600 hover:text-stone-900 font-medium">
+                        • {{ child.label | transloco }}
+                    </a>
+                </div>
+            </div>
+
+        </ng-container>
+
+        <!-- Selección de Idiomas Móvil -->
+        <div class="flex justify-center gap-5 pt-8 pb-2" role="group">
+            <button *ngFor="let lang of languages" (click)="changeLanguage(lang.code); closeMenu()"
+                [attr.aria-current]="currentLanguage() === lang.code ? 'true' : null"
+                class="font-body text-sm tracking-[0.3em] text-stone-700"
+                [ngClass]="{ 'font-semibold underline underline-offset-4': currentLanguage() === lang.code }">
+                {{ lang.code.toUpperCase() }}
+            </button>
+        </div>
+
+        <!-- Botón de Reserva Móvil -->
+        <a routerLink="/reservar" (click)="closeMenu()"
+            class="mt-6 bg-amber-700 text-white text-center py-3.5 rounded-full uppercase tracking-widest text-xs font-semibold shadow-md active:scale-95 transition-transform">
+            {{ 'NAVBAR.RESERVAR' | transloco }}
+        </a>
+
+    </nav>
+</aside>
+
+<!-- Drawer --
+<aside id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Menú de navegación"
     class="fixed top-0 right-0 h-screen w-80 max-w-[85vw] bg-white z-[60] transform transition-transform duration-300 lg:hidden"
     [ngClass]="mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'">
     <div class="flex justify-between items-center p-6 border-b">
@@ -107,7 +232,7 @@
             {{ item.label | transloco }}
         </a>
 
-        <!-- Idiomas móvil -->
+        <!-- Idiomas móvil --
         <div class="flex justify-center gap-5 mt-8" role="group">
 
             <button *ngFor="let lang of languages" (click)="changeLanguage(lang.code); closeMenu()"
@@ -133,4 +258,4 @@
         </a>
 
     </nav>
-</aside>
+</aside>-->

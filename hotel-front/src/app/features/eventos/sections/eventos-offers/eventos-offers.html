@@ -22,9 +22,7 @@
                 {{'EVENTS.OFFERS.TITLE' | transloco}}
             </h2>
 
-
             <div class="w-24 h-px bg-[#d4a15a] mt-8"></div>
-
 
         </div>
 
@@ -32,39 +30,24 @@
         <!-- CARDS -->
         <div class="grid lg:grid-cols-3 gap-8">
 
-
-            @for(item of offers; track item.id){
-
-
-            <article class="group relative h-[520px] overflow-hidden cursor-pointer" (click)="openOffer(item)">
-
+            <article *ngFor="let item of offers; trackBy: trackByOfferId"
+                class="group relative h-[520px] overflow-hidden cursor-pointer" (click)="openOffer(item)">
 
                 <img [src]="item.image"
                     class="absolute inset-0 w-full h-full object-cover transition duration-[1200ms] group-hover:scale-110">
 
-
                 <div class="absolute inset-0 bg-gradient-to-t from-[#382821] via-[#382821]/40 to-transparent">
                 </div>
 
-
-
                 <div class="absolute bottom-0 p-8">
-
-
-                    <span class="text-[#d4a15a] text-xs tracking-[0.4em]">
-                        {{item.number}}
-                    </span>
-
 
                     <h3 class="mt-5 font-title text-4xl text-white">
                         {{item.title | transloco}}
                     </h3>
 
-
                     <p class="mt-4 text-white/75 leading-7">
                         {{item.short | transloco}}
                     </p>
-
 
                     <div class="mt-8 flex items-center gap-4 text-[#d4a15a] uppercase tracking-[0.3em] text-xs">
 
@@ -74,16 +57,10 @@
 
                     </div>
 
-
                 </div>
-
 
             </article>
 
-            }
-
         </div>
-
     </div>
-
 </section>
