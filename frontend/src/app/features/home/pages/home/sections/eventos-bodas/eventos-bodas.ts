@@ -1,9 +1,10 @@
+import { RouterLink } from '@angular/router';
 import { Component, signal } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-eventos-bodas',
-  imports: [TranslocoPipe],
+  imports: [TranslocoPipe, RouterLink],
   templateUrl: './eventos-bodas.html',
   styleUrl: './eventos-bodas.css',
 })

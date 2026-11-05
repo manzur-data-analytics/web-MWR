@@ -3,7 +3,6 @@ import { Component, HostListener, signal } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
 import { TranslocoService } from '@jsverse/transloco';
 import { inject } from '@angular/core';
-import { BookingModal } from '../../shared/components/booking-modal/booking-modal';
 import { ModalService } from '../../shared/services/modal-service';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
@@ -40,18 +39,7 @@ export class Navbar {
   private langMenuOpen = signal(false);
   isLangMenuOpen = this.langMenuOpen.asReadonly();
 
-  // --- Data-driven nav---
-  /* navItems = [
-     { route: '/', label: 'NAVBAR.INICIO' },
-     { route: '/alojamiento', label: 'NAVBAR.ALOJAMIENTO' },
-     { route: '/gastronomia', label: 'NAVBAR.GASTRONOMIA' },
-     { route: '/eventos', label: 'NAVBAR.EVENTOS' },
-     { route: '/spa', label: 'NAVBAR.SPA' },
-     { route: '/experiencias', label: 'NAVBAR.EXPERIENCIAS' },
-     { route: '/nosotros', label: 'NAVBAR.NOSOTROS' }
-   ];*/
-
-  navItems = [
+  navItems: NavItem[] = [
     { route: '/', label: 'NAVBAR.INICIO' },
     { route: '/alojamiento', label: 'NAVBAR.ALOJAMIENTO' },
     { route: '/gastronomia', label: 'NAVBAR.GASTRONOMIA' },
@@ -61,13 +49,9 @@ export class Navbar {
     {
       label: 'NAVBAR.NOSOTROS',
       isOpen: false, // Controla si se abre en mobile
-      /* children: [
-         { label: 'Nosotros 1', route: '/nosotros' },
-         { label: 'Nosotros 2', route: '/nosotros-2' }
-       ]*/
       children: [
-        { label: 'Nosotros 1', route: '/' },
-        { label: 'Nosotros 2', route: '/' }
+        { label: 'Nosotros 1', route: '/nosotros' },
+        { label: 'Nosotros 2', route: '/nosotros-2' }
       ]
     },
   ];

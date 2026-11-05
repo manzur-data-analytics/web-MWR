@@ -1,9 +1,10 @@
+import { RouterLink } from '@angular/router';
 import { Component, inject, OnInit, signal } from '@angular/core';
 import { TranslocoPipe, TranslocoService } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-alojamiento',
-  imports: [TranslocoPipe],
+  imports: [TranslocoPipe, RouterLink],
   templateUrl: './alojamiento.html',
   styleUrl: './alojamiento.css',
 })
