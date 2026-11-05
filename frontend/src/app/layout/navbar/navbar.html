@@ -33,9 +33,21 @@
 
             <ng-container *ngFor="let item of navItems">
 
-                <!-- Item normal -->
+                <!-- Item normal 
                 <a *ngIf="!item.children" [routerLink]="item.route" routerLinkActive="active"
                     [routerLinkActiveOptions]="{ exact: item.route === '/' }"
+                    class="group relative flex items-center justify-center text-center min-h-[48px] min-w-[105px] font-body uppercase text-[13px] tracking-[0.25em] font-normal leading-5"
+                    [ngClass]="navLinkClass()">
+
+                    <span>{{ item.label | transloco }}</span>
+
+                    <span
+                        class="absolute left-1/2 -bottom-0.5 h-px w-0 bg-current transition-all duration-300 group-hover:w-full group-hover:left-0">
+                    </span>
+
+                </a>-->
+
+                <a *ngIf="!item.children"
                     class="group relative flex items-center justify-center text-center min-h-[48px] min-w-[105px] font-body uppercase text-[13px] tracking-[0.25em] font-normal leading-5"
                     [ngClass]="navLinkClass()">
 
@@ -121,7 +133,7 @@
             </div>
 
             <!-- Desktop CTA -->
-            <a href="javascript:void(0)" (click)="openBookingModal()"
+            <a href="javascript:void(0)"
                 class="font-body uppercase text-[12px] tracking-[0.25em] font-medium px-6 py-3 rounded-full border transition-all duration-300"
                 [ngClass]="scrolled
                 ? 'text-white bg-stone-900 border-stone-900 hover:bg-stone-700'
@@ -155,64 +167,96 @@
 
     <!-- Encabezado del Drawer -->
     <div class="flex justify-between items-center p-6 border-b sticky top-0 bg-white z-10">
+
         <img src="/inicio/logo/logomwr.png" alt="Hotel" class="h-9 w-auto" />
+
         <button (click)="closeMenu()" class="text-3xl leading-none text-stone-700 hover:text-black"
-            aria-label="Cerrar menú">×</button>
+            aria-label="Cerrar menú">
+            ×
+        </button>
+
     </div>
+
 
     <!-- Navegación Móvil -->
     <nav class="flex flex-col p-6 space-y-1">
 
         <ng-container *ngFor="let item of navItems">
 
-            <!-- 1. Enlace Normal (Sin hijos) -->
-            <a *ngIf="!item.children" [routerLink]="item.route" (click)="closeMenu()"
-                class="py-4 border-b uppercase tracking-widest text-stone-800 text-sm font-medium block">
+            <!-- ENLACE NORMAL - SIN ROUTING POR AHORA -->
+            <button *ngIf="!item.children" type="button"
+                class="w-full text-left py-4 border-b uppercase tracking-widest text-stone-800 text-sm font-medium">
                 {{ item.label | transloco }}
-            </a>
+            </button>
 
-            <!-- 2. Enlace con Submenú / Acordeón -->
+
+            <!-- ENLACE CON SUBMENÚ / ACORDEÓN -->
             <div *ngIf="item.children" class="border-b">
-                <!-- Botón Padre del Acordeón -->
+
+                <!-- Botón Padre -->
                 <button (click)="item.isOpen = !item.isOpen" type="button"
                     class="w-full py-4 flex items-center justify-between uppercase tracking-widest text-stone-800 text-sm font-medium">
-                    <span>{{ item.label | transloco }}</span>
+
+                    <span>
+                        {{ item.label | transloco }}
+                    </span>
 
                     <svg xmlns="http://www.w3.org/2000/svg"
                         class="w-4 h-4 transition-transform duration-300 text-stone-500"
                         [ngClass]="{ 'rotate-180': item.isOpen }" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+
                     </svg>
+
                 </button>
 
-                <!-- Submenú desplegable Móvil -->
+
+                <!-- Submenú -->
                 <div *ngIf="item.isOpen" class="pl-4 pb-3 space-y-2 bg-stone-50/80 rounded-lg mb-2 pt-2">
-                    <a *ngFor="let child of item.children" [routerLink]="child.route" (click)="closeMenu()"
-                        class="block py-2.5 px-3 text-xs uppercase tracking-wider text-stone-600 hover:text-stone-900 font-medium">
+
+                    <!-- HIJOS SIN ROUTING POR AHORA -->
+                    <button *ngFor="let child of item.children" type="button"
+                        class="block w-full text-left py-2.5 px-3 text-xs uppercase tracking-wider text-stone-600 hover:text-stone-900 font-medium">
+
                         • {{ child.label | transloco }}
-                    </a>
+
+                    </button>
+
                 </div>
+
             </div>
 
         </ng-container>
 
-        <!-- Selección de Idiomas Móvil -->
+
+        <!-- Selección de Idiomas -->
         <div class="flex justify-center gap-5 pt-8 pb-2" role="group">
+
             <button *ngFor="let lang of languages" (click)="changeLanguage(lang.code); closeMenu()"
                 [attr.aria-current]="currentLanguage() === lang.code ? 'true' : null"
-                class="font-body text-sm tracking-[0.3em] text-stone-700"
-                [ngClass]="{ 'font-semibold underline underline-offset-4': currentLanguage() === lang.code }">
+                class="font-body text-sm tracking-[0.3em] text-stone-700" [ngClass]="{
+                    'font-semibold underline underline-offset-4':
+                    currentLanguage() === lang.code
+                }">
+
                 {{ lang.code.toUpperCase() }}
+
             </button>
+
         </div>
 
-        <!-- Botón de Reserva Móvil -->
-        <a routerLink="/reservar" (click)="closeMenu()"
-            class="mt-6 bg-amber-700 text-white text-center py-3.5 rounded-full uppercase tracking-widest text-xs font-semibold shadow-md active:scale-95 transition-transform">
+
+        <!-- RESERVAR - NO HACE NADA -->
+        <button type="button"
+            class="mt-6 bg-amber-700 text-white text-center py-3.5 rounded-full uppercase tracking-widest text-xs font-semibold shadow-md">
+
             {{ 'NAVBAR.RESERVAR' | transloco }}
-        </a>
+
+        </button>
 
     </nav>
+
 </aside>
 
 <!-- Drawer --

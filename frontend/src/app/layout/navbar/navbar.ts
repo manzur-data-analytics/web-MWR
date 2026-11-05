@@ -61,9 +61,13 @@ export class Navbar {
     {
       label: 'NAVBAR.NOSOTROS',
       isOpen: false, // Controla si se abre en mobile
+      /* children: [
+         { label: 'Nosotros 1', route: '/nosotros' },
+         { label: 'Nosotros 2', route: '/nosotros-2' }
+       ]*/
       children: [
-        { label: 'Nosotros 1', route: '/nosotros' },
-        { label: 'Nosotros 2', route: '/nosotros-2' }
+        { label: 'Nosotros 1', route: '/' },
+        { label: 'Nosotros 2', route: '/' }
       ]
     },
   ];

@@ -14,7 +14,7 @@ import { WhatsappButton } from './shared/components/whatsapp-button/whatsapp-but
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('hotel-front');
+  protected readonly title = signal('frontend');
 
   constructor(
     private smooth: SmoothScrollService,
