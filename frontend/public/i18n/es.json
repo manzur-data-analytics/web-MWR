@@ -1,0 +1,449 @@
+{
+    "NAVBAR": {
+        "INICIO": "Inicio",
+        "ALOJAMIENTO": "Alojamiento",
+        "GASTRONOMIA": "Gastronomía",
+        "EVENTOS": "Eventos",
+        "SPA": "Spa",
+        "EXPERIENCIAS": "Experiencias",
+        "NOSOTROS": "Nosotros",
+        "RESERVAR": "Reservar"
+    },
+    "HOME": {
+        "TITLE": "Próximamente",
+        "DESCRIPTION": "Descubrí un nuevo concepto de hospitalidad donde el diseño, la naturaleza y el confort se unen para crear una experiencia única.",
+        "ACCOMMODATION": {
+            "SUBTITLE": "Alojamiento",
+            "TITLE": "Suites y villas concebidas para el descanso absoluto.",
+            "DESCRIPTION": "Espacios donde la arquitectura contemporánea dialoga con la naturaleza para brindar privacidad, confort y una experiencia de hospitalidad excepcional. Cada ambiente ha sido diseñado para disfrutar del tiempo con calma, rodeado de paisajes únicos y detalles cuidadosamente seleccionados.",
+            "BUTTON": "Reservar"
+        },
+        "GASTRONOMY": {
+            "PREVIEW": {
+                "SUBTITLE": "Experiencia Gastronómica",
+                "TITLE": "Sabores que nacen de nuestra tierra",
+                "DESCRIPTION": "Una propuesta culinaria donde los productos regionales, el vino de altura y la creatividad de nuestro equipo se unen para crear momentos inolvidables.",
+                "BUTTON": "Descubrir gastronomía"
+            }
+        },
+        "EVENTS": {
+            "SUBTITLE": "Eventos & Bodas",
+            "TITLE": "Momentos únicos, celebraciones inolvidables",
+            "DESCRIPTION": "Creamos experiencias exclusivas para bodas, eventos sociales y encuentros corporativos, combinando elegancia, gastronomía y un entorno excepcional.",
+            "CARD1": "Bodas",
+            "CARD1_DESC": "Celebraciones diseñadas para crear recuerdos inolvidables.",
+            "CARD2": "Eventos Sociales",
+            "CARD2_DESC": "Experiencias privadas adaptadas a cada ocasión.",
+            "CARD3": "Corporativos",
+            "CARD3_DESC": "Espacios ideales para reuniones y encuentros empresariales.",
+            "FORM": {
+                "SUBTITLE": "Solicitar propuesta",
+                "TITLE": "Comencemos a planificar tu evento",
+                "NAME": "Nombre completo",
+                "EMAIL": "Correo electrónico",
+                "DATE": "Fecha del evento",
+                "GUESTS": "Cantidad de invitados",
+                "MESSAGE": "Contanos sobre tu evento",
+                "BUTTON": "Enviar solicitud"
+            },
+            "MORE": "Descubrir eventos"
+        },
+        "SPA": {
+            "SUBTITLE": "Wellness Wine Spa",
+            "TITLE": "Un espacio dedicado al bienestar.",
+            "DESCRIPTION": "Piscinas climatizadas, circuito de spa, salas de relax y tratamientos inspirados en el vino y los paisajes de la Quebrada.",
+            "ITEM1": "Circuito húmedo y seco",
+            "ITEM2": "Masajes y tratamientos exclusivos",
+            "ITEM3": "Spa Day para huéspedes y visitantes",
+            "BUTTON": "Descubrir el Spa",
+            "RESERVE": "Reservar Dia Spa"
+        },
+        "EXPERIENCES": {
+            "SUBTITLE": "Experiencias",
+            "TITLE": "Mucho más que una estadía",
+            "DESCRIPTION": "Descubra momentos pensados para conectar con la naturaleza, la gastronomía y el descanso en un entorno único.",
+            "PICNIC_TITLE": "Canastas Picnic",
+            "PICNIC_DESC": "Disfrute un picnic gourmet entre jardines y paisajes naturales preparados especialmente para usted.",
+            "WINE_TITLE": "Degustación de Vinos",
+            "WINE_DESC": "Recorra una cuidada selección de etiquetas regionales acompañadas por productos locales.",
+            "SUNSET_TITLE": "Experiencias al Atardecer",
+            "SUNSET_DESC": "Relájese mientras contempla el paisaje acompañado por música, gastronomía y una copa de vino.",
+            "BUTTON": "Descubrir experiencia"
+        },
+        "ABOUT": {
+            "SUBTITLE": "Nuestra historia",
+            "TITLE": "Un legado construido con pasión y familia",
+            "DESCRIPTION": "Desde generaciones atrás, esta finca guarda historias, recuerdos y una forma única de recibir a quienes nos visitan. Hoy continuamos ese legado combinando tradición, naturaleza y hospitalidad.",
+            "GENERATIONS": "Generaciones",
+            "YEARS": "Años de historia",
+            "BUTTON": "Conocer nuestra historia"
+        }
+    },
+    "ACCOMMODATION": {
+        "HERO": {
+            "SUBTITLE": "Habitaciones & Suites",
+            "TITLE": "Descansar también puede ser una experiencia.",
+            "DESCRIPTION": "Cada habitación fue concebida para ofrecer privacidad, amplitud y vistas privilegiadas a los viñedos y la Quebrada de Humahuaca, combinando diseño contemporáneo con materiales nobles de la región.",
+            "BUTTON": "Descubrir habitaciones",
+            "SECOND_BUTTON": "Reservar"
+        },
+        "EXPERIENCE": {
+            "SUBTITLE": "La experiencia",
+            "TITLE": "Mucho más que una habitación.",
+            "DESCRIPTION": "Cada estancia está pensada para conectar descanso, naturaleza y hospitalidad en un entorno único.",
+            "HEADING": "Detalles que hacen la diferencia",
+            "TEXT": "Desde el desayuno regional hasta el acceso al Wine Spa y la atención personalizada, cada momento está diseñado para que la experiencia sea inolvidable.",
+            "AMENITY1": "Desayuno regional",
+            "AMENITY1_DESC": "Productos frescos, panificados artesanales y sabores locales.",
+            "AMENITY2": "Wine Spa",
+            "AMENITY2_DESC": "Acceso a espacios de bienestar seco y húmedo.",
+            "AMENITY3": "Piscina & Solárium",
+            "AMENITY3_DESC": "Piscina climatizada con vistas privilegiadas.",
+            "AMENITY4": "Concierge",
+            "AMENITY4_DESC": "Reservas, experiencias y atención personalizada."
+        },
+        "CTA": {
+            "SUBTITLE": "Su próxima estadía comienza aquí",
+            "TITLE": "Permítanos preparar una experiencia inolvidable.",
+            "DESCRIPTION": "Nuestro equipo estará encantado de ayudarlo a elegir la habitación ideal y responder cualquier consulta sobre su próxima visita.",
+            "BUTTON": "Reservar por WhatsApp"
+        }
+    },
+    "GASTRONOMY": {
+        "HERO": {
+            "SUBTITLE": "Hilario Restaurante",
+            "TITLE": "Una experiencia gastronómica que celebra el territorio.",
+            "DESCRIPTION": "Un restaurante que recupera los sabores, ingredientes y tradiciones del norte argentino para reinterpretarlos desde una mirada contemporánea.",
+            "RESERVE": "Reservar mesa",
+            "MENU": "Ver menú",
+            "CARD_TITLE": "La experiencia",
+            "CARD_ITEM_1": "Cocina de autor",
+            "CARD_ITEM_2": "Ingredientes regionales",
+            "CARD_ITEM_3": "Selección de vinos"
+        },
+        "EXPERIENCE": {
+            "SUBTITLE": "Restaurante",
+            "TITLE": "Hilario",
+            "DESCRIPTION": "Nuestro restaurante recupera la historia del primer encargado de la finca. Respeta el origen de sus productos y encuentra nuevas formas de expresar una cultura gastronómica llena de carácter.",
+            "MENU_DESCRIPTION": "La propuesta se recorre en un menú de pasos que se renueva con las estaciones, acompañado por los vinos de nuestra bodega, El Bayeh.",
+            "TRADITION_DESCRIPTION": "La tradición es el punto de partida. La creatividad, la técnica y la sensibilidad contemporánea son el camino para llevarla a otro nivel.",
+            "RESTAURANT_IMAGE_ALT": "Ossobuco del restaurante Hilario",
+            "WINE_BAR": {
+                "SUBTITLE": "Wine Bar",
+                "TITLE": "Una copa, frente a la paleta del pintor",
+                "DESCRIPTION": "Una propuesta para relajarse en nuestras terrazas panorámicas, mientras la luz de la tarde cambia los colores del paisaje. Platos pequeños con productos y recetas del norte, pensados para compartir y combinar con los vinos de nuestra bodega, El Bayeh, y nuestra carta de cocktails y mocktails.",
+                "IMAGE_ALT": "Copa de aperitivo en el Wine Bar"
+            },
+            "DISH_SUBTITLE": "Hilario",
+            "DISH_TITLE": "Sabores y rincones de la casa",
+            "DISH1": "Trucha ahumada",
+            "DISH2": "Nuestro horno de barro",
+            "DISH3": "Pavlova con cayote"
+        },
+        "CTA": {
+            "SUBTITLE": "Reserva tu experiencia",
+            "TITLE": "Una mesa en el corazón de la Quebrada",
+            "DESCRIPTION": "Hilario abre sus puertas en Maimará con una propuesta gastronómica pensada para crear una experiencia única.",
+            "BUTTON": "Reservar mesa",
+            "MENU": "Ver menú",
+            "IMAGE_ALT": "Vino de la bodega El Bayeh"
+        }
+    },
+    "EVENTS": {
+        "HERO": {
+            "SUBTITLE": "Eventos & Bodas",
+            "TITLE": "Celebraciones en el corazón de la Quebrada",
+            "DESCRIPTION": "Bodas, encuentros sociales y eventos corporativos rodeados por los cerros de Maimará. Espacios al aire libre y salones privados, con un equipo que acompaña cada detalle.",
+            "BUTTON": "Solicitar cotización"
+        },
+        "OFFERS": {
+            "SUBTITLE": "Nuestra propuesta",
+            "TITLE": "Eventos diseñados para momentos únicos",
+            "WEDDINGS": {
+                "TITLE": "Bodas"
+            },
+            "SOCIAL": {
+                "TITLE": "Eventos sociales"
+            },
+            "CORPORATE": {
+                "TITLE": "Eventos corporativos"
+            },
+            "CAROUSEL": {
+                "LABEL": "Carrusel",
+                "PREVIOUS": "Foto anterior",
+                "NEXT": "Foto siguiente",
+                "GO_TO": "Ir a la foto"
+            }
+        },
+        "SPACES": {
+            "SUBTITLE": "Nuestros espacios",
+            "TITLE": "Ambientes creados para cada celebración",
+            "PLAN_CAPTION": "Distribución ilustrativa del espacio",
+            "SALON": {
+                "TITLE": "Salón principal",
+                "DESCRIPTION": "Un ambiente elegante preparado para grandes celebraciones.",
+                "CAPACITY": "Hasta 200 invitados"
+            },
+            "GARDEN": {
+                "TITLE": "Jardines exteriores",
+                "DESCRIPTION": "Espacios naturales ideales para ceremonias y recepciones.",
+                "CAPACITY": "Eventos al aire libre"
+            },
+            "PRIVATE": {
+                "TITLE": "Espacios privados",
+                "DESCRIPTION": "Sectores exclusivos para encuentros íntimos.",
+                "CAPACITY": "Reuniones privadas"
+            }
+        },
+        "QUOTE": {
+            "SUBTITLE": "Solicitud de cotización",
+            "TITLE": "Comencemos a planificar tu próximo evento",
+            "DESCRIPTION": "Compartí con nosotros los detalles de la celebración y nuestro equipo diseñará una propuesta personalizada adaptada a tus necesidades.",
+            "EXPERIENCE": "Experiencias memorables",
+            "EXPERIENCE_TITLE": "Cada celebración merece un escenario excepcional",
+            "EXPERIENCE_DESCRIPTION": "Nuestro equipo acompaña cada etapa de la planificación para que solo tengas que disfrutar del momento.",
+            "STAT1_NUMBER": "200+",
+            "STAT1_LABEL": "Invitados",
+            "STAT2_NUMBER": "4",
+            "STAT2_LABEL": "Espacios exclusivos",
+            "STAT3_NUMBER": "100%",
+            "STAT3_LABEL": "Atención personalizada",
+            "EVENT_TYPE": "Tipo de evento",
+            "WEDDING": "Boda",
+            "SOCIAL": "Evento social",
+            "CORPORATE": "Evento corporativo",
+            "OTHER": "Otro",
+            "NAME": "Nombre completo",
+            "EMAIL": "Correo electrónico",
+            "PHONE": "Teléfono",
+            "GUESTS": "Cantidad aproximada de invitados",
+            "BUDGET": "Presupuesto estimado",
+            "MESSAGE": "Contanos cómo imaginás tu evento...",
+            "BUTTON": "Solicitar propuesta",
+            "DATE_TYPE": "¿Ya tenés una fecha definida?",
+            "EXACT_DATE": "Fecha exacta",
+            "MONTH_ONLY": "Mes aproximado"
+        }
+    },
+    "SPA": {
+        "HERO": {
+            "SUBTITLE": "Wellness Wine Spa",
+            "TITLE": "Un refugio donde el tiempo se detiene.",
+            "DESCRIPTION": "Piscinas, circuito húmedo y seco, vinoterapia y tratamientos pensados para recuperar el equilibrio entre cuerpo y mente en el corazón de la Quebrada.",
+            "BUTTON": "Reservar Dia de Spa",
+            "TREATMENTS": "Menú de Tratamiento"
+        },
+        "GALLERY": {
+            "SUBTITLE": "ESPACIOS",
+            "TITLE": "Cada rincón invita a desconectar.",
+            "DESCRIPTION": "Piscina climatizada, salas de relax, circuito húmedo y seco y espacios concebidos para recuperar el equilibrio entre cuerpo y mente.",
+            "POOL": "Piscina climatizada",
+            "RELAX": "Sala de relajación",
+            "CIRCUIT": "Circuito de Spa"
+        },
+        "TREATMENTS": {
+            "SUBTITLE": "TRATAMIENTOS",
+            "TITLE": "Rituales pensados para recuperar el equilibrio.",
+            "MASSAGE": "Masajes Terapéuticos",
+            "MASSAGE_DESC": "Técnicas relajantes y descontracturantes realizadas por terapeutas especializados.",
+            "WINE": "Wine Therapy",
+            "WINE_DESC": "Tratamiento inspirado en las propiedades antioxidantes de la vid y el vino.",
+            "FACIAL": "Faciales Premium",
+            "FACIAL_DESC": "Protocolos de hidratación y revitalización para una experiencia completa.",
+            "CIRCUIT": "Circuito Húmedo y Seco",
+            "CIRCUIT_DESC": "Piscina climatizada, sauna seco, sauna húmedo y espacios de relajación."
+        },
+        "DAY": {
+            "SUBTITLE": "DIA DE SPA",
+            "TITLE": "Un día completo dedicado al bienestar.",
+            "DESCRIPTION": "Disfrutá una jornada diseñada para desconectar del ritmo cotidiano, con acceso al circuito de spa, tratamientos exclusivos y momentos de relajación en un entorno único.",
+            "BUTTON": "Reservar Dia Spa"
+        }
+    },
+    "EXPERIENCES": {
+        "HERO": {
+            "SUBTITLE": "Experiencias Exclusivas",
+            "TITLE": "Momentos únicos inspirados en la esencia del valle",
+            "DESCRIPTION": "Desde picnics entre viñedos hasta degustaciones privadas y recorridos por bodegas, cada experiencia ha sido diseñada para conectar con la naturaleza, el vino y la hospitalidad que distinguen a MWR Hotel.",
+            "BUTTON": "Descubrir experiencias"
+        },
+        "SIGNATURE": {
+            "SUBTITLE": "Experiencias exclusivas",
+            "TITLE": "Momentos que se quedan con vos",
+            "DESCRIPTION": "Cuatro experiencias diseñadas para quienes buscan algo más que una estadía: recuerdos que perduran mucho después del check-out.",
+            "VIEW_GALLERY": "Ver galería",
+            "RESERVE": "Reservar",
+            "PANEL_DURATION": "Duración",
+            "PANEL_AVAILABILITY": "Disponibilidad",
+            "PANEL_MODE": "Modalidad",
+            "PANEL_RESERVE": "Reservar experiencia",
+            "FEATURE_WINE": "Vino",
+            "FEATURE_PICNIC": "Picnic",
+            "FEATURE_GROUP_SMALL": "2-6 personas",
+            "FEATURE_LABELS": "6 etiquetas",
+            "FEATURE_GOURMET": "Gourmet",
+            "FEATURE_SOMMELIER": "Sommelier",
+            "FEATURE_TRANSFER": "Traslado",
+            "FEATURE_WINERY": "Bodega",
+            "FEATURE_TASTING": "Degustación",
+            "FEATURE_GROUP_REDUCED": "Grupos reducidos",
+            "FEATURE_SUNSET": "Sunset",
+            "FEATURE_SPARKLING": "Espumantes",
+            "FEATURE_MUSIC": "Música",
+            "FEATURE_EXCLUSIVE": "Exclusivo",
+            "PICNIC_CATEGORY": "Al aire libre",
+            "PICNIC_TITLE": "Picnic Privado al Atardecer",
+            "PICNIC_DESC": "Una mesa vestida de blanco entre los viñedos, copas de vino reserva y una selección de quesos y fiambres artesanales, mientras el sol se despide detrás de la cordillera.",
+            "PICNIC_DURATION": "4 horas",
+            "PICNIC_AVAILABILITY": "Todo el año",
+            "PICNIC_MODE": "Privado, al aire libre",
+            "WINE_CATEGORY": "Gastronomía",
+            "WINE_TITLE": "Cata Maridaje de Autor",
+            "WINE_DESC": "Seis etiquetas seleccionadas por nuestro sommelier, maridadas con pasos gourmet pensados para resaltar cada varietal. Una experiencia sensorial de principio a fin.",
+            "WINE_DURATION": "2 horas",
+            "WINE_AVAILABILITY": "De miércoles a domingo",
+            "WINE_MODE": "Indoor, grupos reducidos",
+            "BODEGA_CATEGORY": "Enoturismo",
+            "BODEGA_TITLE": "Tour Exclusivo de Bodega",
+            "BODEGA_DESC": "Recorré los viñedos y las barricas centenarias de una de las bodegas más prestigiosas de la región, con traslado incluido y degustación guiada al finalizar.",
+            "BODEGA_DURATION": "3 horas",
+            "BODEGA_AVAILABILITY": "Con reserva previa",
+            "BODEGA_MODE": "Traslado incluido",
+            "SUNSET_CATEGORY": "Rooftop",
+            "SUNSET_TITLE": "Sunset Sessions Rooftop",
+            "SUNSET_DESC": "Espumantes helados, música en vivo y la mejor vista de la propiedad para despedir el día. Una experiencia exclusiva para huéspedes que buscan algo distinto.",
+            "SUNSET_DURATION": "2 horas",
+            "SUNSET_AVAILABILITY": "Viernes y sábados",
+            "SUNSET_MODE": "Rooftop, cupos limitados"
+        },
+        "CALENDAR": {
+            "SUBTITLE": "Agenda de experiencias",
+            "TITLE": "Viví momentos únicos durante tu estadía",
+            "DESCRIPTION": "Consultá las experiencias disponibles y reservá actividades exclusivas diseñadas para descubrir nuevos sabores, paisajes y momentos inolvidables.",
+            "MONTH": "Julio 2026",
+            "EVENT_WINE": "Cata de vinos",
+            "EVENT_PICNIC": "Picnic privado",
+            "EVENT_SUNSET": "Sunset exclusivo",
+            "EVENT_BODEGA": "Visita a bodega",
+            "SELECT_DAY": "Seleccionar fecha",
+            "AVAILABLE": "Disponible",
+            "RESERVE": "Reservar experiencia"
+        },
+        "CTA": {
+            "SUBTITLE": "Experiencias exclusivas",
+            "TITLE": "Tu próxima historia comienza aquí",
+            "DESCRIPTION": "Descubrí momentos únicos diseñados para transformar una estadía en un recuerdo inolvidable.",
+            "RESERVE": "Reservar experiencia",
+            "EXPLORE": "Explorar experiencias"
+        }
+    },
+    "ABOUT": {
+        "HERO": {
+            "SUBTITLE": "Hospitalidad & Tradición Quebradeña",
+            "TITLE": "Nuestra Historia",
+            "DESCRIPTION": "Un proyecto familiar nacido en el corazón de Maimará, donde abrimos las puertas de nuestro hotel para compartir la magia de despertar frente a nuestros propios viñedos de altura."
+        },
+        "RELATO": {
+            "SUBTITLE": "Relato Familiar",
+            "TITLE": "Un hogar entre los cerros y las vides",
+            "PARAGRAPH1": "Nuestra historia comenzó con el sueño de dar cobijo a los viajeros en la Quebrada y echar raíces en el suelo sagrado de Maimará.",
+            "PARAGRAPH2": "Al frente de nuestro hotel plantamos las primeras hileras de viñedos, combinando la calidez de la hospitalidad familiar con la pasión enológica de altura.",
+            "PARAGRAPH3": "Cada amanecer, nuestros huéspedes contempla el despertar del viñedo bajo la imponencia de los cerros colorados que custodian nuestra casa.",
+            "QUOTE": "Recibir a quien llega no es solo ofrecer un lugar donde descansar; es compartir nuestro vino, nuestra tierra y nuestra familia.",
+            "SIGNATURE_ALT": "Firma de la familia"
+        },
+        "HISTORY": {
+            "SUBTITLE": "Hitos Destacados",
+            "TITLE": "Un Viaje a Través de las Décadas",
+            "QUOTE": "Honrar nuestras raíces en Maimará construyendo un refugio para el alma y los sentidos.",
+            "ITEM1_TITLE": "Cimientos de la Casa",
+            "ITEM1_TEXT": "Abrimos las puertas de nuestro hotel familiar abriendo paso a la hospitalidad en el pueblo.",
+            "ITEM2_TITLE": "Plantación del Viñedo",
+            "ITEM2_TEXT": "Transformamos el terreno frente al hotel en un viñedo de extrema altura rodeado de cerros.",
+            "ITEM3_TITLE": "Primera Cosecha",
+            "ITEM3_TEXT": "Celebramos nuestra primera vendimia artesanal, compartida directamente con nuestros huéspedes.",
+            "ITEM4_TITLE": "Experiencia Integral",
+            "ITEM4_TEXT": "Consolidamos una propuesta única donde hotelería, gastronomía autóctona y vino conviven en armonía."
+        },
+        "TERRITORIO": {
+            "SUBTITLE": "Terroir de Extrema Altura",
+            "TITLE": "El Territorio nos Define",
+            "TEXT1": "Ubicados en Maimará, en plena Quebrada de Humahuaca, nuestras vides crecen bajo un sol radiante, aire puro de montaña y riego con agua limpia de deshielo.",
+            "TEXT2": "La notable amplitud térmica y la altitud le otorgan a nuestras uvas un carácter concentrado, expresivo y de identidad única.",
+            "STAT1_VALUE": "2.390",
+            "STAT1_LABEL": "Metros de Altitud",
+            "STAT2_VALUE": "100%",
+            "STAT2_LABEL": "Atención Familiar"
+        },
+        "LOCATION": {
+            "SUBTITLE": "Nuestra Ubicación",
+            "TITLE": "El Origen en la Tierra",
+            "DESCRIPTION": "Ubicados en el pintoresco pueblo de Maimará, frente a la imponente Paleta del Pintor. Nuestro hotel y viñedo ofrecen un marco natural sin igual en el corazón de la Quebrada de Humahuaca.",
+            "ALTITUDE_VALUE": "2390m",
+            "ALTITUDE_LABEL": "Sobre el nivel del mar",
+            "LATITUDE_VALUE": "S 23° 37'",
+            "LATITUDE_LABEL": "Latitud Sur",
+            "MAP_BTN": "Ver mapa interactivo",
+            "CARD_TITLE": "Hotel & Viñedo Familiar",
+            "CARD_ADDRESS": "Maimará, Quebrada de Humahuaca, Jujuy, Argentina."
+        },
+        "FINCAS": {
+            "SUBTITLE": "Nuestras Parcelas",
+            "TITLE": "Suelos Quebradeños & Altitud",
+            "HA_UNIT": "HA",
+            "MSNM_UNIT": "MSNM",
+            "ITEM1_NAME": "Parcela El Viñedo del Frente",
+            "ITEM1_LOCATION": "Maimará (Frente al Hotel)",
+            "ITEM1_TEXT": "Ubicada justo cruzando nuestra entrada, recibe el sol pleno de la mañana y la vista directa a la Paleta del Pintor.",
+            "ITEM1_VARIETALS": "Malbec · Syrah",
+            "ITEM2_NAME": "Parcela La Falda",
+            "ITEM2_LOCATION": "Maimará",
+            "ITEM2_TEXT": "Suelos pedregosos y francos que potencian la frescura y elegancia de varietales blancos.",
+            "ITEM2_VARIETALS": "Torrontés · Sauvignon Blanc",
+            "ITEM3_NAME": "Parcela Los Cerros",
+            "ITEM3_LOCATION": "Maimará",
+            "ITEM3_TEXT": "Terreno mineral expuesto a gran amplitud térmica para tintos concentrados y de gran personalidad.",
+            "ITEM3_VARIETALS": "Cabernet Franc · Tannat",
+            "ITEM4_NAME": "Parcela El Mirador",
+            "ITEM4_LOCATION": "Quebrada de Humahuaca",
+            "ITEM4_TEXT": "Vides a extrema altura dedicadas a la producción limitada de ediciones especiales de la casa.",
+            "ITEM4_VARIETALS": "Pinot Noir · Malbec de Altura"
+        },
+        "COMPROMISO": {
+            "SUBTITLE": "Sustentabilidad",
+            "TITLE": "Respeto Absoluto por la Naturaleza",
+            "TEXT": "Honramos a la Pachamama trabajando la tierra con prácticas orgánicas y conscientes, protegiendo el ecosistema andino y garantizando la sustentabilidad de nuestra finca."
+        },
+        "PILARES": {
+            "SUBTITLE": "Nuestros Valores",
+            "TITLE": "El Arte de Recibir",
+            "ITEM1_SUBTITLE": "Hospitalidad",
+            "ITEM1_TITLE": "Calidez Familiar",
+            "ITEM1_TEXT": "Cada huésped es recibido como parte de nuestro hogar, brindando una atención personalizada en cada detalle.",
+            "ITEM2_SUBTITLE": "Terroir",
+            "ITEM2_TITLE": "Vinos de Altura",
+            "ITEM2_TEXT": "Elaboramos vinos que reflejan fielmente el clima, el sol y el suelo mineral de Maimará.",
+            "ITEM3_SUBTITLE": "Entorno",
+            "ITEM3_TITLE": "Conexión con la Naturaleza",
+            "ITEM3_TEXT": "Abrir la ventana y encontrarse con el viñedo y los cerros es el corazón de nuestra propuesta."
+        }
+    },
+    "BOOKING": {
+        "SUBTITLE": "Reserva online",
+        "TITLE": "Reservá tu estadía",
+        "DESCRIPTION": "Seleccioná las fechas y cantidad de huéspedes para continuar con tu reserva.",
+        "CHECK_IN": "Entrada",
+        "CHECK_OUT": "Salida",
+        "ADULTS": "Adultos",
+        "CHILDREN": "Niños",
+        "NOTICE": "Al continuar serás redirigido a nuestra plataforma segura de reservas para completar la operación.",
+        "BUTTON": "Ver disponibilidad"
+    },
+    "FOOTER": {
+        "DESCRIPTION": "Un refugio donde la naturaleza, la arquitectura y la hospitalidad se encuentran para crear momentos inolvidables.",
+        "NAVIGATION": "Explorar",
+        "CONTACT": "Contacto",
+        "LOCATION": "Ubicación",
+        "RIGHTS": "Todos los derechos reservados."
+    }
+}

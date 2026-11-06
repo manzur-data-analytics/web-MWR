@@ -1,0 +1,88 @@
+<section id="signature-experiences" class="relative py-24 sm:py-32 bg-[#f8f5f1] overflow-hidden z-10">
+    <!-- Imagen de fondo decorativa -->
+    <div class="background-image">
+        <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=2200&q=80"
+            alt="Fondo">
+    </div>
+
+    <!-- Luces de gradiente decorativas -->
+    <div class="absolute left-0 top-40 w-[34rem] h-[34rem] rounded-full bg-[#d4a15a]/10 blur-3xl pointer-events-none">
+    </div>
+    <div
+        class="absolute right-0 bottom-20 w-[30rem] h-[30rem] rounded-full bg-[#8e4c2f]/10 blur-3xl pointer-events-none">
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+
+        <!-- Encabezado -->
+        <div class="text-center max-w-3xl mx-auto mb-16 sm:mb-28">
+            <span class="uppercase tracking-[0.45em] text-xs text-[#8e4c2f]">
+                {{ 'EXPERIENCES.SIGNATURE.SUBTITLE' | transloco }}
+            </span>
+            <div class="w-24 h-px bg-[#d4a15a] mx-auto my-6 sm:my-8"></div>
+            <p class="text-[#6b645b] text-base sm:text-lg leading-8 sm:leading-9">
+                {{ 'EXPERIENCES.SIGNATURE.DESCRIPTION' | transloco }}
+            </p>
+        </div>
+
+        <!-- LISTADO DE EXPERIENCIAS -->
+        <article
+            class="experience-row flex flex-col lg:grid lg:grid-cols-2 gap-10 lg:gap-20 mb-20 lg:mb-32 items-center"
+            *ngFor="let exp of experiences; let i = index" [class.reverse]="i % 2 !== 0">
+
+            <!-- CONTENIDO DE LA EXPERIENCIA (SIEMPRE PRIMERO EN MÓVIL) -->
+            <div class="experience-content order-1 w-full">
+                <h3>{{ exp.titleKey | transloco }}</h3>
+                <p>{{ exp.descKey | transloco }}</p>
+
+                <!-- Características / Iconos -->
+                <div class="experience-features">
+                    <span *ngFor="let f of exp.features">
+                        {{ f.icon }} {{ f.textKey | transloco }}
+                    </span>
+                </div>
+
+                <!-- Botón de reserva -->
+                <a href="#reservar" class="experience-btn">
+                    {{ 'EXPERIENCES.SIGNATURE.RESERVE' | transloco }}
+                </a>
+            </div>
+
+            <!-- CARRETE DE FOTOS HORIZONTAL (SIEMPRE SEGUNDO EN MÓVIL) -->
+            <div class="experience-carreel-container order-2 w-full relative group">
+
+                <!-- Botones de navegación -->
+                <button (click)="carreel.scrollBy({left: -320, behavior: 'smooth'})"
+                    class="flex absolute left-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-white/90 backdrop-blur hover:bg-white text-[#382821] rounded-full items-center justify-center shadow-lg transition-all active:scale-95">
+                    ‹
+                </button>
+                <button (click)="carreel.scrollBy({left: 320, behavior: 'smooth'})"
+                    class="flex absolute right-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-white/90 backdrop-blur hover:bg-white text-[#382821] rounded-full items-center justify-center shadow-lg transition-all active:scale-95">
+                    ›
+                </button>
+
+                <!-- Contenedor del scroll horizontal -->
+                <div #carreel class="experience-carreel flex overflow-x-auto scrollbar-none snap-x snap-mandatory py-2">
+                    <div *ngFor="let imgUrl of exp.gallery; let imgIndex = index"
+                        class="carreel-item flex-none w-full h-[320px] sm:h-[420px] snap-center snap-always relative overflow-hidden rounded-md group/img shadow-md">
+
+                        <img [src]="imgUrl" [alt]="(exp.titleKey | transloco) + ' - ' + (imgIndex + 1)"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover/img:scale-105">
+
+                        <div class="absolute inset-0 bg-[#382821]/10 group-hover/img:bg-transparent transition-colors">
+                        </div>
+
+                        <!-- Indicador de foto -->
+                        <span
+                            class="absolute bottom-3 left-3 text-[11px] font-mono tracking-widest text-white/90 bg-black/50 backdrop-blur-sm px-3 py-1 rounded-full">
+                            {{ imgIndex + 1 }} / {{ exp.gallery.length }}
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+</section>

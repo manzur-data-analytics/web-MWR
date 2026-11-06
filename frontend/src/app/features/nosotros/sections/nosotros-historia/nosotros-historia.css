@@ -1,0 +1,61 @@
+/* Tipografía Elegante de Títulos */
+.font-title {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Letra Capitular (Editorial) en la primera línea del relato */
+.relato-dropcap::first-letter {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 3.8rem;
+    font-weight: 400;
+    color: #d4a15a;
+    float: left;
+    line-height: 0.8;
+    padding-right: 14px;
+    padding-top: 4px;
+}
+
+/* Cita Destacada */
+.relato-quote {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: 1.35rem;
+    line-height: 1.6;
+    color: #2a1818;
+    border-left: 2px solid #d4a15a;
+    padding-left: 20px;
+}
+
+/* -------------------------------------------------------------
+ * TARJETAS Y CONTENEDORES TIPO CRISTAL (GLASSMORPHISM)
+ * ------------------------------------------------------------- */
+.glass-card {
+    background-color: rgba(30, 16, 16, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(212, 161, 90, 0.25);
+}
+
+.glass-card:hover {
+    background-color: rgba(42, 24, 24, 0.85);
+    border-color: rgba(212, 161, 90, 0.6);
+}
+
+/* Sombra de brillo dorado sutil */
+.shadow-glow {
+    box-shadow: 0 0 15px rgba(212, 161, 90, 0.4);
+}
+
+/* -------------------------------------------------------------
+ * CONTROL DE IMÁGENES Y CAPAS STICKY
+ * ------------------------------------------------------------- */
+/* Garantiza que la imagen de fondo fija tenga un scroll ultrasuave */
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+/* Desplazamiento suave para toda la página */
+html {
+    scroll-behavior: smooth;
+}

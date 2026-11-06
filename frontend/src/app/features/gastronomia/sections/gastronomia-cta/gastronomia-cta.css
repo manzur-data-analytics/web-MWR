@@ -1,0 +1,44 @@
+
+.cta-scene {
+    position: relative;
+    display: grid;
+    isolation: isolate;
+    background: #382821;
+}
+
+.cta-backdrop {
+    position: sticky;
+    top: 0;
+    grid-area: 1 / 1;
+    align-self: start;
+    height: 100vh;
+    height: 100svh;
+    pointer-events: none;
+}
+
+.cta-shade {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgb(25 18 15 / 45%), rgb(25 18 15 / 72%) 50%, rgb(25 18 15 / 55%));
+}
+
+.cta-content {
+    position: relative;
+    z-index: 1;
+    grid-area: 1 / 1;
+    display: flex;
+    align-items: center;
+    min-height: 130vh;
+    min-height: 130svh;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cta-backdrop {
+        position: relative;
+        height: 100%;
+    }
+
+    .cta-content {
+        min-height: 640px;
+    }
+}

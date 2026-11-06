@@ -1,0 +1,207 @@
+<section class="relative py-24 lg:py-36 bg-[#f4f1ed] overflow-hidden">
+
+    <div class="absolute -right-40 top-20 w-96 h-96 rounded-full bg-[#e7dcc6]/50 blur-3xl"></div>
+
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+
+
+        <!-- HEADER -->
+
+        <div class="max-w-3xl mb-16">
+
+            <span class="uppercase tracking-[0.45em] text-xs text-[#8e4c2f]">
+                {{'EVENTS.SPACES.SUBTITLE' | transloco}}
+            </span>
+
+
+            <h2 class="mt-6 font-title text-4xl sm:text-5xl lg:text-6xl font-light text-[#382821]">
+                {{'EVENTS.SPACES.TITLE' | transloco}}
+            </h2>
+
+
+            <div class="w-24 h-px bg-[#c8b89a] mt-8"></div>
+
+        </div>
+
+
+
+
+        <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+
+
+            <!-- PLANO -->
+
+
+            <div class="relative">
+
+
+                <div class="absolute inset-0 border border-[#c8b89a] translate-x-4 translate-y-4">
+                </div>
+
+
+
+                <div class="relative bg-white shadow-xl p-8">
+
+
+                    <svg viewBox="0 0 700 500" class="w-full h-auto">
+
+
+                        <!-- terreno -->
+
+                        <rect x="40" y="320" width="620" height="130" fill="#f4f1ed" stroke="#c8b89a"
+                            stroke-width="2" />
+
+
+                        <!-- salon -->
+
+
+                        <rect x="40" y="40" width="380" height="230" fill="#e7dcc6" stroke="#382821" stroke-width="3"
+                            class="cursor-pointer" (click)="selectSpace('salon')" />
+
+
+
+                        <!-- jardin -->
+
+
+                        <rect x="450" y="40" width="210" height="230" fill="#f4f1ed" stroke="#382821" stroke-width="3"
+                            class="cursor-pointer" (click)="selectSpace('jardin')" />
+
+
+
+                        <!-- privado -->
+
+
+                        <rect x="200" y="340" width="300" height="80" fill="#ffffff" stroke="#382821" stroke-width="3"
+                            class="cursor-pointer" (click)="selectSpace('privado')" />
+
+
+
+
+                        <!-- numeros -->
+
+
+                        <circle cx="230" cy="150" r="25" fill="#8e4c2f" />
+
+                        <text x="230" y="157" text-anchor="middle" fill="white" font-size="20">
+                            01
+                        </text>
+
+
+
+                        <circle cx="550" cy="150" r="25" fill="#d4a15a" />
+
+                        <text x="550" y="157" text-anchor="middle" fill="white" font-size="20">
+                            02
+                        </text>
+
+
+
+                        <circle cx="350" cy="380" r="25" fill="#382821" />
+
+                        <text x="350" y="387" text-anchor="middle" fill="white" font-size="20">
+                            03
+                        </text>
+
+
+
+                    </svg>
+
+
+
+                    <p class="text-center mt-6 uppercase tracking-[0.3em] text-[10px] text-[#7a7a74]">
+                        {{'EVENTS.SPACES.PLAN_CAPTION' | transloco}}
+                    </p>
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+            <!-- INFORMACION -->
+
+
+            <div class="space-y-6">
+
+
+
+                @for(space of spaces; track space.id){
+
+
+                <button (click)="selectSpace(space.id)" class="w-full text-left group">
+
+
+                    <div class="flex gap-5 items-start">
+
+
+                        <span class="
+                        w-12 h-12 shrink-0
+                        flex items-center justify-center
+                        font-title
+                        text-white
+                        transition" [ngClass]="selected===space.id ? 
+                        'bg-[#8e4c2f]' :
+                        'bg-[#382821]'">
+
+                            {{space.number}}
+
+                        </span>
+
+
+
+                        <div>
+
+
+                            <h3 class="font-title text-3xl text-[#382821]">
+                                {{space.title | transloco}}
+                            </h3>
+
+
+
+                            <p class="mt-2 text-[#6b645b]">
+                                {{space.description | transloco}}
+                            </p>
+
+
+
+                            <div class="mt-3 text-sm text-[#8e4c2f]">
+
+                                {{space.capacity | transloco}}
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </button>
+
+
+                <div class="h-px bg-[#d9cfbf]"></div>
+
+
+                }
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+</section>

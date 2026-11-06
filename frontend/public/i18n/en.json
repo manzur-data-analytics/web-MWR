@@ -1,0 +1,422 @@
+{
+    "NAVBAR": {
+        "INICIO": "Home",
+        "ALOJAMIENTO": "Accommodation",
+        "GASTRONOMIA": "Dining",
+        "EVENTOS": "Events",
+        "SPA": "Spa",
+        "EXPERIENCIAS": "Experiences",
+        "NOSOTROS": "About Us",
+        "RESERVAR": "Book Now"
+    },
+    "HOME": {
+        "TITLE": "Soon",
+        "DESCRIPTION": "Discover a new hospitality experience where design, nature, and comfort come together to create unforgettable moments.",
+        "ACCOMMODATION": {
+            "SUBTITLE": "Accommodation",
+            "TITLE": "Suites and villas designed for complete tranquility.",
+            "DESCRIPTION": "Contemporary architecture meets nature to create private, refined spaces dedicated to comfort and relaxation. Every suite has been thoughtfully designed to offer an exclusive hospitality experience surrounded by breathtaking landscapes and timeless elegance.",
+            "BUTTON": "Book Now"
+        },
+        "GASTRONOMY": {
+            "PREVIEW": {
+                "SUBTITLE": "Gastronomic Experience",
+                "TITLE": "Flavors born from our land",
+                "DESCRIPTION": "A culinary proposal where local ingredients, high-altitude wines and the creativity of our team come together to create unforgettable moments.",
+                "BUTTON": "Discover gastronomy"
+            }
+        },
+        "EVENTS": {
+            "SUBTITLE": "Events & Weddings",
+            "TITLE": "Unique moments, unforgettable celebrations",
+            "DESCRIPTION": "We create exclusive experiences for weddings, social gatherings and corporate events, combining elegance, gastronomy and an exceptional setting.",
+            "CARD1": "Weddings",
+            "CARD1_DESC": "Celebrations designed to create unforgettable memories.",
+            "CARD2": "Social Events",
+            "CARD2_DESC": "Private experiences tailored to every occasion.",
+            "CARD3": "Corporate",
+            "CARD3_DESC": "Elegant spaces for meetings and business gatherings.",
+            "FORM": {
+                "SUBTITLE": "Request a proposal",
+                "TITLE": "Let's plan your event",
+                "NAME": "Full name",
+                "EMAIL": "Email address",
+                "DATE": "Event date",
+                "GUESTS": "Number of guests",
+                "MESSAGE": "Tell us about your event",
+                "BUTTON": "Send request"
+            },
+            "MORE": "Discover events"
+        },
+        "SPA": {
+            "SUBTITLE": "Wellness Wine Spa",
+            "TITLE": "A sanctuary dedicated to wellness.",
+            "DESCRIPTION": "Heated pools, spa circuit, relaxation lounges and signature wine-inspired treatments.",
+            "ITEM1": "Indoor wellness circuit",
+            "ITEM2": "Exclusive massages & therapies",
+            "ITEM3": "Spa Day experiences",
+            "BUTTON": "Discover the Spa",
+            "RESERVE": "Book Spa Day"
+        },
+        "EXPERIENCES": {
+            "SUBTITLE": "Experiences",
+            "TITLE": "More than a stay",
+            "DESCRIPTION": "Discover unique moments designed to connect you with nature, gastronomy and relaxation.",
+            "PICNIC_TITLE": "Luxury Picnic",
+            "PICNIC_DESC": "Enjoy a gourmet picnic surrounded by beautiful gardens and breathtaking scenery.",
+            "WINE_TITLE": "Wine Tasting",
+            "WINE_DESC": "Taste a curated selection of regional wines paired with local specialties.",
+            "SUNSET_TITLE": "Sunset Experiences",
+            "SUNSET_DESC": "End the day with unforgettable sunsets, fine cuisine and premium wines.",
+            "BUTTON": "Discover experience"
+        },
+        "ABOUT": {
+            "SUBTITLE": "Our story",
+            "TITLE": "A legacy built with passion and family",
+            "DESCRIPTION": "For generations, this estate has preserved stories, memories and a unique way of welcoming guests. Today we continue that legacy through tradition, nature and hospitality.",
+            "GENERATIONS": "Generations",
+            "YEARS": "Years of history",
+            "BUTTON": "Discover our story"
+        }
+    },
+    "ACCOMMODATION": {
+        "HERO": {
+            "SUBTITLE": "Rooms & Suites",
+            "TITLE": "Rest becomes an experience.",
+            "DESCRIPTION": "Every room has been designed to provide privacy, generous spaces and breathtaking vineyard views, blending contemporary comfort with the essence of Northern Argentina.",
+            "BUTTON": "Discover rooms",
+            "SECOND_BUTTON": "Reserve"
+        },
+        "EXPERIENCE": {
+            "SUBTITLE": "The Experience",
+            "TITLE": "More than a room.",
+            "DESCRIPTION": "Every stay is designed to combine comfort, nature and personalized hospitality.",
+            "HEADING": "Luxury in every detail",
+            "TEXT": "From regional breakfast to exclusive spa access and personalized concierge service, every moment is carefully crafted.",
+            "AMENITY1": "Regional Breakfast",
+            "AMENITY1_DESC": "Fresh local products every morning.",
+            "AMENITY2": "Wine Spa",
+            "AMENITY2_DESC": "Dry and wet wellness facilities.",
+            "AMENITY3": "Pool & Solarium",
+            "AMENITY3_DESC": "Heated outdoor pool overlooking the vineyards.",
+            "AMENITY4": "Concierge",
+            "AMENITY4_DESC": "Personal assistance throughout your stay."
+        },
+        "CTA": {
+            "SUBTITLE": "Your next stay starts here",
+            "TITLE": "Let us create your perfect getaway.",
+            "DESCRIPTION": "Our team will gladly help you choose the ideal room and answer any questions before your arrival.",
+            "BUTTON": "Book via WhatsApp"
+        }
+    },
+    "GASTRONOMY": {
+        "HERO": {
+            "SUBTITLE": "Hilario Restaurant",
+            "TITLE": "A gastronomic experience that celebrates the territory.",
+            "DESCRIPTION": "A restaurant that revives the flavors, ingredients and traditions of northern Argentina, reinterpreting them through a contemporary lens.",
+            "RESERVE": "Book a table",
+            "MENU": "View menu",
+            "CARD_TITLE": "The experience",
+            "CARD_ITEM_1": "Signature cuisine",
+            "CARD_ITEM_2": "Regional ingredients",
+            "CARD_ITEM_3": "Wine selection"
+        },
+        "EXPERIENCE": {
+            "SUBTITLE": "Restaurant",
+            "TITLE": "Hilario",
+            "DESCRIPTION": "Our restaurant brings back the story of the estate’s first caretaker. It respects the origins of its ingredients and finds new ways to express a culinary culture full of character.",
+            "MENU_DESCRIPTION": "The experience unfolds through a tasting menu that changes with the seasons, paired with wines from our winery, El Bayeh.",
+            "TRADITION_DESCRIPTION": "Tradition is the starting point. Creativity, technique and contemporary sensibility are the path to taking it to another level.",
+            "RESTAURANT_IMAGE_ALT": "Ossobuco at Hilario restaurant",
+            "WINE_BAR": {
+                "SUBTITLE": "Wine Bar",
+                "TITLE": "A glass of wine overlooking the Painter’s Palette",
+                "DESCRIPTION": "An invitation to unwind on our panoramic terraces as the afternoon light changes the colors of the landscape. Small plates featuring ingredients and recipes from northern Argentina, designed to share and pair with wines from our winery, El Bayeh, and our selection of cocktails and mocktails.",
+                "IMAGE_ALT": "Aperitif glass at the Wine Bar"
+            },
+            "DISH_SUBTITLE": "Hilario",
+            "DISH_TITLE": "Flavors and corners of the house",
+            "DISH1": "Smoked trout",
+            "DISH2": "Our clay oven",
+            "DISH3": "Pavlova with cayote"
+        },
+        "CTA": {
+            "SUBTITLE": "Book your experience",
+            "TITLE": "A table in the heart of the Quebrada",
+            "DESCRIPTION": "Hilario opens its doors in Maimará with a culinary offering designed to create a unique experience.",
+            "BUTTON": "Book a table",
+            "MENU": "View menu",
+            "IMAGE_ALT": "Wine from El Bayeh winery"
+        }
+    },
+    "EVENTS": {
+        "HERO": {
+            "SUBTITLE": "Events & Weddings",
+            "TITLE": "Celebrations in the heart of the Quebrada",
+            "DESCRIPTION": "Weddings, social gatherings and corporate events surrounded by the hills of Maimará. Outdoor spaces and private venues, with a team that takes care of every detail.",
+            "BUTTON": "Request a quote"
+        },
+        "OFFERS": {
+            "SUBTITLE": "Our proposal",
+            "TITLE": "Events designed for unique moments",
+            "WEDDINGS": {
+                "TITLE": "Weddings"
+            },
+            "SOCIAL": {
+                "TITLE": "Social events"
+            },
+            "CORPORATE": {
+                "TITLE": "Corporate events"
+            },
+            "CAROUSEL": {
+                "LABEL": "Carousel",
+                "PREVIOUS": "Previous photo",
+                "NEXT": "Next photo",
+                "GO_TO": "Go to photo"
+            }
+        },
+        "SPACES": {
+            "SUBTITLE": "Our spaces",
+            "TITLE": "Spaces designed for every celebration",
+            "PLAN_CAPTION": "Illustrative space layout",
+            "SALON": {
+                "TITLE": "Main hall",
+                "DESCRIPTION": "An elegant setting prepared for unforgettable celebrations.",
+                "CAPACITY": "Up to 200 guests"
+            },
+            "GARDEN": {
+                "TITLE": "Outdoor gardens",
+                "DESCRIPTION": "Natural spaces ideal for ceremonies and receptions.",
+                "CAPACITY": "Outdoor events"
+            },
+            "PRIVATE": {
+                "TITLE": "Private spaces",
+                "DESCRIPTION": "Exclusive areas for intimate gatherings.",
+                "CAPACITY": "Private meetings"
+            }
+        },
+        "QUOTE": {
+            "SUBTITLE": "Quote request",
+            "TITLE": "Let's start planning your next event",
+            "DESCRIPTION": "Share the details of the celebration with us, and our team will design a personalized proposal tailored to your needs.",
+            "EXPERIENCE": "Memorable experiences",
+            "EXPERIENCE_TITLE": "Every celebration deserves an exceptional setting",
+            "EXPERIENCE_DESCRIPTION": "Our team guides you through every stage of planning so you can simply enjoy the moment.",
+            "STAT1_NUMBER": "200+",
+            "STAT1_LABEL": "Guests",
+            "STAT2_NUMBER": "4",
+            "STAT2_LABEL": "Exclusive venues",
+            "STAT3_NUMBER": "100%",
+            "STAT3_LABEL": "Personalized service",
+            "EVENT_TYPE": "Event type",
+            "WEDDING": "Wedding",
+            "SOCIAL": "Social event",
+            "CORPORATE": "Corporate event",
+            "OTHER": "Other",
+            "NAME": "Full name",
+            "EMAIL": "Email address",
+            "PHONE": "Phone number",
+            "GUESTS": "Approximate number of guests",
+            "BUDGET": "Estimated budget",
+            "MESSAGE": "Tell us how you imagine your event...",
+            "BUTTON": "Request proposal",
+            "DATE_TYPE": "Do you already have a set date?",
+            "EXACT_DATE": "Exact date",
+            "MONTH_ONLY": "Approximate month"
+        }
+    },
+    "SPA": {
+        "HERO": {
+            "SUBTITLE": "Wellness Wine Spa",
+            "TITLE": "A sanctuary where time slows down.",
+            "DESCRIPTION": "Heated pools, wet and dry spa circuits, wine therapy and treatments designed to restore body and mind in the heart of the Quebrada.",
+            "BUTTON": "Book Spa Day",
+            "TREATMENTS": "Treatment Menu"
+        },
+        "GALLERY": {
+            "SUBTITLE": "SPACES",
+            "TITLE": "Every space invites you to unwind.",
+            "DESCRIPTION": "Heated pool, relaxation lounges, wet and dry spa circuit designed to reconnect body and mind.",
+            "POOL": "Heated Pool",
+            "RELAX": "Relaxation Lounge",
+            "CIRCUIT": "Spa Circuit"
+        },
+        "TREATMENTS": {
+            "SUBTITLE": "TREATMENTS",
+            "TITLE": "Wellness rituals designed to restore balance.",
+            "MASSAGE": "Therapeutic Massages",
+            "MASSAGE_DESC": "Relaxing and deep tissue techniques performed by experienced therapists.",
+            "WINE": "Wine Therapy",
+            "WINE_DESC": "An exclusive ritual inspired by the antioxidant properties of grapes and wine.",
+            "FACIAL": "Premium Facials",
+            "FACIAL_DESC": "Hydrating and revitalizing treatments tailored for complete skin renewal.",
+            "CIRCUIT": "Wet & Dry Spa Circuit",
+            "CIRCUIT_DESC": "Enjoy our heated pool, dry sauna, steam room and relaxation lounges."
+        },
+        "DAY": {
+            "SUBTITLE": "SPA DAY",
+            "TITLE": "A full day devoted to your wellbeing.",
+            "DESCRIPTION": "Reconnect with yourself through a carefully curated Spa Day including access to the wellness circuit, signature treatments and peaceful relaxation areas.",
+            "BUTTON": "Book Spa Day"
+        }
+    },
+    "EXPERIENCES": {
+        "HERO": {
+            "SUBTITLE": "Exclusive Experiences",
+            "TITLE": "Unique moments inspired by the spirit of the valley",
+            "DESCRIPTION": "From vineyard picnics to private wine tastings and winery tours, every experience is designed to connect guests with nature, wine and the warm hospitality of MWR Hotel.",
+            "BUTTON": "Explore experiences"
+        },
+        "SIGNATURE": {
+            "SUBTITLE": "Exclusive Experiences",
+            "TITLE": "Moments You'll Always Remember",
+            "DESCRIPTION": "Four curated experiences designed for those seeking more than a stay—memories that remain long after check-out.",
+            "VIEW_GALLERY": "View gallery",
+            "RESERVE": "Book now",
+            "PANEL_DURATION": "Duration",
+            "PANEL_AVAILABILITY": "Availability",
+            "PANEL_MODE": "Experience",
+            "PANEL_RESERVE": "Book experience",
+            "FEATURE_WINE": "Wine",
+            "FEATURE_PICNIC": "Picnic",
+            "FEATURE_GROUP_SMALL": "2–6 guests",
+            "FEATURE_LABELS": "6 wine labels",
+            "FEATURE_GOURMET": "Gourmet cuisine",
+            "FEATURE_SOMMELIER": "Sommelier",
+            "FEATURE_TRANSFER": "Transfer included",
+            "FEATURE_WINERY": "Winery",
+            "FEATURE_TASTING": "Wine tasting",
+            "FEATURE_GROUP_REDUCED": "Small groups",
+            "FEATURE_SUNSET": "Sunset",
+            "FEATURE_SPARKLING": "Sparkling wine",
+            "FEATURE_MUSIC": "Live music",
+            "FEATURE_EXCLUSIVE": "Exclusive",
+            "PICNIC_CATEGORY": "Outdoor",
+            "PICNIC_TITLE": "Private Sunset Picnic",
+            "PICNIC_DESC": "A beautifully set table among the vineyards, reserve wines, artisan cheeses and charcuterie, while the sun disappears behind the mountains.",
+            "PICNIC_DURATION": "4 hours",
+            "PICNIC_AVAILABILITY": "Available year-round",
+            "PICNIC_MODE": "Private, outdoor",
+            "WINE_CATEGORY": "Gastronomy",
+            "WINE_TITLE": "Signature Wine Pairing",
+            "WINE_DESC": "Six carefully selected wines paired with gourmet dishes designed to highlight every varietal. A complete sensory journey.",
+            "WINE_DURATION": "2 hours",
+            "WINE_AVAILABILITY": "Wednesday to Sunday",
+            "WINE_MODE": "Indoor, small groups",
+            "BODEGA_CATEGORY": "Wine Tourism",
+            "BODEGA_TITLE": "Exclusive Winery Tour",
+            "BODEGA_DESC": "Discover the vineyards and historic wine cellars of one of the region's finest wineries, including private transportation and a guided tasting.",
+            "BODEGA_DURATION": "3 hours",
+            "BODEGA_AVAILABILITY": "Advance reservation required",
+            "BODEGA_MODE": "Transfer included",
+            "SUNSET_CATEGORY": "Rooftop",
+            "SUNSET_TITLE": "Sunset Sessions Rooftop",
+            "SUNSET_DESC": "Chilled sparkling wines, live music, and breathtaking views of the estate to end the day in style. An exclusive experience for our guests.",
+            "SUNSET_DURATION": "2 hours",
+            "SUNSET_AVAILABILITY": "Fridays & Saturdays",
+            "SUNSET_MODE": "Rooftop, limited capacity"
+        },
+        "CALENDAR": {
+            "SUBTITLE": "Experience calendar",
+            "TITLE": "Live unique moments during your stay",
+            "DESCRIPTION": "Explore available experiences and reserve exclusive activities designed to discover new flavors, landscapes and unforgettable moments.",
+            "MONTH": "July 2026",
+            "EVENT_WINE": "Wine tasting",
+            "EVENT_PICNIC": "Private picnic",
+            "EVENT_SUNSET": "Exclusive sunset",
+            "EVENT_BODEGA": "Winery visit",
+            "SELECT_DAY": "Select date",
+            "AVAILABLE": "Available",
+            "RESERVE": "Book experience"
+        },
+        "CTA": {
+            "SUBTITLE": "Exclusive experiences",
+            "TITLE": "Your next story begins here",
+            "DESCRIPTION": "Discover unique moments designed to transform your stay into an unforgettable memory.",
+            "RESERVE": "Book experience",
+            "EXPLORE": "Explore experiences"
+        }
+    },
+    "ABOUT": {
+        "HERO": {
+            "SUBTITLE": "Our history",
+            "TITLE": "An estate, a family, and generations of memories",
+            "DESCRIPTION": "From our earliest days among vineyards and mountains, we built a place where family tradition meets a new way of welcoming guests."
+        },
+        "RELATO": {
+            "SUBTITLE": "Past and present",
+            "TITLE": "A family at the forefront of the land",
+            "PARAGRAPH1": "Since our earliest years, this estate has been part of the region's history. Over time, our family took the helm, transforming it into a space dedicated to welcoming guests with the same warmth we received.",
+            "PARAGRAPH2": "Today, as the new generation leading the way, we guide this place with a clear vision: to honor tradition and look toward the future, without ever losing the essence of our origins.",
+            "PARAGRAPH3": "Every corner of the estate reflects our commitment to creating experiences that honor the land, those who work it, and our constant pursuit of excellence.",
+            "QUOTE": "We consider ourselves simple guardians of this land. We believe in our duty to leave it in better condition than when we received it."
+        },
+        "HISTORY": {
+            "SUBTITLE": "Milestones of the estate",
+            "TITLE": "One family, one land, and an ongoing legacy",
+            "DESCRIPTION": "For generations this estate was home, work, and family gathering. Today we open its doors to share that same essence with our guests.",
+            "QUOTE": "Every stone, every tree, and every corner holds a story.",
+            "ITEM1_TITLE": "The beginnings",
+            "ITEM1_TEXT": "The early years of a family building its bond with the land.",
+            "ITEM2_TITLE": "The family legacy",
+            "ITEM2_TEXT": "New generations kept the estate's traditions and values alive.",
+            "ITEM3_TITLE": "A new chapter",
+            "ITEM3_TEXT": "The property began to transform without losing its identity.",
+            "ITEM4_TITLE": "Our present",
+            "ITEM4_TEXT": "Today we welcome visitors who become part of our history."
+        },
+        "TERRITORIO": {
+            "SUBTITLE": "Our surroundings",
+            "TITLE": "The territory defines us",
+            "TEXT1": "Our estate is located at the foot of the mountain range, in a privileged corner where soil, water, and altitude combine to give character to every part of the property.",
+            "TEXT2": "This dynamic landscape, together with thermal contrasts between day and night, makes this place unique. With this understanding, we care for every detail with precision.",
+            "STAT1_VALUE": "980m",
+            "STAT1_LABEL": "Above sea level",
+            "STAT2_VALUE": "S 33° 00'",
+            "STAT2_LABEL": "South Latitude"
+        },
+        "FINCAS": {
+            "SUBTITLE": "Our properties",
+            "TITLE": "The estates that give us identity",
+            "ITEM1_NAME": "Main Estate",
+            "ITEM1_LOCATION": "Luján de Cuyo",
+            "ITEM1_TEXT": "Our historic estate, whose first vineyards were planted over a century ago. A large part of our identity as a family was born here.",
+            "ITEM1_VARIETALS": "Malbec and Semillon",
+            "ITEM2_NAME": "High Altitude Estate",
+            "ITEM2_LOCATION": "Tupungato",
+            "ITEM2_TEXT": "The highest altitude among our properties, where daily temperature variance produces wines with distinctive freshness.",
+            "ITEM2_VARIETALS": "Malbec and Chardonnay",
+            "ITEM3_NAME": "East Estate",
+            "ITEM3_LOCATION": "Perdriel",
+            "ITEM3_TEXT": "One of our largest properties, equipped with drip irrigation and soil studies applying precision viticulture.",
+            "ITEM3_VARIETALS": "Cabernet Sauvignon and Syrah",
+            "ITEM4_NAME": "Valley Estate",
+            "ITEM4_LOCATION": "Agrelo",
+            "ITEM4_TEXT": "Located in Agrelo, featuring a high trellis system and hail protection netting safeguarding every harvest.",
+            "ITEM4_VARIETALS": "Petit Verdot and Moscato Bianco"
+        },
+        "COMPROMISO": {
+            "SUBTITLE": "Sustainable commitment",
+            "TITLE": "Respect for the land guides every step",
+            "TEXT": "Preserving the environment is an everyday commitment woven into everything we do. Every decision we make aims to leave this land in better condition for those who follow."
+        }
+    },
+    "BOOKING": {
+        "SUBTITLE": "Online booking",
+        "TITLE": "Reserve your stay",
+        "DESCRIPTION": "Select your dates and number of guests to continue with your reservation.",
+        "CHECK_IN": "Check-in",
+        "CHECK_OUT": "Check-out",
+        "ADULTS": "Adults",
+        "CHILDREN": "Children",
+        "NOTICE": "By continuing you will be redirected to our secure booking platform to complete your reservation.",
+        "BUTTON": "Check availability"
+    },
+    "FOOTER": {
+        "DESCRIPTION": "A sanctuary where nature, architecture and hospitality come together to create unforgettable moments.",
+        "NAVIGATION": "Explore",
+        "CONTACT": "Contact",
+        "LOCATION": "Location",
+        "RIGHTS": "All rights reserved."
+    }
+}

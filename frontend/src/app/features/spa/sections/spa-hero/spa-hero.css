@@ -1,0 +1,106 @@
+:host {
+    display: block;
+}
+
+/* ==========================================
+   1. BOTÓN 1 (Sin desplazamiento, solo hover simple)
+   ========================================== */
+.luxury-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 42px;
+    background: #8e4c2f;
+    border: 1px solid #8e4c2f;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: .35em;
+    font-size: .75rem;
+    font-weight: 500;
+    line-height: 1;
+    box-sizing: border-box;
+    transition: background-color .45s ease, border-color .45s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.luxury-btn:hover {
+    background: #bb644a;
+    border-color: #bb644a;
+}
+
+
+/* ==========================================
+   2. BOTÓN 2 (Se pinta hacia la derecha al hover)
+   ========================================== */
+.luxury-outline-btn {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 42px;
+    border: 1px solid #d4a15a;
+    background: rgba(56, 40, 33, .35);
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: .35em;
+    font-size: .75rem;
+    font-weight: 500;
+    line-height: 1;
+    box-sizing: border-box;
+    transition: color .45s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Capa dorada que se desliza de izquierda a derecha */
+.luxury-outline-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #d4a15a;
+    transform: translateX(-101%);
+    transition: transform .55s cubic-bezier(.77, 0, .18, 1);
+    z-index: 1;
+}
+
+.luxury-outline-btn span {
+    position: relative;
+    z-index: 2;
+    /* Mantiene el texto visible sobre el fondo que se desliza */
+}
+
+.luxury-outline-btn:hover {
+    color: #382821;
+    /* Cambia el color de texto a oscuro al cubrirse */
+}
+
+.luxury-outline-btn:hover::before {
+    transform: translateX(0);
+    /* Se desplaza hacia la derecha */
+}
+
+
+/* ==========================================
+   3. RESPONSIVE Y ANIMACIONES
+   ========================================== */
+@media(max-width: 768px) {
+
+    .luxury-btn,
+    .luxury-outline-btn {
+        width: 100%;
+        padding: 14px 24px;
+    }
+}
+
+@keyframes slowZoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.12);
+    }
+}

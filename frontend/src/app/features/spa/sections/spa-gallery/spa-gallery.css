@@ -1,0 +1,50 @@
+/* Ocultar barra de scroll para un acabado limpio */
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Permitir scroll táctil nativo */
+.gallery-scroll-container {
+    -webkit-overflow-scrolling: touch;
+    /* Removido scroll-behavior: smooth para permitir refrescos instantáneos de scroll */
+}
+
+.luxury-card {
+    flex-shrink: 0;
+}
+
+.luxury-img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    transition: transform .8s ease;
+}
+
+.luxury-card:hover .luxury-img {
+    transform: scale(1.06);
+}
+
+@media(max-width:1024px) {
+    .luxury-img {
+        height: 380px;
+    }
+
+    .luxury-card {
+        width: 300px !important;
+    }
+}
+
+@media(max-width:640px) {
+    .luxury-card {
+        width: 260px !important;
+    }
+
+    .luxury-img {
+        height: 320px;
+    }
+}

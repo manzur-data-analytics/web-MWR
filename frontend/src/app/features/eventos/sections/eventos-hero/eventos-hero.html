@@ -1,0 +1,41 @@
+<section class="relative min-h-screen overflow-hidden">
+    <!-- Imagen -->
+    <img src="secciones/eventos/hero/hotel-0141.jpg" alt="" fetchpriority="high"
+        class="absolute inset-0 w-full h-full object-cover">
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-[#382821]/80 via-[#382821]/55 to-black/20"></div>
+
+    <!-- Decoración -->
+    <div
+        class="absolute right-10 top-24 sm:right-20 sm:top-32 w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-[#d4a15a]/20 blur-3xl">
+    </div>
+
+    <!-- Contenido -->
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 min-h-screen flex items-center py-32 lg:py-36">
+        <div class="max-w-3xl">
+            <span class="uppercase tracking-[0.3em] text-[#e8bd80] text-xs sm:text-sm">
+                {{ 'EVENTS.HERO.SUBTITLE' | transloco }}
+            </span>
+            <h1 class="mt-5 sm:mt-6 font-title text-4xl sm:text-5xl xl:text-7xl font-light leading-tight text-white">
+                {{'EVENTS.HERO.TITLE' | transloco}}
+            </h1>
+
+            <div class="w-16 sm:w-24 h-px bg-[#d4a15a] my-7 sm:my-10"></div>
+
+            <p class="max-w-2xl text-white/95 text-lg sm:text-xl leading-8 sm:leading-9">
+                {{'EVENTS.HERO.DESCRIPTION' | transloco}}
+            </p>
+
+            <div class="flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8 mt-10 sm:mt-12">
+
+                <a href="#cotizacion"
+                    class="px-9 py-4 bg-[#8e4c2f] hover:bg-[#743d26] text-white font-medium uppercase tracking-[0.25em] text-sm text-center w-full sm:w-auto transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">
+                    <span>
+                        {{'EVENTS.HERO.BUTTON' | transloco}}
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

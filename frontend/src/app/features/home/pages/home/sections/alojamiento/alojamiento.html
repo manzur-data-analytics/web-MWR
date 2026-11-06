@@ -1,0 +1,208 @@
+<!-- ALOJAMIENTO -->
+<section id="alojamiento" class="relative bg-[#f4f1ed] py-20 lg:py-28 overflow-hidden">
+
+    <!-- fondos -->
+    <div class="absolute right-0 top-0 h-full w-[35%] bg-[#e7dcc6] hidden lg:block"></div>
+
+    <div class="absolute -left-32 top-20 w-80 h-80 rounded-full bg-[#c8b89a]/20 blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
+
+        <!-- TITULO -->
+        <div class="max-w-2xl mb-12 lg:mb-16">
+
+
+            <span class="
+            uppercase
+            tracking-[0.45em]
+            text-[10px]
+            lg:text-[11px]
+            text-[#8e4c2f]">
+
+                {{'HOME.ACCOMMODATION.SUBTITLE' | transloco}}
+
+            </span>
+
+
+
+            <h2 class="
+            mt-4
+            font-title
+            text-4xl
+            sm:text-5xl
+            font-light
+            leading-tight
+            text-[#382821]">
+
+                {{'HOME.ACCOMMODATION.TITLE' | transloco}}
+
+            </h2>
+
+
+            <div class="w-20 h-px bg-[#c8b89a] mt-6"></div>
+
+
+        </div>
+
+
+
+
+
+        <!-- CONTENIDO -->
+
+
+        <div class="relative">
+
+
+
+            <!-- IMAGEN -->
+
+            <div class="
+            relative
+            w-full
+            lg:w-[78%]
+            aspect-[4/3]
+            sm:aspect-[16/9]
+            overflow-hidden
+            shadow-[0_25px_70px_rgba(59,40,33,.18)]">
+
+
+                @for(img of imagenes; track img; let i=$index){
+
+                <img [src]="img" class="
+                absolute inset-0
+                w-full h-full
+                object-cover
+                transition-all
+                duration-[1400ms]" [class.opacity-100]="i===imagenActual()" [class.opacity-0]="i!==imagenActual()"
+                    [class.scale-105]="i===imagenActual()" [class.scale-100]="i!==imagenActual()">
+
+
+                }
+
+
+                <div class="
+                absolute inset-0
+                bg-gradient-to-t
+                from-[#382821]/30
+                via-transparent
+                to-transparent">
+                </div>
+
+
+            </div>
+
+            <!-- TARJETA -->
+            <div class="mt-8 lg:mt-0 lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2 bg-[#f8f5f1] w-full sm:max-w-xl lg:max-w-md
+                p-7 sm:p-10 shadow-[0_20px_60px_rgba(59,40,33,.12)]">
+                <span class="
+                uppercase
+                tracking-[0.35em]
+                text-[10px]
+                text-[#bb644a]">
+
+                    Luxury Collection
+
+                </span>
+
+                <h3 class="
+                mt-4
+                font-title
+                text-3xl
+                sm:text-4xl
+                font-light
+                text-[#382821]">
+
+
+                    {{'HOME.ACCOMMODATION.TITLE' | transloco}}
+
+
+                </h3>
+
+                <p class="
+                mt-5
+                text-sm
+                sm:text-base
+                leading-8
+                text-[#5c5a3e]">
+
+                    {{'HOME.ACCOMMODATION.DESCRIPTION' | transloco}}
+
+                </p>
+
+
+                <a routerLink="/alojamiento" class="
+                group
+                inline-flex
+                items-center
+                gap-3
+                mt-8
+                uppercase
+                tracking-[.3em]
+                text-[10px]
+                text-[#8e4c2f]">
+
+                    {{'HOME.ACCOMMODATION.BUTTON' | transloco}}
+
+                    <span class="
+                    w-8
+                    h-px
+                    bg-[#8e4c2f]
+                    transition-all
+                    duration-500
+                    group-hover:w-14">
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- MINI FOTO SOLO DESKTOP -->
+        <div class="
+        hidden
+        lg:block
+        absolute
+        right-20
+        bottom-2">
+
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80"
+                class="
+            w-56
+            h-40
+            object-cover
+            border-[8px]
+            border-[#f4f1ed]
+            shadow-xl">
+
+        </div>
+
+        <!-- INDICADORES -->
+        <div class="
+        flex
+        justify-center
+        lg:justify-start
+        gap-3
+        mt-10
+        lg:mt-16">
+
+            @for(img of imagenes; track img; let i=$index){
+
+            <button (click)="imagenActual.set(i)" class="
+            h-[2px]
+            transition-all
+            duration-500" [class.w-10]="i===imagenActual()" [class.w-5]="i!==imagenActual()"
+                [class.bg-[#8e4c2f]]="i===imagenActual()" [class.bg-[#c8b89a]]="i!==imagenActual()">
+
+            </button>
+
+
+            }
+
+        </div>
+
+    </div>
+
+</section>

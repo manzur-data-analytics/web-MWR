@@ -1,0 +1,8 @@
+﻿nav a.active {
+    color: #d4a15a;
+}
+
+nav a.active span:last-child {
+    width: 100%;
+    left: 0;
+}

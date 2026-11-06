@@ -1,0 +1,47 @@
+﻿<section class="bg-[#382821] py-24 lg:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10">
+        <div class="mb-12 max-w-3xl sm:mb-16">
+            <span class="text-xs uppercase tracking-[0.35em] text-[#e8bd80]">{{ 'EVENTS.OFFERS.SUBTITLE' | transloco }}</span>
+            <h2 class="mt-6 font-title text-4xl font-light text-white sm:text-5xl lg:text-6xl">{{ 'EVENTS.OFFERS.TITLE' | transloco }}</h2>
+            <div class="mt-8 h-px w-24 bg-[#d4a15a]" aria-hidden="true"></div>
+        </div>
+        <div class="grid gap-12 lg:grid-cols-3 lg:gap-8">
+            @for (offer of offers; track offer.id) {
+                <article role="region" [attr.aria-roledescription]="'EVENTS.OFFERS.CAROUSEL.LABEL' | transloco"
+                    [attr.aria-labelledby]="'offer-title-' + offer.id">
+                    <div class="relative aspect-[4/5] overflow-hidden bg-[#281c17]">
+                        <img [id]="'offer-image-' + offer.id" [src]="offer.images[activeIndex(offer)]"
+                            [alt]="offer.title | transloco" loading="lazy" class="h-full w-full object-cover">
+                        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" aria-hidden="true"></div>
+                        <h3 [id]="'offer-title-' + offer.id" class="absolute inset-x-6 bottom-7 font-title text-4xl leading-tight text-white sm:text-5xl lg:text-4xl">
+                            {{ offer.title | transloco }}
+                        </h3>
+                        <button type="button" class="carousel-arrow left-3" (click)="move(offer, -1)"
+                            [attr.aria-label]="'EVENTS.OFFERS.CAROUSEL.PREVIOUS' | transloco"
+                            [attr.aria-controls]="'offer-image-' + offer.id">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-5 w-5"><path d="m14 6-6 6 6 6" /></svg>
+                        </button>
+                        <button type="button" class="carousel-arrow right-3" (click)="move(offer, 1)"
+                            [attr.aria-label]="'EVENTS.OFFERS.CAROUSEL.NEXT' | transloco"
+                            [attr.aria-controls]="'offer-image-' + offer.id">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-5 w-5"><path d="m10 6 6 6-6 6" /></svg>
+                        </button>
+                    </div>
+                    <div class="mt-4 flex items-center gap-4">
+                        <div class="flex min-w-0 flex-1 gap-1">
+                            @for (image of offer.images; track image; let index = $index) {
+                                <button type="button" class="carousel-indicator" [class.is-active]="activeIndex(offer) === index"
+                                    (click)="select(offer, index)" [attr.aria-current]="activeIndex(offer) === index ? 'true' : null"
+                                    [attr.aria-label]="('EVENTS.OFFERS.CAROUSEL.GO_TO' | transloco) + ' ' + formatNumber(index + 1)"
+                                    [attr.aria-controls]="'offer-image-' + offer.id"><span></span></button>
+                            }
+                        </div>
+                        <span class="shrink-0 text-sm tabular-nums tracking-widest text-[#e8bd80]" aria-live="polite" aria-atomic="true">
+                            {{ formatNumber(activeIndex(offer) + 1) }}/{{ formatNumber(offer.images.length) }}
+                        </span>
+                    </div>
+                </article>
+            }
+        </div>
+    </div>
+</section>

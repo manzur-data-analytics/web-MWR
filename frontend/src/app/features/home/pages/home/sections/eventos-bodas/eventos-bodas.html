@@ -1,0 +1,298 @@
+<section id="eventos-bodas" class="relative py-24 lg:py-36 overflow-hidden">
+
+    <!-- Imagen ambiente -->
+    <div class="absolute inset-0 overflow-hidden">
+
+        <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=2200&q=90" class="
+        w-full
+        h-full
+        object-cover
+        scale-105
+        transition-transform
+        duration-[3000ms]">
+
+    </div>
+
+
+    <!-- Overlay elegante -->
+    <div class="
+        absolute
+        inset-0
+        bg-gradient-to-b
+        from-[#f4f1ed]/30
+        via-[#382821]/65
+        to-[#382821]/85">
+    </div>
+
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
+
+
+        <!-- INTRO -->
+
+        <div class="max-w-3xl mx-auto text-center">
+
+
+            <span class="
+            uppercase
+            tracking-[0.5em]
+            text-[#d4a15a]
+            text-[11px]">
+
+                {{'HOME.EVENTS.SUBTITLE' | transloco}}
+
+            </span>
+
+
+
+            <h2 class="
+            mt-6
+            font-title
+            text-4xl
+            sm:text-5xl
+            lg:text-7xl
+            font-light
+            text-white
+            leading-tight">
+
+                {{'HOME.EVENTS.TITLE' | transloco}}
+
+            </h2>
+
+
+
+            <div class="
+            w-24
+            h-px
+            bg-[#d4a15a]
+            mx-auto
+            my-8">
+            </div>
+
+
+
+            <p class="
+            text-white/80
+            text-base
+            sm:text-lg
+            leading-8">
+
+                {{'HOME.EVENTS.DESCRIPTION' | transloco}}
+
+            </p>
+
+
+        </div>
+
+
+
+
+
+        <!-- CARDS -->
+
+        <div class="
+        grid
+        md:grid-cols-3
+        gap-6
+        mt-16
+        lg:mt-20">
+
+
+            <div class="event-card">
+
+                <span>01</span>
+
+                <h3>
+                    {{'HOME.EVENTS.CARD1' | transloco}}
+                </h3>
+
+                <p>
+                    {{'HOME.EVENTS.CARD1_DESC' | transloco}}
+                </p>
+
+            </div>
+
+
+
+            <div class="event-card">
+
+                <span>02</span>
+
+                <h3>
+                    {{'HOME.EVENTS.CARD2' | transloco}}
+                </h3>
+
+                <p>
+                    {{'HOME.EVENTS.CARD2_DESC' | transloco}}
+                </p>
+
+            </div>
+
+
+
+
+            <div class="event-card">
+
+                <span>03</span>
+
+                <h3>
+                    {{'HOME.EVENTS.CARD3' | transloco}}
+                </h3>
+
+                <p>
+                    {{'HOME.EVENTS.CARD3_DESC' | transloco}}
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <!-- FORMULARIO -->
+
+        <div class="
+        mt-20
+        max-w-5xl
+        mx-auto
+        bg-[#f4f1ed]
+        shadow-[0_30px_80px_rgba(0,0,0,.25)]
+        p-8
+        sm:p-12
+        lg:p-16">
+
+
+            <div class="text-center mb-10">
+
+
+                <span class="
+                uppercase
+                tracking-[0.45em]
+                text-[#8e4c2f]
+                text-[10px]">
+
+                    {{'HOME.EVENTS.FORM.SUBTITLE' | transloco}}
+
+                </span>
+
+
+
+                <h3 class="
+                mt-5
+                font-title
+                text-3xl
+                sm:text-5xl
+                font-light
+                text-[#382821]">
+
+                    {{'HOME.EVENTS.FORM.TITLE' | transloco}}
+
+                </h3>
+
+
+                <div class="
+                w-20
+                h-px
+                bg-[#c8b89a]
+                mx-auto
+                mt-6">
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <form class="
+            grid
+            md:grid-cols-2
+            gap-5">
+
+
+                <input class="luxury-input" placeholder="{{'HOME.EVENTS.FORM.NAME' | transloco}}">
+
+
+
+                <input class="luxury-input" placeholder="{{'HOME.EVENTS.FORM.EMAIL' | transloco}}">
+
+
+
+                <input class="luxury-input" placeholder="{{'HOME.EVENTS.FORM.DATE' | transloco}}">
+
+
+
+                <input class="luxury-input" placeholder="{{'HOME.EVENTS.FORM.GUESTS' | transloco}}">
+
+
+
+                <textarea class="
+                luxury-input
+                md:col-span-2
+                h-36" placeholder="{{'HOME.EVENTS.FORM.MESSAGE' | transloco}}">
+                </textarea>
+
+
+
+
+                <button class="
+                luxury-submit
+                md:col-span-2">
+
+                    {{'HOME.EVENTS.FORM.BUTTON' | transloco}}
+
+                </button>
+
+
+            </form>
+
+
+        </div>
+
+
+
+
+
+        <!-- LINK -->
+
+        <div class="text-center mt-14">
+
+
+            <a routerLink="/eventos" class="
+            inline-flex
+            items-center
+            gap-4
+            text-[#d4a15a]
+            uppercase
+            tracking-[0.4em]
+            text-xs
+            group">
+
+
+                {{'HOME.EVENTS.MORE' | transloco}}
+
+
+                <span class="
+                w-10
+                h-px
+                bg-[#d4a15a]
+                transition-all
+                duration-500
+                group-hover:w-16">
+                </span>
+
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>

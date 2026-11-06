@@ -1,0 +1,36 @@
+:host {
+    display: block;
+}
+
+
+footer {
+    animation: fadeUp .8s ease both;
+}
+
+@keyframes marqueeReverse {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.animate-marquee-reverse {
+    /* 25s controla la velocidad. Súbelo a 35s si lo quieres más lento, bájalo si lo quieres más rápido */
+    animation: marqueeReverse 25s linear infinite; 
+}
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}

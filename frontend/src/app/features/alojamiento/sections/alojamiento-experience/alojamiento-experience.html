@@ -1,0 +1,174 @@
+<section class="relative py-28 lg:py-36 overflow-hidden bg-[#f4f1ed]">
+
+    <!-- fondo -->
+    <div class="absolute inset-0 opacity-[.05]">
+        <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=2200&q=80"
+            class="w-full h-full object-cover">
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+
+        <!-- HEADER -->
+        <div class="max-w-3xl mb-20">
+
+            <span class="uppercase tracking-[.45em] text-[11px] text-[#8e4c2f]">
+
+                {{'ACCOMMODATION.EXPERIENCE.SUBTITLE' | transloco}}
+
+            </span>
+
+            <h2 class="mt-5 font-title text-5xl xl:text-6xl font-light text-[#382821]">
+
+                {{'ACCOMMODATION.EXPERIENCE.TITLE' | transloco}}
+
+            </h2>
+
+            <div class="w-24 h-px bg-[#c8b89a] mt-8"></div>
+
+            <p class="mt-8 text-[#5c5a3e] text-lg leading-9">
+
+                {{'ACCOMMODATION.EXPERIENCE.DESCRIPTION' | transloco}}
+
+            </p>
+
+        </div>
+
+        <!-- EXPERIENCIA -->
+        <div class="grid lg:grid-cols-12 gap-16 items-center">
+
+            <!-- GALERÍA -->
+            <div class="lg:col-span-7">
+                <div class="relative overflow-hidden shadow-2xl rounded-2xl group">
+
+                    <!-- Contenedor de Slides -->
+                    <div class="relative h-[650px] overflow-hidden bg-neutral-900">
+                        <div *ngFor="let slide of slides; let i = index"
+                            class="absolute inset-0 transition-all duration-1000 ease-in-out"
+                            [class.opacity-100]="currentSlide === i" [class.opacity-0]="currentSlide !== i"
+                            [class.scale-105]="currentSlide === i" [class.scale-100]="currentSlide !== i"
+                            [class.pointer-events-none]="currentSlide !== i">
+
+                            <img [src]="slide" alt="Instalaciones del hotel"
+                                class="w-full h-full object-cover transition-transform duration-[4000ms] ease-out"
+                                [class.scale-110]="currentSlide === i" />
+                        </div>
+                    </div>
+
+                    <!-- Degradado elegante para lectura y profundidad -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20 pointer-events-none">
+                    </div>
+
+                    <!-- Botón Izquierda -->
+                    <button (click)="prevSlide()" aria-label="Imagen anterior"
+                        class="absolute left-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/30 backdrop-blur-md text-white border border-white/20 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center hover:bg-white hover:text-black hover:scale-110">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+
+                    <!-- Botón Derecha -->
+                    <button (click)="nextSlide()" aria-label="Siguiente imagen"
+                        class="absolute right-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/30 backdrop-blur-md text-white border border-white/20 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center hover:bg-white hover:text-black hover:scale-110">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+
+                    <!-- Indicadores de línea elegante (Luxury Style) -->
+                    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+                        <button *ngFor="let slide of slides; let i = index" (click)="goToSlide(i)"
+                            [aria-label]="'Ir a imagen ' + (i + 1)"
+                            class="h-1.5 rounded-full transition-all duration-500" [class.w-8]="currentSlide === i"
+                            [class.bg-white]="currentSlide === i" [class.w-2.5]="currentSlide !== i"
+                            [class.bg-white/40]="currentSlide !== i">
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- TEXTO -->
+            <div class="lg:col-span-5">
+
+                <h3 class="font-title text-4xl font-light text-[#382821]">
+
+                    {{'ACCOMMODATION.EXPERIENCE.HEADING' | transloco}}
+
+                </h3>
+
+                <p class="mt-8 text-[#5c5a3e] leading-9">
+
+                    {{'ACCOMMODATION.EXPERIENCE.TEXT' | transloco}}
+
+                </p>
+
+                <!-- amenities -->
+                <div class="mt-12 space-y-8">
+
+                    <!-- Desayuno -->
+                    <div class="flex gap-5">
+                        <ng-icon name="heroCake" class="w-7 h-7 text-[#bb644a] shrink-0 mt-1">
+                        </ng-icon>
+
+                        <div>
+                            <h4 class="font-title text-2xl text-[#382821]">
+                                {{'ACCOMMODATION.EXPERIENCE.AMENITY1' | transloco}}
+                            </h4>
+                            <p class="mt-2 text-[#5c5a3e]">
+                                {{'ACCOMMODATION.EXPERIENCE.AMENITY1_DESC' | transloco}}
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Wine Spa -->
+                    <div class="flex gap-5">
+                        <ng-icon name="heroSparkles" class="w-7 h-7 text-[#bb644a]"></ng-icon>
+
+                        <div>
+                            <h4 class="font-title text-2xl text-[#382821]">
+                                {{'ACCOMMODATION.EXPERIENCE.AMENITY2' | transloco}}
+                            </h4>
+                            <p class="mt-2 text-[#5c5a3e]">
+                                {{'ACCOMMODATION.EXPERIENCE.AMENITY2_DESC' | transloco}}
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Piscina -->
+                    <div class="flex gap-5">
+                        <ng-icon name="heroSun" class="w-7 h-7 text-[#bb644a]"></ng-icon>
+
+                        <div>
+                            <h4 class="font-title text-2xl text-[#382821]">
+                                {{'ACCOMMODATION.EXPERIENCE.AMENITY3' | transloco}}
+                            </h4>
+                            <p class="mt-2 text-[#5c5a3e]">
+                                {{'ACCOMMODATION.EXPERIENCE.AMENITY3_DESC' | transloco}}
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Concierge -->
+                    <div class="flex gap-5">
+                        <ng-icon name="heroBell" class="w-7 h-7 text-[#bb644a]"></ng-icon>
+
+                        <div>
+                            <h4 class="font-title text-2xl text-[#382821]">
+                                {{'ACCOMMODATION.EXPERIENCE.AMENITY4' | transloco}}
+                            </h4>
+                            <p class="mt-2 text-[#5c5a3e]">
+                                {{'ACCOMMODATION.EXPERIENCE.AMENITY4_DESC' | transloco}}
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
