@@ -111,9 +111,9 @@
     },
     "GASTRONOMY": {
         "HERO": {
-            "SUBTITLE": "Restaurante Surco",
-            "TITLE": "Uma experiência gastronômica que celebra o território",
-            "DESCRIPTION": "Uma proposta culinária autoral onde ingredientes locais, vinhos selecionados e criatividade se unem para criar momentos inesquecíveis.",
+            "SUBTITLE": "Restaurante Hilario",
+            "TITLE": "Uma experiência gastronômica que celebra o território.",
+            "DESCRIPTION": "Um restaurante que resgata os sabores, ingredientes e tradições do norte argentino para reinterpretá-los a partir de uma perspectiva contemporânea.",
             "RESERVE": "Reservar mesa",
             "MENU": "Ver menu",
             "CARD_TITLE": "A experiência",
@@ -122,24 +122,31 @@
             "CARD_ITEM_3": "Seleção de vinhos"
         },
         "EXPERIENCE": {
-            "SUBTITLE": "Nossa essência",
-            "TITLE": "Uma cozinha marcada pela identidade e pelo território",
-            "DESCRIPTION": "No Surco, nosso chef executivo interpreta os sabores da região através de uma cozinha sofisticada, sazonal e autêntica. Cada criação nasce do respeito pelos ingredientes locais, pelos produtores e pela busca constante por experiências inesquecíveis.",
-            "QUOTE": "A gastronomia começa quando cada ingrediente tem uma história para contar.",
-            "CHEF": "Nome do Chef Executivo",
-            "ROLE": "Chef Executivo Surco",
-            "DISH_SUBTITLE": "Criações especiais",
-            "DISH_TITLE": "Pratos que definem nossa cozinha",
-            "DISH1": "Sabores do território",
-            "DISH2": "Produto e estação",
-            "DISH3": "Uma experiência inesquecível"
+            "SUBTITLE": "Restaurante",
+            "TITLE": "Hilario",
+            "DESCRIPTION": "Nosso restaurante resgata a história do primeiro encarregado da propriedade. Respeita a origem dos seus ingredientes e encontra novas formas de expressar uma cultura gastronômica cheia de personalidade.",
+            "MENU_DESCRIPTION": "A proposta se revela em um menu degustação que se renova com as estações, acompanhado pelos vinhos da nossa vinícola, El Bayeh.",
+            "TRADITION_DESCRIPTION": "A tradição é o ponto de partida. A criatividade, a técnica e a sensibilidade contemporânea são o caminho para levá-la a outro nível.",
+            "RESTAURANT_IMAGE_ALT": "Ossobuco do restaurante Hilario",
+            "WINE_BAR": {
+                "SUBTITLE": "Wine Bar",
+                "TITLE": "Uma taça, diante da Paleta do Pintor",
+                "DESCRIPTION": "Uma proposta para relaxar em nossos terraços panorâmicos, enquanto a luz da tarde transforma as cores da paisagem. Pequenos pratos com ingredientes e receitas do norte argentino, pensados para compartilhar e combinar com os vinhos da nossa vinícola, El Bayeh, e nossa carta de coquetéis e mocktails.",
+                "IMAGE_ALT": "Taça de aperitivo no Wine Bar"
+            },
+            "DISH_SUBTITLE": "Hilario",
+            "DISH_TITLE": "Sabores e recantos da casa",
+            "DISH1": "Truta defumada",
+            "DISH2": "Nosso forno de barro",
+            "DISH3": "Pavlova com cayote"
         },
         "CTA": {
             "SUBTITLE": "Reserve sua experiência",
-            "TITLE": "Uma mesa, uma história, um momento inesquecível",
-            "DESCRIPTION": "Descubra o Surco e viva uma experiência gastronômica onde cada detalhe foi pensado para criar momentos únicos.",
+            "TITLE": "Uma mesa no coração da Quebrada",
+            "DESCRIPTION": "Hilario abre suas portas em Maimará com uma proposta gastronômica pensada para criar uma experiência única.",
             "BUTTON": "Reservar mesa",
-            "MENU": "Ver menu"
+            "MENU": "Ver menu",
+            "IMAGE_ALT": "Vinho da vinícola El Bayeh"
         }
     },
     "EVENTS": {

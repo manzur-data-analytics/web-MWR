@@ -1,187 +1,72 @@
-<section class="relative py-16 sm:py-24 lg:py-32 overflow-hidden bg-[#f4f1ed]">
-
-
-    <!-- Imagen ambiente detrás -->
-
-    <div class="absolute inset-0">
-
-        <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=2000&q=80"
-            class="w-full h-full object-cover">
-
-        <div class="absolute inset-0 bg-[#f4f1ed]/85"></div>
-
-    </div>
-
-
-    <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
-
-
-        <!-- CHEF -->
-
-        <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-
-
-            <!-- Foto -->
-
-            <div class="lg:col-span-5">
-
+﻿<section class="overflow-hidden bg-[#f4f1ed] py-20 sm:py-28 lg:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10">
+        <div class="grid items-center gap-12 lg:grid-cols-12 lg:gap-14">
+            <div class="px-3 lg:col-span-5 lg:px-0">
                 <div class="relative">
-
-
-                    <div class="absolute -left-3 -bottom-3 sm:-left-6 sm:-bottom-6
-                    w-full h-full
-                    border border-[#c8b89a]">
-                    </div>
-
-
-                    <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1000&q=80"
-                        class="relative w-full h-[320px] sm:h-[420px] lg:h-[500px] object-cover shadow-2xl">
-
-
+                    <div class="pointer-events-none absolute -bottom-4 -left-4 h-full w-full border border-[#c8b89a]"
+                        aria-hidden="true"></div>
+                    <img src="secciones/gastronomia/experience/ossobuco-0373.jpg"
+                        [alt]="'GASTRONOMY.EXPERIENCE.RESTAURANT_IMAGE_ALT' | transloco" loading="lazy"
+                        class="relative aspect-[4/5] w-full object-cover shadow-xl">
                 </div>
-
-
             </div>
-
-
-            <!-- Texto -->
-
             <div class="lg:col-span-7">
-
-
-                <span class="uppercase tracking-[0.3em] sm:tracking-[0.45em] text-[11px] text-[#8e4c2f]">
-
-                    {{ 'GASTRONOMY.EXPERIENCE.SUBTITLE' | transloco }}
-
-                </span>
-
-
-                <h2
-                    class="mt-5 sm:mt-6 font-title text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-light text-[#382821]">
-
-                    {{ 'GASTRONOMY.EXPERIENCE.TITLE' | transloco }}
-
-                </h2>
-
-
-                <div class="w-16 sm:w-24 h-px bg-[#c8b89a] my-6 sm:my-8"></div>
-
-
-                <p class="text-[#5c5a3e] text-base sm:text-lg leading-7 sm:leading-9">
-
-                    {{ 'GASTRONOMY.EXPERIENCE.DESCRIPTION' | transloco }}
-
-                </p>
-
-
-                <blockquote
-                    class="mt-6 sm:mt-8 border-l-2 border-[#bb644a] pl-4 sm:pl-6 italic text-lg sm:text-xl text-[#7a7a74]">
-
-                    "{{ 'GASTRONOMY.EXPERIENCE.QUOTE' | transloco }}"
-
-                </blockquote>
-
-
-                <div class="mt-8 sm:mt-10">
-
-                    <h3 class="font-title text-2xl sm:text-3xl text-[#382821]">
-
-                        {{ 'GASTRONOMY.EXPERIENCE.CHEF' | transloco }}
-
-                    </h3>
-
-                    <span class="uppercase tracking-[0.25em] sm:tracking-[0.35em] text-[10px] text-[#bb644a]">
-
-                        {{ 'GASTRONOMY.EXPERIENCE.ROLE' | transloco }}
-
-                    </span>
-
+                <span class="experience-eyebrow">{{ 'GASTRONOMY.EXPERIENCE.SUBTITLE' | transloco }}</span>
+                <h2 class="experience-title">{{ 'GASTRONOMY.EXPERIENCE.TITLE' | transloco }}</h2>
+                <div class="experience-divider" aria-hidden="true"></div>
+                <div class="experience-copy space-y-6">
+                    <p>{{ 'GASTRONOMY.EXPERIENCE.DESCRIPTION' | transloco }}</p>
+                    <p>{{ 'GASTRONOMY.EXPERIENCE.MENU_DESCRIPTION' | transloco }}</p>
+                    <p>{{ 'GASTRONOMY.EXPERIENCE.TRADITION_DESCRIPTION' | transloco }}</p>
                 </div>
-
-
             </div>
-
-
         </div>
-
-
-
-        <!-- PLATOS ESTRELLA -->
-
-        <div class="mt-16 sm:mt-24">
-
-
-            <div class="text-center mb-10 sm:mb-12">
-
-                <span class="uppercase tracking-[0.25em] sm:tracking-[0.4em] text-[11px] text-[#8e4c2f]">
-
-                    {{ 'GASTRONOMY.EXPERIENCE.DISH_SUBTITLE' | transloco }}
-
-                </span>
-
-
-                <h3 class="mt-4 font-title text-3xl sm:text-4xl text-[#382821]">
-
-                    {{ 'GASTRONOMY.EXPERIENCE.DISH_TITLE' | transloco }}
-
-                </h3>
-
-
+        <div class="mt-24 grid items-center gap-12 lg:mt-32 lg:grid-cols-12 lg:gap-14">
+            <div class="lg:col-span-7">
+                <span class="experience-eyebrow">{{ 'GASTRONOMY.EXPERIENCE.WINE_BAR.SUBTITLE' | transloco }}</span>
+                <h2 class="experience-title">{{ 'GASTRONOMY.EXPERIENCE.WINE_BAR.TITLE' | transloco }}</h2>
+                <div class="experience-divider" aria-hidden="true"></div>
+                <p class="experience-copy">{{ 'GASTRONOMY.EXPERIENCE.WINE_BAR.DESCRIPTION' | transloco }}</p>
             </div>
-
-
-
-            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-6 md:gap-8">
-
-
-                <div class="group">
-
-                    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80"
-                        class="h-[220px] sm:h-[240px] md:h-[260px] w-full object-cover transition duration-700 group-hover:scale-105">
-
-
-                    <h4 class="mt-5 font-title text-xl sm:text-2xl text-[#382821]">
-                        {{ 'GASTRONOMY.EXPERIENCE.DISH1' | transloco }}
-                    </h4>
-
+            <div class="px-3 lg:col-span-5 lg:px-0">
+                <div class="relative">
+                    <div class="pointer-events-none absolute -bottom-4 -right-4 h-full w-full border border-[#c8b89a]"
+                        aria-hidden="true"></div>
+                    <img src="secciones/gastronomia/experience/copa-aperitivo-0197.jpg"
+                        [alt]="'GASTRONOMY.EXPERIENCE.WINE_BAR.IMAGE_ALT' | transloco" loading="lazy"
+                        class="relative aspect-[4/5] w-full object-cover shadow-xl">
                 </div>
-
-
-
-                <div class="group">
-
-                    <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&q=80"
-                        class="h-[220px] sm:h-[240px] md:h-[260px] w-full object-cover transition duration-700 group-hover:scale-105">
-
-
-                    <h4 class="mt-5 font-title text-xl sm:text-2xl text-[#382821]">
-                        {{ 'GASTRONOMY.EXPERIENCE.DISH2' | transloco }}
-                    </h4>
-
-                </div>
-
-
-
-
-                <div class="group">
-
-                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80"
-                        class="h-[220px] sm:h-[240px] md:h-[260px] w-full object-cover transition duration-700 group-hover:scale-105">
-
-
-                    <h4 class="mt-5 font-title text-xl sm:text-2xl text-[#382821]">
-                        {{ 'GASTRONOMY.EXPERIENCE.DISH3' | transloco }}
-                    </h4>
-
-                </div>
-
-
             </div>
-
-
         </div>
-
-
+        <div class="mt-24 lg:mt-32">
+            <div class="mb-10 text-center sm:mb-12">
+                <span class="experience-eyebrow">{{ 'GASTRONOMY.EXPERIENCE.DISH_SUBTITLE' | transloco }}</span>
+                <h2 class="mt-4 font-title text-3xl text-[#382821] sm:text-4xl">{{ 'GASTRONOMY.EXPERIENCE.DISH_TITLE' |
+                    transloco }}</h2>
+            </div>
+            <div class="grid gap-8 md:grid-cols-3">
+                <figure>
+                    <img src="secciones/gastronomia/experience/trucha-0375.jpg"
+                        [alt]="'GASTRONOMY.EXPERIENCE.DISH1' | transloco" loading="lazy"
+                        class="aspect-[3/2] w-full object-cover">
+                    <figcaption class="mt-4 font-title text-xl text-[#382821] sm:text-2xl">{{
+                        'GASTRONOMY.EXPERIENCE.DISH1' | transloco }}</figcaption>
+                </figure>
+                <figure>
+                    <img src="secciones/gastronomia/experience/horno-barro-0297.jpg"
+                        [alt]="'GASTRONOMY.EXPERIENCE.DISH2' | transloco" loading="lazy"
+                        class="aspect-[3/2] w-full object-cover">
+                    <figcaption class="mt-4 font-title text-xl text-[#382821] sm:text-2xl">{{
+                        'GASTRONOMY.EXPERIENCE.DISH2' | transloco }}</figcaption>
+                </figure>
+                <figure>
+                    <img src="secciones/gastronomia/experience/pavlova-0372.jpg"
+                        [alt]="'GASTRONOMY.EXPERIENCE.DISH3' | transloco" loading="lazy"
+                        class="aspect-[3/2] w-full object-cover">
+                    <figcaption class="mt-4 font-title text-xl text-[#382821] sm:text-2xl">{{
+                        'GASTRONOMY.EXPERIENCE.DISH3' | transloco }}</figcaption>
+                </figure>
+            </div>
+        </div>
     </div>
-
 </section>
