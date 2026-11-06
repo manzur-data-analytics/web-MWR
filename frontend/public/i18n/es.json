@@ -152,47 +152,27 @@
     "EVENTS": {
         "HERO": {
             "SUBTITLE": "Eventos & Bodas",
-            "TITLE": "Celebraciones que se convierten en recuerdos inolvidables",
-            "DESCRIPTION": "Creamos experiencias únicas para bodas, eventos sociales y encuentros corporativos en un entorno exclusivo, combinando gastronomía, naturaleza y atención personalizada.",
+            "TITLE": "Celebraciones en el corazón de la Quebrada",
+            "DESCRIPTION": "Bodas, encuentros sociales y eventos corporativos rodeados por los cerros de Maimará. Espacios al aire libre y salones privados, con un equipo que acompaña cada detalle.",
             "BUTTON": "Solicitar cotización"
-        },
-        "GALLERY": {
-            "SUBTITLE": "Eventos exclusivos",
-            "TITLE": "Momentos diseñados para recordar",
-            "ITEMS": {
-                "WEDDING": {
-                    "TITLE": "Bodas elegantes",
-                    "CATEGORY": "Celebraciones privadas"
-                },
-                "SOCIAL": {
-                    "TITLE": "Encuentros inolvidables",
-                    "CATEGORY": "Eventos sociales"
-                },
-                "CORPORATE": {
-                    "TITLE": "Eventos corporativos",
-                    "CATEGORY": "Experiencias empresariales"
-                },
-                "CELEBRATION": {
-                    "TITLE": "Grandes celebraciones",
-                    "CATEGORY": "Momentos especiales"
-                }
-            }
         },
         "OFFERS": {
             "SUBTITLE": "Nuestra propuesta",
             "TITLE": "Eventos diseñados para momentos únicos",
-            "VIEW": "Ver experiencia",
             "WEDDINGS": {
-                "TITLE": "Bodas",
-                "SHORT": "Celebraciones elegantes diseñadas alrededor de cada detalle."
+                "TITLE": "Bodas"
             },
             "SOCIAL": {
-                "TITLE": "Eventos sociales",
-                "SHORT": "Encuentros memorables con gastronomía y ambientaciones exclusivas."
+                "TITLE": "Eventos sociales"
             },
             "CORPORATE": {
-                "TITLE": "Eventos corporativos",
-                "SHORT": "Espacios profesionales para reuniones, encuentros y celebraciones empresariales."
+                "TITLE": "Eventos corporativos"
+            },
+            "CAROUSEL": {
+                "LABEL": "Carrusel",
+                "PREVIOUS": "Foto anterior",
+                "NEXT": "Foto siguiente",
+                "GO_TO": "Ir a la foto"
             }
         },
         "SPACES": {
@@ -217,11 +197,11 @@
         },
         "QUOTE": {
             "SUBTITLE": "Solicitud de cotización",
-            "TITLE": "Comencemos a planificar su próximo evento",
-            "DESCRIPTION": "Comparta con nosotros los detalles de su celebración y nuestro equipo preparará una propuesta personalizada adaptada a sus necesidades.",
+            "TITLE": "Comencemos a planificar tu próximo evento",
+            "DESCRIPTION": "Compartí con nosotros los detalles de la celebración y nuestro equipo diseñará una propuesta personalizada adaptada a tus necesidades.",
             "EXPERIENCE": "Experiencias memorables",
             "EXPERIENCE_TITLE": "Cada celebración merece un escenario excepcional",
-            "EXPERIENCE_DESCRIPTION": "Nuestro equipo acompaña cada etapa de la planificación para que solo tenga que disfrutar del momento.",
+            "EXPERIENCE_DESCRIPTION": "Nuestro equipo acompaña cada etapa de la planificación para que solo tengas que disfrutar del momento.",
             "STAT1_NUMBER": "200+",
             "STAT1_LABEL": "Invitados",
             "STAT2_NUMBER": "4",
@@ -238,9 +218,9 @@
             "PHONE": "Teléfono",
             "GUESTS": "Cantidad aproximada de invitados",
             "BUDGET": "Presupuesto estimado",
-            "MESSAGE": "Cuéntenos cómo imagina su evento...",
+            "MESSAGE": "Contanos cómo imaginás tu evento...",
             "BUTTON": "Solicitar propuesta",
-            "DATE_TYPE": "¿Ya tiene una fecha definida?",
+            "DATE_TYPE": "¿Ya tenés una fecha definida?",
             "EXACT_DATE": "Fecha exacta",
             "MONTH_ONLY": "Mes aproximado"
         }

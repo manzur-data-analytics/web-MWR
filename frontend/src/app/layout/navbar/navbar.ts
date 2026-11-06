@@ -70,14 +70,14 @@ export class Navbar {
     this.langMenuOpen.set(false);
   }
 
-  // --- Nuevo: una sola función en vez de [ngClass] repetido en cada <a> ---
+
+  // --- Ya lo tenías, pero le sumamos el cierre del dropdown de idioma ---
   navLinkClass(): string {
     return this.scrolled
       ? 'text-stone-800 hover:opacity-70'
       : 'text-white hover:opacity-70';
   }
 
-  // --- Ya lo tenías, pero le sumamos el cierre del dropdown de idioma ---
   toggleMenu() {
     this.mobileMenuOpen = !this.mobileMenuOpen;
   }

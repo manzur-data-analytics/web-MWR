@@ -152,47 +152,27 @@
     "EVENTS": {
         "HERO": {
             "SUBTITLE": "Events & Weddings",
-            "TITLE": "Celebrations that become unforgettable memories",
-            "DESCRIPTION": "We create unique experiences for weddings, social events, and corporate gatherings in an exclusive setting, combining gastronomy, nature, and personalized service.",
+            "TITLE": "Celebrations in the heart of the Quebrada",
+            "DESCRIPTION": "Weddings, social gatherings and corporate events surrounded by the hills of Maimará. Outdoor spaces and private venues, with a team that takes care of every detail.",
             "BUTTON": "Request a quote"
-        },
-        "GALLERY": {
-            "SUBTITLE": "Exclusive events",
-            "TITLE": "Moments designed to remember",
-            "ITEMS": {
-                "WEDDING": {
-                    "TITLE": "Elegant weddings",
-                    "CATEGORY": "Private celebrations"
-                },
-                "SOCIAL": {
-                    "TITLE": "Unforgettable gatherings",
-                    "CATEGORY": "Social events"
-                },
-                "CORPORATE": {
-                    "TITLE": "Corporate events",
-                    "CATEGORY": "Business experiences"
-                },
-                "CELEBRATION": {
-                    "TITLE": "Grand celebrations",
-                    "CATEGORY": "Special moments"
-                }
-            }
         },
         "OFFERS": {
             "SUBTITLE": "Our proposal",
             "TITLE": "Events designed for unique moments",
-            "VIEW": "View experience",
             "WEDDINGS": {
-                "TITLE": "Weddings",
-                "SHORT": "Elegant celebrations designed around every detail."
+                "TITLE": "Weddings"
             },
             "SOCIAL": {
-                "TITLE": "Social events",
-                "SHORT": "Memorable gatherings with exclusive gastronomy and settings."
+                "TITLE": "Social events"
             },
             "CORPORATE": {
-                "TITLE": "Corporate events",
-                "SHORT": "Professional spaces for meetings, gatherings and business celebrations."
+                "TITLE": "Corporate events"
+            },
+            "CAROUSEL": {
+                "LABEL": "Carousel",
+                "PREVIOUS": "Previous photo",
+                "NEXT": "Next photo",
+                "GO_TO": "Go to photo"
             }
         },
         "SPACES": {
@@ -218,7 +198,7 @@
         "QUOTE": {
             "SUBTITLE": "Quote request",
             "TITLE": "Let's start planning your next event",
-            "DESCRIPTION": "Share the details of your celebration with us, and our team will prepare a personalized proposal tailored to your needs.",
+            "DESCRIPTION": "Share the details of the celebration with us, and our team will design a personalized proposal tailored to your needs.",
             "EXPERIENCE": "Memorable experiences",
             "EXPERIENCE_TITLE": "Every celebration deserves an exceptional setting",
             "EXPERIENCE_DESCRIPTION": "Our team guides you through every stage of planning so you can simply enjoy the moment.",

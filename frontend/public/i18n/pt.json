@@ -152,47 +152,27 @@
     "EVENTS": {
         "HERO": {
             "SUBTITLE": "Eventos & Casamentos",
-            "TITLE": "Celebrações que se transformam em memórias inesquecíveis",
-            "DESCRIPTION": "Criamos experiências únicas para casamentos, eventos sociais e encontros corporativos em um ambiente exclusivo, combinando gastronomia, natureza e atendimento personalizado.",
+            "TITLE": "Celebrações no coração da Quebrada",
+            "DESCRIPTION": "Casamentos, encontros sociais e eventos corporativos cercados pelos cerros de Maimará. Espaços ao ar livre e salões privativos, com uma equipe que acompanha cada detalhe.",
             "BUTTON": "Solicitar orçamento"
-        },
-        "GALLERY": {
-            "SUBTITLE": "Eventos exclusivos",
-            "TITLE": "Momentos criados para lembrar",
-            "ITEMS": {
-                "WEDDING": {
-                    "TITLE": "Casamentos elegantes",
-                    "CATEGORY": "Celebrações privadas"
-                },
-                "SOCIAL": {
-                    "TITLE": "Encontros inesquecíveis",
-                    "CATEGORY": "Eventos sociais"
-                },
-                "CORPORATE": {
-                    "TITLE": "Eventos corporativos",
-                    "CATEGORY": "Experiências empresariais"
-                },
-                "CELEBRATION": {
-                    "TITLE": "Grandes celebrações",
-                    "CATEGORY": "Momentos especiais"
-                }
-            }
         },
         "OFFERS": {
             "SUBTITLE": "Nossa proposta",
             "TITLE": "Eventos planejados para momentos únicos",
-            "VIEW": "Ver experiência",
             "WEDDINGS": {
-                "TITLE": "Casamentos",
-                "SHORT": "Celebrações elegantes pensadas em cada detalhe."
+                "TITLE": "Casamentos"
             },
             "SOCIAL": {
-                "TITLE": "Eventos sociais",
-                "SHORT": "Encontros memoráveis com gastronomia e ambientes exclusivos."
+                "TITLE": "Eventos sociais"
             },
             "CORPORATE": {
-                "TITLE": "Eventos corporativos",
-                "SHORT": "Espaços profissionais para reuniões e celebrações empresariais."
+                "TITLE": "Eventos corporativos"
+            },
+            "CAROUSEL": {
+                "LABEL": "Carrossel",
+                "PREVIOUS": "Foto anterior",
+                "NEXT": "Próxima foto",
+                "GO_TO": "Ir para a foto"
             }
         },
         "SPACES": {
@@ -218,10 +198,10 @@
         "QUOTE": {
             "SUBTITLE": "Solicitação de cotação",
             "TITLE": "Vamos começar a planejar seu próximo evento",
-            "DESCRIPTION": "Compartilhe conosco os detalhes da sua comemoração e nossa equipe preparará uma proposta personalizada sob medida.",
+            "DESCRIPTION": "Compartilhe conosco os detalhes da celebração e nossa equipe criará uma proposta personalizada adaptada às suas necessidades.",
             "EXPERIENCE": "Experiências memoráveis",
             "EXPERIENCE_TITLE": "Toda comemoração merece um cenário excepcional",
-            "EXPERIENCE_DESCRIPTION": "Nossa equipe acompanha cada etapa do planejamento para que você só precise aprovechar o momento.",
+            "EXPERIENCE_DESCRIPTION": "Nossa equipe acompanha cada etapa do planejamento para que você só precise aproveitar o momento.",
             "STAT1_NUMBER": "200+",
             "STAT1_LABEL": "Convidados",
             "STAT2_NUMBER": "4",
