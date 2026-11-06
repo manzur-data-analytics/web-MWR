@@ -19,41 +19,85 @@ export class EventosOffers {
       id: 'weddings',
       title: 'EVENTS.OFFERS.WEDDINGS.TITLE',
       images: this.imagePaths('bodas', [
-        'BYF02676.jpg', 'primera-0056.jpg', 'segunda-0059.jpg',
-        'tercera-0221.jpg', 'cuarta-0287.jpg', 'quinta-0294.jpg',
+        'BYF02676.webp', 'primera-0056.webp', 'segunda-0059.webp',
+        'tercera-0221.webp', 'cuarta-0287.webp', 'quinta-0294.webp',
       ]),
     },
     {
       id: 'social',
       title: 'EVENTS.OFFERS.SOCIAL.TITLE',
       images: this.imagePaths('eventos-sociales', [
-        'primera-0171.jpg', 'segunda-0200.jpg', 'tercera-202.jpg',
-        'quinta-0268.jpg', 'cuarta-0257.jpg', 'sexta-0280.jpg', 'septima-0323.jpg',
+        'primera-0171.webp', 'segunda-0200.webp', 'tercera-202.webp',
+        'quinta-0268.webp', 'cuarta-0257.webp', 'sexta-0280.webp', 'septima-0323.webp',
       ]),
     },
     {
       id: 'corporate',
       title: 'EVENTS.OFFERS.CORPORATE.TITLE',
       images: this.imagePaths('eventos-corporativos', [
-        'segunda-0165.jpg', 'primera-0139.jpg', 'tercera-0168.jpg',
-        'cuarta-0185.jpg', 'quinta-0212.jpg', 'sexta-0234.jpg',
-        'septima-0331.jpg', 'octava-0338.jpg', 'novena-0344.jpg',
+        'segunda-0165.webp', 'primera-0139.webp', 'tercera-0168.webp',
+        'cuarta-0185.webp', 'quinta-0212.webp', 'sexta-0254.webp',
+        'septima-0331.webp', 'octava-0338.webp', 'novena-0344.webp',
       ]),
     },
   ];
 
   readonly activeSlides = signal<Record<string, number>>({});
+  readonly pendingSlides = signal<Record<string, number>>({});
+  private readonly imageCache = new Map<string, Promise<void>>();
 
   activeIndex(offer: EventOffer): number {
     return this.activeSlides()[offer.id] ?? 0;
   }
 
   move(offer: EventOffer, direction: number): void {
-    this.select(offer, (this.activeIndex(offer) + direction + offer.images.length) % offer.images.length);
+    const current = this.pendingSlides()[offer.id] ?? this.activeIndex(offer);
+    void this.select(offer, (current + direction + offer.images.length) % offer.images.length);
   }
 
-  select(offer: EventOffer, index: number): void {
-    this.activeSlides.update(current => ({ ...current, [offer.id]: index }));
+  async select(offer: EventOffer, index: number): Promise<void> {
+    this.pendingSlides.update(current => ({ ...current, [offer.id]: index }));
+    try {
+      await this.loadImage(offer.images[index]);
+      // A slower request must not replace a more recent selection.
+      if (this.pendingSlides()[offer.id] !== index) return;
+      this.activeSlides.update(current => ({ ...current, [offer.id]: index }));
+      this.preloadNeighbors(offer);
+    } catch {
+      // Keep the current photograph visible if the next one cannot load.
+    } finally {
+      if (this.pendingSlides()[offer.id] === index) {
+        this.pendingSlides.update(current => {
+          const next = { ...current };
+          delete next[offer.id];
+          return next;
+        });
+      }
+    }
+  }
+
+  preloadNeighbors(offer: EventOffer): void {
+    const index = this.activeIndex(offer);
+    for (const offset of [-1, 1]) {
+      const neighbor = (index + offset + offer.images.length) % offer.images.length;
+      void this.loadImage(offer.images[neighbor]).catch(() => {});
+    }
+  }
+
+  private loadImage(src: string): Promise<void> {
+    const cached = this.imageCache.get(src);
+    if (cached) return cached;
+    const ready = new Promise<void>((resolve, reject) => {
+      const image = new Image();
+      image.onload = () => {
+        image.decode().then(resolve, resolve);
+      };
+      image.onerror = () => reject(new Error(`Unable to load ${src}`));
+      image.src = src;
+    });
+    this.imageCache.set(src, ready);
+    void ready.catch(() => this.imageCache.delete(src));
+    return ready;
   }
 
   formatNumber(value: number): string {

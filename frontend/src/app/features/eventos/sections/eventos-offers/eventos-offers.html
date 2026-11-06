@@ -8,10 +8,12 @@
         <div class="grid gap-12 lg:grid-cols-3 lg:gap-8">
             @for (offer of offers; track offer.id) {
                 <article role="region" [attr.aria-roledescription]="'EVENTS.OFFERS.CAROUSEL.LABEL' | transloco"
-                    [attr.aria-labelledby]="'offer-title-' + offer.id">
+                    [attr.aria-labelledby]="'offer-title-' + offer.id"
+                    [attr.aria-busy]="pendingSlides()[offer.id] !== undefined">
                     <div class="relative aspect-[4/5] overflow-hidden bg-[#281c17]">
                         <img [id]="'offer-image-' + offer.id" [src]="offer.images[activeIndex(offer)]"
-                            [alt]="offer.title | transloco" loading="lazy" class="h-full w-full object-cover">
+                            [alt]="offer.title | transloco" loading="lazy" (load)="preloadNeighbors(offer)"
+                            class="h-full w-full object-cover">
                         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" aria-hidden="true"></div>
                         <h3 [id]="'offer-title-' + offer.id" class="absolute inset-x-6 bottom-7 font-title text-4xl leading-tight text-white sm:text-5xl lg:text-4xl">
                             {{ offer.title | transloco }}
