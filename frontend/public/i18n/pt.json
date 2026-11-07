@@ -1,4 +1,8 @@
 {
+    "WHATSAPP": {
+        "MESSAGE": "Olá, gostaria de saber sobre...",
+        "LABEL": "Entrar em contato pelo WhatsApp"
+    },
     "NAVBAR": {
         "INICIO": "Início",
         "ALOJAMIENTO": "Acomodações",
