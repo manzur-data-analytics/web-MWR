@@ -10,7 +10,7 @@ from pathlib import Path
 from PIL import Image, ImageOps
 
 
-root = Path(__file__).resolve().parents[1] / "public/secciones/eventos/offers"
+root = Path(__file__).resolve().parents[1] / "public/images/secciones/eventos/galeria"
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("source", type=Path, help="Originals directory, organized by category")
 args = parser.parse_args()
