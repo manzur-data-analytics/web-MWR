@@ -69,11 +69,13 @@ Las plantillas usan claves como `EVENTS.HERO.TITLE` mediante el pipe `transloco`
 
 ## Modificar imágenes y carruseles
 
-Guardá las fotos en `frontend/public/secciones/`, dentro del módulo correspondiente. En HTML y TypeScript se referencian desde `secciones/...`, sin el prefijo `public/`.
+Guardá las fotos en `frontend/public/images/secciones/`, dentro del módulo correspondiente. En HTML y TypeScript se referencian desde `images/secciones/...`, sin el prefijo `public/`.
 
 Usá nombres descriptivos, en minúsculas y sin espacios, conservando el número de foto cuando corresponda. Si renombrás un archivo, actualizá todas sus referencias.
 
 Los tres carruseles de Eventos tienen sus listas y su orden definidos en `frontend/src/app/features/eventos/sections/eventos-offers/eventos-offers.ts`. Para agregar o reordenar fotos, editá esas listas; los indicadores y contadores se calculan según la cantidad de imágenes.
+
+Los carruseles usan únicamente imágenes WebP, directamente en las carpetas `bodas/`, `eventos-sociales/` y `eventos-corporativos/` dentro de `frontend/public/images/secciones/eventos/galeria/`. Los originales se guardan fuera del repositorio. Para generar nuevas imágenes, ejecutá `python frontend/scripts/optimize-event-images.py "ruta/a/originales"` desde la raíz; esa carpeta debe contener las categorías correspondientes con los JPG. Requiere Python y Pillow (`python -m pip install Pillow`). El script conserva la proporción, limita las dimensiones a 1200 × 1600 píxeles y escribe las WebP en la carpeta de cada categoría. Incluí las imágenes generadas y actualizá las listas del carrusel con sus nombres `.webp`.
 
 La sección “Nuestros espacios” de Eventos está temporalmente comentada en la página y sus imports. Sus archivos y traducciones se conservan para poder reactivarla.
 

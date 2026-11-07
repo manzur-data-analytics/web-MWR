@@ -49,3 +49,33 @@
     outline: 2px solid #e8bd80;
     outline-offset: 3px;
 }
+
+.offer-card { position: relative; }
+.expand-gallery { display: none; }
+
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
+    .offer-card {
+        transition: transform 280ms ease, filter 280ms ease;
+        transform-origin: center;
+    }
+    .offer-card:first-child { transform-origin: left center; }
+    .offer-card:last-child { transform-origin: right center; }
+    .offer-card.is-expanded {
+        z-index: 10;
+        transform: translateY(-10px) scale(1.08);
+        filter: drop-shadow(0 20px 24px rgb(0 0 0 / 45%));
+    }
+    .expand-gallery {
+        display: block;
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        cursor: pointer;
+        color: white;
+    }
+    .expand-gallery:focus-visible { outline: 2px solid #e8bd80; outline-offset: -4px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .offer-card { transition: none; }
+}

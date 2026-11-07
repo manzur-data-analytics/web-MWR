@@ -1,4 +1,8 @@
 {
+    "WHATSAPP": {
+        "MESSAGE": "Hi, I'd like to ask about...",
+        "LABEL": "Contact us on WhatsApp"
+    },
     "NAVBAR": {
         "INICIO": "Home",
         "ALOJAMIENTO": "Accommodation",
@@ -172,7 +176,9 @@
                 "LABEL": "Carousel",
                 "PREVIOUS": "Previous photo",
                 "NEXT": "Next photo",
-                "GO_TO": "Go to photo"
+                "GO_TO": "Go to photo",
+                "EXPAND": "Expand carousel",
+                "CLOSE": "Collapse carousel"
             }
         },
         "SPACES": {

@@ -1,6 +1,7 @@
 <div class="whatsapp-wrapper">
 
-    <a href="https://wa.me/549XXXXXXXXXX" target="_blank" class="whatsapp-float">
+    <a [href]="whatsappUrl('WHATSAPP.MESSAGE' | transloco)" target="_blank" rel="noopener noreferrer"
+        [attr.aria-label]="'WHATSAPP.LABEL' | transloco" class="whatsapp-float">
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor">
 
