@@ -105,6 +105,6 @@ export class EventosOffers {
   }
 
   private imagePaths(folder: string, files: string[]): string[] {
-    return files.map(file => `secciones/eventos/offers/${folder}/${file}`);
+    return files.map(file => `images/secciones/eventos/galeria/${folder}/${file}`);
   }
 }
