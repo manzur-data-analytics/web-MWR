@@ -114,14 +114,20 @@
 
             <!-- Bloque Original generado dinámicamente -->
             <div class="flex shrink-0 items-center gap-16">
-                <img *ngFor="let logo of logosInifinitos" [src]="'images/aliados/' + logo" [alt]="logo"
-                    class="h-10 w-auto opacity-40 hover:opacity-100 transition object-contain brightness-0 invert">
+                <a *ngFor="let logo of logosInifinitos" [href]="logo.url" target="_blank"
+                    rel="noopener noreferrer" class="shrink-0">
+                    <img [src]="'images/aliados/' + logo.image" [alt]="logo.name"
+                        class="h-10 w-auto opacity-40 hover:opacity-100 transition object-contain brightness-0 invert">
+                </a>
             </div>
 
             <!-- Bloque Espejo (Idéntico para mantener el bucle sin saltos visuales) -->
             <div class="flex shrink-0 items-center gap-16" aria-hidden="true">
-                <img *ngFor="let logo of logosInifinitos" [src]="'images/aliados/' + logo" [alt]="logo"
-                    class="h-10 w-auto opacity-40 hover:opacity-100 transition object-contain brightness-0 invert">
+                <a *ngFor="let logo of logosInifinitos" [href]="logo.url" target="_blank"
+                    rel="noopener noreferrer" tabindex="-1" class="shrink-0">
+                    <img [src]="'images/aliados/' + logo.image" [alt]="logo.name"
+                        class="h-10 w-auto opacity-40 hover:opacity-100 transition object-contain brightness-0 invert">
+                </a>
             </div>
 
         </div>

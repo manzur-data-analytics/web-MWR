@@ -31,10 +31,14 @@ export class Footer {
   ];
 
   // 2. Base de logos de marcas (solo los nombres de archivo)
-  private baseLogos: string[] = ['cm.png', 'eb.png', 'lh.png'];
+  private baseLogos = [
+    { image: 'cm.png', name: 'Casa Mocha', url: 'https://www.instagram.com/casa_mocha/?hl=es' },
+    { image: 'eb.png', name: 'Bodega El Bayeh', url: 'https://bodegaelbayeh.com.ar/' },
+    { image: 'lh.png', name: 'La Huerta Tambo', url: 'https://lahuertatambo.com/' }
+  ];
 
   // 3. Array final que usará el HTML
-  logosInifinitos: string[] = [];
+  logosInifinitos: { image: string; name: string; url: string }[] = [];
 
   ngOnInit(): void {
     // Multiplicamos la lista para asegurarnos de que llene monitores ultra-wide
