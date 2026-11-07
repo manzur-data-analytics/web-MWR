@@ -9,10 +9,10 @@
         </div>
         <div class="grid gap-12 lg:grid-cols-3 lg:gap-8">
             @for (offer of offers; track offer.id) {
-            <article role="region" [attr.aria-roledescription]="'EVENTS.OFFERS.CAROUSEL.LABEL' | transloco"
+            <article class="offer-card" [class.is-expanded]="expandedOffer()?.id === offer.id" role="region" [attr.aria-roledescription]="'EVENTS.OFFERS.CAROUSEL.LABEL' | transloco"
                 [attr.aria-labelledby]="'offer-title-' + offer.id"
                 [attr.aria-busy]="pendingSlides()[offer.id] !== undefined">
-                <div class="relative aspect-[4/5] overflow-hidden bg-[#281c17]">
+                <div class="offer-photo relative aspect-[4/5] overflow-hidden bg-[#281c17]">
                     <img [id]="'offer-image-' + offer.id" [src]="offer.images[activeIndex(offer)]"
                         [alt]="offer.title | transloco" loading="lazy" (load)="preloadNeighbors(offer)"
                         class="h-full w-full object-cover">
@@ -22,6 +22,10 @@
                         class="absolute inset-x-6 bottom-7 font-title text-4xl leading-tight text-white sm:text-5xl lg:text-4xl">
                         {{ offer.title | transloco }}
                     </h3>
+                    <button type="button" class="expand-gallery" (click)="toggleExpansion(offer)"
+                        [attr.aria-pressed]="expandedOffer()?.id === offer.id"
+                        [attr.aria-label]="((expandedOffer()?.id === offer.id ? 'EVENTS.OFFERS.CAROUSEL.CLOSE' : 'EVENTS.OFFERS.CAROUSEL.EXPAND') | transloco) + ': ' + (offer.title | transloco)">
+                    </button>
                     <button type="button" class="carousel-arrow left-3" (click)="move(offer, -1)"
                         [attr.aria-label]="'EVENTS.OFFERS.CAROUSEL.PREVIOUS' | transloco"
                         [attr.aria-controls]="'offer-image-' + offer.id">

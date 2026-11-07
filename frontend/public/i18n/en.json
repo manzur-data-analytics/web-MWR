@@ -172,7 +172,9 @@
                 "LABEL": "Carousel",
                 "PREVIOUS": "Previous photo",
                 "NEXT": "Next photo",
-                "GO_TO": "Go to photo"
+                "GO_TO": "Go to photo",
+                "EXPAND": "Expand carousel",
+                "CLOSE": "Collapse carousel"
             }
         },
         "SPACES": {

@@ -1,4 +1,4 @@
-﻿import { Component, signal } from '@angular/core';
+﻿import { Component, HostListener, signal } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
 
 interface EventOffer {
@@ -41,6 +41,28 @@ export class EventosOffers {
       ]),
     },
   ];
+
+  readonly expandedOffer = signal<EventOffer | null>(null);
+
+  toggleExpansion(offer: EventOffer): void {
+    if (!window.matchMedia('(min-width: 1024px) and (hover: hover) and (pointer: fine)').matches) return;
+    this.expandedOffer.update(current => current?.id === offer.id ? null : offer);
+  }
+
+  @HostListener('document:keydown.escape')
+  collapse(): void {
+    this.expandedOffer.set(null);
+  }
+
+  @HostListener('document:click', ['$event'])
+  onOutsideClick(event: MouseEvent): void {
+    if (event.target instanceof Element && !event.target.closest('.offer-card')) this.collapse();
+  }
+
+  @HostListener('window:resize')
+  onResize(): void {
+    if (!window.matchMedia('(min-width: 1024px) and (hover: hover) and (pointer: fine)').matches) this.collapse();
+  }
 
   readonly activeSlides = signal<Record<string, number>>({});
   readonly pendingSlides = signal<Record<string, number>>({});
