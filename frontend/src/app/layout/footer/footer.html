@@ -96,6 +96,7 @@
 
             <div class="flex flex-wrap justify-center gap-5">
                 <a *ngFor="let social of socials" [href]="social.url"
+                    target="_blank" rel="noopener noreferrer"
                     class="font-body text-xs text-white/60 hover:text-white transition">
                     {{social.name}}
                 </a>

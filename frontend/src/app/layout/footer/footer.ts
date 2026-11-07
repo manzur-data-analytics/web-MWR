@@ -22,11 +22,7 @@ export class Footer {
   socials = [
     {
       name: 'Instagram',
-      url: '#'
-    },
-    {
-      name: 'Facebook',
-      url: '#'
+      url: 'https://www.instagram.com/maimarawineresort/'
     }
   ];
 
