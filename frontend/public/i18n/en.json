@@ -14,32 +14,34 @@
         "RESERVAR": "Book Now"
     },
     "HOME": {
-        "TITLE": "Soon",
-        "DESCRIPTION": "Discover a new hospitality experience where design, nature, and comfort come together to create unforgettable moments.",
+        "TITLE": "MAIMARÁ WINE RESORT",
+        "DESCRIPTION": "A sanctuary where nature takes center stage, architecture engages in dialogue with its surroundings, and every experience invites you to discover the essence of the Quebrada de Humahuaca.",
         "ACCOMMODATION": {
             "SUBTITLE": "Accommodation",
-            "TITLE": "Suites and villas designed for complete tranquility.",
-            "DESCRIPTION": "Contemporary architecture meets nature to create private, refined spaces dedicated to comfort and relaxation. Every suite has been thoughtfully designed to offer an exclusive hospitality experience surrounded by breathtaking landscapes and timeless elegance.",
-            "BUTTON": "Book Now"
+            "TITLE": "Opening 2027",
+            "CARD_LABEL": "Luxury Wine Resort",
+            "CARD_TITLE": "Wake up facing the Paleta del Pintor",
+            "DESCRIPTION": "Eight luxury suites designed with every comfort for a restful stay. A starting point for discovering the Quebrada from within: its flavors, its people, and the traditions that live on in every village.",
+            "BUTTON": "Learn more"
         },
         "GASTRONOMY": {
             "PREVIEW": {
-                "SUBTITLE": "Gastronomic Experience",
-                "TITLE": "Flavors born from our land",
-                "DESCRIPTION": "A culinary proposal where local ingredients, high-altitude wines and the creativity of our team come together to create unforgettable moments.",
+                "SUBTITLE": "Dining",
+                "TITLE": "Hilario Restaurante & Wine Bar",
+                "DESCRIPTION": "Two ways to discover the flavors of northern Argentina: a tasting menu in the restaurant and, on the terraces, sharing plates paired with wines from our winery, El Bayeh.",
                 "BUTTON": "Discover gastronomy"
             }
         },
         "EVENTS": {
             "SUBTITLE": "Events & Weddings",
-            "TITLE": "Unique moments, unforgettable celebrations",
-            "DESCRIPTION": "We create exclusive experiences for weddings, social gatherings and corporate events, combining elegance, gastronomy and an exceptional setting.",
+            "TITLE": "Celebrations",
+            "DESCRIPTION": "Weddings, social gatherings, and corporate events with the Quebrada as a backdrop. Outdoor spaces and private rooms, a tailored dining experience, and a team that takes care of every detail.",
             "CARD1": "Weddings",
-            "CARD1_DESC": "Celebrations designed to create unforgettable memories.",
-            "CARD2": "Social Events",
-            "CARD2_DESC": "Private experiences tailored to every occasion.",
-            "CARD3": "Corporate",
-            "CARD3_DESC": "Elegant spaces for meetings and business gatherings.",
+            "CARD1_DESC": "Ceremony, reception, and party all in one place.",
+            "CARD2": "Social events",
+            "CARD2_DESC": "Birthdays, anniversaries, and gatherings tailored to you.",
+            "CARD3": "Corporate events",
+            "CARD3_DESC": "Meetings, presentations, and incentive events overlooking the hills.",
             "FORM": {
                 "SUBTITLE": "Request a proposal",
                 "TITLE": "Let's plan your event",
@@ -419,10 +421,32 @@
         "BUTTON": "Check availability"
     },
     "FOOTER": {
-        "DESCRIPTION": "A sanctuary where nature, architecture and hospitality come together to create unforgettable moments.",
+        "DESCRIPTION": "A sanctuary where nature takes center stage, architecture engages in dialogue with its surroundings, and every experience invites you to discover the essence of the Quebrada de Humahuaca.",
         "NAVIGATION": "Explore",
         "CONTACT": "Contact",
+        "PROVINCE": "Jujuy Province",
         "LOCATION": "Location",
         "RIGHTS": "All rights reserved."
+    },
+    "ABOUT_PAGE": {
+        "HERO": {
+            "SUBTITLE": "About us",
+            "TITLE": "A dream built by the hands of the Quebrada"
+        },
+        "STORY": {
+            "SUBTITLE": "Our history",
+            "PARAGRAPH1": "The family's story in the north began almost a hundred years ago. Pedro, Fernando and Daniel's father, traveled through the Quebrada buying fruit and vegetables from growers in each village. Those journeys sparked a love for Maimará that his sons have always carried with them.",
+            "PARAGRAPH2": "In 2010, Fernando and Daniel began imagining a hotel on the hillside, facing the Paleta del Pintor, to welcome visitors to the Quebrada and share everything this land had given them. From the very first day, they knew it could not be just any hotel: it had to grow out of this place and its people.",
+            "PARAGRAPH3": "They worked with local builders, using local techniques and materials, and stones from the Río Grande, brought one by one to build the gardens' dry-stone walls. From the foundations up, every wall sought to reflect the culture of the villages surrounding Maimará.",
+            "PARAGRAPH4": "Today, their children run El Bayeh winery, and the estate's wines are the heart that brings Maimará Wine Resort to life. The spirit remains the same as it was more than fifteen years ago: to open the doors and share their love for this land with everyone who arrives."
+        },
+        "GALLERY": {
+            "LABEL": "Resort gallery",
+            "PREVIOUS": "Previous",
+            "NEXT": "Next",
+            "PERGOLA": "The resort pergola",
+            "RESORT": "Accommodation at Maimará Wine Resort",
+            "EVENTS": "Celebration spaces at the resort"
+        }
     }
 }

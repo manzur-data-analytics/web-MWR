@@ -24,19 +24,19 @@
                 </h4>
                 <ul class="mt-6 space-y-4">
                     <li>
-                        <a href="#hotel" class="font-body text-sm text-white/70 hover:text-white transition">
-                            {{ 'NAVBAR.INICIO' | transloco }}
+                        <a routerLink="/gastronomia" class="font-body text-sm text-white/70 hover:text-white transition">
+                            {{ 'NAVBAR.GASTRONOMIA' | transloco }}
                         </a>
                     </li>
 
                     <li>
-                        <a href="#habitaciones" class="font-body text-sm text-white/70 hover:text-white transition">
-                            {{ 'NAVBAR.ALOJAMIENTO' | transloco }}
+                        <a routerLink="/eventos" class="font-body text-sm text-white/70 hover:text-white transition">
+                            {{ 'NAVBAR.EVENTOS' | transloco }}
                         </a>
                     </li>
 
                     <li>
-                        <a href="#experiencias" class="font-body text-sm text-white/70 hover:text-white transition">
+                        <a routerLink="/experiencias" class="font-body text-sm text-white/70 hover:text-white transition">
                             {{ 'NAVBAR.EXPERIENCIAS' | transloco }}
                         </a>
                     </li>
@@ -52,15 +52,16 @@
 
                 <div class="mt-6 space-y-4">
                     <p class="font-body text-sm text-white/70 leading-6">
-                        {{hotelInfo.address}}
+                        {{hotelInfo.address}}<br>
+                        {{ 'FOOTER.PROVINCE' | transloco }}
                     </p>
 
                     <p class="font-body text-sm text-white/70">
-                        {{hotelInfo.phone}}
+                        <a href="tel:+543885153356" class="hover:text-white transition">{{hotelInfo.phone}}</a>
                     </p>
 
                     <p class="font-body text-sm text-white/70 break-all">
-                        {{hotelInfo.email}}
+                        <a [href]="'mailto:' + hotelInfo.email" class="hover:text-white transition">{{hotelInfo.email}}</a>
                     </p>
 
                 </div>

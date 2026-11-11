@@ -1,0 +1,110 @@
+<form class="space-y-8">
+
+                        <!-- Selector: Tipo de Evento -->
+                        <div>
+                            <label
+                                class="uppercase tracking-[0.2em] text-[11px] text-[#8e4c2f] font-semibold block mb-3">
+                                {{'EVENTS.QUOTE.EVENT_TYPE' | transloco}}
+                            </label>
+
+                            <!-- Grid ajustado: 2 columnas en mobile/tablet y 4 solo en pantallas XL -->
+                            <div class="grid grid-cols-2 xl:grid-cols-4 gap-2.5">
+                                <button *ngFor="let type of eventTypes" type="button"
+                                    (click)="selectedType = type.value"
+                                    class="py-2.5 px-1.5 border text-[11px] xl:text-xs font-medium uppercase text-center transition-all duration-300 leading-snug flex items-center justify-center min-h-[48px] whitespace-normal"
+                                    [class.bg-[#382821]]="selectedType === type.value"
+                                    [class.text-white]="selectedType === type.value"
+                                    [class.border-[#382821]]="selectedType === type.value"
+                                    [class.bg-white]="selectedType !== type.value"
+                                    [class.text-[#382821]]="selectedType !== type.value"
+                                    [class.hover:border-[#d4a15a]]="selectedType !== type.value">
+
+                                    <span>
+                                        {{ type.label | transloco }}
+                                    </span>
+
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Campos de Información Personal -->
+                        <div class="grid md:grid-cols-2 gap-5 sm:gap-6">
+                            <div class="relative">
+                                <input
+                                    class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white/80 w-full text-sm text-[#2b211d] focus:bg-white focus:outline-none focus:border-[#d4a15a] transition-all"
+                                    placeholder="{{'EVENTS.QUOTE.NAME' | transloco}}">
+                            </div>
+
+                            <div class="relative">
+                                <input
+                                    class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white/80 w-full text-sm text-[#2b211d] focus:bg-white focus:outline-none focus:border-[#d4a15a] transition-all"
+                                    placeholder="{{'EVENTS.QUOTE.EMAIL' | transloco}}">
+                            </div>
+
+                            <div class="relative">
+                                <input
+                                    class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white/80 w-full text-sm text-[#2b211d] focus:bg-white focus:outline-none focus:border-[#d4a15a] transition-all"
+                                    placeholder="{{'EVENTS.QUOTE.PHONE' | transloco}}">
+                            </div>
+
+                            <div class="relative">
+                                <input type="number"
+                                    class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white/80 w-full text-sm text-[#2b211d] focus:bg-white focus:outline-none focus:border-[#d4a15a] transition-all"
+                                    placeholder="{{'EVENTS.QUOTE.GUESTS' | transloco}}">
+                            </div>
+                        </div>
+
+                        <!-- Selector: Tipo de Fecha + Input -->
+                        <div
+                            class="bg-white/50 p-4 sm:p-5 border border-[#e8dfd1] rounded-sm space-y-4 max-w-full overflow-hidden">
+                            <label
+                                class="uppercase tracking-[0.2em] sm:tracking-[0.3em] text-[11px] text-[#8e4c2f] font-semibold block">
+                                {{'EVENTS.QUOTE.DATE_TYPE' | transloco}}
+                            </label>
+
+                            <div class="flex gap-2.5 sm:gap-3">
+                                <button type="button" (click)="dateType='exact'"
+                                    class="flex-1 py-2.5 px-2 sm:px-4 text-[11px] sm:text-xs tracking-wider uppercase font-medium border transition-all duration-300 whitespace-normal leading-snug"
+                                    [class.bg-[#d4a15a]]="dateType==='exact'" [class.text-white]="dateType==='exact'"
+                                    [class.border-[#d4a15a]]="dateType==='exact'" [class.bg-white]="dateType!=='exact'"
+                                    [class.text-[#382821]]="dateType!=='exact'"
+                                    [class.border-[#d9cfbf]]="dateType!=='exact'">
+                                    {{'EVENTS.QUOTE.EXACT_DATE' | transloco}}
+                                </button>
+
+                                <button type="button" (click)="dateType='month'"
+                                    class="flex-1 py-2.5 px-2 sm:px-4 text-[11px] sm:text-xs tracking-wider uppercase font-medium border transition-all duration-300 whitespace-normal leading-snug"
+                                    [class.bg-[#d4a15a]]="dateType==='month'" [class.text-white]="dateType==='month'"
+                                    [class.border-[#d4a15a]]="dateType==='month'" [class.bg-white]="dateType!=='month'"
+                                    [class.text-[#382821]]="dateType!=='month'"
+                                    [class.border-[#d9cfbf]]="dateType!=='month'">
+                                    {{'EVENTS.QUOTE.MONTH_ONLY' | transloco}}
+                                </button>
+                            </div>
+
+                            <!-- Inputs adaptados para pantallas móviles sin desborde -->
+                            <input *ngIf="dateType === 'exact'" type="date"
+                                class="luxury-input border border-[#d9cfbf] px-3.5 sm:px-5 py-3 bg-white w-full max-w-full min-w-0 box-border text-xs sm:text-sm text-[#2b211d] focus:outline-none focus:border-[#d4a15a] appearance-none">
+
+                            <input *ngIf="dateType === 'month'" type="month"
+                                class="luxury-input border border-[#d9cfbf] px-3.5 sm:px-5 py-3 bg-white w-full max-w-full min-w-0 box-border text-xs sm:text-sm text-[#2b211d] focus:outline-none focus:border-[#d4a15a] appearance-none">
+                        </div>
+
+                        <!-- Presupuesto y Mensaje -->
+                        <div class="space-y-5">
+                            <input
+                                class="luxury-input border border-[#d9cfbf] px-5 py-4 bg-white/80 w-full text-sm text-[#2b211d] focus:bg-white focus:outline-none focus:border-[#d4a15a] transition-all"
+                                placeholder="{{'EVENTS.QUOTE.BUDGET' | transloco}}">
+
+                            <textarea
+                                class="luxury-input h-32 border border-[#d9cfbf] px-5 py-4 bg-white/80 w-full text-sm text-[#2b211d] focus:bg-white focus:outline-none focus:border-[#d4a15a] resize-none transition-all"
+                                placeholder="{{'EVENTS.QUOTE.MESSAGE' | transloco}}"></textarea>
+                        </div>
+
+                        <!-- Botón Submit -->
+                        <button type="submit"
+                            class="luxury-submit w-full py-5 bg-[#382821] text-white uppercase tracking-[0.3em] text-xs font-semibold hover:bg-[#8e4c2f] transition-colors duration-300 shadow-lg">
+                            {{'EVENTS.QUOTE.BUTTON' | transloco}}
+                        </button>
+
+                    </form>

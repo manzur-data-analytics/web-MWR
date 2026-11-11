@@ -68,18 +68,10 @@
             shadow-[0_25px_70px_rgba(59,40,33,.18)]">
 
 
-                @for(img of imagenes; track img; let i=$index){
-
-                <img [src]="img" class="
-                absolute inset-0
-                w-full h-full
-                object-cover
-                transition-all
-                duration-[1400ms]" [class.opacity-100]="i===imagenActual()" [class.opacity-0]="i!==imagenActual()"
-                    [class.scale-105]="i===imagenActual()" [class.scale-100]="i!==imagenActual()">
-
-
-                }
+                <img src="images/home/alojamiento/primera-0113.jpg"
+                    [alt]="'HOME.ACCOMMODATION.CARD_TITLE' | transloco"
+                    loading="lazy"
+                    class="absolute inset-0 w-full h-full object-cover">
 
 
                 <div class="
@@ -102,7 +94,7 @@
                 text-[10px]
                 text-[#bb644a]">
 
-                    Luxury Collection
+                    {{'HOME.ACCOMMODATION.CARD_LABEL' | transloco}}
 
                 </span>
 
@@ -115,7 +107,7 @@
                 text-[#382821]">
 
 
-                    {{'HOME.ACCOMMODATION.TITLE' | transloco}}
+                    {{'HOME.ACCOMMODATION.CARD_TITLE' | transloco}}
 
 
                 </h3>
@@ -157,49 +149,6 @@
                 </a>
 
             </div>
-
-        </div>
-
-        <!-- MINI FOTO SOLO DESKTOP -->
-        <div class="
-        hidden
-        lg:block
-        absolute
-        right-20
-        bottom-2">
-
-            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80"
-                class="
-            w-56
-            h-40
-            object-cover
-            border-[8px]
-            border-[#f4f1ed]
-            shadow-xl">
-
-        </div>
-
-        <!-- INDICADORES -->
-        <div class="
-        flex
-        justify-center
-        lg:justify-start
-        gap-3
-        mt-10
-        lg:mt-16">
-
-            @for(img of imagenes; track img; let i=$index){
-
-            <button (click)="imagenActual.set(i)" class="
-            h-[2px]
-            transition-all
-            duration-500" [class.w-10]="i===imagenActual()" [class.w-5]="i!==imagenActual()"
-                [class.bg-[#8e4c2f]]="i===imagenActual()" [class.bg-[#c8b89a]]="i!==imagenActual()">
-
-            </button>
-
-
-            }
 
         </div>
 

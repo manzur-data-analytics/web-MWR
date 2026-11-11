@@ -3,7 +3,7 @@
     <!-- Imagen ambiente -->
     <div class="absolute inset-0 overflow-hidden">
 
-        <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=2200&q=90" class="
+        <img src="images/home/eventos/primera-0055.jpg" class="
         w-full
         h-full
         object-cover
@@ -100,6 +100,7 @@
 
             <div class="event-card">
 
+                <img src="images/secciones/eventos/galeria/bodas/BYF02676.webp" [alt]="'HOME.EVENTS.CARD1' | transloco" loading="lazy" class="w-full aspect-[4/3] object-cover mb-6">
                 <span>01</span>
 
                 <h3>
@@ -116,6 +117,7 @@
 
             <div class="event-card">
 
+                <img src="images/secciones/eventos/galeria/eventos-sociales/tercera-202.webp" [alt]="'HOME.EVENTS.CARD2' | transloco" loading="lazy" class="w-full aspect-[4/3] object-cover mb-6">
                 <span>02</span>
 
                 <h3>
@@ -133,6 +135,7 @@
 
             <div class="event-card">
 
+                <img src="images/secciones/eventos/galeria/eventos-corporativos/tercera-0168.webp" [alt]="'HOME.EVENTS.CARD3' | transloco" loading="lazy" class="w-full aspect-[4/3] object-cover mb-6">
                 <span>03</span>
 
                 <h3>
@@ -174,7 +177,7 @@
                 text-[#8e4c2f]
                 text-[10px]">
 
-                    {{'HOME.EVENTS.FORM.SUBTITLE' | transloco}}
+                    {{'EVENTS.QUOTE.SUBTITLE' | transloco}}
 
                 </span>
 
@@ -188,7 +191,7 @@
                 font-light
                 text-[#382821]">
 
-                    {{'HOME.EVENTS.FORM.TITLE' | transloco}}
+                    {{'EVENTS.QUOTE.TITLE' | transloco}}
 
                 </h3>
 
@@ -208,47 +211,7 @@
 
 
 
-            <form class="
-            grid
-            md:grid-cols-2
-            gap-5">
-
-
-                <input class="luxury-input" placeholder="{{'HOME.EVENTS.FORM.NAME' | transloco}}">
-
-
-
-                <input class="luxury-input" placeholder="{{'HOME.EVENTS.FORM.EMAIL' | transloco}}">
-
-
-
-                <input class="luxury-input" placeholder="{{'HOME.EVENTS.FORM.DATE' | transloco}}">
-
-
-
-                <input class="luxury-input" placeholder="{{'HOME.EVENTS.FORM.GUESTS' | transloco}}">
-
-
-
-                <textarea class="
-                luxury-input
-                md:col-span-2
-                h-36" placeholder="{{'HOME.EVENTS.FORM.MESSAGE' | transloco}}">
-                </textarea>
-
-
-
-
-                <button class="
-                luxury-submit
-                md:col-span-2">
-
-                    {{'HOME.EVENTS.FORM.BUTTON' | transloco}}
-
-                </button>
-
-
-            </form>
+            <app-eventos-form />
 
 
         </div>

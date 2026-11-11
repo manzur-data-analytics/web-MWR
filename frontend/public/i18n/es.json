@@ -14,32 +14,34 @@
         "RESERVAR": "Reservar"
     },
     "HOME": {
-        "TITLE": "Próximamente",
-        "DESCRIPTION": "Descubrí un nuevo concepto de hospitalidad donde el diseño, la naturaleza y el confort se unen para crear una experiencia única.",
+        "TITLE": "MAIMARÁ WINE RESORT",
+        "DESCRIPTION": "Un refugio donde la naturaleza se convierte en protagonista, la arquitectura dialoga con el entorno y cada experiencia invita a descubrir la esencia de la Quebrada de Humahuaca.",
         "ACCOMMODATION": {
             "SUBTITLE": "Alojamiento",
-            "TITLE": "Suites y villas concebidas para el descanso absoluto.",
-            "DESCRIPTION": "Espacios donde la arquitectura contemporánea dialoga con la naturaleza para brindar privacidad, confort y una experiencia de hospitalidad excepcional. Cada ambiente ha sido diseñado para disfrutar del tiempo con calma, rodeado de paisajes únicos y detalles cuidadosamente seleccionados.",
-            "BUTTON": "Reservar"
+            "TITLE": "Apertura 2027",
+            "CARD_LABEL": "Luxury Wine Resort",
+            "CARD_TITLE": "Despertar frente a la Paleta del Pintor",
+            "DESCRIPTION": "Ocho suites de lujo diseñadas con todo el confort para el descanso. Un punto de partida para conocer la Quebrada desde adentro: sus sabores, su gente y las tradiciones que siguen vivas en cada pueblo.",
+            "BUTTON": "Conocer más"
         },
         "GASTRONOMY": {
             "PREVIEW": {
-                "SUBTITLE": "Experiencia Gastronómica",
-                "TITLE": "Sabores que nacen de nuestra tierra",
-                "DESCRIPTION": "Una propuesta culinaria donde los productos regionales, el vino de altura y la creatividad de nuestro equipo se unen para crear momentos inolvidables.",
+                "SUBTITLE": "Gastronomía",
+                "TITLE": "Hilario Restaurante & Wine Bar",
+                "DESCRIPTION": "Dos propuestas para descubrir el norte en la mesa: un menú de pasos en el restaurante y, en las terrazas, platos para compartir con los vinos de nuestra bodega, El Bayeh.",
                 "BUTTON": "Descubrir gastronomía"
             }
         },
         "EVENTS": {
             "SUBTITLE": "Eventos & Bodas",
-            "TITLE": "Momentos únicos, celebraciones inolvidables",
-            "DESCRIPTION": "Creamos experiencias exclusivas para bodas, eventos sociales y encuentros corporativos, combinando elegancia, gastronomía y un entorno excepcional.",
+            "TITLE": "Celebraciones",
+            "DESCRIPTION": "Bodas, encuentros sociales y eventos corporativos con la Quebrada de fondo. Espacios al aire libre y salones privados, una propuesta gastronómica a medida y un equipo que acompaña cada detalle.",
             "CARD1": "Bodas",
-            "CARD1_DESC": "Celebraciones diseñadas para crear recuerdos inolvidables.",
-            "CARD2": "Eventos Sociales",
-            "CARD2_DESC": "Experiencias privadas adaptadas a cada ocasión.",
+            "CARD1_DESC": "Ceremonia, recepción y fiesta en un mismo lugar.",
+            "CARD2": "Eventos sociales",
+            "CARD2_DESC": "Cumpleaños, aniversarios y reuniones a medida.",
             "CARD3": "Corporativos",
-            "CARD3_DESC": "Espacios ideales para reuniones y encuentros empresariales.",
+            "CARD3_DESC": "Reuniones, presentaciones e incentivos frente a los cerros.",
             "FORM": {
                 "SUBTITLE": "Solicitar propuesta",
                 "TITLE": "Comencemos a planificar tu evento",
@@ -446,10 +448,32 @@
         "BUTTON": "Ver disponibilidad"
     },
     "FOOTER": {
-        "DESCRIPTION": "Un refugio donde la naturaleza, la arquitectura y la hospitalidad se encuentran para crear momentos inolvidables.",
+        "DESCRIPTION": "Un refugio donde la naturaleza se convierte en protagonista, la arquitectura dialoga con el entorno y cada experiencia invita a descubrir la esencia de la Quebrada de Humahuaca.",
         "NAVIGATION": "Explorar",
         "CONTACT": "Contacto",
+        "PROVINCE": "Provincia de Jujuy",
         "LOCATION": "Ubicación",
         "RIGHTS": "Todos los derechos reservados."
+    },
+    "ABOUT_PAGE": {
+        "HERO": {
+            "SUBTITLE": "Nosotros",
+            "TITLE": "Un sueño hecho con las manos de la Quebrada"
+        },
+        "STORY": {
+            "SUBTITLE": "Nuestra historia",
+            "PARAGRAPH1": "La historia de la familia en el norte empezó hace casi cien años. Pedro, padre de Fernando y Daniel, recorría la Quebrada comprando frutas y verduras a los productores de cada pueblo, y de esos viajes nació un cariño por Maimará que sus hijos llevaron siempre con ellos.",
+            "PARAGRAPH2": "En 2010, Fernando y Daniel empezaron a imaginar un hotel sobre el cerro, frente a la Paleta del Pintor, para recibir a quienes llegan a la Quebrada y compartir con ellos todo lo que esta tierra les había dado. Desde el primer día supieron que no podía ser un hotel cualquiera: tenía que nacer de este lugar y de su gente.",
+            "PARAGRAPH3": "Trabajaron con constructores de la zona, con técnicas y materiales locales, con la piedra del Río Grande, que se trajo una a una para levantar las pircas de los jardines. Desde los cimientos, cada muro buscó reflejar la cultura de los pueblos que rodean Maimará.",
+            "PARAGRAPH4": "Hoy, sus hijos llevan adelante la bodega El Bayeh, y los vinos de la finca son el corazón que le da vida a Maimará Wine Resort. El espíritu sigue siendo el mismo que hace más de quince años: abrir las puertas y compartir, con quien llegue, el amor por esta tierra."
+        },
+        "GALLERY": {
+            "LABEL": "Galería del resort",
+            "PREVIOUS": "Anterior",
+            "NEXT": "Siguiente",
+            "PERGOLA": "La pérgola del resort",
+            "RESORT": "Alojamiento en Maimará Wine Resort",
+            "EVENTS": "Espacios para celebraciones del resort"
+        }
     }
 }
