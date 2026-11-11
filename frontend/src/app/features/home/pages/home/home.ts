@@ -18,6 +18,7 @@ import { Nosotros } from './sections/nosotros/nosotros';
 
 export class Home implements AfterViewInit {
 
+  //prueba
   private transloco = inject(TranslocoService);
 
   private observeReveal(selector: string, threshold = 0.25) {
