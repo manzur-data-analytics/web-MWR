@@ -25,16 +25,26 @@ export interface Experience {
   styleUrl: './experiencias-signature.css',
 })
 export class ExperienciasSignature {
+  moveGallery(carousel: HTMLElement, direction: -1 | 1): void {
+    const count = carousel.children.length;
+    const width = carousel.clientWidth;
+    if (count < 2 || width === 0) return;
+
+    const currentIndex = Math.round(carousel.scrollLeft / width);
+    const nextIndex = (currentIndex + direction + count) % count;
+    carousel.scrollTo({ left: nextIndex * width, behavior: 'smooth' });
+  }
+
   experiences: Experience[] = [
     {
       id: 1,
       number: '01',
-      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=90',
+      image: '/images/secciones/experiencias/signature/picnic/picnic-canasta-jardines.jpg',
       gallery: [
-        'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=800&q=80',
+        '/images/secciones/experiencias/signature/picnic/picnic-canasta-jardines.jpg',
+        '/images/secciones/experiencias/signature/picnic/picnic-tabla-fiambres-quesos.jpg',
+        '/images/secciones/experiencias/signature/picnic/picnic-criolla-maimara.jpeg',
+        '/images/secciones/experiencias/signature/picnic/picnic-copa-frente-a-los-cerros.jpg',
       ],
       categoryKey: 'EXPERIENCES.SIGNATURE.PICNIC_CATEGORY',
       titleKey: 'EXPERIENCES.SIGNATURE.PICNIC_TITLE',
@@ -47,12 +57,13 @@ export class ExperienciasSignature {
     {
       id: 2,
       number: '02',
-      image: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1600&q=90',
+      image: '/images/secciones/experiencias/signature/wine-trip/wine-trip-presentacion-vino.jpg',
       gallery: [
-        'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1516594798947-e65505dbb29d?auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1543007630-9710e4a00a20?auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?auto=format&fit=crop&w=800&q=80',
+        '/images/secciones/experiencias/signature/wine-trip/wine-trip-presentacion-vino.jpg',
+        '/images/secciones/experiencias/signature/wine-trip/wine-trip-servicio-copa.jpg',
+        '/images/secciones/experiencias/signature/wine-trip/wine-trip-criolla-hielera.jpg',
+        '/images/secciones/experiencias/signature/wine-trip/wine-trip-botellas-criolla.jpg',
+        '/images/secciones/experiencias/signature/wine-trip/wine-trip-seleccion-vinos.jpg',
       ],
       categoryKey: 'EXPERIENCES.SIGNATURE.WINE_CATEGORY',
       titleKey: 'EXPERIENCES.SIGNATURE.WINE_TITLE',

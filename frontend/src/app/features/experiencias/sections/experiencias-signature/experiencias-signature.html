@@ -1,8 +1,8 @@
 <section id="signature-experiences" class="relative py-24 sm:py-32 bg-[#f8f5f1] overflow-hidden z-10">
     <!-- Imagen de fondo decorativa -->
     <div class="background-image">
-        <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=2200&q=80"
-            alt="Fondo">
+        <img src="/images/secciones/experiencias/hero/picnic-jardines-paleta-del-pintor.jpg"
+            alt="" loading="lazy">
     </div>
 
     <!-- Luces de gradiente decorativas -->
@@ -59,11 +59,11 @@
             <div class="experience-carreel-container order-2 w-full relative group">
 
                 <!-- Botones de navegación -->
-                <button (click)="carreel.scrollBy({left: -320, behavior: 'smooth'})"
+                <button type="button" (click)="moveGallery(carreel, -1)"
                     class="flex absolute left-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-white/90 backdrop-blur hover:bg-white text-[#382821] rounded-full items-center justify-center shadow-lg transition-all active:scale-95">
                     ‹
                 </button>
-                <button (click)="carreel.scrollBy({left: 320, behavior: 'smooth'})"
+                <button type="button" (click)="moveGallery(carreel, 1)"
                     class="flex absolute right-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-white/90 backdrop-blur hover:bg-white text-[#382821] rounded-full items-center justify-center shadow-lg transition-all active:scale-95">
                     ›
                 </button>
@@ -71,9 +71,9 @@
                 <!-- Contenedor del scroll horizontal -->
                 <div #carreel class="experience-carreel flex overflow-x-auto scrollbar-none snap-x snap-mandatory py-2">
                     <div *ngFor="let imgUrl of exp.gallery; let imgIndex = index"
-                        class="carreel-item flex-none w-full h-[320px] sm:h-[420px] snap-center snap-always relative overflow-hidden rounded-md group/img shadow-md">
+                        class="carreel-item flex-none w-full aspect-[3/4] snap-center snap-always relative overflow-hidden rounded-md group/img shadow-md">
 
-                        <img [src]="imgUrl" [alt]="(exp.titleKey | transloco) + ' - ' + (imgIndex + 1)"
+                        <img loading="lazy" decoding="async" [src]="imgUrl" [alt]="(exp.titleKey | transloco) + ' - ' + (imgIndex + 1)"
                             class="w-full h-full object-cover transition-transform duration-700 group-hover/img:scale-105">
 
                         <div class="absolute inset-0 bg-[#382821]/10 group-hover/img:bg-transparent transition-colors">
