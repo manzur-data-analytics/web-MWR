@@ -32,18 +32,25 @@
 
             <!-- CONTENIDO DE LA EXPERIENCIA (SIEMPRE PRIMERO EN MÓVIL) -->
             <div class="experience-content order-1 w-full">
+                <span class="uppercase tracking-[0.3em] text-xs text-[#8e4c2f]">{{ exp.categoryKey | transloco }}</span>
                 <h3>{{ exp.titleKey | transloco }}</h3>
                 <p>{{ exp.descKey | transloco }}</p>
 
                 <!-- Características / Iconos -->
-                <div class="experience-features">
-                    <span *ngFor="let f of exp.features">
-                        {{ f.icon }} {{ f.textKey | transloco }}
-                    </span>
+                <div class="mt-6 space-y-3 text-[#6b645b]">
+                    <div><strong>{{ 'EXPERIENCES.SIGNATURE.PANEL_AVAILABILITY' | transloco }}:</strong> {{ exp.availabilityKey | transloco }}</div>
+                    <div><strong>{{ 'EXPERIENCES.SIGNATURE.PANEL_MODE' | transloco }}:</strong> {{ exp.modeKey | transloco }}</div>
+                </div>
+                <p *ngIf="exp.noteKey">{{ exp.noteKey | transloco }}</p>
+                <div *ngIf="exp.routeKeys" class="mt-6 text-[#6b645b]">
+                    <strong>{{ 'EXPERIENCES.SIGNATURE.WINE_ROUTES' | transloco }}:</strong>
+                    <ul class="mt-3 list-disc pl-5 space-y-3">
+                        <li *ngFor="let routeKey of exp.routeKeys">{{ routeKey | transloco }}</li>
+                    </ul>
                 </div>
 
                 <!-- Botón de reserva -->
-                <a href="#reservar" class="experience-btn">
+                <a href="" (click)="$event.preventDefault()" class="experience-btn">
                     {{ 'EXPERIENCES.SIGNATURE.RESERVE' | transloco }}
                 </a>
             </div>

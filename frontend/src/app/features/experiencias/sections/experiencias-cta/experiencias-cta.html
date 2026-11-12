@@ -14,11 +14,6 @@
         </span>
 
 
-        <h2>
-            {{ 'EXPERIENCES.CTA.TITLE' | transloco }}
-        </h2>
-
-
         <div class="cta-line"></div>
 
 
@@ -30,14 +25,12 @@
         <div class="cta-actions">
 
 
-            <a href="#" class="cta-primary">
+            <a href="" (click)="$event.preventDefault()" class="cta-primary">
                 {{ 'EXPERIENCES.CTA.RESERVE' | transloco }}
             </a>
 
 
-            <a href="#" class="cta-secondary">
-                {{ 'EXPERIENCES.CTA.EXPLORE' | transloco }}
-            </a>
+
 
 
         </div>
