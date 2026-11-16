@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
 
 export interface Experience {
@@ -24,18 +24,40 @@ export interface Experience {
   templateUrl: './experiencias-signature.html',
   styleUrl: './experiencias-signature.css',
 })
-export class ExperienciasSignature {
+export class ExperienciasSignature implements AfterViewInit {
+  @ViewChildren('carreel') private carousels!: QueryList<ElementRef<HTMLElement>>;
+
+  ngAfterViewInit(): void {
+    this.carousels.forEach(({ nativeElement }) => {
+      nativeElement.scrollTo({ left: nativeElement.clientWidth, behavior: 'instant' });
+    });
+  }
+
+  normalizeGallery(carousel: HTMLElement): void {
+    const width = carousel.clientWidth;
+    const count = carousel.children.length - 2;
+    if (count < 2 || width === 0) return;
+
+    const index = Math.round(carousel.scrollLeft / width);
+    if (index === 0 || index === count + 1) {
+      carousel.scrollTo({
+        left: (index === 0 ? count : 1) * width,
+        behavior: 'instant',
+      });
+    }
+  }
+
   moveGallery(carousel: HTMLElement, direction: -1 | 1): void {
-    const count = carousel.children.length;
+    const count = carousel.children.length - 2;
     const width = carousel.clientWidth;
     if (count < 2 || width === 0) return;
 
     const currentIndex = Math.round(carousel.scrollLeft / width);
-    const nextIndex = (currentIndex + direction + count) % count;
+    const nextIndex = Math.max(0, Math.min(count + 1, currentIndex + direction));
     carousel.scrollTo({ left: nextIndex * width, behavior: 'smooth' });
   }
 
-  experiences: Experience[] = [
+  experiences: (Experience & { slides: string[] })[] = [
     {
       id: 1,
       number: '01',
@@ -77,5 +99,12 @@ export class ExperienciasSignature {
         'EXPERIENCES.SIGNATURE.WINE_ROUTE_GRAND',
       ],
     },
-  ];
+  ].map((experience) => ({
+    ...experience,
+    slides: [
+      experience.gallery[experience.gallery.length - 1],
+      ...experience.gallery,
+      experience.gallery[0],
+    ],
+  }));
 }
