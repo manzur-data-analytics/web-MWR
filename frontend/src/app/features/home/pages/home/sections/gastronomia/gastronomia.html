@@ -23,7 +23,7 @@
 
             <div class="relative overflow-hidden shadow-2xl">
 
-                <img src="images/home/gastronomia/primera-0302.jpg"
+                <img src="images/home/gastronomia/primera-0130.jpg"
                     class="main-image">
 
             </div>
@@ -49,16 +49,15 @@
 
 
 
-            <h2 class="
+            <h2 class="gastronomy-title
                 mt-6
                 font-title
-                text-4xl
-                sm:text-5xl
-                lg:text-6xl
                 font-light
                 text-white">
 
-                {{'HOME.GASTRONOMY.PREVIEW.TITLE' | transloco}}
+                @let title = 'HOME.GASTRONOMY.PREVIEW.TITLE' | transloco;
+                <span class="block whitespace-nowrap">{{ title.split(' & ')[0] }}</span>
+                <span class="block whitespace-nowrap">&amp; {{ title.split(' & ')[1] }}</span>
 
             </h2>
 
@@ -86,29 +85,13 @@
 
 
 
-            <a routerLink="/gastronomia" class="
-                inline-flex
-                items-center
-                gap-4
-                mt-10
-                uppercase
-                tracking-[0.35em]
-                text-xs
-                text-[#d4a15a]
-                group">
+            <a routerLink="/gastronomia" class="site-button site-button--light mt-10">
 
 
                 {{'HOME.GASTRONOMY.PREVIEW.BUTTON' | transloco}}
 
 
-                <span class="
-                    w-10
-                    h-px
-                    bg-[#d4a15a]
-                    transition-all
-                    duration-500
-                    group-hover:w-16">
-                </span>
+
 
 
             </a>

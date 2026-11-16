@@ -77,21 +77,3 @@
     line-height:1.9;
 
 }
-
-.experience-content a{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    margin-top:30px;
-
-    color:#d4a15a;
-
-    text-transform:uppercase;
-
-    letter-spacing:.3em;
-
-    font-size:.72rem;
-
-}

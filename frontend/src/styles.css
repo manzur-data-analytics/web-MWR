@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./app/shared/styles/buttons.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500&display=swap');
 
@@ -35,6 +36,25 @@ body {
 
 .font-body {
     font-family: var(--font-body);
+}
+
+/* Altura compartida por las portadas de todas las páginas. */
+.page-hero {
+    height: max(100svh, 50rem);
+}
+
+.page-hero > .page-hero-content {
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 0;
+    padding-top: var(--hero-content-padding-top, 8rem);
+    padding-bottom: 3rem;
+}
+
+@media (max-width: 639px) {
+    .page-hero {
+        height: max(100svh, 55rem);
+    }
 }
 
 @keyframes fadeUp {

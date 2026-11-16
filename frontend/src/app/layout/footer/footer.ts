@@ -1,10 +1,11 @@
+import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-footer',
-  imports: [TranslocoPipe, CommonModule],
+  imports: [TranslocoPipe, CommonModule, RouterLink],
   templateUrl: './footer.html',
   styleUrl: './footer.css',
 })
@@ -14,9 +15,9 @@ export class Footer {
 
   hotelInfo = {
     name: 'MWR Hotel',
-    address: 'Maimará, Jujuy, Argentina',
-    phone: '+54 388 000 0000',
-    email: 'reservas@mwrhotel.com'
+    address: 'Ex RN 9 3225, Maimar\u00e1',
+    phone: '+54 388 515 3356',
+    email: 'comercial@maimarawineresort.com'
   };
 
   socials = [

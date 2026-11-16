@@ -1,0 +1,115 @@
+/* Acciones de contenido: una base y una variante para fondos oscuros. */
+.site-button {
+    --button-bg: #8e4c2f;
+    --button-color: #fff;
+    --button-border: #8e4c2f;
+    --button-hover-bg: #743d26;
+    --button-hover-color: #fff;
+    position: relative;
+    isolation: isolate;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    box-sizing: border-box;
+    min-height: 50px;
+    max-width: 100%;
+    padding: 15px 28px;
+    border: 1px solid var(--button-border);
+    background: var(--button-bg);
+    color: var(--button-color);
+    font-family: var(--font-body);
+    font-size: .6875rem;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color .25s, border-color .25s, color .25s;
+}
+
+.site-button:hover {
+    background: var(--button-hover-bg);
+    border-color: var(--button-hover-bg);
+    color: var(--button-hover-color);
+}
+
+.site-button--light {
+    --button-bg: transparent;
+    --button-color: #e8bd80;
+    --button-border: #e8bd80;
+    --button-hover-bg: #e8bd80;
+    --button-hover-color: #382821;
+}
+
+/* Portadas: mayor presencia, flecha y entrada de color desde la izquierda. */
+.site-button--hero {
+    --button-bg: #a45e3c;
+    --button-border: #b77c58;
+    --button-hover-bg: #e8bd80;
+    --button-hover-color: #382821;
+    overflow: hidden;
+    min-height: 56px;
+    padding: 17px 32px;
+    letter-spacing: .25em;
+    box-shadow: 0 8px 24px rgba(24, 15, 10, .16);
+    transition: color .4s, border-color .4s, box-shadow .4s;
+}
+
+.site-button--hero::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: var(--button-hover-bg);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .45s cubic-bezier(.22, .61, .36, 1);
+}
+
+.site-button--hero::after {
+    content: '\2192';
+    font-size: 1.15rem;
+    line-height: 1;
+    letter-spacing: 0;
+    transition: transform .4s;
+}
+
+.site-button--hero.site-button--secondary {
+    --button-bg: rgba(38, 28, 23, .3);
+    --button-border: rgba(255, 255, 255, .8);
+    --button-hover-bg: #f8f5f1;
+    backdrop-filter: blur(8px);
+}
+
+.site-button--hero:hover {
+    background: var(--button-bg);
+    box-shadow: 0 12px 28px rgba(24, 15, 10, .22);
+}
+
+.site-button--hero:hover::before { transform: scaleX(1); }
+.site-button--hero:hover::after { transform: translateX(4px); }
+
+.site-button:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 5px;
+}
+
+.site-button:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+@media (max-width: 639px) {
+    .site-button { padding-inline: 22px; letter-spacing: .15em; }
+    .page-hero .site-button { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .site-button,
+    .site-button::before,
+    .site-button::after { transition: none; }
+}

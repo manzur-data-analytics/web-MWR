@@ -1,0 +1,30 @@
+.quote-chip {
+    padding: .8rem 1rem;
+    border: 1px solid #d9cfbf;
+    font-size: .72rem;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: #8e4c2f;
+    background: #faf8f5;
+}
+
+.event-type-card {
+    padding: 1rem;
+    border: 1px solid #d9cfbf;
+    transition: .35s;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: .75rem;
+    background: white;
+}
+
+
+.event-type-card:hover {
+    border-color: #8e4c2f;
+}
+
+.event-type-card.active {
+    background: #382821;
+    color: white;
+    border-color: #382821;
+}

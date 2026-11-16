@@ -1,8 +1,8 @@
 <section id="signature-experiences" class="relative py-24 sm:py-32 bg-[#f8f5f1] overflow-hidden z-10">
     <!-- Imagen de fondo decorativa -->
     <div class="background-image">
-        <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=2200&q=80"
-            alt="Fondo">
+        <img src="images/secciones/experiencias/hero/picnic-jardines-paleta-del-pintor.jpg"
+            alt="" loading="lazy">
     </div>
 
     <!-- Luces de gradiente decorativas -->
@@ -32,18 +32,25 @@
 
             <!-- CONTENIDO DE LA EXPERIENCIA (SIEMPRE PRIMERO EN MÓVIL) -->
             <div class="experience-content order-1 w-full">
+                <span class="uppercase tracking-[0.3em] text-xs text-[#8e4c2f]">{{ exp.categoryKey | transloco }}</span>
                 <h3>{{ exp.titleKey | transloco }}</h3>
                 <p>{{ exp.descKey | transloco }}</p>
 
                 <!-- Características / Iconos -->
-                <div class="experience-features">
-                    <span *ngFor="let f of exp.features">
-                        {{ f.icon }} {{ f.textKey | transloco }}
-                    </span>
+                <div class="mt-6 space-y-3 text-[#6b645b]">
+                    <div><strong>{{ 'EXPERIENCES.SIGNATURE.PANEL_AVAILABILITY' | transloco }}:</strong> {{ exp.availabilityKey | transloco }}</div>
+                    <div><strong>{{ 'EXPERIENCES.SIGNATURE.PANEL_MODE' | transloco }}:</strong> {{ exp.modeKey | transloco }}</div>
+                </div>
+                <p *ngIf="exp.noteKey">{{ exp.noteKey | transloco }}</p>
+                <div *ngIf="exp.routeKeys" class="mt-6 text-[#6b645b]">
+                    <strong>{{ 'EXPERIENCES.SIGNATURE.WINE_ROUTES' | transloco }}:</strong>
+                    <ul class="mt-3 list-disc pl-5 space-y-3">
+                        <li *ngFor="let routeKey of exp.routeKeys">{{ routeKey | transloco }}</li>
+                    </ul>
                 </div>
 
                 <!-- Botón de reserva -->
-                <a href="#reservar" class="experience-btn">
+                <a href="" (click)="$event.preventDefault()" class="site-button mt-8">
                     {{ 'EXPERIENCES.SIGNATURE.RESERVE' | transloco }}
                 </a>
             </div>
@@ -52,21 +59,21 @@
             <div class="experience-carreel-container order-2 w-full relative group">
 
                 <!-- Botones de navegación -->
-                <button (click)="carreel.scrollBy({left: -320, behavior: 'smooth'})"
+                <button type="button" (click)="moveGallery(carreel, -1)"
                     class="flex absolute left-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-white/90 backdrop-blur hover:bg-white text-[#382821] rounded-full items-center justify-center shadow-lg transition-all active:scale-95">
                     ‹
                 </button>
-                <button (click)="carreel.scrollBy({left: 320, behavior: 'smooth'})"
+                <button type="button" (click)="moveGallery(carreel, 1)"
                     class="flex absolute right-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-white/90 backdrop-blur hover:bg-white text-[#382821] rounded-full items-center justify-center shadow-lg transition-all active:scale-95">
                     ›
                 </button>
 
                 <!-- Contenedor del scroll horizontal -->
-                <div #carreel class="experience-carreel flex overflow-x-auto scrollbar-none snap-x snap-mandatory py-2">
-                    <div *ngFor="let imgUrl of exp.gallery; let imgIndex = index"
-                        class="carreel-item flex-none w-full h-[320px] sm:h-[420px] snap-center snap-always relative overflow-hidden rounded-md group/img shadow-md">
+                <div #carreel (scrollend)="normalizeGallery(carreel)" class="experience-carreel flex overflow-x-auto scrollbar-none snap-x snap-mandatory py-2">
+                    <div *ngFor="let imgUrl of exp.slides; let imgIndex = index"
+                        class="carreel-item flex-none w-full aspect-[3/4] snap-center relative overflow-hidden rounded-md group/img shadow-md">
 
-                        <img [src]="imgUrl" [alt]="(exp.titleKey | transloco) + ' - ' + (imgIndex + 1)"
+                        <img loading="lazy" decoding="async" [src]="imgUrl" [alt]="(exp.titleKey | transloco) + ' - ' + ((imgIndex + exp.gallery.length - 1) % exp.gallery.length + 1)"
                             class="w-full h-full object-cover transition-transform duration-700 group-hover/img:scale-105">
 
                         <div class="absolute inset-0 bg-[#382821]/10 group-hover/img:bg-transparent transition-colors">
@@ -75,7 +82,7 @@
                         <!-- Indicador de foto -->
                         <span
                             class="absolute bottom-3 left-3 text-[11px] font-mono tracking-widest text-white/90 bg-black/50 backdrop-blur-sm px-3 py-1 rounded-full">
-                            {{ imgIndex + 1 }} / {{ exp.gallery.length }}
+                            {{ (imgIndex + exp.gallery.length - 1) % exp.gallery.length + 1 }} / {{ exp.gallery.length }}
                         </span>
                     </div>
                 </div>

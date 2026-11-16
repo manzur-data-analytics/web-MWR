@@ -4,6 +4,8 @@
     /* Resetea la propiedad order en escritorio para dejar actuar a la grilla */
     .experience-row .experience-content,
     .experience-row .experience-carreel-container {
+    max-width: 30rem;
+    justify-self: center;
         order: unset !important;
     }
 
@@ -53,6 +55,8 @@
 /*CARRETE DE FOTOS HORIZONTAL*/
 .experience-carreel-container {
     min-width: 0;
+    max-width: 30rem;
+    justify-self: center;
     position: relative;
 }
 
@@ -62,12 +66,11 @@
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
-    touch-action: pan-x;
+    touch-action: pan-x pan-y;
 }
 
 .carreel-item {
     scroll-snap-align: center;
-    scroll-snap-stop: always;
 }
 
 .scrollbar-none::-webkit-scrollbar {
@@ -111,31 +114,4 @@
     font-size: .78rem;
     color: var(--clr-muted);
     border-radius: 2px;
-}
-
-/*BOTÓN DE RESERVA*/
-.experience-btn {
-    display: inline-flex;
-    margin-top: 32px;
-    padding: 14px 34px;
-    background: var(--clr-dark);
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    font-size: .72rem;
-    transition: background-color .35s, color .35s;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.experience-btn:hover {
-    background: var(--clr-gold);
-    color: var(--clr-dark);
-}
-
-@media (max-width: 640px) {
-    .experience-btn {
-        width: 100%;
-        justify-content: center;
-    }
 }
