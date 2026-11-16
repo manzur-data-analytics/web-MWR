@@ -52,6 +52,8 @@ export class ExperienciasSignature implements AfterViewInit {
     const width = carousel.clientWidth;
     if (count < 2 || width === 0) return;
 
+    // Reposition endpoint copies before moving, even if scrollend has not fired.
+    this.normalizeGallery(carousel);
     const currentIndex = Math.round(carousel.scrollLeft / width);
     const nextIndex = Math.max(0, Math.min(count + 1, currentIndex + direction));
     carousel.scrollTo({ left: nextIndex * width, behavior: 'smooth' });

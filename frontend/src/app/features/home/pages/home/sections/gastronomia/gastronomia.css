@@ -47,3 +47,8 @@
     }
 
 }
+.gastronomy-title {
+    font-size: clamp(1.5rem, 5vw, 3.75rem);
+    line-height: 1.15;
+    text-align: center;
+}

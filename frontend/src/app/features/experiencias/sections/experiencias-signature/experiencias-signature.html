@@ -50,7 +50,7 @@
                 </div>
 
                 <!-- Botón de reserva -->
-                <a href="" (click)="$event.preventDefault()" class="experience-btn">
+                <a href="" (click)="$event.preventDefault()" class="site-button mt-8">
                     {{ 'EXPERIENCES.SIGNATURE.RESERVE' | transloco }}
                 </a>
             </div>
@@ -71,7 +71,7 @@
                 <!-- Contenedor del scroll horizontal -->
                 <div #carreel (scrollend)="normalizeGallery(carreel)" class="experience-carreel flex overflow-x-auto scrollbar-none snap-x snap-mandatory py-2">
                     <div *ngFor="let imgUrl of exp.slides; let imgIndex = index"
-                        class="carreel-item flex-none w-full aspect-[3/4] snap-center snap-always relative overflow-hidden rounded-md group/img shadow-md">
+                        class="carreel-item flex-none w-full aspect-[3/4] snap-center relative overflow-hidden rounded-md group/img shadow-md">
 
                         <img loading="lazy" decoding="async" [src]="imgUrl" [alt]="(exp.titleKey | transloco) + ' - ' + ((imgIndex + exp.gallery.length - 1) % exp.gallery.length + 1)"
                             class="w-full h-full object-cover transition-transform duration-700 group-hover/img:scale-105">

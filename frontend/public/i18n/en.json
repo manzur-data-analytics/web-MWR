@@ -55,31 +55,28 @@
             "MORE": "Discover events"
         },
         "SPA": {
-            "SUBTITLE": "Wellness Wine Spa",
-            "TITLE": "A sanctuary dedicated to wellness.",
-            "DESCRIPTION": "Heated pools, spa circuit, relaxation lounges and signature wine-inspired treatments.",
-            "ITEM1": "Indoor wellness circuit",
-            "ITEM2": "Exclusive massages & therapies",
-            "ITEM3": "Spa Day experiences",
-            "BUTTON": "Discover the Spa",
-            "RESERVE": "Book Spa Day"
+            "SUBTITLE": "Opening 2027",
+            "TITLE": "Wine Spa",
+            "DESCRIPTION": "Coming soon, a new space of calm overlooking the hills. Our Wine Spa invites you to slow down and surrender to the water, warmth and aromas of wine.",
+            "ITEM1": "Indoor and outdoor pool",
+            "ITEM2": "Water circuit",
+            "ITEM3": "Wine-inspired treatments",
+            "BUTTON": "Learn more"
         },
         "EXPERIENCES": {
             "SUBTITLE": "Experiences",
-            "TITLE": "More than a stay",
-            "DESCRIPTION": "Discover unique moments designed to connect you with nature, gastronomy and relaxation.",
-            "PICNIC_TITLE": "Luxury Picnic",
-            "PICNIC_DESC": "Enjoy a gourmet picnic surrounded by beautiful gardens and breathtaking scenery.",
-            "WINE_TITLE": "Wine Tasting",
-            "WINE_DESC": "Taste a curated selection of regional wines paired with local specialties.",
-            "SUNSET_TITLE": "Sunset Experiences",
-            "SUNSET_DESC": "End the day with unforgettable sunsets, fine cuisine and premium wines.",
-            "BUTTON": "Discover experience"
+            "TITLE": "Moments to experience Maimará",
+            "DESCRIPTION": "A picnic in the gardens and a journey through the wines from our winery, to discover the Quebrada in a different way.",
+            "PICNIC_TITLE": "Picnic facing the Paleta del Pintor",
+            "PICNIC_DESC": "A basket of regional products and wine from our winery, to enjoy in the hotel gardens.",
+            "WINE_TITLE": "Wine Trip",
+            "WINE_DESC": "Three journeys through the wines of Bodega El Bayeh, in our Wine Bar overlooking the hills.",
+            "BUTTON": "Discover experiences"
         },
         "ABOUT": {
             "SUBTITLE": "Our story",
-            "TITLE": "A legacy built with passion and family",
-            "DESCRIPTION": "For generations, this estate has preserved stories, memories and a unique way of welcoming guests. Today we continue that legacy through tradition, nature and hospitality.",
+            "TITLE": "A dream built by the hands of the Quebrada",
+            "DESCRIPTION": "In 2010, Fernando and Daniel began imagining a hotel on the hillside, facing the Paleta del Pintor, to share their family's love for this land with everyone who arrives.",
             "GENERATIONS": "Generations",
             "YEARS": "Years of history",
             "BUTTON": "Discover our story"
@@ -87,32 +84,32 @@
     },
     "ACCOMMODATION": {
         "HERO": {
-            "SUBTITLE": "Rooms & Suites",
-            "TITLE": "Rest becomes an experience.",
-            "DESCRIPTION": "Every room has been designed to provide privacy, generous spaces and breathtaking vineyard views, blending contemporary comfort with the essence of Northern Argentina.",
-            "BUTTON": "Discover rooms",
-            "SECOND_BUTTON": "Reserve"
+            "SUBTITLE": "Accommodation · Opening 2027",
+            "TITLE": "Wake up facing the Paleta del Pintor.",
+            "DESCRIPTION": "Eight luxury suites designed with every comfort for a restful stay. A starting point for discovering the Quebrada from within: its flavors, its people, and the traditions that live on in every village.",
+            "BUTTON": "Keep me updated"
         },
         "EXPERIENCE": {
-            "SUBTITLE": "The Experience",
-            "TITLE": "More than a room.",
-            "DESCRIPTION": "Every stay is designed to combine comfort, nature and personalized hospitality.",
-            "HEADING": "Luxury in every detail",
-            "TEXT": "From regional breakfast to exclusive spa access and personalized concierge service, every moment is carefully crafted.",
-            "AMENITY1": "Regional Breakfast",
-            "AMENITY1_DESC": "Fresh local products every morning.",
-            "AMENITY2": "Wine Spa",
-            "AMENITY2_DESC": "Dry and wet wellness facilities.",
-            "AMENITY3": "Pool & Solarium",
-            "AMENITY3_DESC": "Heated outdoor pool overlooking the vineyards.",
-            "AMENITY4": "Concierge",
-            "AMENITY4_DESC": "Personal assistance throughout your stay."
+            "SUBTITLE": "Accommodation",
+            "TITLE": "Our services",
+            "AMENITY1": "8 luxury suites",
+            "AMENITY1_DESC": "Designed for rest, with every comfort.",
+            "AMENITY2": "Breakfast",
+            "AMENITY2_DESC": "Every morning, with regional products.",
+            "AMENITY3": "Wifi",
+            "AMENITY3_DESC": "Connection throughout the hotel.",
+            "AMENITY4": "Parking",
+            "AMENITY4_DESC": "For guests, within the hotel grounds.",
+            "AMENITY5": "Wine Spa",
+            "AMENITY5_DESC": "Water circuit, saunas and treatment rooms.",
+            "AMENITY6": "Pool",
+            "AMENITY6_DESC": "Indoor and outdoor, overlooking the hills."
         },
         "CTA": {
-            "SUBTITLE": "Your next stay starts here",
-            "TITLE": "Let us create your perfect getaway.",
-            "DESCRIPTION": "Our team will gladly help you choose the ideal room and answer any questions before your arrival.",
-            "BUTTON": "Book via WhatsApp"
+            "SUBTITLE": "Opening soon",
+            "TITLE": "Be the first to discover it",
+            "DESCRIPTION": "We are preparing every detail to welcome you. Get in touch and hear the latest news before anyone else.",
+            "BUTTON": "Keep me updated"
         }
     },
     "GASTRONOMY": {
@@ -235,37 +232,27 @@
     },
     "SPA": {
         "HERO": {
-            "SUBTITLE": "Wellness Wine Spa",
-            "TITLE": "A sanctuary where time slows down.",
-            "DESCRIPTION": "Heated pools, wet and dry spa circuits, wine therapy and treatments designed to restore body and mind in the heart of the Quebrada.",
-            "BUTTON": "Book Spa Day",
-            "TREATMENTS": "Treatment Menu"
+            "SUBTITLE": "Wine Spa · Opening 2027",
+            "TITLE": "A space of calm overlooking the hills",
+            "DESCRIPTION": "A Wine Spa designed to slow down: water, warmth and treatments inspired by the wines from our winery, with the Paleta del Pintor as a backdrop.",
+            "BUTTON": "BOOK"
         },
         "GALLERY": {
-            "SUBTITLE": "SPACES",
-            "TITLE": "Every space invites you to unwind.",
-            "DESCRIPTION": "Heated pool, relaxation lounges, wet and dry spa circuit designed to reconnect body and mind.",
-            "POOL": "Heated Pool",
-            "RELAX": "Relaxation Lounge",
-            "CIRCUIT": "Spa Circuit"
+            "SUBTITLE": "Spaces",
+            "TITLE": "Every corner invites you to unwind",
+            "IMAGE_ALT": "Wine Spa pool overlooking the Paleta del Pintor",
+            "POOL": "Indoor and outdoor pool",
+            "POOL_DESC": "A pool connecting the interior with the terrace, to enjoy the water overlooking the hills.",
+            "CIRCUIT": "Water circuit",
+            "CIRCUIT_DESC": "Dry sauna, steam room, Scottish shower and whirlpool.",
+            "ROOMS": "Treatment rooms",
+            "ROOMS_DESC": "Intimate, peaceful spaces for massages and wellness rituals."
         },
         "TREATMENTS": {
-            "SUBTITLE": "TREATMENTS",
-            "TITLE": "Wellness rituals designed to restore balance.",
-            "MASSAGE": "Therapeutic Massages",
-            "MASSAGE_DESC": "Relaxing and deep tissue techniques performed by experienced therapists.",
-            "WINE": "Wine Therapy",
-            "WINE_DESC": "An exclusive ritual inspired by the antioxidant properties of grapes and wine.",
-            "FACIAL": "Premium Facials",
-            "FACIAL_DESC": "Hydrating and revitalizing treatments tailored for complete skin renewal.",
-            "CIRCUIT": "Wet & Dry Spa Circuit",
-            "CIRCUIT_DESC": "Enjoy our heated pool, dry sauna, steam room and relaxation lounges."
-        },
-        "DAY": {
-            "SUBTITLE": "SPA DAY",
-            "TITLE": "A full day devoted to your wellbeing.",
-            "DESCRIPTION": "Reconnect with yourself through a carefully curated Spa Day including access to the wellness circuit, signature treatments and peaceful relaxation areas.",
-            "BUTTON": "Book Spa Day"
+            "SUBTITLE": "Treatments",
+            "TITLE": "Rituals inspired by wine",
+            "DESCRIPTION": "We are preparing a treatment menu drawing on the properties of the vine and the wines of Bodega El Bayeh. You will be able to discover it very soon.",
+            "BUTTON": "BOOK"
         }
     },
     "EXPERIENCES": {

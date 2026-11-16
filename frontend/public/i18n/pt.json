@@ -55,31 +55,28 @@
             "MORE": "Descobrir eventos"
         },
         "SPA": {
-            "SUBTITLE": "Wellness Wine Spa",
-            "TITLE": "Um espaço dedicado ao bem-estar.",
-            "DESCRIPTION": "Piscinas climatizadas, circuito de spa, salas de relaxamento e tratamentos inspirados no vinho.",
-            "ITEM1": "Circuito úmido e seco",
-            "ITEM2": "Massagens e tratamentos exclusivos",
-            "ITEM3": "Spa Day para hóspedes e visitantes",
-            "BUTTON": "Conheça o Spa",
-            "RESERVE": "Reservar Spa Day"
+            "SUBTITLE": "Abertura 2027",
+            "TITLE": "Wine Spa",
+            "DESCRIPTION": "Em breve, um novo espaço de calma em frente aos cerros. Nosso Wine Spa convida a desacelerar e se deixar levar pela água, pelo calor e pelos aromas do vinho.",
+            "ITEM1": "Piscina indoor e outdoor",
+            "ITEM2": "Circuito de águas",
+            "ITEM3": "Tratamentos inspirados no vinho",
+            "BUTTON": "Saiba mais"
         },
         "EXPERIENCES": {
             "SUBTITLE": "Experiências",
-            "TITLE": "Muito mais que uma hospedagem",
-            "DESCRIPTION": "Descubra experiências criadas para conectar você à natureza, gastronomia e bem-estar.",
-            "PICNIC_TITLE": "Cestas de Piquenique",
-            "PICNIC_DESC": "Desfrute de um piquenique gourmet em jardins e paisagens naturais exclusivas.",
-            "WINE_TITLE": "Degustação de Vinhos",
-            "WINE_DESC": "Conheça uma seleção especial de vinhos regionais harmonizados com produtos locais.",
-            "SUNSET_TITLE": "Experiências ao Pôr do Sol",
-            "SUNSET_DESC": "Relaxe apreciando o pôr do sol com gastronomia, música e bons vinhos.",
-            "BUTTON": "Descobrir experiência"
+            "TITLE": "Momentos para viver Maimará",
+            "DESCRIPTION": "Um piquenique nos jardins e um percurso pelos vinhos da nossa vinícola, para descobrir a Quebrada de outra maneira.",
+            "PICNIC_TITLE": "Piquenique em frente à Paleta del Pintor",
+            "PICNIC_DESC": "Uma cesta com produtos da região e vinho da nossa vinícola, para aproveitar nos jardins do hotel.",
+            "WINE_TITLE": "Wine Trip",
+            "WINE_DESC": "Três percursos pelos vinhos da Bodega El Bayeh, no nosso Wine Bar com vista para os cerros.",
+            "BUTTON": "Descobrir experiências"
         },
         "ABOUT": {
             "SUBTITLE": "Nossa história",
-            "TITLE": "Um legado construído com paixão e família",
-            "DESCRIPTION": "Há gerações, esta propriedade preserva histórias, memórias e uma forma única de receber nossos visitantes. Hoje continuamos esse legado através da tradição, natureza e hospitalidade.",
+            "TITLE": "Um sonho feito pelas mãos da Quebrada",
+            "DESCRIPTION": "Em 2010, Fernando e Daniel começaram a imaginar um hotel sobre o cerro, em frente à Paleta del Pintor, para compartilhar com quem chegar o amor da família por esta terra.",
             "GENERATIONS": "Gerações",
             "YEARS": "Anos de história",
             "BUTTON": "Conheça nossa história"
@@ -87,32 +84,32 @@
     },
     "ACCOMMODATION": {
         "HERO": {
-            "SUBTITLE": "Quartos & Suítes",
-            "TITLE": "Descansar também é uma experiência.",
-            "DESCRIPTION": "Cada quarto foi projetado para oferecer privacidade, conforto e vistas privilegiadas para os vinhedos e para a Quebrada de Humahuaca.",
-            "BUTTON": "Conhecer quartos",
-            "SECOND_BUTTON": "Reserva"
+            "SUBTITLE": "Hospedagem · Abertura 2027",
+            "TITLE": "Despertar em frente à Paleta del Pintor.",
+            "DESCRIPTION": "Oito suítes de luxo projetadas com todo o conforto para o descanso. Um ponto de partida para conhecer a Quebrada por dentro: seus sabores, sua gente e as tradições que seguem vivas em cada povoado.",
+            "BUTTON": "Quero receber novidades"
         },
         "EXPERIENCE": {
-            "SUBTITLE": "A Experiência",
-            "TITLE": "Muito mais que um quarto.",
-            "DESCRIPTION": "Cada hospedagem combina conforto, natureza e atendimento personalizado.",
-            "HEADING": "Luxo em cada detalhe",
-            "TEXT": "Do café da manhã regional ao Wine Spa e ao concierge exclusivo, tudo foi pensado para proporcionar momentos inesquecíveis.",
-            "AMENITY1": "Café da manhã regional",
-            "AMENITY1_DESC": "Produtos frescos e sabores locais.",
-            "AMENITY2": "Wine Spa",
-            "AMENITY2_DESC": "Circuitos secos e úmidos de bem-estar.",
-            "AMENITY3": "Piscina & Solário",
-            "AMENITY3_DESC": "Piscina climatizada com vista para os vinhedos.",
-            "AMENITY4": "Concierge",
-            "AMENITY4_DESC": "Atendimento personalizado durante toda a estadia."
+            "SUBTITLE": "Hospedagem",
+            "TITLE": "Nossos serviços",
+            "AMENITY1": "8 suítes de luxo",
+            "AMENITY1_DESC": "Pensadas para o descanso, com todo o conforto.",
+            "AMENITY2": "Café da manhã",
+            "AMENITY2_DESC": "Todas as manhãs, com produtos da região.",
+            "AMENITY3": "Wifi",
+            "AMENITY3_DESC": "Conexão em todo o hotel.",
+            "AMENITY4": "Estacionamento",
+            "AMENITY4_DESC": "Para hóspedes, dentro do hotel.",
+            "AMENITY5": "Wine Spa",
+            "AMENITY5_DESC": "Circuito de águas, saunas e salas de tratamentos.",
+            "AMENITY6": "Piscina",
+            "AMENITY6_DESC": "Indoor e outdoor, com vista para os cerros."
         },
         "CTA": {
-            "SUBTITLE": "Sua próxima hospedagem começa aqui",
-            "TITLE": "Permita-nos preparar uma experiência inesquecível.",
-            "DESCRIPTION": "Nossa equipe terá prazer em ajudá-lo a escolher o quarto ideal e esclarecer todas as suas dúvidas.",
-            "BUTTON": "Reservar pelo WhatsApp"
+            "SUBTITLE": "Abertura em breve",
+            "TITLE": "Seja o primeiro a conhecer",
+            "DESCRIPTION": "Estamos preparando cada detalhe para receber você. Escreva para nós e conheça as novidades antes de todo mundo.",
+            "BUTTON": "Quero receber novidades"
         }
     },
     "GASTRONOMY": {
@@ -235,37 +232,27 @@
     },
     "SPA": {
         "HERO": {
-            "SUBTITLE": "Wellness Wine Spa",
-            "TITLE": "Um refúgio onde o tempo desacelera.",
-            "DESCRIPTION": "Piscinas aquecidas, circuito seco e úmido, vinoterapia e tratamentos pensados para renovar corpo e mente no coração da Quebrada.",
-            "BUTTON": "Agendar um dia de spa",
-            "TREATMENTS": "Menu de tratamento"
+            "SUBTITLE": "Wine Spa · Abertura 2027",
+            "TITLE": "Um espaço de calma em frente aos cerros",
+            "DESCRIPTION": "Um Wine Spa pensado para desacelerar: água, calor e tratamentos inspirados nos vinhos da nossa vinícola, com a Paleta del Pintor como paisagem.",
+            "BUTTON": "RESERVAR"
         },
         "GALLERY": {
-            "SUBTITLE": "ESPAÇOS",
-            "TITLE": "Cada espaço convida ao relaxamento.",
-            "DESCRIPTION": "Piscina climatizada, salas de descanso e circuito de spa seco e úmido para renovar corpo e mente.",
-            "POOL": "Piscina aquecida",
-            "RELAX": "Sala de relaxamento",
-            "CIRCUIT": "Circuito do Spa"
+            "SUBTITLE": "Espaços",
+            "TITLE": "Cada canto convida a desconectar",
+            "IMAGE_ALT": "Piscina do Wine Spa com vista para a Paleta del Pintor",
+            "POOL": "Piscina indoor e outdoor",
+            "POOL_DESC": "Uma piscina que une o interior ao terraço, para aproveitar a água com vista para os cerros.",
+            "CIRCUIT": "Circuito de águas",
+            "CIRCUIT_DESC": "Sauna seca, sauna úmida, ducha escocesa e hidromassagem.",
+            "ROOMS": "Salas de tratamentos",
+            "ROOMS_DESC": "Espaços íntimos e silenciosos para massagens e rituais de bem-estar."
         },
         "TREATMENTS": {
-            "SUBTITLE": "TRATAMENTOS",
-            "TITLE": "Rituais criados para restaurar o equilíbrio.",
-            "MASSAGE": "Massagens Terapêuticas",
-            "MASSAGE_DESC": "Técnicas relaxantes e terapêuticas realizadas por profissionais especializados.",
-            "WINE": "Wine Therapy",
-            "WINE_DESC": "Tratamento exclusivo inspirado nas propriedades antioxidantes da uva e do vinho.",
-            "FACIAL": "Tratamentos Faciais Premium",
-            "FACIAL_DESC": "Protocolos de hidratação e revitalização para renovar a pele.",
-            "CIRCUIT": "Circuito de Spa Úmido e Seco",
-            "CIRCUIT_DESC": "Piscina aquecida, sauna seca, sauna úmida e salas de relaxamento."
-        },
-        "DAY": {
-            "SUBTITLE": "SPA DAY",
-            "TITLE": "Um dia inteiro dedicado ao seu bem-estar.",
-            "DESCRIPTION": "Desfrute de um Spa Day completo com acesso ao circuito de spa, tratamentos exclusivos e momentos de relaxamento em um ambiente único.",
-            "BUTTON": "Reservar Spa Day"
+            "SUBTITLE": "Tratamentos",
+            "TITLE": "Rituais inspirados no vinho",
+            "DESCRIPTION": "Estamos preparando um menu de tratamentos que aproveita as propriedades da videira e dos vinhos da Bodega El Bayeh. Em breve você poderá conhecê-lo.",
+            "BUTTON": "RESERVAR"
         }
     },
     "EXPERIENCES": {

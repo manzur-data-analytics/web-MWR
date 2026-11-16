@@ -35,14 +35,15 @@
 
         </div>
 
-        <div class="grid lg:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
 
             <!-- CARD -->
 
             <article class="experience-card">
 
-                <img src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&w=900&q=90">
-                
+                <img src="images/secciones/experiencias/signature/picnic/picnic-canasta-jardines.jpg"
+                    [alt]="'HOME.EXPERIENCES.PICNIC_TITLE' | transloco" loading="lazy" decoding="async">
+
                 <div class="experience-content">
 
                     <span>01</span>
@@ -51,19 +52,14 @@
 
                     <p>{{'HOME.EXPERIENCES.PICNIC_DESC'|transloco}}</p>
 
-                    <a routerLink="/experiencias">
-
-                        {{'HOME.EXPERIENCES.BUTTON'|transloco}}
-
-                    </a>
-
                 </div>
 
             </article>
 
             <article class="experience-card">
 
-                <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=900&q=90">
+                <img src="images/secciones/experiencias/signature/wine-trip/wine-trip-servicio-copa.jpg"
+                    [alt]="'HOME.EXPERIENCES.WINE_TITLE' | transloco" loading="lazy" decoding="async">
 
                 <div class="experience-content">
 
@@ -73,38 +69,16 @@
 
                     <p>{{'HOME.EXPERIENCES.WINE_DESC'|transloco}}</p>
 
-                    <a routerLink="/experiencias">
-
-                        {{'HOME.EXPERIENCES.BUTTON'|transloco}}
-
-                    </a>
-
                 </div>
 
             </article>
 
-            <article class="experience-card">
+        </div>
 
-                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=90">
-
-                <div class="experience-content">
-
-                    <span>03</span>
-
-                    <h3>{{'HOME.EXPERIENCES.SUNSET_TITLE'|transloco}}</h3>
-
-                    <p>{{'HOME.EXPERIENCES.SUNSET_DESC'|transloco}}</p>
-
-                    <a routerLink="/experiencias">
-
-                        {{'HOME.EXPERIENCES.BUTTON'|transloco}}
-
-                    </a>
-
-                </div>
-
-            </article>
-
+        <div class="text-center mt-12">
+            <a routerLink="/experiencias" class="site-button site-button--light">
+                {{'HOME.EXPERIENCES.BUTTON'|transloco}}
+            </a>
         </div>
 
     </div>

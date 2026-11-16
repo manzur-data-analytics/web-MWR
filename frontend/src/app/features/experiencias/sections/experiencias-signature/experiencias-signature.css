@@ -71,7 +71,6 @@
 
 .carreel-item {
     scroll-snap-align: center;
-    scroll-snap-stop: always;
 }
 
 .scrollbar-none::-webkit-scrollbar {
@@ -115,31 +114,4 @@
     font-size: .78rem;
     color: var(--clr-muted);
     border-radius: 2px;
-}
-
-/*BOTÓN DE RESERVA*/
-.experience-btn {
-    display: inline-flex;
-    margin-top: 32px;
-    padding: 14px 34px;
-    background: var(--clr-dark);
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    font-size: .72rem;
-    transition: background-color .35s, color .35s;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.experience-btn:hover {
-    background: var(--clr-gold);
-    color: var(--clr-dark);
-}
-
-@media (max-width: 640px) {
-    .experience-btn {
-        width: 100%;
-        justify-content: center;
-    }
 }

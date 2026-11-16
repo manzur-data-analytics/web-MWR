@@ -132,66 +132,18 @@
 
 
 
-.cta-primary {
-
-
-    padding: 18px 45px;
-
-    background: #d4a15a;
-
-    color: #382821;
-
-
-    text-transform: uppercase;
-
-    letter-spacing: .25em;
-
-    font-size: .7rem;
-
-
-    transition: .35s;
-
-}
 
 
 
-.cta-primary:hover {
-
-    background: white;
-
-}
 
 
 
-.cta-secondary {
 
 
-    padding: 18px 45px;
-
-    border: 1px solid rgba(255, 255, 255, .5);
-
-    color: white;
 
 
-    text-transform: uppercase;
-
-    letter-spacing: .25em;
-
-    font-size: .7rem;
 
 
-    transition: .35s;
-
-}
-
-
-.cta-secondary:hover {
-
-    background: white;
-
-    color: #382821;
-
-}
 
 
 
