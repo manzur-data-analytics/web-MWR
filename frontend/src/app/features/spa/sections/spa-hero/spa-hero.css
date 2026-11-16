@@ -2,10 +2,10 @@
 
 .spa-hero { background: #382821; }
 
-.hero-image { object-position: center 65%; }
+.hero-image { object-position: left 55%; }
 
 .hero-overlay {
-    background: linear-gradient(90deg, rgba(38, 28, 23, .86), rgba(38, 28, 23, .55) 60%, rgba(38, 28, 23, .18));
+    background: linear-gradient(90deg, rgba(38, 28, 23, .68), rgba(38, 28, 23, .4) 60%, rgba(38, 28, 23, .18));
 }
 
 .hero-content {
