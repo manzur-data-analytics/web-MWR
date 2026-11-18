@@ -1,16 +1,16 @@
 .quote-chip {
     padding: .8rem 1rem;
-    border: 1px solid #d9cfbf;
+    border: 1px solid var(--color-brand-sand);
     font-size: .72rem;
     letter-spacing: .25em;
     text-transform: uppercase;
-    color: #8e4c2f;
-    background: #faf8f5;
+    color: var(--color-brand-terracotta);
+    background: var(--color-brand-bg);
 }
 
 .event-type-card {
     padding: 1rem;
-    border: 1px solid #d9cfbf;
+    border: 1px solid var(--color-brand-sand);
     transition: .35s;
     text-transform: uppercase;
     letter-spacing: .15em;
@@ -20,13 +20,13 @@
 
 
 .event-type-card:hover {
-    border-color: #8e4c2f;
+    border-color: var(--color-brand-terracotta);
 }
 
 .event-type-card.active {
-    background: #382821;
+    background: var(--color-brand-dark);
     color: white;
-    border-color: #382821;
+    border-color: var(--color-brand-dark);
 }
 
 .luxury-submit {
@@ -36,10 +36,10 @@
     width: 100%;
     min-height: 60px;
 
-    background: #8e4c2f;
+    background: var(--color-brand-terracotta);
     color: #fff;
 
-    border: 1px solid #8e4c2f;
+    border: 1px solid var(--color-brand-terracotta);
 
     font-size: .75rem;
     font-weight: 600;
@@ -58,8 +58,8 @@
 }
 
 .luxury-submit:hover {
-    background: #bb644a;
-    border-color: #bb644a;
+    background: var(--color-brand-terracotta);
+    border-color: var(--color-brand-terracotta);
     transform: translateY(-2px);
     box-shadow: 0 20px 45px rgba(142, 76, 47, .35);
 }

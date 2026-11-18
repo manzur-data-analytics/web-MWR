@@ -1,9 +1,9 @@
 /* Acciones de contenido: una base y una variante para fondos oscuros. */
 .site-button {
-    --button-bg: #8e4c2f;
+    --button-bg: var(--color-brand-terracotta);
     --button-color: #fff;
-    --button-border: #8e4c2f;
-    --button-hover-bg: #743d26;
+    --button-border: var(--color-brand-terracotta);
+    --button-hover-bg: var(--color-brand-dark);
     --button-hover-color: #fff;
     position: relative;
     isolation: isolate;
@@ -37,19 +37,19 @@
 }
 
 .site-button--light {
-    --button-bg: transparent;
-    --button-color: #e8bd80;
-    --button-border: #e8bd80;
-    --button-hover-bg: #e8bd80;
-    --button-hover-color: #382821;
+    --button-bg: var(--color-brand-sand);
+    --button-color: var(--color-brand-black);
+    --button-border: var(--color-brand-sand);
+    --button-hover-bg: var(--color-brand-bg);
+    --button-hover-color: var(--color-brand-dark);
 }
 
 /* Portadas: mayor presencia, flecha y entrada de color desde la izquierda. */
 .site-button--hero {
-    --button-bg: #a45e3c;
-    --button-border: #b77c58;
-    --button-hover-bg: #e8bd80;
-    --button-hover-color: #382821;
+    --button-bg: var(--color-brand-terracotta);
+    --button-border: var(--color-brand-terracotta);
+    --button-hover-bg: var(--color-brand-sand);
+    --button-hover-color: var(--color-brand-dark);
     overflow: hidden;
     min-height: 56px;
     padding: 17px 32px;
@@ -80,7 +80,7 @@
 .site-button--hero.site-button--secondary {
     --button-bg: rgba(38, 28, 23, .3);
     --button-border: rgba(255, 255, 255, .8);
-    --button-hover-bg: #f8f5f1;
+    --button-hover-bg: var(--color-brand-bg);
     backdrop-filter: blur(8px);
 }
 

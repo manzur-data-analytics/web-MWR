@@ -1,24 +1,50 @@
 @import "tailwindcss";
 @import "./app/shared/styles/buttons.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500&display=swap');
+@font-face {
+    font-family: 'Arapey';
+    src: url('../public/fonts/Arapey-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
 
-@theme {
-    --color-brand-bg: #f8f5f1;
-    --color-brand-dark: #382821;
-    --color-brand-gold: #d4a15a;
-    --color-brand-terracotta: #8e4c2f;
-    --color-brand-muted: #6b645b;
+@font-face {
+    font-family: 'Arapey';
+    src: url('../public/fonts/Arapey-Italic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Iowan Old Style';
+    src: url('../public/fonts/iowan-old-style-roman.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@theme static {
+    --color-brand-bg: #f4ebd7;
+    --color-brand-sand: #dcccb0;
+    --color-brand-gold: #806d53;
+    --color-brand-terracotta: #724640;
+    --color-brand-black: #050505;
+    --color-brand-dark: #393a37;
+    --color-brand-muted: #806d53;
 }
 
 /* Variables CSS tradicionales para componentes sin Tailwind */
 :root {
-    --clr-bg: #f8f5f1;
-    --clr-dark: #382821;
-    --clr-gold: #d4a15a;
-    --clr-terracotta: #8e4c2f;
-    --clr-muted: #6b645b;
-    --clr-border: #e7ddd1;
+    --font-title: 'Iowan Old Style', Georgia, serif;
+    --font-body: 'Arapey', Georgia, serif;
+    --clr-bg: var(--color-brand-bg);
+    --clr-dark: var(--color-brand-dark);
+    --clr-gold: var(--color-brand-gold);
+    --clr-terracotta: var(--color-brand-terracotta);
+    --clr-muted: var(--color-brand-muted);
+    --clr-border: var(--color-brand-sand);
 }
 
 html {
@@ -32,6 +58,15 @@ body {
 
 .font-title {
     font-family: var(--font-title);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.font-title.italic {
+    font-family: var(--font-body);
+    text-transform: none;
+    letter-spacing: normal;
 }
 
 .font-body {

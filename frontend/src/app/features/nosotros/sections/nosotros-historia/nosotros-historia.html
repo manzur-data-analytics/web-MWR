@@ -1,7 +1,7 @@
-<section class="bg-[#faf7f2] text-[#2a1818] py-24 sm:py-32">
+<section class="bg-brand-bg text-brand-dark py-24 sm:py-32">
     <div class="max-w-3xl mx-auto px-6 lg:px-10">
-        <h2 class="text-xs uppercase tracking-[0.35em] text-[#8e4c2f] mb-10">{{ 'ABOUT_PAGE.STORY.SUBTITLE' | transloco }}</h2>
-        <div class="space-y-6 text-[#5c4a4a] text-base sm:text-lg leading-8">
+        <h2 class="text-xs uppercase tracking-[0.35em] text-brand-terracotta mb-10">{{ 'ABOUT_PAGE.STORY.SUBTITLE' | transloco }}</h2>
+        <div class="space-y-6 text-brand-muted text-base sm:text-lg leading-8">
             @for (paragraph of paragraphs; track paragraph) {
                 <p>{{ paragraph | transloco }}</p>
             }
@@ -10,9 +10,9 @@
             <img [src]="photos[photoIndex()].src" [alt]="photos[photoIndex()].altKey | transloco" loading="lazy"
                 class="w-full aspect-[4/3] sm:aspect-[16/9] object-cover">
             <div class="flex items-center justify-between gap-4 mt-6">
-                <button type="button" (click)="movePhoto(-1)" class="p-3 border border-[#8e4c2f] text-[#8e4c2f]">{{ 'ABOUT_PAGE.GALLERY.PREVIOUS' | transloco }}</button>
+                <button type="button" (click)="movePhoto(-1)" class="p-3 border border-brand-terracotta text-brand-terracotta">{{ 'ABOUT_PAGE.GALLERY.PREVIOUS' | transloco }}</button>
                 <span aria-live="polite">{{ photoIndex() + 1 }} / {{ photos.length }}</span>
-                <button type="button" (click)="movePhoto(1)" class="p-3 border border-[#8e4c2f] text-[#8e4c2f]">{{ 'ABOUT_PAGE.GALLERY.NEXT' | transloco }}</button>
+                <button type="button" (click)="movePhoto(1)" class="p-3 border border-brand-terracotta text-brand-terracotta">{{ 'ABOUT_PAGE.GALLERY.NEXT' | transloco }}</button>
             </div>
         </div>
     </div>

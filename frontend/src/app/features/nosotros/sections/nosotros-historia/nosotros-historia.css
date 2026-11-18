@@ -1,14 +1,14 @@
 /* Tipografía Elegante de Títulos */
 .font-title {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: var(--font-title);
 }
 
 /* Letra Capitular (Editorial) en la primera línea del relato */
 .relato-dropcap::first-letter {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: var(--font-title);
     font-size: 3.8rem;
     font-weight: 400;
-    color: #d4a15a;
+    color: var(--color-brand-gold);
     float: left;
     line-height: 0.8;
     padding-right: 14px;
@@ -17,12 +17,12 @@
 
 /* Cita Destacada */
 .relato-quote {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: var(--font-body);
     font-style: italic;
     font-size: 1.35rem;
     line-height: 1.6;
-    color: #2a1818;
-    border-left: 2px solid #d4a15a;
+    color: var(--color-brand-dark);
+    border-left: 2px solid var(--color-brand-gold);
     padding-left: 20px;
 }
 

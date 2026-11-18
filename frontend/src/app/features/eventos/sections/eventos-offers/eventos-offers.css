@@ -20,8 +20,8 @@
 }
 
 .carousel-arrow:hover {
-    background: #e8bd80;
-    color: #382821;
+    background: var(--color-brand-sand);
+    color: var(--color-brand-dark);
 }
 
 .carousel-indicator {
@@ -41,12 +41,12 @@
 
 .carousel-indicator.is-active span,
 .carousel-indicator:hover span {
-    background: #e8bd80;
+    background: var(--color-brand-sand);
 }
 
 .carousel-arrow:focus-visible,
 .carousel-indicator:focus-visible {
-    outline: 2px solid #e8bd80;
+    outline: 2px solid var(--color-brand-sand);
     outline-offset: 3px;
 }
 
@@ -73,7 +73,7 @@
         cursor: pointer;
         color: white;
     }
-    .expand-gallery:focus-visible { outline: 2px solid #e8bd80; outline-offset: -4px; }
+    .expand-gallery:focus-visible { outline: 2px solid var(--color-brand-sand); outline-offset: -4px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

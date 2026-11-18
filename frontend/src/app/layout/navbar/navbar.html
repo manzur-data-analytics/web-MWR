@@ -1,10 +1,10 @@
-<header class="fixed top-0 left-0 w-full z-50 transition-all duration-500" [ngClass]="scrolled
-    ? 'bg-[#e7dcc6]/50 backdrop-blur-md shadow-lg'
+<header class="fixed top-0 left-0 w-full z-50 transition-all duration-500" [class.is-scrolled]="scrolled" [ngClass]="scrolled
+    ? 'bg-brand-sand/50 backdrop-blur-md shadow-lg'
     : 'bg-transparent'">
     <div class="max-w-[1500px] mx-auto px-6 xl:px-10 h-20 lg:h-24 flex items-center justify-between gap-6">
         <!-- Logo -->
-        <a routerLink="/" class="flex items-center shrink-0">
-            <img src="images/marca/logo-blanco.png" alt="Hotel" class="h-11 w-auto transition-all duration-300 lg:h-14" />
+        <a routerLink="/" class="brand-logo shrink-0" aria-label="Maimar? Wine Resort, inicio">
+            <img [src]="scrolled ? 'images/brand/isologotipo/mwr_isologotipo-01.png' : 'images/brand/isologotipo/mwr_isologotipo-02.png'" alt="" />
         </a>
         <nav class="hidden lg:flex items-center gap-8 xl:gap-9">
             <ng-container *ngFor="let item of navItems">
@@ -19,7 +19,7 @@
                     </span>
                 </a>
                 <!-- Dropdown -->
-                <div *ngIf="item.children"
+                <div *ngIf="item.children" routerLinkActive="active"
                     class="relative group flex items-center justify-center min-h-[48px] min-w-[105px]">
                     <button
                         class="flex items-center gap-1 font-body uppercase text-[13px] tracking-[0.25em] font-normal"
@@ -101,7 +101,7 @@
     [ngClass]="mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'">
     <!-- Encabezado del Drawer -->
     <div class="flex justify-between items-center p-6 border-b sticky top-0 bg-white z-10">
-        <img src="images/marca/logo.png" alt="Hotel" class="h-9 w-auto" />
+        <span class="brand-logo brand-logo--drawer"><img src="images/brand/isologotipo/mwr_isologotipo-01.png" alt="Maimar? Wine Resort" /></span>
         <button (click)="closeMenu()" class="text-3xl leading-none text-stone-700 hover:text-black"
             aria-label="Cerrar menú">
             ×

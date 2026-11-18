@@ -1,5 +1,5 @@
 :host { display: block; }
-.accommodation-hero { background: #382821; }
+.accommodation-hero { background: var(--color-brand-dark); }
 .hero-image { object-position: center 15%; }
 .hero-overlay {
     background: linear-gradient(to bottom, rgba(38, 28, 23, .45), rgba(38, 28, 23, .08) 40%, rgba(38, 28, 23, .2) 55%, rgba(38, 28, 23, .85));

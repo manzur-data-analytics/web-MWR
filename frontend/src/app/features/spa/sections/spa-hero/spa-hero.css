@@ -1,6 +1,6 @@
 :host { display: block; }
 
-.spa-hero { background: #382821; }
+.spa-hero { background: var(--color-brand-dark); }
 
 .hero-image { object-position: left 55%; }
 
