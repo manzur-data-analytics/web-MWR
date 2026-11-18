@@ -1,9 +1,9 @@
 :host {
 
-    --dark: #382821;
-    --gold: #d4a15a;
-    --terracotta: #8e4c2f;
-    --bg: #f8f5f1;
+    --dark: var(--color-brand-dark);
+    --gold: var(--color-brand-gold);
+    --terracotta: var(--color-brand-terracotta);
+    --bg: var(--color-brand-bg);
 
 }
 

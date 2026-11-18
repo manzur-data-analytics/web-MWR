@@ -1,6 +1,6 @@
-<section class="relative py-24 lg:py-36 bg-[#f4f1ed] overflow-hidden">
+<section class="relative py-24 lg:py-36 bg-brand-bg overflow-hidden">
 
-    <div class="absolute -right-40 top-20 w-96 h-96 rounded-full bg-[#e7dcc6]/50 blur-3xl"></div>
+    <div class="absolute -right-40 top-20 w-96 h-96 rounded-full bg-brand-sand/50 blur-3xl"></div>
 
 
     <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
@@ -10,17 +10,17 @@
 
         <div class="max-w-3xl mb-16">
 
-            <span class="uppercase tracking-[0.45em] text-xs text-[#8e4c2f]">
+            <span class="uppercase tracking-[0.45em] text-xs text-brand-terracotta">
                 {{'EVENTS.SPACES.SUBTITLE' | transloco}}
             </span>
 
 
-            <h2 class="mt-6 font-title text-4xl sm:text-5xl lg:text-6xl font-light text-[#382821]">
+            <h2 class="mt-6 font-title text-4xl sm:text-5xl lg:text-6xl font-light text-brand-dark">
                 {{'EVENTS.SPACES.TITLE' | transloco}}
             </h2>
 
 
-            <div class="w-24 h-px bg-[#c8b89a] mt-8"></div>
+            <div class="w-24 h-px bg-brand-sand mt-8"></div>
 
         </div>
 
@@ -37,7 +37,7 @@
             <div class="relative">
 
 
-                <div class="absolute inset-0 border border-[#c8b89a] translate-x-4 translate-y-4">
+                <div class="absolute inset-0 border border-brand-sand translate-x-4 translate-y-4">
                 </div>
 
 
@@ -50,14 +50,14 @@
 
                         <!-- terreno -->
 
-                        <rect x="40" y="320" width="620" height="130" fill="#f4f1ed" stroke="#c8b89a"
+                        <rect x="40" y="320" width="620" height="130" fill="var(--color-brand-bg)" stroke="var(--color-brand-sand)"
                             stroke-width="2" />
 
 
                         <!-- salon -->
 
 
-                        <rect x="40" y="40" width="380" height="230" fill="#e7dcc6" stroke="#382821" stroke-width="3"
+                        <rect x="40" y="40" width="380" height="230" fill="var(--color-brand-sand)" stroke="var(--color-brand-dark)" stroke-width="3"
                             class="cursor-pointer" (click)="selectSpace('salon')" />
 
 
@@ -65,7 +65,7 @@
                         <!-- jardin -->
 
 
-                        <rect x="450" y="40" width="210" height="230" fill="#f4f1ed" stroke="#382821" stroke-width="3"
+                        <rect x="450" y="40" width="210" height="230" fill="var(--color-brand-bg)" stroke="var(--color-brand-dark)" stroke-width="3"
                             class="cursor-pointer" (click)="selectSpace('jardin')" />
 
 
@@ -73,7 +73,7 @@
                         <!-- privado -->
 
 
-                        <rect x="200" y="340" width="300" height="80" fill="#ffffff" stroke="#382821" stroke-width="3"
+                        <rect x="200" y="340" width="300" height="80" fill="#ffffff" stroke="var(--color-brand-dark)" stroke-width="3"
                             class="cursor-pointer" (click)="selectSpace('privado')" />
 
 
@@ -82,7 +82,7 @@
                         <!-- numeros -->
 
 
-                        <circle cx="230" cy="150" r="25" fill="#8e4c2f" />
+                        <circle cx="230" cy="150" r="25" fill="var(--color-brand-terracotta)" />
 
                         <text x="230" y="157" text-anchor="middle" fill="white" font-size="20">
                             01
@@ -90,7 +90,7 @@
 
 
 
-                        <circle cx="550" cy="150" r="25" fill="#d4a15a" />
+                        <circle cx="550" cy="150" r="25" fill="var(--color-brand-gold)" />
 
                         <text x="550" y="157" text-anchor="middle" fill="white" font-size="20">
                             02
@@ -98,7 +98,7 @@
 
 
 
-                        <circle cx="350" cy="380" r="25" fill="#382821" />
+                        <circle cx="350" cy="380" r="25" fill="var(--color-brand-dark)" />
 
                         <text x="350" y="387" text-anchor="middle" fill="white" font-size="20">
                             03
@@ -110,7 +110,7 @@
 
 
 
-                    <p class="text-center mt-6 uppercase tracking-[0.3em] text-[10px] text-[#7a7a74]">
+                    <p class="text-center mt-6 uppercase tracking-[0.3em] text-[10px] text-brand-muted">
                         {{'EVENTS.SPACES.PLAN_CAPTION' | transloco}}
                     </p>
 
@@ -148,8 +148,8 @@
                         font-title
                         text-white
                         transition" [ngClass]="selected===space.id ? 
-                        'bg-[#8e4c2f]' :
-                        'bg-[#382821]'">
+                        'bg-brand-terracotta' :
+                        'bg-brand-dark'">
 
                             {{space.number}}
 
@@ -160,19 +160,19 @@
                         <div>
 
 
-                            <h3 class="font-title text-3xl text-[#382821]">
+                            <h3 class="font-title text-3xl text-brand-dark">
                                 {{space.title | transloco}}
                             </h3>
 
 
 
-                            <p class="mt-2 text-[#6b645b]">
+                            <p class="mt-2 text-brand-muted">
                                 {{space.description | transloco}}
                             </p>
 
 
 
-                            <div class="mt-3 text-sm text-[#8e4c2f]">
+                            <div class="mt-3 text-sm text-brand-terracotta">
 
                                 {{space.capacity | transloco}}
 
@@ -188,7 +188,7 @@
                 </button>
 
 
-                <div class="h-px bg-[#d9cfbf]"></div>
+                <div class="h-px bg-brand-sand"></div>
 
 
                 }

@@ -1,4 +1,4 @@
-<section id="signature-experiences" class="relative py-24 sm:py-32 bg-[#f8f5f1] overflow-hidden z-10">
+<section id="signature-experiences" class="relative py-24 sm:py-32 bg-brand-bg overflow-hidden z-10">
     <!-- Imagen de fondo decorativa -->
     <div class="background-image">
         <img src="images/secciones/experiencias/hero/picnic-jardines-paleta-del-pintor.jpg"
@@ -6,21 +6,21 @@
     </div>
 
     <!-- Luces de gradiente decorativas -->
-    <div class="absolute left-0 top-40 w-[34rem] h-[34rem] rounded-full bg-[#d4a15a]/10 blur-3xl pointer-events-none">
+    <div class="absolute left-0 top-40 w-[34rem] h-[34rem] rounded-full bg-brand-gold/10 blur-3xl pointer-events-none">
     </div>
     <div
-        class="absolute right-0 bottom-20 w-[30rem] h-[30rem] rounded-full bg-[#8e4c2f]/10 blur-3xl pointer-events-none">
+        class="absolute right-0 bottom-20 w-[30rem] h-[30rem] rounded-full bg-brand-terracotta/10 blur-3xl pointer-events-none">
     </div>
 
     <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
 
         <!-- Encabezado -->
         <div class="text-center max-w-3xl mx-auto mb-16 sm:mb-28">
-            <span class="uppercase tracking-[0.45em] text-xs text-[#8e4c2f]">
+            <span class="uppercase tracking-[0.45em] text-xs text-brand-terracotta">
                 {{ 'EXPERIENCES.SIGNATURE.SUBTITLE' | transloco }}
             </span>
-            <div class="w-24 h-px bg-[#d4a15a] mx-auto my-6 sm:my-8"></div>
-            <p class="text-[#6b645b] text-base sm:text-lg leading-8 sm:leading-9">
+            <div class="w-24 h-px bg-brand-gold mx-auto my-6 sm:my-8"></div>
+            <p class="text-brand-muted text-base sm:text-lg leading-8 sm:leading-9">
                 {{ 'EXPERIENCES.SIGNATURE.DESCRIPTION' | transloco }}
             </p>
         </div>
@@ -32,17 +32,17 @@
 
             <!-- CONTENIDO DE LA EXPERIENCIA (SIEMPRE PRIMERO EN MÓVIL) -->
             <div class="experience-content order-1 w-full">
-                <span class="uppercase tracking-[0.3em] text-xs text-[#8e4c2f]">{{ exp.categoryKey | transloco }}</span>
+                <span class="uppercase tracking-[0.3em] text-xs text-brand-terracotta">{{ exp.categoryKey | transloco }}</span>
                 <h3>{{ exp.titleKey | transloco }}</h3>
                 <p>{{ exp.descKey | transloco }}</p>
 
                 <!-- Características / Iconos -->
-                <div class="mt-6 space-y-3 text-[#6b645b]">
+                <div class="mt-6 space-y-3 text-brand-muted">
                     <div><strong>{{ 'EXPERIENCES.SIGNATURE.PANEL_AVAILABILITY' | transloco }}:</strong> {{ exp.availabilityKey | transloco }}</div>
                     <div><strong>{{ 'EXPERIENCES.SIGNATURE.PANEL_MODE' | transloco }}:</strong> {{ exp.modeKey | transloco }}</div>
                 </div>
                 <p *ngIf="exp.noteKey">{{ exp.noteKey | transloco }}</p>
-                <div *ngIf="exp.routeKeys" class="mt-6 text-[#6b645b]">
+                <div *ngIf="exp.routeKeys" class="mt-6 text-brand-muted">
                     <strong>{{ 'EXPERIENCES.SIGNATURE.WINE_ROUTES' | transloco }}:</strong>
                     <ul class="mt-3 list-disc pl-5 space-y-3">
                         <li *ngFor="let routeKey of exp.routeKeys">{{ routeKey | transloco }}</li>
@@ -60,11 +60,11 @@
 
                 <!-- Botones de navegación -->
                 <button type="button" (click)="moveGallery(carreel, -1)"
-                    class="flex absolute left-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-white/90 backdrop-blur hover:bg-white text-[#382821] rounded-full items-center justify-center shadow-lg transition-all active:scale-95">
+                    class="flex absolute left-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-white/90 backdrop-blur hover:bg-white text-brand-dark rounded-full items-center justify-center shadow-lg transition-all active:scale-95">
                     ‹
                 </button>
                 <button type="button" (click)="moveGallery(carreel, 1)"
-                    class="flex absolute right-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-white/90 backdrop-blur hover:bg-white text-[#382821] rounded-full items-center justify-center shadow-lg transition-all active:scale-95">
+                    class="flex absolute right-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-white/90 backdrop-blur hover:bg-white text-brand-dark rounded-full items-center justify-center shadow-lg transition-all active:scale-95">
                     ›
                 </button>
 
@@ -76,7 +76,7 @@
                         <img loading="lazy" decoding="async" [src]="imgUrl" [alt]="(exp.titleKey | transloco) + ' - ' + ((imgIndex + exp.gallery.length - 1) % exp.gallery.length + 1)"
                             class="w-full h-full object-cover transition-transform duration-700 group-hover/img:scale-105">
 
-                        <div class="absolute inset-0 bg-[#382821]/10 group-hover/img:bg-transparent transition-colors">
+                        <div class="absolute inset-0 bg-brand-dark/10 group-hover/img:bg-transparent transition-colors">
                         </div>
 
                         <!-- Indicador de foto -->

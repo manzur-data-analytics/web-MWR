@@ -1,8 +1,21 @@
-﻿nav a.active {
-    color: #d4a15a;
+.brand-logo { position: relative; display: block; width: 145px; height: 60px; overflow: hidden; }
+.brand-logo img { position: absolute; width: 300px; max-width: none; height: auto; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.brand-logo--drawer { width: 120px; height: 48px; }
+.brand-logo--drawer img { width: 250px; }
+
+header nav a.active,
+header nav .active > button {
+    color: var(--color-brand-sand);
 }
 
-nav a.active span:last-child {
+header.is-scrolled nav a.active,
+header.is-scrolled nav .active > button,
+aside nav a.active {
+    color: var(--color-brand-terracotta);
+    font-weight: 600;
+}
+
+header nav a.active span:last-child {
     width: 100%;
     left: 0;
 }

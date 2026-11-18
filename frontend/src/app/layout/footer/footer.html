@@ -1,4 +1,4 @@
-<footer class="bg-[#382821] text-white overflow-hidden">
+<footer class="bg-brand-gold text-white overflow-hidden">
 
     <!-- MAIN -->
     <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-16 lg:py-20">
@@ -7,36 +7,36 @@
             <!-- BRAND -->
             <div class="sm:col-span-2 lg:col-span-1 text-center sm:text-left">
 
-                <h3 class="font-title text-4xl lg:text-5xl font-light tracking-wide">
-                    MWR
-                </h3>
-                <div class="w-16 h-px bg-[#d4a15a] mt-5 mx-auto sm:mx-0"></div>
+                <div class="footer-brand mx-auto sm:mx-0">
+                    <img src="images/brand/isologotipo/mwr_isologotipo-02.png" alt="Maimar? Wine Resort">
+                </div>
+                <div class="w-16 h-px bg-brand-sand mt-5 mx-auto sm:mx-0"></div>
 
-                <p class="mt-6 font-body text-white/70 leading-7 text-sm max-w-sm mx-auto sm:mx-0">
+                <p class="mt-6 font-body text-white leading-7 text-sm max-w-sm mx-auto sm:mx-0">
                     {{ 'FOOTER.DESCRIPTION' | transloco }}
                 </p>
             </div>
 
             <!-- NAVIGATION -->
             <div class="text-center sm:text-left">
-                <h4 class="font-body uppercase tracking-[0.3em] text-xs text-[#c8b89a]">
+                <h4 class="font-body uppercase tracking-[0.3em] text-xs text-white">
                     {{ 'FOOTER.NAVIGATION' | transloco }}
                 </h4>
                 <ul class="mt-6 space-y-4">
                     <li>
-                        <a routerLink="/gastronomia" class="font-body text-sm text-white/70 hover:text-white transition">
+                        <a routerLink="/gastronomia" class="font-body text-sm text-white hover:text-white transition">
                             {{ 'NAVBAR.GASTRONOMIA' | transloco }}
                         </a>
                     </li>
 
                     <li>
-                        <a routerLink="/eventos" class="font-body text-sm text-white/70 hover:text-white transition">
+                        <a routerLink="/eventos" class="font-body text-sm text-white hover:text-white transition">
                             {{ 'NAVBAR.EVENTOS' | transloco }}
                         </a>
                     </li>
 
                     <li>
-                        <a routerLink="/experiencias" class="font-body text-sm text-white/70 hover:text-white transition">
+                        <a routerLink="/experiencias" class="font-body text-sm text-white hover:text-white transition">
                             {{ 'NAVBAR.EXPERIENCIAS' | transloco }}
                         </a>
                     </li>
@@ -46,21 +46,21 @@
 
             <!-- CONTACT -->
             <div class="text-center sm:text-left">
-                <h4 class="font-body uppercase tracking-[0.3em] text-xs text-[#c8b89a]">
+                <h4 class="font-body uppercase tracking-[0.3em] text-xs text-white">
                     {{ 'FOOTER.CONTACT' | transloco }}
                 </h4>
 
                 <div class="mt-6 space-y-4">
-                    <p class="font-body text-sm text-white/70 leading-6">
+                    <p class="font-body text-sm text-white leading-6">
                         {{hotelInfo.address}}<br>
                         {{ 'FOOTER.PROVINCE' | transloco }}
                     </p>
 
-                    <p class="font-body text-sm text-white/70">
+                    <p class="font-body text-sm text-white">
                         <a href="tel:+543885153356" class="hover:text-white transition">{{hotelInfo.phone}}</a>
                     </p>
 
-                    <p class="font-body text-sm text-white/70 break-all">
+                    <p class="font-body text-sm text-white break-all">
                         <a [href]="'mailto:' + hotelInfo.email" class="hover:text-white transition">{{hotelInfo.email}}</a>
                     </p>
 
@@ -70,7 +70,7 @@
 
             <!-- MAP -->
             <div class="sm:col-span-2 lg:col-span-1">
-                <h4 class="font-body uppercase tracking-[0.3em] text-xs text-[#c8b89a] text-center lg:text-left">
+                <h4 class="font-body uppercase tracking-[0.3em] text-xs text-white text-center lg:text-left">
                     {{ 'FOOTER.LOCATION' | transloco }}
                 </h4>
 
@@ -89,7 +89,7 @@
         <div
             class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-6 flex flex-col md:flex-row items-center justify-between gap-5 text-center md:text-left">
 
-            <p class="font-body text-xs text-white/50 tracking-wide">
+            <p class="font-body text-xs text-white tracking-wide">
                 © {{currentYear}} MWR Hotel.
                 {{ 'FOOTER.RIGHTS' | transloco }}
 
@@ -98,7 +98,7 @@
             <div class="flex flex-wrap justify-center gap-5">
                 <a *ngFor="let social of socials" [href]="social.url"
                     target="_blank" rel="noopener noreferrer"
-                    class="font-body text-xs text-white/60 hover:text-white transition">
+                    class="font-body text-xs text-white hover:text-white transition">
                     {{social.name}}
                 </a>
 
@@ -109,7 +109,7 @@
 
     <!-- LOGOS INFINITOS EN MOVIMIENTO -->
     <div
-        class="border-t border-white/5 bg-[#2d1f19] py-8 overflow-hidden select-none relative before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-20 before:bg-gradient-to-r before:from-[#2d1f19] before:to-transparent after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-20 after:bg-gradient-to-l after:from-[#2d1f19] after:to-transparent">
+        class="border-t border-white/5 bg-brand-dark py-8 overflow-hidden select-none relative before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-20 before:bg-gradient-to-r before:from-brand-dark before:to-transparent after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-20 after:bg-gradient-to-l after:from-brand-dark after:to-transparent">
 
         <!-- Contenedor con la animación -->
         <div class="flex w-max gap-16 animate-marquee-reverse">

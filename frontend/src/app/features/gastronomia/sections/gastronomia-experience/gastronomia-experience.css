@@ -1,5 +1,5 @@
 .experience-eyebrow {
-    color: #8e4c2f;
+    color: var(--color-brand-terracotta);
     font-size: 11px;
     letter-spacing: 0.35em;
     text-transform: uppercase;
@@ -7,7 +7,7 @@
 
 .experience-title {
     margin-top: 1.25rem;
-    color: #382821;
+    color: var(--color-brand-dark);
     font-family: var(--font-title);
     font-size: clamp(2.25rem, 3.5vw, 3.75rem);
     font-weight: 300;
@@ -18,11 +18,11 @@
     width: 5rem;
     height: 1px;
     margin-block: 2rem;
-    background: #c8b89a;
+    background: var(--color-brand-sand);
 }
 
 .experience-copy {
-    color: #5c5a3e;
+    color: var(--color-brand-muted);
     font-size: 1.125rem;
     line-height: 1.9;
 }

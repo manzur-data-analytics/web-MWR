@@ -52,13 +52,13 @@
 .calendar-glow.left {
     left: -150px;
     top: 200px;
-    background: #d4a15a;
+    background: var(--color-brand-gold);
 }
 
 .calendar-glow.right {
     right: -150px;
     bottom: 100px;
-    background: #8e4c2f;
+    background: var(--color-brand-terracotta);
 }
 
 /* CALENDAR WRAPPER */
@@ -86,7 +86,7 @@
     font-family: var(--font-title, serif);
     font-size: 1.8rem;
     font-weight: 300;
-    color: var(--dark, #382821);
+    color: var(--dark, var(--color-brand-dark));
 }
 
 @media (min-width: 768px) {
@@ -110,9 +110,9 @@
 }
 
 .calendar-header button:hover {
-    background: var(--gold, #d4a15a);
+    background: var(--gold, var(--color-brand-gold));
     color: white;
-    border-color: var(--gold, #d4a15a);
+    border-color: var(--gold, var(--color-brand-gold));
 }
 
 /* WEEK (7 COLUMNAS EN TODAS LAS PANTALLAS) */
@@ -127,7 +127,7 @@
     font-size: .65rem;
     text-transform: uppercase;
     letter-spacing: .15em;
-    color: #8e4c2f;
+    color: var(--color-brand-terracotta);
     font-weight: 600;
 }
 
@@ -147,7 +147,7 @@
 .calendar-day {
     aspect-ratio: 1 / 1;
     height: auto;
-    background: #faf8f5;
+    background: var(--color-brand-bg);
     border: 1px solid #eee;
     position: relative;
     cursor: pointer;
@@ -173,7 +173,7 @@
     z-index: 2;
     font-family: var(--font-title, serif);
     font-size: 1rem;
-    color: #382821;
+    color: var(--color-brand-dark);
     font-weight: 500;
 }
 
@@ -206,7 +206,7 @@
 
 /* HOVER & STATES */
 .calendar-day:hover {
-    border-color: #d4a15a;
+    border-color: var(--color-brand-gold);
     z-index: 10;
 }
 
@@ -219,8 +219,8 @@
 }
 
 .calendar-day.is-selected {
-    border-color: #8e4c2f;
-    box-shadow: 0 0 0 2px #8e4c2f;
+    border-color: var(--color-brand-terracotta);
+    box-shadow: 0 0 0 2px var(--color-brand-terracotta);
 }
 
 /* ETIQUETAS Y PUNTOS DE EVENTOS */
@@ -240,7 +240,7 @@
     z-index: 2;
     width: 6px;
     height: 6px;
-    background-color: #d4a15a;
+    background-color: var(--color-brand-gold);
     border-radius: 50%;
     align-self: center;
 }
