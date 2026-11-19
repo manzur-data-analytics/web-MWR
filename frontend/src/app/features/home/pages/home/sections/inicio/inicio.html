@@ -1,16 +1,23 @@
 <section id="inicio" class="page-hero relative w-full overflow-hidden">
 
-    <!-- Imagen de respaldo -->
-    <img src="images/home/hero/hotel.png" alt=""
-        class="absolute inset-0 h-full w-full object-cover object-center">
+    <div class="hero-mobile-background" aria-hidden="true">
+        <img src="videos/inicio2-poster.jpg" alt="">
+    </div>
 
-    <video class="hero-video absolute inset-0 h-full w-full object-cover object-center"
-        autoplay muted loop playsinline preload="metadata" poster="images/home/hero/hotel.png" aria-hidden="true">
-        <source src="videos/inicio-web.mp4" type="video/mp4">
-    </video>
+    <div class="hero-media absolute inset-0 overflow-hidden">
+        <!-- Imagen de respaldo -->
+        <img src="videos/inicio2-poster.jpg" alt=""
+            class="absolute inset-0 h-full w-full object-cover object-center">
+
+        <video class="hero-video absolute inset-0 h-full w-full object-cover object-center"
+            [class.hero-video--playing]="videoPlaying" (playing)="videoPlaying = true" (pause)="videoPlaying = false"
+            autoplay muted [muted]="true" loop playsinline preload="metadata" aria-hidden="true" tabindex="-1">
+            <source src="videos/inicio2-web.mp4" type="video/mp4">
+        </video>
+    </div>
 
     <!-- Overlay -->
-    <div class="absolute inset-0 bg-black/35"></div>
+    <div class="hero-overlay absolute inset-0 bg-black/35"></div>
 
 
     <!-- Contenido -->
@@ -21,12 +28,12 @@
 
 
             <!-- Línea -->
-            <div class="w-20 sm:w-24 h-px bg-white/70 mx-auto my-7 sm:my-8">
+            <div class="hero-divider w-20 sm:w-24 h-px bg-white/70 mx-auto my-7 sm:my-8">
             </div>
 
 
             <!-- Descripción -->
-            <p class="font-body text-white/85 
+            <p class="hero-description font-body text-white/85 
                 text-sm 
                 sm:text-base 
                 md:text-lg

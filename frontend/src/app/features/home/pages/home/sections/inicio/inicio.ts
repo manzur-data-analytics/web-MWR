@@ -8,5 +8,5 @@ import { TranslocoPipe } from '@jsverse/transloco';
   styleUrl: './inicio.css',
 })
 export class Inicio {
-
+  videoPlaying = false;
 }

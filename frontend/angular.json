@@ -22,7 +22,7 @@
               {
                 "glob": "**/*",
                 "input": "public",
-                "ignore": ["videos/inicio.MOV"]
+                "ignore": ["videos/inicio.MOV", "videos/inicio2.MOV"]
               }
             ],
             "styles": [
