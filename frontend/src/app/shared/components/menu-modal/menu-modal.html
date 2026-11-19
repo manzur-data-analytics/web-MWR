@@ -1,0 +1,9 @@
+<dialog #dialog class="menu-dialog" aria-labelledby="menu-dialog-title" (click)="onBackdrop($event)" (close)="onClosed()">
+    <div class="menu-dialog__header">
+        <h2 id="menu-dialog-title">{{ 'GASTRONOMY.HERO.MENU' | transloco }}</h2>
+        <button type="button" class="menu-dialog__close" (click)="close()" [attr.aria-label]="'MENU_MODAL.CLOSE' | transloco">&times;</button>
+    </div>
+    @if (isOpen) {
+        <iframe src="documentos/menu-hilario.pdf#toolbar=0" [title]="'GASTRONOMY.HERO.MENU' | transloco"></iframe>
+    }
+</dialog>

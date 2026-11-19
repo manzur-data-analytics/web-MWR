@@ -1,4 +1,5 @@
 {
+    "MENU_MODAL": { "CLOSE": "Cerrar menú" },
     "WHATSAPP": {
         "MESSAGE": "Hola, quería consultar sobre...",
         "LABEL": "Contactar por WhatsApp"

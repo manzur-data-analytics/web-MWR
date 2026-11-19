@@ -6,10 +6,11 @@ import { Navbar } from './layout/navbar/navbar';
 import { Footer } from './layout/footer/footer';
 import { filter } from 'rxjs';
 import { WhatsappButton } from './shared/components/whatsapp-button/whatsapp-button';
+import { MenuModal } from './shared/components/menu-modal/menu-modal';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, BookingModal, Navbar, Footer, WhatsappButton],
+  imports: [RouterOutlet, BookingModal, Navbar, Footer, WhatsappButton, MenuModal],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

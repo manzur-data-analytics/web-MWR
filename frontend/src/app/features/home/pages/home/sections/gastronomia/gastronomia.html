@@ -85,16 +85,22 @@
 
 
 
-            <a routerLink="/gastronomia" class="site-button site-button--light mt-10">
+            <div class="mt-10 flex flex-col items-center gap-5">
+                <div class="flex w-full max-w-xs flex-col gap-4 sm:w-auto sm:max-w-none sm:flex-row">
+                    <button type="button" class="site-button w-full sm:w-auto">
+                        {{ 'GASTRONOMY.HERO.RESERVE' | transloco }}
+                    </button>
+                    <a appMenuModal href="documentos/menu-hilario.pdf" target="_blank" rel="noopener"
+                        class="site-button site-button--light w-full sm:w-auto">
+                        {{ 'GASTRONOMY.HERO.MENU' | transloco }}
+                    </a>
+                </div>
 
-
-                {{'HOME.GASTRONOMY.PREVIEW.BUTTON' | transloco}}
-
-
-
-
-
-            </a>
+                <a routerLink="/gastronomia"
+                    class="inline-flex min-h-11 items-center justify-center px-3 text-sm text-white/90 underline underline-offset-4 transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">
+                    {{ 'HOME.GASTRONOMY.PREVIEW.BUTTON' | transloco }}
+                </a>
+            </div>
 
 
         </div>
