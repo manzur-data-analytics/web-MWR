@@ -29,7 +29,7 @@
             "PREVIEW": {
                 "SUBTITLE": "Dining",
                 "TITLE": "Hilario Restaurante & Wine Bar",
-                "DESCRIPTION": "Two ways to discover the flavors of northern Argentina: a tasting menu in the restaurant and, on the terraces, sharing plates paired with wines from our winery, El Bayeh.",
+                "DESCRIPTION": "Two ways to discover the flavors of northern Argentina: a tasting menu and sharing plates paired with wines from our winery, El Bayeh.",
                 "BUTTON": "Discover gastronomy"
             }
         },
@@ -140,7 +140,7 @@
             },
             "DISH_SUBTITLE": "Hilario",
             "DISH_TITLE": "Flavors and corners of the house",
-            "DISH1": "Smoked trout",
+            "DISH1": "TROUT GRAVLAX",
             "DISH2": "Our clay oven",
             "DISH3": "Pavlova with cayote"
         },
@@ -214,6 +214,9 @@
             "STAT2_LABEL": "Exclusive venues",
             "STAT3_NUMBER": "100%",
             "STAT3_LABEL": "Personalized service",
+            "SENDING": "Sending...",
+            "SUCCESS": "Your request has been sent. We will contact you soon.",
+            "ERROR": "We couldn't send your request. Please try again.",
             "EVENT_TYPE": "Event type",
             "WEDDING": "Wedding",
             "SOCIAL": "Social event",
@@ -236,7 +239,7 @@
             "SUBTITLE": "Wine Spa · Opening 2027",
             "TITLE": "A space of calm overlooking the hills",
             "DESCRIPTION": "A Wine Spa designed to slow down: water, warmth and treatments inspired by the wines from our winery, with the Paleta del Pintor as a backdrop.",
-            "BUTTON": "BOOK"
+            "BUTTON": "I WANT TO RECEIVE UPDATES"
         },
         "GALLERY": {
             "SUBTITLE": "Spaces",
@@ -253,7 +256,7 @@
             "SUBTITLE": "Treatments",
             "TITLE": "Rituals inspired by wine",
             "DESCRIPTION": "We are preparing a treatment menu drawing on the properties of the vine and the wines of Bodega El Bayeh. You will be able to discover it very soon.",
-            "BUTTON": "BOOK"
+            "BUTTON": "I WANT TO RECEIVE UPDATES"
         }
     },
     "EXPERIENCES": {
@@ -261,12 +264,11 @@
             "SUBTITLE": "Experiences",
             "TITLE": "Special moments",
             "DESCRIPTION": "A picnic in the gardens facing the Paleta del Pintor, a tasting of wines from our winery, and experiences tailored to you.",
-            "BUTTON": "Discover experiences"
+            "BUTTON": "Book experience"
         },
         "SIGNATURE": {
             "SUBTITLE": "Our experiences",
             "TITLE": "Moments You'll Always Remember",
-            "DESCRIPTION": "Two ways to enjoy Maimará: a picnic in the gardens and a journey through the wines from our winery.",
             "VIEW_GALLERY": "View gallery",
             "RESERVE": "Book",
             "PANEL_DURATION": "Duration",
@@ -298,7 +300,7 @@
             "WINE_DESC": "A journey through the wines of Bodega El Bayeh in our Wine Bar, overlooking the hills. Wines made with grapes from different corners of the Quebrada: from the Criolla of small growers to the reds from the estate at 2,700 metres above sea level.",
             "WINE_DURATION": "2 hours",
             "WINE_AVAILABILITY": "Thursday to Monday, 11 am to 8 pm",
-            "WINE_MODE": "At the Wine Bar",
+            "WINE_MODE": "Hilario Restaurante",
             "BODEGA_CATEGORY": "Wine Tourism",
             "BODEGA_TITLE": "Exclusive Winery Tour",
             "BODEGA_DESC": "Discover the vineyards and historic wine cellars of one of the region's finest wineries, including private transportation and a guided tasting.",

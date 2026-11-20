@@ -33,8 +33,8 @@ export class SmoothScrollService {
         });
     }
 
-    scrollTo(target: string | number) {
-        this.lenis?.scrollTo(target);
+    scrollTo(target: string | number, duration?: number) {
+        this.lenis?.scrollTo(target, { duration });
     }
 
 }

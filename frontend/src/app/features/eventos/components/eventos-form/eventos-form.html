@@ -1,4 +1,5 @@
-<form class="space-y-8">
+<form class="space-y-8" (submit)="submit($event)">
+                        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display: none" aria-hidden="true">
 
                         <!-- Selector: Tipo de Evento -->
                         <div>
@@ -30,25 +31,25 @@
                         <!-- Campos de Información Personal -->
                         <div class="grid md:grid-cols-2 gap-5 sm:gap-6">
                             <div class="relative">
-                                <input
+                                <input name="name" type="text" required autocomplete="name" [attr.aria-label]="'EVENTS.QUOTE.NAME' | transloco"
                                     class="luxury-input border border-brand-sand px-5 py-4 bg-white/80 w-full text-sm text-brand-dark focus:bg-white focus:outline-none focus:border-brand-gold transition-all"
                                     placeholder="{{'EVENTS.QUOTE.NAME' | transloco}}">
                             </div>
 
                             <div class="relative">
-                                <input
+                                <input name="email" type="email" required autocomplete="email" [attr.aria-label]="'EVENTS.QUOTE.EMAIL' | transloco"
                                     class="luxury-input border border-brand-sand px-5 py-4 bg-white/80 w-full text-sm text-brand-dark focus:bg-white focus:outline-none focus:border-brand-gold transition-all"
                                     placeholder="{{'EVENTS.QUOTE.EMAIL' | transloco}}">
                             </div>
 
                             <div class="relative">
-                                <input
+                                <input name="Telefono" type="tel" autocomplete="tel" [attr.aria-label]="'EVENTS.QUOTE.PHONE' | transloco"
                                     class="luxury-input border border-brand-sand px-5 py-4 bg-white/80 w-full text-sm text-brand-dark focus:bg-white focus:outline-none focus:border-brand-gold transition-all"
                                     placeholder="{{'EVENTS.QUOTE.PHONE' | transloco}}">
                             </div>
 
                             <div class="relative">
-                                <input type="number"
+                                <input name="Invitados" type="number" min="1" [attr.aria-label]="'EVENTS.QUOTE.GUESTS' | transloco"
                                     class="luxury-input border border-brand-sand px-5 py-4 bg-white/80 w-full text-sm text-brand-dark focus:bg-white focus:outline-none focus:border-brand-gold transition-all"
                                     placeholder="{{'EVENTS.QUOTE.GUESTS' | transloco}}">
                             </div>
@@ -83,28 +84,31 @@
                             </div>
 
                             <!-- Inputs adaptados para pantallas móviles sin desborde -->
-                            <input *ngIf="dateType === 'exact'" type="date"
+                            <input *ngIf="dateType === 'exact'" name="Fecha" type="date" [attr.aria-label]="'EVENTS.QUOTE.EXACT_DATE' | transloco"
                                 class="luxury-input border border-brand-sand px-3.5 sm:px-5 py-3 bg-white w-full max-w-full min-w-0 box-border text-xs sm:text-sm text-brand-dark focus:outline-none focus:border-brand-gold appearance-none">
 
-                            <input *ngIf="dateType === 'month'" type="month"
+                            <input *ngIf="dateType === 'month'" name="Fecha" type="month" [attr.aria-label]="'EVENTS.QUOTE.MONTH_ONLY' | transloco"
                                 class="luxury-input border border-brand-sand px-3.5 sm:px-5 py-3 bg-white w-full max-w-full min-w-0 box-border text-xs sm:text-sm text-brand-dark focus:outline-none focus:border-brand-gold appearance-none">
                         </div>
 
                         <!-- Presupuesto y Mensaje -->
                         <div class="space-y-5">
-                            <input
+                            <input name="Presupuesto" [attr.aria-label]="'EVENTS.QUOTE.BUDGET' | transloco"
                                 class="luxury-input border border-brand-sand px-5 py-4 bg-white/80 w-full text-sm text-brand-dark focus:bg-white focus:outline-none focus:border-brand-gold transition-all"
                                 placeholder="{{'EVENTS.QUOTE.BUDGET' | transloco}}">
 
-                            <textarea
+                            <textarea name="Mensaje" [attr.aria-label]="'EVENTS.QUOTE.MESSAGE' | transloco"
                                 class="luxury-input h-32 border border-brand-sand px-5 py-4 bg-white/80 w-full text-sm text-brand-dark focus:bg-white focus:outline-none focus:border-brand-gold resize-none transition-all"
                                 placeholder="{{'EVENTS.QUOTE.MESSAGE' | transloco}}"></textarea>
                         </div>
 
                         <!-- Botón Submit -->
-                        <button type="submit"
+                        <button type="submit" [disabled]="sending"
                             class="site-button w-full">
-                            {{'EVENTS.QUOTE.BUTTON' | transloco}}
+                            {{ (sending ? 'EVENTS.QUOTE.SENDING' : 'EVENTS.QUOTE.BUTTON') | transloco }}
                         </button>
+
+                        <p *ngIf="status === 'success'" role="status" class="text-brand-dark text-sm">{{ 'EVENTS.QUOTE.SUCCESS' | transloco }}</p>
+                        <p *ngIf="status === 'error'" role="alert" class="text-brand-terracotta text-sm">{{ 'EVENTS.QUOTE.ERROR' | transloco }}</p>
 
                     </form>

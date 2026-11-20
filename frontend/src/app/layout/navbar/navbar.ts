@@ -3,7 +3,6 @@ import { Component, HostListener, signal } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
 import { TranslocoService } from '@jsverse/transloco';
 import { inject } from '@angular/core';
-import { ModalService } from '../../shared/services/modal-service';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 export interface NavItem {
@@ -23,14 +22,6 @@ export interface NavItem {
 export class Navbar {
 
   private transloco = inject(TranslocoService);
-  private modalService = inject(ModalService);
-
-  openBookingModal() {
-
-    this.modalService.openBookingModal();
-
-  }
-
   // --- Estado existente (ya lo tenías) ---
   scrolled = false;
   mobileMenuOpen = false;
@@ -46,14 +37,7 @@ export class Navbar {
     { route: '/eventos', label: 'NAVBAR.EVENTOS' },
     { route: '/spa', label: 'NAVBAR.SPA' },
     { route: '/experiencias', label: 'NAVBAR.EXPERIENCIAS' },
-    {
-      label: 'NAVBAR.NOSOTROS',
-      isOpen: false, // Controla si se abre en mobile
-      children: [
-        { label: 'Nosotros 1', route: '/nosotros' },
-        { label: 'Nosotros 2', route: '/nosotros-2' }
-      ]
-    },
+    { route: '/nosotros', label: 'NAVBAR.NOSOTROS' },
   ];
 
   languages = [

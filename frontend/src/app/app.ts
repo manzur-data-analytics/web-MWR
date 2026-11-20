@@ -1,6 +1,5 @@
 import { Component, signal } from '@angular/core';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
-import { BookingModal } from './shared/components/booking-modal/booking-modal';
 import { SmoothScrollService } from './core/services/smoth-scroll.service';
 import { Navbar } from './layout/navbar/navbar';
 import { Footer } from './layout/footer/footer';
@@ -10,7 +9,7 @@ import { MenuModal } from './shared/components/menu-modal/menu-modal';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, BookingModal, Navbar, Footer, WhatsappButton, MenuModal],
+  imports: [RouterOutlet, Navbar, Footer, WhatsappButton, MenuModal],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -29,7 +29,7 @@
 
             <div class="flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8 mt-10 sm:mt-12">
 
-                <a href="#cotizacion"
+                <a href="#formulario-cotizacion" (click)="$event.preventDefault(); scroll.scrollTo('#formulario-cotizacion', 2)"
                     class="site-button site-button--hero">
                     <span>
                         {{'EVENTS.HERO.BUTTON' | transloco}}

@@ -73,7 +73,7 @@
                 </div>
             </div>
             <!-- Desktop CTA -->
-            <button type="button" (click)="openBookingModal()"
+            <button type="button"
                 class="font-body uppercase text-[12px] tracking-[0.25em] font-medium px-6 py-3 rounded-full border transition-all duration-300"
                 [ngClass]="scrolled
                 ? 'text-white bg-stone-900 border-stone-900 hover:bg-stone-700'
@@ -152,7 +152,7 @@
             </button>
         </div>
         <!-- Reservar -->
-        <button type="button" (click)="closeMenu(); openBookingModal()"
+        <button type="button"
             class="mt-6 bg-amber-700 text-white text-center py-3.5 rounded-full uppercase tracking-widest text-xs font-semibold shadow-md">
             {{ 'NAVBAR.RESERVAR' | transloco }}
         </button>

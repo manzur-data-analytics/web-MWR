@@ -29,7 +29,7 @@
             "PREVIEW": {
                 "SUBTITLE": "Gastronomía",
                 "TITLE": "Hilario Restaurante & Wine Bar",
-                "DESCRIPTION": "Dos propuestas para descubrir el norte en la mesa: un menú de pasos en el restaurante y, en las terrazas, platos para compartir con los vinos de nuestra bodega, El Bayeh.",
+                "DESCRIPTION": "Dos propuestas para descubrir el norte en la mesa: un menú de pasos y platos para compartir con los vinos de nuestra bodega, El Bayeh.",
                 "BUTTON": "Descubrir gastronomía"
             }
         },
@@ -140,7 +140,7 @@
             },
             "DISH_SUBTITLE": "Hilario",
             "DISH_TITLE": "Sabores y rincones de la casa",
-            "DISH1": "Trucha ahumada",
+            "DISH1": "GRAVLAX DE TRUCHA",
             "DISH2": "Nuestro horno de barro",
             "DISH3": "Pavlova con cayote"
         },
@@ -226,6 +226,9 @@
             "BUDGET": "Presupuesto estimado",
             "MESSAGE": "Contanos cómo imaginás tu evento...",
             "BUTTON": "Solicitar propuesta",
+            "SENDING": "Enviando...",
+            "SUCCESS": "Tu solicitud fue enviada. Nos pondremos en contacto con vos.",
+            "ERROR": "No pudimos enviar tu solicitud. Intentá nuevamente.",
             "DATE_TYPE": "¿Ya tenés una fecha definida?",
             "EXACT_DATE": "Fecha exacta",
             "MONTH_ONLY": "Mes aproximado"
@@ -236,7 +239,7 @@
             "SUBTITLE": "Wine Spa · Apertura 2027",
             "TITLE": "Un espacio de calma frente a los cerros",
             "DESCRIPTION": "Un Wine Spa pensado para detener el ritmo: agua, calor y tratamientos inspirados en el vino de nuestra bodega, con la Paleta del Pintor como paisaje.",
-            "BUTTON": "RESERVAR"
+            "BUTTON": "QUIERO RECIBIR NOVEDADES"
         },
         "GALLERY": {
             "SUBTITLE": "Espacios",
@@ -253,7 +256,7 @@
             "SUBTITLE": "Tratamientos",
             "TITLE": "Rituales inspirados en el vino",
             "DESCRIPTION": "Estamos preparando un menú de tratamientos que toma las propiedades de la vid y los vinos de Bodega El Bayeh. Muy pronto vas a poder conocerlo.",
-            "BUTTON": "RESERVA"
+            "BUTTON": "QUIERO RECIBIR NOVEDADES"
         }
     },
     "EXPERIENCES": {
@@ -261,12 +264,11 @@
             "SUBTITLE": "Experiencias",
             "TITLE": "Momentos especiales",
             "DESCRIPTION": "Un picnic en los jardines frente a la Paleta del Pintor, una degustación de los vinos de nuestra bodega y propuestas pensadas a medida.",
-            "BUTTON": "Descubrir experiencias"
+            "BUTTON": "Reservar experiencia"
         },
         "SIGNATURE": {
             "SUBTITLE": "Nuestras experiencias",
             "TITLE": "Momentos que se quedan con vos",
-            "DESCRIPTION": "Dos maneras de disfrutar Maimará: un picnic en los jardines y un recorrido por los vinos de nuestra bodega.",
             "VIEW_GALLERY": "Ver galería",
             "RESERVE": "Reservar",
             "PANEL_DURATION": "Duración",
@@ -298,7 +300,7 @@
             "WINE_DESC": "Un recorrido por los vinos de Bodega El Bayeh en nuestro Wine Bar, con vista a los cerros. Vinos elaborados con uvas de distintos rincones de la Quebrada: desde la criolla de los pequeños parceleros hasta los tintos de la finca a 2.700 metros de altura.",
             "WINE_DURATION": "2 horas",
             "WINE_AVAILABILITY": "Jueves a lunes, 11 a 20 h",
-            "WINE_MODE": "En el Wine Bar",
+            "WINE_MODE": "Hilario Restaurante",
             "BODEGA_CATEGORY": "Enoturismo",
             "BODEGA_TITLE": "Tour Exclusivo de Bodega",
             "BODEGA_DESC": "Recorré los viñedos y las barricas centenarias de una de las bodegas más prestigiosas de la región, con traslado incluido y degustación guiada al finalizar.",
