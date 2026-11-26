@@ -8,7 +8,7 @@ import { TranslocoPipe } from '@jsverse/transloco';
   styleUrl: './nosotros-historia.css',
 })
 export class NosotrosHistoria {
-  readonly paragraphs = [1, 2, 3, 4].map(number => 'ABOUT_PAGE.STORY.PARAGRAPH' + number);
+  readonly paragraphs = [1, 2, 3, 4, 5].map(number => 'ABOUT_PAGE.STORY.PARAGRAPH' + number);
   readonly photoIndex = signal(0);
 
   // Temporary resort images; replace with the family's archival photos when supplied.
