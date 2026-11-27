@@ -13,9 +13,9 @@ export class NosotrosHistoria {
 
   // Temporary resort images; replace with the family's archival photos when supplied.
   readonly photos = [
-    { src: 'images/secciones/nosotros/galeria_pergola.jpg', altKey: 'ABOUT_PAGE.GALLERY.PERGOLA' },
-    { src: 'images/home/alojamiento/primera-0113.jpg', altKey: 'ABOUT_PAGE.GALLERY.RESORT' },
-    { src: 'images/secciones/nosotros/foto-0007.jpg', altKey: 'ABOUT_PAGE.GALLERY.EVENTS' },
+    { src: 'images/secciones/nosotros/galeria_pergola.webp', altKey: 'ABOUT_PAGE.GALLERY.PERGOLA' },
+    { src: 'images/home/alojamiento/primera-0113.webp', altKey: 'ABOUT_PAGE.GALLERY.RESORT' },
+    { src: 'images/secciones/nosotros/foto-0007.webp', altKey: 'ABOUT_PAGE.GALLERY.EVENTS' },
   ];
 
   movePhoto(direction: number): void {
