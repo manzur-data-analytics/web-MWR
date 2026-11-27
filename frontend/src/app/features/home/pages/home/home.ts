@@ -7,11 +7,11 @@ import { Spa } from './sections/spa/spa';
 import { Inicio } from './sections/inicio/inicio';
 import { Gastronomia } from './sections/gastronomia/gastronomia';
 import { Experiencias } from './sections/experiencias/experiencias';
-import { Nosotros } from './sections/nosotros/nosotros';
+// import { Nosotros } from './sections/nosotros/nosotros'; // Oculto temporalmente
 
 @Component({
   selector: 'app-home',
-  imports: [Inicio, Alojamiento, Gastronomia, EventosBodas, Spa, Experiencias, Nosotros],
+  imports: [Inicio, Alojamiento, Gastronomia, EventosBodas, Spa, Experiencias],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

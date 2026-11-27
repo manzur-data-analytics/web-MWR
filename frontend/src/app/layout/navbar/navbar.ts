@@ -37,7 +37,8 @@ export class Navbar {
     { route: '/eventos', label: 'NAVBAR.EVENTOS' },
     { route: '/spa', label: 'NAVBAR.SPA' },
     { route: '/experiencias', label: 'NAVBAR.EXPERIENCIAS' },
-    { route: '/nosotros', label: 'NAVBAR.NOSOTROS' },
+    // Oculto temporalmente
+    // { route: '/nosotros', label: 'NAVBAR.NOSOTROS' },
   ];
 
   languages = [
